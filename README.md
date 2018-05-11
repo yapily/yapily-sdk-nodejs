@@ -17,6 +17,7 @@ var institutionsApi = new YapilyApi.InstitutionsApi();
 institutionsApi.getInstitutionsUsingGET(institutionsCallback);
 ```
 
+
 - Creating users and retrieving users for your application registered in the Yapily Dashboard
 ```javascript
 var usersApi = new YapilyApi.ApplicationUsersApi();
@@ -27,13 +28,12 @@ usersApi.addUserUsingPOST(appUser, addUserCallback);
 var users = usersApi.getUsersUsingGET(getUsersCallback);
 ```
 
-- Build authorisation URL for your users to log into their institution
+
+- Build authorisation URL for your users to log into their institution. NOTE: Use this URL to direct your user to a web page to authenticate with their institution in their web browser (mobile operating systems will handle URLs that should be handled by their native apps).
 
 ```javascript
 var institutionAuthorisationUrl = `https://auth.yapily.com/direct/?institution=${institutionId}&application=${applicationId}&user=${userUuid}&callback=${myCallbackUrl}`;
 ```
- 
-Use this URL to direct your user to a web page to authenticate with their institution in their web browser (mobile operating systems will handle URLs that should be handled by their native apps).
 
 
 - Returning user account details
@@ -45,6 +45,7 @@ var accountsApi = new YapilyApi.AccountsApi();
 accountsApi.getAccountsUsingGET(opts, accountsCallback);
 ```
 
+
 - Returning user transaction details
 
 ```javascript
@@ -53,6 +54,7 @@ var opts = { consent : consentToken };
 var transactionsApi = new YapilyApi.TransactionsApi();
 transactionsApi.getTransactionsUsingGET(accountId, opts, transactionsCallback);
 ```
+
 
 - Returning user identity details
 ```javascript
