@@ -1,2 +1,3 @@
 *.sh
 swagger-codegen-cli.jar
+Jenkinsfile
