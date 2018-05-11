@@ -30,9 +30,12 @@ var users = usersApi.getUsersUsingGET(getUsersCallback);
 - Build authorisation URL for your users to log into their institution
 
 ```javascript
-var directUrl = `https://auth.yapily.com/direct/?institution=${institutionId}&application=${applicationId}&user=${userUuid}&callback=${myCallbackUrl}`;
+var institutionAuthorisationUrl = `https://auth.yapily.com/direct/?institution=${institutionId}&application=${applicationId}&user=${userUuid}&callback=${myCallbackUrl}`;
 ```
  
+Use this URL to direct your user to a web page to authenticate with their institution in their web browser (mobile operating systems will handle URLs that should be handled by their native apps).
+
+
 - Returning user account details
 
 ```javascript
