@@ -12,43 +12,51 @@ Sample usage of the SDK can be seen in the `examples` folder.
 
 - Retrieve a list of available financial institutions to connect to
 
-```javascript
-Institutions institutionsApi = new Institutions();
-List<Institution> institutionList = institutionsApi.listInstitutions();
+```javascript	
+var institutionsApi = new YapilyApi.InstitutionsApi();
+var institutionList = institutionsApi.getInstitutionUsingGET();
 ```
 
 - Creating users and retrieving users for your application registered in the Yapily Dashboard
 ```javascript
-Users usersApi = new Users();
-usersApi.createUser("Bojack");
-List<ApplicationUser> users = usersApi.listUsers();
+var usersApi = new YapilyApi.ApplicationUsersApi();
+var appUser = new YapilyApi.ApplicationUser();
+appUser.appUserId = "Bojack";
+usersApi.addUserUsingPOST(appUser, addUserCallback);
+
+var users = usersApi.getUsersUsingGET(getUsersCallback);
 ```
 
-- Receiving an authorisation URL your users to log into their institution
+- Build authorisation URL for your users to log into their institution
 
 ```javascript
-Auth auth = new Auth();
-URI directUrl = auth.authDirectURL(applicationId, userUuid, institutionId, YOUR_CALLBACK_URL, "account");
+var directUrl = `https://auth.yapily.com/direct/?institution=${institutionId}&application=${applicationId}&user=${userUuid}&callback=${myCallbackUrl}`;
 ```
  
 - Returning user account details
 
 ```javascript
-Accounts accountsApi = new Accounts();
-List<Account> accounts = accountsApi.listAccounts(userUuid, institutionId);
+var opts = { consent : consentToken };
+//...
+var accountsApi = new YapilyApi.AccountsApi();
+accountsApi.getAccountsUsingGET(opts, accountsCallback);
 ```
 
 - Returning user transaction details
 
 ```javascript
-Transactions transactionsApi = new Transactions();
-List<Transaction> transactions = transactionsApi.listTransactions(userUuid, accountId, institutionId);
+var opts = { consent : consentToken };
+//...
+var transactionsApi = new YapilyApi.TransactionsApi();
+transactionsApi.getTransactionsUsingGET(accountId, opts, transactionsCallback);
 ```
 
 - Returning user identity details
 ```javascript
-Identities identitiesApi = new Identities();
-Identity identity = identitiesApi.getIdentity(userUuid, institutionId);
+var opts = { consent : consentToken };
+//...
+var identitiesApi = new YapilyApi.IdentityApi();
+identitiesApi.getIdentity(opts, identityCallback);
 ```
 
 ## Further information
