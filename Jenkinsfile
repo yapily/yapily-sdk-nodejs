@@ -20,10 +20,10 @@ node {
 			sh "sh generate-sdk.sh" 
 		}
 
-		helper.runCommandAndDeployToGit(params.BRANCH_NAME,
-		 								"Bump to ${params.API_VERSION}",
-		  								params.apiVersion, 
-		  								generateSdk)
+		helper.gitDeploy(params.BRANCH_NAME,
+						 "Bump to ${params.API_VERSION}",
+						 params.apiVersion, 
+						 generateSdk)
 	}
 	
 }
