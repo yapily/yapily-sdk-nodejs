@@ -16,9 +16,7 @@ node {
 
 	stage('Build and Deploy to Git'){
 
-		def generateSdk = {
-			sh "sh generate-sdk.sh"
-		}
+		def generateSdk = sh "sh generate-sdk.sh"
 
 		helper.runCommandAndDeployToGit(params.BRANCH_NAME,
 		 								"Bump to ${params.API_VERSION}",
