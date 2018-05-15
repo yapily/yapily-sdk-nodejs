@@ -1,5 +1,3 @@
-@Library('helper-library') _
-
 node {
 
 	properties([disableConcurrentBuilds(), 
