@@ -11,7 +11,7 @@ node {
 	slackSend "Deployment Started - ${env.JOB_NAME} ${env.BUILD_NUMBER} - (<${env.BUILD_URL}|Open>)"
 
 	stage('Checkout') {
-		checkout scm
+		sh "git checkout ${params.BRANCH_NAME}"
 	}
 
 	stage('Build'){
