@@ -14,12 +14,12 @@ node {
 		sh "git checkout ${params.BRANCH_NAME}"
 	}
 
-	stage('Build'){
-		sh "sh generate-sdk.sh"
-	}
-
-	stage('Deploy to GitHub'){
-		helper.pushToGit(params.BRANCH_NAME, "Bump to ${params.API_VERSION}", params.apiVersion)
+	stage('Build and Deploy to Git'){
+		def generateSdk = sh "sh generate-sdk.sh"
+		helper.runCommandAndDeployToGit(params.BRANCH_NAME,
+		 								"Bump to ${params.API_VERSION}",
+		  								params.apiVersion, 
+		  								this.&generateSdk)
 	}
 	
 }
