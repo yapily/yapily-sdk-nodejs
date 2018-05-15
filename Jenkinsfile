@@ -8,10 +8,6 @@ node {
 
 	def helper = new yapily.jenkins.Helper()
 
-	def generateSdk() {
-		sh "sh generate-sdk.sh"
-	}
-
 	slackSend "Deployment Started - ${env.JOB_NAME} ${env.BUILD_NUMBER} - (<${env.BUILD_URL}|Open>)"
 
 	stage('Checkout') {
@@ -19,6 +15,11 @@ node {
 	}
 
 	stage('Build and Deploy to Git'){
+
+		def generateSdk() {
+			sh "sh generate-sdk.sh"
+		}
+		
 		helper.runCommandAndDeployToGit(params.BRANCH_NAME,
 		 								"Bump to ${params.API_VERSION}",
 		  								params.apiVersion, 
