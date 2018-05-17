@@ -1,4 +1,4 @@
-# YapilyRestApiExplorer.Country
+# YapilyApi.Country
 
 ## Properties
 Name | Type | Description | Notes

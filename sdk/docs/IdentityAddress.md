@@ -1,4 +1,4 @@
-# YapilyRestApiExplorer.IdentityAddress
+# YapilyApi.IdentityAddress
 
 ## Properties
 Name | Type | Description | Notes

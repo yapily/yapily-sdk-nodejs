@@ -1,18 +1,18 @@
-# YapilyApi.AccountsApi
+# YapilyApi.InstitutionsApi
 
 All URIs are relative to *https://api.yapily.com:443*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getAccountUsingGET**](AccountsApi.md#getAccountUsingGET) | **GET** /accounts/{accountId} | Get account
-[**getAccountsUsingGET**](AccountsApi.md#getAccountsUsingGET) | **GET** /accounts | Get accounts
+[**getInstitutionUsingGET**](InstitutionsApi.md#getInstitutionUsingGET) | **GET** /institutions/{institutionId} | Retrieves details of a specific institution available in Yapily
+[**getInstitutionsUsingGET**](InstitutionsApi.md#getInstitutionsUsingGET) | **GET** /institutions | Retrieves the list of institutions available in Yapily
 
 
-<a name="getAccountUsingGET"></a>
-# **getAccountUsingGET**
-> Account getAccountUsingGET(accountId, opts)
+<a name="getInstitutionUsingGET"></a>
+# **getInstitutionUsingGET**
+> Institution getInstitutionUsingGET(institutionId)
 
-Get account
+Retrieves details of a specific institution available in Yapily
 
 ### Example
 ```javascript
@@ -24,13 +24,10 @@ var basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new YapilyApi.AccountsApi();
+var apiInstance = new YapilyApi.InstitutionsApi();
 
-var accountId = "accountId_example"; // String | accountId
+var institutionId = "institutionId_example"; // String | institutionId
 
-var opts = { 
-  'consent': "consent_example" // String | Consent Token
-};
 
 var callback = function(error, data, response) {
   if (error) {
@@ -39,19 +36,18 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getAccountUsingGET(accountId, opts, callback);
+apiInstance.getInstitutionUsingGET(institutionId, callback);
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **accountId** | **String**| accountId | 
- **consent** | **String**| Consent Token | [optional] 
+ **institutionId** | **String**| institutionId | 
 
 ### Return type
 
-[**Account**](Account.md)
+[**Institution**](Institution.md)
 
 ### Authorization
 
@@ -62,11 +58,11 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json;charset=UTF-8
 
-<a name="getAccountsUsingGET"></a>
-# **getAccountsUsingGET**
-> [Account] getAccountsUsingGET(opts)
+<a name="getInstitutionsUsingGET"></a>
+# **getInstitutionsUsingGET**
+> [Institution] getInstitutionsUsingGET()
 
-Get accounts
+Retrieves the list of institutions available in Yapily
 
 ### Example
 ```javascript
@@ -78,11 +74,7 @@ var basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new YapilyApi.AccountsApi();
-
-var opts = { 
-  'consent': "consent_example" // String | Consent Token
-};
+var apiInstance = new YapilyApi.InstitutionsApi();
 
 var callback = function(error, data, response) {
   if (error) {
@@ -91,18 +83,15 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getAccountsUsingGET(opts, callback);
+apiInstance.getInstitutionsUsingGET(callback);
 ```
 
 ### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **consent** | **String**| Consent Token | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
-[**[Account]**](Account.md)
+[**[Institution]**](Institution.md)
 
 ### Authorization
 

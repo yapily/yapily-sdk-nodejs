@@ -30,7 +30,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new YapilyApi.TransactionsApi();
+    instance = new YapilyApi.ConsentsApi();
   });
 
   var getProperty = function(object, getter, property) {
@@ -49,11 +49,31 @@
       object[property] = value;
   }
 
-  describe('TransactionsApi', function() {
-    describe('getTransactionsUsingGET', function() {
-      it('should call getTransactionsUsingGET successfully', function(done) {
-        //uncomment below and update the code to test getTransactionsUsingGET
-        //instance.getTransactionsUsingGET(function(error) {
+  describe('ConsentsApi', function() {
+    describe('addConsentUsingPOST', function() {
+      it('should call addConsentUsingPOST successfully', function(done) {
+        //uncomment below and update the code to test addConsentUsingPOST
+        //instance.addConsentUsingPOST(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('deleteUsingDELETE', function() {
+      it('should call deleteUsingDELETE successfully', function(done) {
+        //uncomment below and update the code to test deleteUsingDELETE
+        //instance.deleteUsingDELETE(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('getUserConsentsUsingGET', function() {
+      it('should call getUserConsentsUsingGET successfully', function(done) {
+        //uncomment below and update the code to test getUserConsentsUsingGET
+        //instance.getUserConsentsUsingGET(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

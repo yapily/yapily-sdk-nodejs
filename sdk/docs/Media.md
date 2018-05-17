@@ -1,8 +1,9 @@
-# YapilyApi.InstitutionConsent
+# YapilyApi.Media
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**institutionId** | **String** |  | [optional] 
+**source** | **String** |  | [optional] 
+**type** | **String** |  | [optional] 
 
 

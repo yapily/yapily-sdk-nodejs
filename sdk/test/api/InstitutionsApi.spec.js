@@ -30,7 +30,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new YapilyApi.TransactionsApi();
+    instance = new YapilyApi.InstitutionsApi();
   });
 
   var getProperty = function(object, getter, property) {
@@ -49,11 +49,21 @@
       object[property] = value;
   }
 
-  describe('TransactionsApi', function() {
-    describe('getTransactionsUsingGET', function() {
-      it('should call getTransactionsUsingGET successfully', function(done) {
-        //uncomment below and update the code to test getTransactionsUsingGET
-        //instance.getTransactionsUsingGET(function(error) {
+  describe('InstitutionsApi', function() {
+    describe('getInstitutionUsingGET', function() {
+      it('should call getInstitutionUsingGET successfully', function(done) {
+        //uncomment below and update the code to test getInstitutionUsingGET
+        //instance.getInstitutionUsingGET(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('getInstitutionsUsingGET', function() {
+      it('should call getInstitutionsUsingGET successfully', function(done) {
+        //uncomment below and update the code to test getInstitutionsUsingGET
+        //instance.getInstitutionsUsingGET(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

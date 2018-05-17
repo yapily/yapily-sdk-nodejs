@@ -1,7 +1,7 @@
 {
-  "name": "yapily_rest_api_explorer",
-  "version": "0.0.2",
-  "description": "To_access_endpoints_that_require_authentication_use_your_Application_bkeyb_and_bsecretb_created_on_the_a_hrefhttpsdashboard_yapily_com_target_blankDashboarda",
+  "name": "yapily_api",
+  "version": "0.0.5",
+  "description": "To_access_endpoints_that_require_authentication_use_your_Application_key_and_secret_created_in_the_Dashboard__httpsdashboard_yapily_com",
   "license": "Unlicense",
   "main": "src/index.js",
   "scripts": {

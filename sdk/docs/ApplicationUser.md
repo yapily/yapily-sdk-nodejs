@@ -1,4 +1,4 @@
-# YapilyRestApiExplorer.ApplicationUser
+# YapilyApi.ApplicationUser
 
 ## Properties
 Name | Type | Description | Notes

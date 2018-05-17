@@ -1,8 +1,9 @@
-# YapilyApi.InstitutionConsent
+# YapilyApi.Consent
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**institutionId** | **String** |  | [optional] 
+**consentToken** | **String** |  | [optional] 
+**tokenType** | **String** |  | [optional] 
 
 

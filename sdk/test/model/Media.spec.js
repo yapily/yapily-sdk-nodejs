@@ -30,7 +30,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new YapilyApi.TransactionsApi();
+    instance = new YapilyApi.Media();
   });
 
   var getProperty = function(object, getter, property) {
@@ -49,17 +49,25 @@
       object[property] = value;
   }
 
-  describe('TransactionsApi', function() {
-    describe('getTransactionsUsingGET', function() {
-      it('should call getTransactionsUsingGET successfully', function(done) {
-        //uncomment below and update the code to test getTransactionsUsingGET
-        //instance.getTransactionsUsingGET(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+  describe('Media', function() {
+    it('should create an instance of Media', function() {
+      // uncomment below and update the code to test Media
+      //var instane = new YapilyApi.Media();
+      //expect(instance).to.be.a(YapilyApi.Media);
     });
+
+    it('should have the property source (base name: "source")', function() {
+      // uncomment below and update the code to test the property source
+      //var instane = new YapilyApi.Media();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property type (base name: "type")', function() {
+      // uncomment below and update the code to test the property type
+      //var instane = new YapilyApi.Media();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

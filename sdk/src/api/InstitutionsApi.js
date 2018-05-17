@@ -16,29 +16,29 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/Account'], factory);
+    define(['ApiClient', 'model/Institution'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../model/Account'));
+    module.exports = factory(require('../ApiClient'), require('../model/Institution'));
   } else {
     // Browser globals (root is window)
     if (!root.YapilyApi) {
       root.YapilyApi = {};
     }
-    root.YapilyApi.AccountsApi = factory(root.YapilyApi.ApiClient, root.YapilyApi.Account);
+    root.YapilyApi.InstitutionsApi = factory(root.YapilyApi.ApiClient, root.YapilyApi.Institution);
   }
-}(this, function(ApiClient, Account) {
+}(this, function(ApiClient, Institution) {
   'use strict';
 
   /**
-   * Accounts service.
-   * @module api/AccountsApi
+   * Institutions service.
+   * @module api/InstitutionsApi
    * @version 0.0.5
    */
 
   /**
-   * Constructs a new AccountsApi. 
-   * @alias module:api/AccountsApi
+   * Constructs a new InstitutionsApi. 
+   * @alias module:api/InstitutionsApi
    * @class
    * @param {module:ApiClient} [apiClient] Optional API client implementation to use,
    * default to {@link module:ApiClient#instance} if unspecified.
@@ -48,40 +48,36 @@
 
 
     /**
-     * Callback function to receive the result of the getAccountUsingGET operation.
-     * @callback module:api/AccountsApi~getAccountUsingGETCallback
+     * Callback function to receive the result of the getInstitutionUsingGET operation.
+     * @callback module:api/InstitutionsApi~getInstitutionUsingGETCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/Account} data The data returned by the service call.
+     * @param {module:model/Institution} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
-     * Get account
-     * @param {String} accountId accountId
-     * @param {Object} opts Optional parameters
-     * @param {String} opts.consent Consent Token
-     * @param {module:api/AccountsApi~getAccountUsingGETCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/Account}
+     * Retrieves details of a specific institution available in Yapily
+     * @param {String} institutionId institutionId
+     * @param {module:api/InstitutionsApi~getInstitutionUsingGETCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/Institution}
      */
-    this.getAccountUsingGET = function(accountId, opts, callback) {
-      opts = opts || {};
+    this.getInstitutionUsingGET = function(institutionId, callback) {
       var postBody = null;
 
-      // verify the required parameter 'accountId' is set
-      if (accountId === undefined || accountId === null) {
-        throw new Error("Missing the required parameter 'accountId' when calling getAccountUsingGET");
+      // verify the required parameter 'institutionId' is set
+      if (institutionId === undefined || institutionId === null) {
+        throw new Error("Missing the required parameter 'institutionId' when calling getInstitutionUsingGET");
       }
 
 
       var pathParams = {
-        'accountId': accountId
+        'institutionId': institutionId
       };
       var queryParams = {
       };
       var collectionQueryParams = {
       };
       var headerParams = {
-        'consent': opts['consent']
       };
       var formParams = {
       };
@@ -89,32 +85,29 @@
       var authNames = ['basicAuth'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json;charset=UTF-8'];
-      var returnType = Account;
+      var returnType = Institution;
 
       return this.apiClient.callApi(
-        '/accounts/{accountId}', 'GET',
+        '/institutions/{institutionId}', 'GET',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
     }
 
     /**
-     * Callback function to receive the result of the getAccountsUsingGET operation.
-     * @callback module:api/AccountsApi~getAccountsUsingGETCallback
+     * Callback function to receive the result of the getInstitutionsUsingGET operation.
+     * @callback module:api/InstitutionsApi~getInstitutionsUsingGETCallback
      * @param {String} error Error message, if any.
-     * @param {Array.<module:model/Account>} data The data returned by the service call.
+     * @param {Array.<module:model/Institution>} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
-     * Get accounts
-     * @param {Object} opts Optional parameters
-     * @param {String} opts.consent Consent Token
-     * @param {module:api/AccountsApi~getAccountsUsingGETCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link Array.<module:model/Account>}
+     * Retrieves the list of institutions available in Yapily
+     * @param {module:api/InstitutionsApi~getInstitutionsUsingGETCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link Array.<module:model/Institution>}
      */
-    this.getAccountsUsingGET = function(opts, callback) {
-      opts = opts || {};
+    this.getInstitutionsUsingGET = function(callback) {
       var postBody = null;
 
 
@@ -125,7 +118,6 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'consent': opts['consent']
       };
       var formParams = {
       };
@@ -133,10 +125,10 @@
       var authNames = ['basicAuth'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json;charset=UTF-8'];
-      var returnType = [Account];
+      var returnType = [Institution];
 
       return this.apiClient.callApi(
-        '/accounts', 'GET',
+        '/institutions', 'GET',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );

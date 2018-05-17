@@ -1,17 +1,17 @@
-# YapilyApi.TransactionsApi
+# YapilyApi.IdentityApi
 
 All URIs are relative to *https://api.yapily.com:443*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getTransactionsUsingGET**](TransactionsApi.md#getTransactionsUsingGET) | **GET** /accounts/{accountId}/transactions | Get account transactions
+[**identityUsingGET**](IdentityApi.md#identityUsingGET) | **GET** /identity | Get identity
 
 
-<a name="getTransactionsUsingGET"></a>
-# **getTransactionsUsingGET**
-> [Transaction] getTransactionsUsingGET(accountId)
+<a name="identityUsingGET"></a>
+# **identityUsingGET**
+> Identity identityUsingGET(opts)
 
-Get account transactions
+Get identity
 
 ### Example
 ```javascript
@@ -23,10 +23,11 @@ var basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
 
-var apiInstance = new YapilyApi.TransactionsApi();
+var apiInstance = new YapilyApi.IdentityApi();
 
-var accountId = "accountId_example"; // String | accountId
-
+var opts = { 
+  'consent': "consent_example" // String | Consent Token
+};
 
 var callback = function(error, data, response) {
   if (error) {
@@ -35,18 +36,18 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getTransactionsUsingGET(accountId, callback);
+apiInstance.identityUsingGET(opts, callback);
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **accountId** | **String**| accountId | 
+ **consent** | **String**| Consent Token | [optional] 
 
 ### Return type
 
-[**[Transaction]**](Transaction.md)
+[**Identity**](Identity.md)
 
 ### Authorization
 

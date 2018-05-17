@@ -1,4 +1,4 @@
-# YapilyRestApiExplorer.Transaction
+# YapilyApi.Transaction
 
 ## Properties
 Name | Type | Description | Notes

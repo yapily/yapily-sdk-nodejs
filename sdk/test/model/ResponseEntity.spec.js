@@ -30,7 +30,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new YapilyApi.TransactionsApi();
+    instance = new YapilyApi.ResponseEntity();
   });
 
   var getProperty = function(object, getter, property) {
@@ -49,17 +49,31 @@
       object[property] = value;
   }
 
-  describe('TransactionsApi', function() {
-    describe('getTransactionsUsingGET', function() {
-      it('should call getTransactionsUsingGET successfully', function(done) {
-        //uncomment below and update the code to test getTransactionsUsingGET
-        //instance.getTransactionsUsingGET(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+  describe('ResponseEntity', function() {
+    it('should create an instance of ResponseEntity', function() {
+      // uncomment below and update the code to test ResponseEntity
+      //var instane = new YapilyApi.ResponseEntity();
+      //expect(instance).to.be.a(YapilyApi.ResponseEntity);
     });
+
+    it('should have the property body (base name: "body")', function() {
+      // uncomment below and update the code to test the property body
+      //var instane = new YapilyApi.ResponseEntity();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property statusCode (base name: "statusCode")', function() {
+      // uncomment below and update the code to test the property statusCode
+      //var instane = new YapilyApi.ResponseEntity();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property statusCodeValue (base name: "statusCodeValue")', function() {
+      // uncomment below and update the code to test the property statusCodeValue
+      //var instane = new YapilyApi.ResponseEntity();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

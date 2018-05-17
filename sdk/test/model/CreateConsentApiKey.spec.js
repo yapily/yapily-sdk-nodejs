@@ -30,7 +30,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new YapilyApi.TransactionsApi();
+    instance = new YapilyApi.CreateConsentApiKey();
   });
 
   var getProperty = function(object, getter, property) {
@@ -49,17 +49,25 @@
       object[property] = value;
   }
 
-  describe('TransactionsApi', function() {
-    describe('getTransactionsUsingGET', function() {
-      it('should call getTransactionsUsingGET successfully', function(done) {
-        //uncomment below and update the code to test getTransactionsUsingGET
-        //instance.getTransactionsUsingGET(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+  describe('CreateConsentApiKey', function() {
+    it('should create an instance of CreateConsentApiKey', function() {
+      // uncomment below and update the code to test CreateConsentApiKey
+      //var instane = new YapilyApi.CreateConsentApiKey();
+      //expect(instance).to.be.a(YapilyApi.CreateConsentApiKey);
     });
+
+    it('should have the property apiKey (base name: "apiKey")', function() {
+      // uncomment below and update the code to test the property apiKey
+      //var instane = new YapilyApi.CreateConsentApiKey();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property institutionId (base name: "institutionId")', function() {
+      // uncomment below and update the code to test the property institutionId
+      //var instane = new YapilyApi.CreateConsentApiKey();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

@@ -25,7 +25,7 @@
     if (!root.YapilyApi) {
       root.YapilyApi = {};
     }
-    root.YapilyApi.Country = factory(root.YapilyApi.ApiClient);
+    root.YapilyApi.CreateConsentApiKey = factory(root.YapilyApi.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
@@ -34,14 +34,14 @@
 
 
   /**
-   * The Country model module.
-   * @module model/Country
+   * The CreateConsentApiKey model module.
+   * @module model/CreateConsentApiKey
    * @version 0.0.5
    */
 
   /**
-   * Constructs a new <code>Country</code>.
-   * @alias module:model/Country
+   * Constructs a new <code>CreateConsentApiKey</code>.
+   * @alias module:model/CreateConsentApiKey
    * @class
    */
   var exports = function() {
@@ -52,34 +52,34 @@
   };
 
   /**
-   * Constructs a <code>Country</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>CreateConsentApiKey</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/Country} obj Optional instance to populate.
-   * @return {module:model/Country} The populated <code>Country</code> instance.
+   * @param {module:model/CreateConsentApiKey} obj Optional instance to populate.
+   * @return {module:model/CreateConsentApiKey} The populated <code>CreateConsentApiKey</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
 
-      if (data.hasOwnProperty('countryCode2')) {
-        obj['countryCode2'] = ApiClient.convertToType(data['countryCode2'], 'String');
+      if (data.hasOwnProperty('apiKey')) {
+        obj['apiKey'] = ApiClient.convertToType(data['apiKey'], 'String');
       }
-      if (data.hasOwnProperty('displayName')) {
-        obj['displayName'] = ApiClient.convertToType(data['displayName'], 'String');
+      if (data.hasOwnProperty('institutionId')) {
+        obj['institutionId'] = ApiClient.convertToType(data['institutionId'], 'String');
       }
     }
     return obj;
   }
 
   /**
-   * @member {String} countryCode2
+   * @member {String} apiKey
    */
-  exports.prototype['countryCode2'] = undefined;
+  exports.prototype['apiKey'] = undefined;
   /**
-   * @member {String} displayName
+   * @member {String} institutionId
    */
-  exports.prototype['displayName'] = undefined;
+  exports.prototype['institutionId'] = undefined;
 
 
 

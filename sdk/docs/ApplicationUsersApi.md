@@ -1,28 +1,34 @@
-# YapilyRestApiExplorer.YapilyApplicationsUsersApi
+# YapilyApi.ApplicationUsersApi
 
 All URIs are relative to *https://api.yapily.com:443*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**addUserUsingPOST**](YapilyApplicationsUsersApi.md#addUserUsingPOST) | **POST** /users | addUser
-[**getUserUsingGET**](YapilyApplicationsUsersApi.md#getUserUsingGET) | **GET** /users/{uuid} | getUser
-[**getUsersUsingGET**](YapilyApplicationsUsersApi.md#getUsersUsingGET) | **GET** /users | getUsers
-[**updateUserUsingPUT**](YapilyApplicationsUsersApi.md#updateUserUsingPUT) | **PUT** /users/{uuid} | updateUser
+[**addUserUsingPOST**](ApplicationUsersApi.md#addUserUsingPOST) | **POST** /users | Add an application user
+[**getUserUsingGET**](ApplicationUsersApi.md#getUserUsingGET) | **GET** /users/{uuid} | Get an application user
+[**getUsersUsingGET**](ApplicationUsersApi.md#getUsersUsingGET) | **GET** /users | Get application users
+[**updateUserUsingPUT**](ApplicationUsersApi.md#updateUserUsingPUT) | **PUT** /users/{uuid} | Update an application user
 
 
 <a name="addUserUsingPOST"></a>
 # **addUserUsingPOST**
 > ApplicationUser addUserUsingPOST(applicationUser)
 
-addUser
+Add an application user
 
 ### Example
 ```javascript
-var YapilyRestApiExplorer = require('yapily_rest_api_explorer');
+var YapilyApi = require('yapily_api');
+var defaultClient = YapilyApi.ApiClient.instance;
 
-var apiInstance = new YapilyRestApiExplorer.YapilyApplicationsUsersApi();
+// Configure HTTP basic authorization: basicAuth
+var basicAuth = defaultClient.authentications['basicAuth'];
+basicAuth.username = 'YOUR USERNAME';
+basicAuth.password = 'YOUR PASSWORD';
 
-var applicationUser = new YapilyRestApiExplorer.ApplicationUser(); // ApplicationUser | applicationUser
+var apiInstance = new YapilyApi.ApplicationUsersApi();
+
+var applicationUser = new YapilyApi.ApplicationUser(); // ApplicationUser | applicationUser
 
 
 var callback = function(error, data, response) {
@@ -47,24 +53,30 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[basicAuth](../README.md#basicAuth)
 
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: */*
+ - **Accept**: application/json;charset=UTF-8
 
 <a name="getUserUsingGET"></a>
 # **getUserUsingGET**
 > ApplicationUser getUserUsingGET(uuid)
 
-getUser
+Get an application user
 
 ### Example
 ```javascript
-var YapilyRestApiExplorer = require('yapily_rest_api_explorer');
+var YapilyApi = require('yapily_api');
+var defaultClient = YapilyApi.ApiClient.instance;
 
-var apiInstance = new YapilyRestApiExplorer.YapilyApplicationsUsersApi();
+// Configure HTTP basic authorization: basicAuth
+var basicAuth = defaultClient.authentications['basicAuth'];
+basicAuth.username = 'YOUR USERNAME';
+basicAuth.password = 'YOUR PASSWORD';
+
+var apiInstance = new YapilyApi.ApplicationUsersApi();
 
 var uuid = "uuid_example"; // String | uuid
 
@@ -91,24 +103,30 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[basicAuth](../README.md#basicAuth)
 
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: */*
+ - **Accept**: application/json;charset=UTF-8
 
 <a name="getUsersUsingGET"></a>
 # **getUsersUsingGET**
 > [ApplicationUser] getUsersUsingGET()
 
-getUsers
+Get application users
 
 ### Example
 ```javascript
-var YapilyRestApiExplorer = require('yapily_rest_api_explorer');
+var YapilyApi = require('yapily_api');
+var defaultClient = YapilyApi.ApiClient.instance;
 
-var apiInstance = new YapilyRestApiExplorer.YapilyApplicationsUsersApi();
+// Configure HTTP basic authorization: basicAuth
+var basicAuth = defaultClient.authentications['basicAuth'];
+basicAuth.username = 'YOUR USERNAME';
+basicAuth.password = 'YOUR PASSWORD';
+
+var apiInstance = new YapilyApi.ApplicationUsersApi();
 
 var callback = function(error, data, response) {
   if (error) {
@@ -129,28 +147,34 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[basicAuth](../README.md#basicAuth)
 
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: */*
+ - **Accept**: application/json;charset=UTF-8
 
 <a name="updateUserUsingPUT"></a>
 # **updateUserUsingPUT**
 > ApplicationUser updateUserUsingPUT(uuid, applicationUser)
 
-updateUser
+Update an application user
 
 ### Example
 ```javascript
-var YapilyRestApiExplorer = require('yapily_rest_api_explorer');
+var YapilyApi = require('yapily_api');
+var defaultClient = YapilyApi.ApiClient.instance;
 
-var apiInstance = new YapilyRestApiExplorer.YapilyApplicationsUsersApi();
+// Configure HTTP basic authorization: basicAuth
+var basicAuth = defaultClient.authentications['basicAuth'];
+basicAuth.username = 'YOUR USERNAME';
+basicAuth.password = 'YOUR PASSWORD';
+
+var apiInstance = new YapilyApi.ApplicationUsersApi();
 
 var uuid = "uuid_example"; // String | uuid
 
-var applicationUser = new YapilyRestApiExplorer.ApplicationUser(); // ApplicationUser | applicationUser
+var applicationUser = new YapilyApi.ApplicationUser(); // ApplicationUser | applicationUser
 
 
 var callback = function(error, data, response) {
@@ -176,10 +200,10 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[basicAuth](../README.md#basicAuth)
 
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: */*
+ - **Accept**: application/json;charset=UTF-8
 
