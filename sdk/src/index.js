@@ -16,12 +16,12 @@
 (function(factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/Account', 'model/ApplicationUser', 'model/Consent', 'model/Country', 'model/CreateConsentApiKey', 'model/Identity', 'model/IdentityAddress', 'model/Institution', 'model/InstitutionConsent', 'model/Media', 'model/ResponseEntity', 'model/Transaction', 'api/AccountsApi', 'api/ApplicationUsersApi', 'api/ConsentsApi', 'api/IdentityApi', 'api/InstitutionsApi', 'api/TransactionsApi'], factory);
+    define(['ApiClient','Auth', 'model/Account', 'model/ApplicationUser', 'model/Consent', 'model/Country', 'model/CreateConsentApiKey', 'model/Identity', 'model/IdentityAddress', 'model/Institution', 'model/InstitutionConsent', 'model/Media', 'model/ResponseEntity', 'model/Transaction', 'api/AccountsApi', 'api/ApplicationUsersApi', 'api/ConsentsApi', 'api/IdentityApi', 'api/InstitutionsApi', 'api/TransactionsApi'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('./ApiClient'), require('./model/Account'), require('./model/ApplicationUser'), require('./model/Consent'), require('./model/Country'), require('./model/CreateConsentApiKey'), require('./model/Identity'), require('./model/IdentityAddress'), require('./model/Institution'), require('./model/InstitutionConsent'), require('./model/Media'), require('./model/ResponseEntity'), require('./model/Transaction'), require('./api/AccountsApi'), require('./api/ApplicationUsersApi'), require('./api/ConsentsApi'), require('./api/IdentityApi'), require('./api/InstitutionsApi'), require('./api/TransactionsApi'));
+    module.exports = factory(require('./ApiClient'),require('./Auth'), require('./model/Account'), require('./model/ApplicationUser'), require('./model/Consent'), require('./model/Country'), require('./model/CreateConsentApiKey'), require('./model/Identity'), require('./model/IdentityAddress'), require('./model/Institution'), require('./model/InstitutionConsent'), require('./model/Media'), require('./model/ResponseEntity'), require('./model/Transaction'), require('./api/AccountsApi'), require('./api/ApplicationUsersApi'), require('./api/ConsentsApi'), require('./api/IdentityApi'), require('./api/InstitutionsApi'), require('./api/TransactionsApi'));
   }
-}(function(ApiClient, Account, ApplicationUser, Consent, Country, CreateConsentApiKey, Identity, IdentityAddress, Institution, InstitutionConsent, Media, ResponseEntity, Transaction, AccountsApi, ApplicationUsersApi, ConsentsApi, IdentityApi, InstitutionsApi, TransactionsApi) {
+}(function(ApiClient, Auth, Account, ApplicationUser, Consent, Country, CreateConsentApiKey, Identity, IdentityAddress, Institution, InstitutionConsent, Media, ResponseEntity, Transaction, AccountsApi, ApplicationUsersApi, ConsentsApi, IdentityApi, InstitutionsApi, TransactionsApi) {
   'use strict';
 
   /**
@@ -61,6 +61,8 @@
      * @property {module:ApiClient}
      */
     ApiClient: ApiClient,
+
+    Auth: Auth,
     /**
      * The Account model constructor.
      * @property {module:model/Account}

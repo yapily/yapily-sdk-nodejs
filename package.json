@@ -1,4 +1,0 @@
-{
-"name": "yapily sdk",
-"scripts":{"install":"cd sdk && npm install"}
-}
