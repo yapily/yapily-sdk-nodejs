@@ -18,7 +18,7 @@ The SDK is currently available in the Yapily github repository and
 can be included in your project 
 by adding it to your dependencies
 
-#### pip
+#### npm
 
 ```bash
 npm install https://github.com/yapily/yapily-sdk-npm.git
