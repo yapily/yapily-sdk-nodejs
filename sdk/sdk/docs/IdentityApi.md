@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 <a name="identityUsingGET"></a>
 # **identityUsingGET**
-> Identity identityUsingGET(opts)
+> Identity identityUsingGET(consent)
 
 Get identity
 
@@ -25,9 +25,8 @@ basicAuth.password = 'YOUR PASSWORD';
 
 var apiInstance = new YapilyApi.IdentityApi();
 
-var opts = { 
-  'consent': "consent_example" // String | Consent Token
-};
+var consent = "consent_example"; // String | Consent Token
+
 
 var callback = function(error, data, response) {
   if (error) {
@@ -36,14 +35,14 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.identityUsingGET(opts, callback);
+apiInstance.identityUsingGET(consent, callback);
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **consent** | **String**| Consent Token | [optional] 
+ **consent** | **String**| Consent Token | 
 
 ### Return type
 

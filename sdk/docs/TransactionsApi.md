@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 <a name="getTransactionsUsingGET"></a>
 # **getTransactionsUsingGET**
-> [Transaction] getTransactionsUsingGET(accountId)
+> [Transaction] getTransactionsUsingGET(consent, accountId)
 
 Get account transactions
 
@@ -25,6 +25,8 @@ basicAuth.password = 'YOUR PASSWORD';
 
 var apiInstance = new YapilyApi.TransactionsApi();
 
+var consent = "consent_example"; // String | Consent Token
+
 var accountId = "accountId_example"; // String | accountId
 
 
@@ -35,13 +37,14 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getTransactionsUsingGET(accountId, callback);
+apiInstance.getTransactionsUsingGET(consent, accountId, callback);
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **consent** | **String**| Consent Token | 
  **accountId** | **String**| accountId | 
 
 ### Return type

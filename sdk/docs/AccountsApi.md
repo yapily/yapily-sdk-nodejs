@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 <a name="getAccountUsingGET"></a>
 # **getAccountUsingGET**
-> Account getAccountUsingGET(accountId, opts)
+> Account getAccountUsingGET(accountId, consent)
 
 Get account
 
@@ -28,9 +28,8 @@ var apiInstance = new YapilyApi.AccountsApi();
 
 var accountId = "accountId_example"; // String | accountId
 
-var opts = { 
-  'consent': "consent_example" // String | Consent Token
-};
+var consent = "consent_example"; // String | Consent Token
+
 
 var callback = function(error, data, response) {
   if (error) {
@@ -39,7 +38,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getAccountUsingGET(accountId, opts, callback);
+apiInstance.getAccountUsingGET(accountId, consent, callback);
 ```
 
 ### Parameters
@@ -47,7 +46,7 @@ apiInstance.getAccountUsingGET(accountId, opts, callback);
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **accountId** | **String**| accountId | 
- **consent** | **String**| Consent Token | [optional] 
+ **consent** | **String**| Consent Token | 
 
 ### Return type
 
@@ -64,7 +63,7 @@ Name | Type | Description  | Notes
 
 <a name="getAccountsUsingGET"></a>
 # **getAccountsUsingGET**
-> [Account] getAccountsUsingGET(opts)
+> [Account] getAccountsUsingGET(consent)
 
 Get accounts
 
@@ -80,9 +79,8 @@ basicAuth.password = 'YOUR PASSWORD';
 
 var apiInstance = new YapilyApi.AccountsApi();
 
-var opts = { 
-  'consent': "consent_example" // String | Consent Token
-};
+var consent = "consent_example"; // String | Consent Token
+
 
 var callback = function(error, data, response) {
   if (error) {
@@ -91,14 +89,14 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getAccountsUsingGET(opts, callback);
+apiInstance.getAccountsUsingGET(consent, callback);
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **consent** | **String**| Consent Token | [optional] 
+ **consent** | **String**| Consent Token | 
 
 ### Return type
 

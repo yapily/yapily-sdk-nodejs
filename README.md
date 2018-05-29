@@ -1,5 +1,3 @@
-# Yapily Node.js SDK
-[![GitHub version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=gh&type=6&v=2.3.1-SNAPSHOT)](http://badge.fury.io/gh/boennemann%2Fbadges)
 
 This SDK can be used as a module or an example of how to connect to any financial institution integrated by Yapily.
 
