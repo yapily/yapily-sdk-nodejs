@@ -1,5 +1,5 @@
 
-# Yapily Python SDK
+# Yapily Node.js SDK
 This SDK can be used as a module or an example of how to connect to any financial institution integrated by Yapily.
 
 
