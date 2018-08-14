@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 <a name="getTransactionsUsingGET"></a>
 # **getTransactionsUsingGET**
-> [Transaction] getTransactionsUsingGET(consent, accountId)
+> ApiListResponseOfTransaction getTransactionsUsingGET(consent, accountId)
 
 Get account transactions
 
@@ -49,7 +49,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[Transaction]**](Transaction.md)
+[**ApiListResponseOfTransaction**](ApiListResponseOfTransaction.md)
 
 ### Authorization
 

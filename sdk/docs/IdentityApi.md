@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 <a name="identityUsingGET"></a>
 # **identityUsingGET**
-> Identity identityUsingGET(consent)
+> ApiResponseOfIdentity identityUsingGET(consent)
 
 Get identity
 
@@ -46,7 +46,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Identity**](Identity.md)
+[**ApiResponseOfIdentity**](ApiResponseOfIdentity.md)
 
 ### Authorization
 

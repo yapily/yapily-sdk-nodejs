@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 <a name="getAccountUsingGET"></a>
 # **getAccountUsingGET**
-> Account getAccountUsingGET(accountId, consent)
+> ApiResponseOfAccount getAccountUsingGET(accountId, consent)
 
 Get account
 
@@ -50,7 +50,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Account**](Account.md)
+[**ApiResponseOfAccount**](ApiResponseOfAccount.md)
 
 ### Authorization
 
@@ -63,7 +63,7 @@ Name | Type | Description  | Notes
 
 <a name="getAccountsUsingGET"></a>
 # **getAccountsUsingGET**
-> [Account] getAccountsUsingGET(consent)
+> ApiListResponseOfAccount getAccountsUsingGET(consent)
 
 Get accounts
 
@@ -100,7 +100,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[Account]**](Account.md)
+[**ApiListResponseOfAccount**](ApiListResponseOfAccount.md)
 
 ### Authorization
 
