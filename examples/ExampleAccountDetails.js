@@ -75,7 +75,6 @@ var getConsentToken = function(userUuid,institutionId,callback) {
     }
 
     consentsApi.getUserConsentsUsingGET(userUUID,opts,function(error,consents) {
-
         if(error) {
             callback(error)
         } else {
@@ -86,11 +85,7 @@ var getConsentToken = function(userUuid,institutionId,callback) {
 
 var getIdentity = function(consentToken,callback) {
 
-    var opts = {
-        "consent": consentToken
-    }
-
-    identityApi.identityUsingGET(opts,function(err,identity) {
+    identityApi.identityUsingGET(consentToken,function(err,identity) {
         if(err) {
             callback(err)
         } else{
@@ -106,11 +101,7 @@ var getIdentity = function(consentToken,callback) {
 
 var getAccounts = function(consentToken,callback) {
 
-    var opts = {
-        "consent": consentToken
-    }
-
-    accountsApi.getAccountsUsingGET(opts,function(err,accounts) {
+    accountsApi.getAccountsUsingGET(consentToken,function(err,accounts) {
 
         if(err) {
             callback(err)

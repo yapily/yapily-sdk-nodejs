@@ -14,13 +14,12 @@ api.getInstitutionsUsingGET(
         if (error) {
             console.error(error);
         } else {
-
-
-            institutions.map(function(institution) {
+            console.log(data.data)
+            institutions.data.map(function(institution) {
                 console.log(institution.id)
             });
 
-            var institution = institutions[0];
+            var institution = data.data[0];
 
             api.getInstitutionUsingGET(institution.id,
                 function(error, data, response) {
