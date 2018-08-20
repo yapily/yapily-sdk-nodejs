@@ -3,9 +3,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**appUserId** | **String** |  | [optional] 
 **applicationUuid** | **String** |  | [optional] 
 **institutionConsents** | [**[InstitutionConsent]**](InstitutionConsent.md) |  | [optional] 
+**userReference** | **String** |  | [optional] 
 **uuid** | **String** | User UUID | [optional] 
 
 

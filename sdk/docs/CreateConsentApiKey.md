@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**apiKey** | **String** |  | [optional] 
-**institutionId** | **String** |  | [optional] 
+**apiKey** | **String** |  | 
+**institutionId** | **String** |  | 
 
 

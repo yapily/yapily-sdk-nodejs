@@ -3,12 +3,13 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**amount** | **Number** |  | [optional] 
-**createdAt** | **Date** |  | [optional] 
-**currency** | **String** |  | [optional] 
 **id** | **String** |  | [optional] 
-**reference** | **String** |  | [optional] 
 **status** | **String** |  | [optional] 
+**createdAt** | **Date** |  | [optional] 
+**reference** | **String** |  | [optional] 
+**amount** | **Number** |  | [optional] 
+**currency** | **String** |  | [optional] 
+**authUrl** | **String** |  | [optional] 
 
 
 <a name="StatusEnum"></a>

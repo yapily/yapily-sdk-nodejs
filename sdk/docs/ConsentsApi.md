@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 
 <a name="deleteUsingDELETE"></a>
 # **deleteUsingDELETE**
-> ResponseEntity deleteUsingDELETE(userUuid, consentToken)
+> Object deleteUsingDELETE(userUuid, consentToken)
 
 Delete consent
 
@@ -104,7 +104,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ResponseEntity**](ResponseEntity.md)
+**Object**
 
 ### Authorization
 

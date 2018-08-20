@@ -3,10 +3,10 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**id** | **String** |  | [optional] 
+**_date** | **Date** |  | [optional] 
 **amount** | **Number** |  | [optional] 
 **currency** | **String** |  | [optional] 
-**_date** | **Date** |  | [optional] 
 **description** | **String** |  | [optional] 
-**id** | **String** |  | [optional] 
 
 

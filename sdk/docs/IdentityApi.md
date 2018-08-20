@@ -4,12 +4,12 @@ All URIs are relative to *https://api.yapily.com:443*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**identityUsingGET**](IdentityApi.md#identityUsingGET) | **GET** /identity | Get identity
+[**getIdentityUsingGET**](IdentityApi.md#getIdentityUsingGET) | **GET** /identity | Get identity
 
 
-<a name="identityUsingGET"></a>
-# **identityUsingGET**
-> ApiResponseOfIdentity identityUsingGET(consent)
+<a name="getIdentityUsingGET"></a>
+# **getIdentityUsingGET**
+> ApiResponseOfIdentity getIdentityUsingGET(consent)
 
 Get identity
 
@@ -35,7 +35,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.identityUsingGET(consent, callback);
+apiInstance.getIdentityUsingGET(consent, callback);
 ```
 
 ### Parameters

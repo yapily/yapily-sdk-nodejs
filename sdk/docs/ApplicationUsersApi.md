@@ -5,14 +5,14 @@ All URIs are relative to *https://api.yapily.com:443*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**addUserUsingPOST**](ApplicationUsersApi.md#addUserUsingPOST) | **POST** /users | Add an application user
-[**getUserUsingGET**](ApplicationUsersApi.md#getUserUsingGET) | **GET** /users/{uuid} | Get an application user
+[**deleteUserUsingDELETE**](ApplicationUsersApi.md#deleteUserUsingDELETE) | **DELETE** /users/{userUuid} | Delete an application user
+[**getUserUsingGET**](ApplicationUsersApi.md#getUserUsingGET) | **GET** /users/{userUuid} | Get an application user
 [**getUsersUsingGET**](ApplicationUsersApi.md#getUsersUsingGET) | **GET** /users | Get application users
-[**updateUserUsingPUT**](ApplicationUsersApi.md#updateUserUsingPUT) | **PUT** /users/{uuid} | Update an application user
 
 
 <a name="addUserUsingPOST"></a>
 # **addUserUsingPOST**
-> ApplicationUser addUserUsingPOST(applicationUser)
+> ApplicationUser addUserUsingPOST(newApplicationUser)
 
 Add an application user
 
@@ -28,7 +28,7 @@ basicAuth.password = 'YOUR PASSWORD';
 
 var apiInstance = new YapilyApi.ApplicationUsersApi();
 
-var applicationUser = new YapilyApi.ApplicationUser(); // ApplicationUser | applicationUser
+var newApplicationUser = new YapilyApi.NewApplicationUser(); // NewApplicationUser | newApplicationUser
 
 
 var callback = function(error, data, response) {
@@ -38,18 +38,68 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.addUserUsingPOST(applicationUser, callback);
+apiInstance.addUserUsingPOST(newApplicationUser, callback);
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **applicationUser** | [**ApplicationUser**](ApplicationUser.md)| applicationUser | 
+ **newApplicationUser** | [**NewApplicationUser**](NewApplicationUser.md)| newApplicationUser | 
 
 ### Return type
 
 [**ApplicationUser**](ApplicationUser.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json;charset=UTF-8
+ - **Accept**: application/json;charset=UTF-8
+
+<a name="deleteUserUsingDELETE"></a>
+# **deleteUserUsingDELETE**
+> Object deleteUserUsingDELETE(userUuid)
+
+Delete an application user
+
+### Example
+```javascript
+var YapilyApi = require('yapily_api');
+var defaultClient = YapilyApi.ApiClient.instance;
+
+// Configure HTTP basic authorization: basicAuth
+var basicAuth = defaultClient.authentications['basicAuth'];
+basicAuth.username = 'YOUR USERNAME';
+basicAuth.password = 'YOUR PASSWORD';
+
+var apiInstance = new YapilyApi.ApplicationUsersApi();
+
+var userUuid = "userUuid_example"; // String | userUuid
+
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.deleteUserUsingDELETE(userUuid, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **userUuid** | **String**| userUuid | 
+
+### Return type
+
+**Object**
 
 ### Authorization
 
@@ -62,7 +112,7 @@ Name | Type | Description  | Notes
 
 <a name="getUserUsingGET"></a>
 # **getUserUsingGET**
-> ApplicationUser getUserUsingGET(uuid)
+> ApplicationUser getUserUsingGET(userUuid)
 
 Get an application user
 
@@ -78,7 +128,7 @@ basicAuth.password = 'YOUR PASSWORD';
 
 var apiInstance = new YapilyApi.ApplicationUsersApi();
 
-var uuid = "uuid_example"; // String | uuid
+var userUuid = "userUuid_example"; // String | userUuid
 
 
 var callback = function(error, data, response) {
@@ -88,14 +138,14 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getUserUsingGET(uuid, callback);
+apiInstance.getUserUsingGET(userUuid, callback);
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **uuid** | **String**| uuid | 
+ **userUuid** | **String**| userUuid | 
 
 ### Return type
 
@@ -144,59 +194,6 @@ This endpoint does not need any parameter.
 ### Return type
 
 [**[ApplicationUser]**](ApplicationUser.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json;charset=UTF-8
-
-<a name="updateUserUsingPUT"></a>
-# **updateUserUsingPUT**
-> ApplicationUser updateUserUsingPUT(uuid, applicationUser)
-
-Update an application user
-
-### Example
-```javascript
-var YapilyApi = require('yapily_api');
-var defaultClient = YapilyApi.ApiClient.instance;
-
-// Configure HTTP basic authorization: basicAuth
-var basicAuth = defaultClient.authentications['basicAuth'];
-basicAuth.username = 'YOUR USERNAME';
-basicAuth.password = 'YOUR PASSWORD';
-
-var apiInstance = new YapilyApi.ApplicationUsersApi();
-
-var uuid = "uuid_example"; // String | uuid
-
-var applicationUser = new YapilyApi.ApplicationUser(); // ApplicationUser | applicationUser
-
-
-var callback = function(error, data, response) {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-};
-apiInstance.updateUserUsingPUT(uuid, applicationUser, callback);
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **uuid** | **String**| uuid | 
- **applicationUser** | [**ApplicationUser**](ApplicationUser.md)| applicationUser | 
-
-### Return type
-
-[**ApplicationUser**](ApplicationUser.md)
 
 ### Authorization
 

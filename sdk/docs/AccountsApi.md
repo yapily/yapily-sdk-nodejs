@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 <a name="getAccountUsingGET"></a>
 # **getAccountUsingGET**
-> ApiResponseOfAccount getAccountUsingGET(accountId, consent)
+> ApiResponseOfAccount getAccountUsingGET(consent, accountId)
 
 Get account
 
@@ -26,9 +26,9 @@ basicAuth.password = 'YOUR PASSWORD';
 
 var apiInstance = new YapilyApi.AccountsApi();
 
-var accountId = "accountId_example"; // String | accountId
-
 var consent = "consent_example"; // String | Consent Token
+
+var accountId = "accountId_example"; // String | accountId
 
 
 var callback = function(error, data, response) {
@@ -38,15 +38,15 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getAccountUsingGET(accountId, consent, callback);
+apiInstance.getAccountUsingGET(consent, accountId, callback);
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **accountId** | **String**| accountId | 
  **consent** | **String**| Consent Token | 
+ **accountId** | **String**| accountId | 
 
 ### Return type
 

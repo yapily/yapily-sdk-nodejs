@@ -4,12 +4,13 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **consentToken** | **String** |  | [optional] 
-**scope** | **[String]** |  | [optional] 
+**featureScope** | **[String]** |  | [optional] 
+**requestId** | **String** |  | [optional] 
 **tokenType** | **String** |  | [optional] 
 
 
-<a name="[ScopeEnum]"></a>
-## Enum: [ScopeEnum]
+<a name="[FeatureScopeEnum]"></a>
+## Enum: [FeatureScopeEnum]
 
 
 * `ACCOUNTS` (value: `"ACCOUNTS"`)
@@ -20,9 +21,15 @@ Name | Type | Description | Notes
 
 * `IDENTITY` (value: `"IDENTITY"`)
 
+* `INITIATE_SINGLE_PAYMENT_SORTCODE` (value: `"INITIATE_SINGLE_PAYMENT_SORTCODE"`)
+
+* `EXISTING_PAYMENT_INITIATION_DETAILS` (value: `"EXISTING_PAYMENT_INITIATION_DETAILS"`)
+
 * `CREATE_SINGLE_PAYMENT_SORTCODE` (value: `"CREATE_SINGLE_PAYMENT_SORTCODE"`)
 
 * `EXISTING_PAYMENTS_DETAILS` (value: `"EXISTING_PAYMENTS_DETAILS"`)
+
+* `TRANSFER` (value: `"TRANSFER"`)
 
 * `OPEN_DATA_PERSONAL_CURRENT_ACCOUNTS` (value: `"OPEN_DATA_PERSONAL_CURRENT_ACCOUNTS"`)
 
