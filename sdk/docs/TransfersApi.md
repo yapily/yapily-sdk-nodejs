@@ -4,12 +4,12 @@ All URIs are relative to *https://api.yapily.com:443*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**createPaymentUsingPUT**](TransfersApi.md#createPaymentUsingPUT) | **PUT** /accounts/{accountId}/transfer | Transfer money from one account to another account accessible with the same consent
+[**transferUsingPUT**](TransfersApi.md#transferUsingPUT) | **PUT** /accounts/{accountId}/transfer | Transfer money from one account to another account accessible with the same consent
 
 
-<a name="createPaymentUsingPUT"></a>
-# **createPaymentUsingPUT**
-> ApiResponseOfTransferResponse createPaymentUsingPUT(consent, accountId, opts)
+<a name="transferUsingPUT"></a>
+# **transferUsingPUT**
+> ApiResponseOfTransferResponse transferUsingPUT(consent, accountId, opts)
 
 Transfer money from one account to another account accessible with the same consent
 
@@ -30,8 +30,7 @@ var consent = "consent_example"; // String | Consent Token
 var accountId = "accountId_example"; // String | accountId
 
 var opts = { 
-  'transferRequest': new YapilyApi.TransferRequest(), // TransferRequest | transferRequest
-  'raw': true // Boolean | raw
+  'transferRequest': new YapilyApi.TransferRequest() // TransferRequest | transferRequest
 };
 
 var callback = function(error, data, response) {
@@ -41,7 +40,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.createPaymentUsingPUT(consent, accountId, opts, callback);
+apiInstance.transferUsingPUT(consent, accountId, opts, callback);
 ```
 
 ### Parameters
@@ -51,7 +50,6 @@ Name | Type | Description  | Notes
  **consent** | **String**| Consent Token | 
  **accountId** | **String**| accountId | 
  **transferRequest** | [**TransferRequest**](TransferRequest.md)| transferRequest | [optional] 
- **raw** | **Boolean**| raw | [optional] 
 
 ### Return type
 

@@ -32,8 +32,8 @@ var institution = "institution_example"; // String | institution
 
 var opts = { 
   'paymentRequest': new YapilyApi.SortCodePaymentRequest(), // SortCodePaymentRequest | paymentRequest
-  'userUuid': new YapilyApi.ModelObject(), // ModelObject | user-uuid
-  'callback': new YapilyApi.ModelObject() // ModelObject | callback
+  'userUuid': "userUuid_example", // String | user-uuid
+  'callback': "callback_example" // String | callback
 };
 
 var callback = function(error, data, response) {
@@ -52,8 +52,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **institution** | **String**| institution | 
  **paymentRequest** | [**SortCodePaymentRequest**](SortCodePaymentRequest.md)| paymentRequest | [optional] 
- **userUuid** | [**ModelObject**](.md)| user-uuid | [optional] 
- **callback** | [**ModelObject**](.md)| callback | [optional] 
+ **userUuid** | **String**| user-uuid | [optional] 
+ **callback** | **String**| callback | [optional] 
 
 ### Return type
 
