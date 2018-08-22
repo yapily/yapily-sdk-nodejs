@@ -9,7 +9,7 @@ basicAuth.password = constants.APPLICATION_SECRET
 
 var api = new YapilyApi.ApplicationUsersApi()
 
-var firstUser = new YapilyApi.ApplicationUser()
+var firstUser =  {"referenceId":"yourUsersReferenceId"}
 
 api.addUserUsingPOST(firstUser,function(error, userAdded) {
 
@@ -18,7 +18,7 @@ api.addUserUsingPOST(firstUser,function(error, userAdded) {
  } else{
 
     var secondUser = new YapilyApi.ApplicationUser()
-    secondUser.appUserId = "The application uuid"
+    secondUser.referenceId= "yourSecondUsersReferenceId"
 
     api.addUserUsingPOST(secondUser,function(error,user) {
 
@@ -29,18 +29,14 @@ api.addUserUsingPOST(firstUser,function(error, userAdded) {
             api.getUsersUsingGET(function(error,users) {
 
                 users.map(function(user) {
-                    console.log(user.appUserId)
+                    console.log(user.referenceId)
                 });
 
                 var user = users[0]
-                user.appUserId = "updated-user-application-id"
 
-                api.updateUserUsingPUT(user.uuid,user,function(error,user) {
+                api.deleteUserUsingDELETE(user.uuid,function(error,result) {
 
-                    api.getUserUsingGET(user.uuid,function(error,user) {
-
-                        console.log("Fetched user with uuid %s and user application id %s",user.uuid,user.appUserId)
-                    });
+                    console.log("Deleted user %s",user.referenceId)
                 })
             })
         }
