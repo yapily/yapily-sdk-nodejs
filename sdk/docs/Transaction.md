@@ -8,5 +8,6 @@ Name | Type | Description | Notes
 **amount** | **Number** |  | [optional] 
 **currency** | **String** |  | [optional] 
 **description** | **String** |  | [optional] 
+**merchant** | [**Merchant**](Merchant.md) |  | [optional] 
 
 

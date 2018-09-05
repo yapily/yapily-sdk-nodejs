@@ -6,7 +6,7 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**addConsentUsingPOST**](ConsentsApi.md#addConsentUsingPOST) | **POST** /users/{userUuid}/consents | Post consent
 [**deleteUsingDELETE**](ConsentsApi.md#deleteUsingDELETE) | **DELETE** /users/{userUuid}/consents/{consentToken} | Delete consent
-[**getUserConsentsUsingGET**](ConsentsApi.md#getUserConsentsUsingGET) | **GET** /users/{userUuid}/consents | Get consent
+[**getUserConsentsUsingGET**](ConsentsApi.md#getUserConsentsUsingGET) | **GET** /users/{userUuid}/consents | Get user consents
 
 
 <a name="addConsentUsingPOST"></a>
@@ -119,7 +119,7 @@ Name | Type | Description  | Notes
 # **getUserConsentsUsingGET**
 > [Consent] getUserConsentsUsingGET(userUuid, opts)
 
-Get consent
+Get user consents
 
 ### Example
 ```javascript

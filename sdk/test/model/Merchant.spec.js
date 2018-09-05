@@ -30,7 +30,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new YapilyApi.CreditCheck();
+    instance = new YapilyApi.Merchant();
   });
 
   var getProperty = function(object, getter, property) {
@@ -49,22 +49,16 @@
       object[property] = value;
   }
 
-  describe('CreditCheck', function() {
-    it('should create an instance of CreditCheck', function() {
-      // uncomment below and update the code to test CreditCheck
-      //var instane = new YapilyApi.CreditCheck();
-      //expect(instance).to.be.a(YapilyApi.CreditCheck);
+  describe('Merchant', function() {
+    it('should create an instance of Merchant', function() {
+      // uncomment below and update the code to test Merchant
+      //var instane = new YapilyApi.Merchant();
+      //expect(instance).to.be.a(YapilyApi.Merchant);
     });
 
-    it('should have the property notes (base name: "Notes")', function() {
-      // uncomment below and update the code to test the property notes
-      //var instane = new YapilyApi.CreditCheck();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property scoringType (base name: "ScoringType")', function() {
-      // uncomment below and update the code to test the property scoringType
-      //var instane = new YapilyApi.CreditCheck();
+    it('should have the property merchantName (base name: "merchantName")', function() {
+      // uncomment below and update the code to test the property merchantName
+      //var instane = new YapilyApi.Merchant();
       //expect(instance).to.be();
     });
 
