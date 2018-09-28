@@ -3,14 +3,18 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**documentationUrl** | **String** |  | [optional] 
-**endpoint** | **String** |  | [optional] 
 **feature** | **String** |  | [optional] 
+**endpoint** | **String** |  | [optional] 
+**documentationUrl** | **String** |  | [optional] 
 
 
 <a name="FeatureEnum"></a>
 ## Enum: FeatureEnum
 
+
+* `INITIATE_ACCOUNT_REQUEST` (value: `"INITIATE_ACCOUNT_REQUEST"`)
+
+* `ACCOUNT_REQUEST_DETAILS` (value: `"ACCOUNT_REQUEST_DETAILS"`)
 
 * `ACCOUNTS` (value: `"ACCOUNTS"`)
 

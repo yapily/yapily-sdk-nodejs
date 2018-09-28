@@ -9,7 +9,6 @@ Name | Type | Description | Notes
 **reference** | **String** |  | [optional] 
 **amount** | **Number** |  | [optional] 
 **currency** | **String** |  | [optional] 
-**authUrl** | **String** |  | [optional] 
 
 
 <a name="StatusEnum"></a>
@@ -23,6 +22,8 @@ Name | Type | Description | Notes
 * `DECLINED` (value: `"DECLINED"`)
 
 * `COMPLETED` (value: `"COMPLETED"`)
+
+* `EXPIRED` (value: `"EXPIRED"`)
 
 * `UNKNOWN` (value: `"UNKNOWN"`)
 

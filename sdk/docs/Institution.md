@@ -3,14 +3,27 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**countries** | [**[Country]**](Country.md) |  | [optional] 
-**credentialsType** | **String** |  | [optional] 
-**environmentType** | **String** |  | [optional] 
-**features** | **[String]** |  | [optional] 
-**fullName** | **String** |  | [optional] 
 **id** | **String** |  | [optional] 
-**media** | [**[Media]**](Media.md) |  | [optional] 
 **name** | **String** |  | [optional] 
+**fullName** | **String** |  | [optional] 
+**countries** | [**[Country]**](Country.md) |  | [optional] 
+**environmentType** | **String** |  | [optional] 
+**credentialsType** | **String** |  | [optional] 
+**media** | [**[Media]**](Media.md) |  | [optional] 
+**features** | **[String]** |  | [optional] 
+
+
+<a name="EnvironmentTypeEnum"></a>
+## Enum: EnvironmentTypeEnum
+
+
+* `SANDBOX` (value: `"SANDBOX"`)
+
+* `MOCK` (value: `"MOCK"`)
+
+* `LIVE` (value: `"LIVE"`)
+
+
 
 
 <a name="CredentialsTypeEnum"></a>
@@ -36,22 +49,13 @@ Name | Type | Description | Notes
 
 
 
-<a name="EnvironmentTypeEnum"></a>
-## Enum: EnvironmentTypeEnum
-
-
-* `SANDBOX` (value: `"SANDBOX"`)
-
-* `MOCK` (value: `"MOCK"`)
-
-* `LIVE` (value: `"LIVE"`)
-
-
-
-
 <a name="[FeaturesEnum]"></a>
 ## Enum: [FeaturesEnum]
 
+
+* `INITIATE_ACCOUNT_REQUEST` (value: `"INITIATE_ACCOUNT_REQUEST"`)
+
+* `ACCOUNT_REQUEST_DETAILS` (value: `"ACCOUNT_REQUEST_DETAILS"`)
 
 * `ACCOUNTS` (value: `"ACCOUNTS"`)
 

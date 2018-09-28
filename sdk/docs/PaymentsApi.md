@@ -4,15 +4,14 @@ All URIs are relative to *https://api.yapily.com:443*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**createPaymentInitiationUsingPOST**](PaymentsApi.md#createPaymentInitiationUsingPOST) | **POST** /initiate-payment-sortcode | Initiate a new single payment for user to authorise
+[**createPaymentInitiationUsingPOST**](PaymentsApi.md#createPaymentInitiationUsingPOST) | **POST** /payment-sortcode-auth-requests | Initiate a new single payment for user to authorise
 [**createPaymentUsingPOST**](PaymentsApi.md#createPaymentUsingPOST) | **POST** /payment-sortcode | Create a new single payment
-[**getPaymentInitiationStatusUsingGET**](PaymentsApi.md#getPaymentInitiationStatusUsingGET) | **GET** /payment-initiations/{paymentId} | Get status of a payment initiation
 [**getPaymentStatusUsingGET**](PaymentsApi.md#getPaymentStatusUsingGET) | **GET** /payments/{paymentId} | Get status of a payment
 
 
 <a name="createPaymentInitiationUsingPOST"></a>
 # **createPaymentInitiationUsingPOST**
-> ApiResponseOfPaymentResponse createPaymentInitiationUsingPOST(institution, opts)
+> ApiResponseOfAuthorisationRequestResponse createPaymentInitiationUsingPOST(opts)
 
 Initiate a new single payment for user to authorise
 
@@ -28,12 +27,8 @@ basicAuth.password = 'YOUR PASSWORD';
 
 var apiInstance = new YapilyApi.PaymentsApi();
 
-var institution = "institution_example"; // String | institution
-
 var opts = { 
-  'paymentRequest': new YapilyApi.SortCodePaymentRequest(), // SortCodePaymentRequest | paymentRequest
-  'userUuid': "userUuid_example", // String | user-uuid
-  'callback': "callback_example" // String | callback
+  'paymentAuthRequest': new YapilyApi.SortCodePaymentAuthRequest() // SortCodePaymentAuthRequest | paymentAuthRequest
 };
 
 var callback = function(error, data, response) {
@@ -43,21 +38,18 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.createPaymentInitiationUsingPOST(institution, opts, callback);
+apiInstance.createPaymentInitiationUsingPOST(opts, callback);
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **institution** | **String**| institution | 
- **paymentRequest** | [**SortCodePaymentRequest**](SortCodePaymentRequest.md)| paymentRequest | [optional] 
- **userUuid** | **String**| user-uuid | [optional] 
- **callback** | **String**| callback | [optional] 
+ **paymentAuthRequest** | [**SortCodePaymentAuthRequest**](SortCodePaymentAuthRequest.md)| paymentAuthRequest | [optional] 
 
 ### Return type
 
-[**ApiResponseOfPaymentResponse**](ApiResponseOfPaymentResponse.md)
+[**ApiResponseOfAuthorisationRequestResponse**](ApiResponseOfAuthorisationRequestResponse.md)
 
 ### Authorization
 
@@ -120,59 +112,6 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json;charset=UTF-8
- - **Accept**: application/json;charset=UTF-8
-
-<a name="getPaymentInitiationStatusUsingGET"></a>
-# **getPaymentInitiationStatusUsingGET**
-> ApiResponseOfPaymentResponse getPaymentInitiationStatusUsingGET(institution, paymentId)
-
-Get status of a payment initiation
-
-### Example
-```javascript
-var YapilyApi = require('yapily_api');
-var defaultClient = YapilyApi.ApiClient.instance;
-
-// Configure HTTP basic authorization: basicAuth
-var basicAuth = defaultClient.authentications['basicAuth'];
-basicAuth.username = 'YOUR USERNAME';
-basicAuth.password = 'YOUR PASSWORD';
-
-var apiInstance = new YapilyApi.PaymentsApi();
-
-var institution = "institution_example"; // String | institution
-
-var paymentId = "paymentId_example"; // String | paymentId
-
-
-var callback = function(error, data, response) {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-};
-apiInstance.getPaymentInitiationStatusUsingGET(institution, paymentId, callback);
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **institution** | **String**| institution | 
- **paymentId** | **String**| paymentId | 
-
-### Return type
-
-[**ApiResponseOfPaymentResponse**](ApiResponseOfPaymentResponse.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
  - **Accept**: application/json;charset=UTF-8
 
 <a name="getPaymentStatusUsingGET"></a>

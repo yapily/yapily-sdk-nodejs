@@ -3,15 +3,45 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**consentToken** | **String** |  | [optional] 
+**id** | **String** |  | [optional] 
+**userUuid** | **String** |  | [optional] 
+**institutionId** | **String** |  | [optional] 
+**status** | **String** |  | [optional] 
+**createdAt** | **Date** |  | [optional] 
+**expiresAt** | **Date** |  | [optional] 
+**timeToExpireInMillis** | **Number** |  | [optional] 
 **featureScope** | **[String]** |  | [optional] 
-**requestId** | **String** |  | [optional] 
-**tokenType** | **String** |  | [optional] 
+**consentToken** | **String** |  | [optional] 
+
+
+<a name="StatusEnum"></a>
+## Enum: StatusEnum
+
+
+* `AWAITING_AUTHORIZATION` (value: `"AWAITING_AUTHORIZATION"`)
+
+* `AUTHORIZED` (value: `"AUTHORIZED"`)
+
+* `REJECTED` (value: `"REJECTED"`)
+
+* `REVOKED` (value: `"REVOKED"`)
+
+* `FAILED` (value: `"FAILED"`)
+
+* `EXPIRED` (value: `"EXPIRED"`)
+
+* `UNKNOWN` (value: `"UNKNOWN"`)
+
+
 
 
 <a name="[FeatureScopeEnum]"></a>
 ## Enum: [FeatureScopeEnum]
 
+
+* `INITIATE_ACCOUNT_REQUEST` (value: `"INITIATE_ACCOUNT_REQUEST"`)
+
+* `ACCOUNT_REQUEST_DETAILS` (value: `"ACCOUNT_REQUEST_DETAILS"`)
 
 * `ACCOUNTS` (value: `"ACCOUNTS"`)
 
