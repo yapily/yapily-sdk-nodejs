@@ -16,8 +16,9 @@ var accountsApi = new YapilyApi.AccountsApi()
 var consentsApi = new YapilyApi.ConsentsApi()
 var identityApi = new YapilyApi.IdentityApi()
 var transactionsApi = new YapilyApi.TransactionsApi()
+var transfersApi = new YapilyApi.TransfersApi()
 
-var user = {"referenceId":"{{your-users-reference-id}}"}
+var user = {"referenceId":"yourUsersReferenceId"}
 
 var createReadLine = function() {
 
@@ -27,55 +28,40 @@ var createReadLine = function() {
     })
 }
 
+var authorizationReadline = createReadLine()
+
 usersApi.addUserUsingPOST(user,function(error, createUser) {
 
     if(error) {
         console.error(error)
     } else {
 
-        institutionId = "starling-personal-access"
+        institutionId = "monzo"
         userUUID = createUser.uuid
 
-        postConsentToken(userUUID ,"{{your-personal-api-key}}",institutionId, function(err,token) {
+        redirectUrl = YapilyApi.Auth.authDirectUrl(constants.APPLICATION_ID,userUUID,institutionId,constants.CALLBACK_URL,"account")
 
-            getConsentToken(userUUID,institutionId, function(err,consentToken) {
+        authorizationReadline.question(util.format('Press any key once authenticated to %s ',redirectUrl), (answer) => {
+            authorizationReadline.close()
+
+            getConsentToken(userUUID.uuid,institutionId, function(err,consentToken) {
 
                 if(err) {
                     console.error(err)
                 } else {
                     console.log("Consent Token fetched:  %s",consentToken)
-                    getIdentity(consentToken,function(err,identity) {
-                        if(err) {
-                            console.error(err);
-                        } else {
-                            console.log(identity)
-                            getAccounts(consentToken,function(err,accounts) {
-                            })
-                        }
+                    getAccounts(consentToken,function(err,accounts) {
+                        console.log("Accounts fetched: %s issuing transfer",accounts)
+                        transfer(consentToken,function(err,transfer) {
+                        })
                     })
                 }
             })
+
         })
     }
 })
 
-var postConsentToken = function(userUUID, accessToken, institutionId, callback) {
-
-    console.log("Adding token for %s",userUUID)
-
-    var opts = {
-    	"accessToken": accessToken,
-    	"institutionId": institutionId
-    }
-
-    consentsApi.addConsentUsingPOST(userUUID, opts, function(err,consent) {
-        if(err) {
-            callback(err)
-        } else {
-            callback(null,consent)
-        }
-    });
-}
 
 var getConsentToken = function(userUuid,institutionId,callback) {
 
@@ -94,22 +80,6 @@ var getConsentToken = function(userUuid,institutionId,callback) {
     })
 }
 
-var getIdentity = function(consentToken,callback) {
-
-    identityApi.getIdentityUsingGET(consentToken,function(err,identity) {
-        if(err) {
-            callback(err)
-        } else{
-
-            console.log("**************IDENTITY******************")
-            console.log(identity)
-            console.log("****************************************")
-
-            callback(null,identity)
-        }
-    })
-}
-
 var getAccounts = function(consentToken,callback) {
 
     accountsApi.getAccountsUsingGET(consentToken,function(err,accounts) {
@@ -123,6 +93,35 @@ var getAccounts = function(consentToken,callback) {
             console.log("****************************************")
 
             callback(null,accounts)
+        }
+    })
+}
+
+var transfer = function(consentToken,callback) {
+
+    var accountId = "{{account-id}}"
+    var opts = {
+        "transferRequest": {
+            "accountId": "{{destination-account-id}}",
+            "amount": 0.50,
+            "currency": "GBP",
+            "reference": "Your transaction with yapily",
+            "transferReferenceId": "uuidReferenceId"
+        }
+    }
+
+    transfersApi.transferUsingPUT(consentToken, accountId, opts, function(err,transfer) {
+
+        if(err) {
+            console.log(err);
+            callback(err)
+        } else {
+
+            console.log("**************TRANSFER******************")
+            console.log(transfer)
+            console.log("****************************************")
+
+            callback(null,transfer)
         }
     })
 }
