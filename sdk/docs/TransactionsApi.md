@@ -30,7 +30,11 @@ var consent = "consent_example"; // String | Consent Token
 var accountId = "accountId_example"; // String | accountId
 
 var opts = { 
-  '_with': ["_with_example"] // [String] | with
+  '_with': ["_with_example"], // [String] | with
+  'from': "from_example", // String | from
+  'before': "before_example", // String | before
+  'limit': 56, // Number | limit
+  'sort': "sort_example" // String | sort
 };
 
 var callback = function(error, data, response) {
@@ -50,6 +54,10 @@ Name | Type | Description  | Notes
  **consent** | **String**| Consent Token | 
  **accountId** | **String**| accountId | 
  **_with** | [**[String]**](String.md)| with | [optional] 
+ **from** | **String**| from | [optional] 
+ **before** | **String**| before | [optional] 
+ **limit** | **Number**| limit | [optional] 
+ **sort** | **String**| sort | [optional] 
 
 ### Return type
 
