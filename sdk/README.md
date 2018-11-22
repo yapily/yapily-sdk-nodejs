@@ -122,7 +122,7 @@ api.getAccountUsingGET(consent, accountId, callback);
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *https://api.yapily.com:443*
+All URIs are relative to *https://api.yapily.com*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------

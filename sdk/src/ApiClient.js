@@ -46,9 +46,9 @@
     /**
      * The base URL against which to resolve every API call's (relative) path.
      * @type {String}
-     * @default https://api.yapily.com:443
+     * @default https://api.yapily.com
      */
-    this.basePath = 'https://api.yapily.com:443'.replace(/\/+$/, '');
+    this.basePath = 'https://api.yapily.com'.replace(/\/+$/, '');
 
     /**
      * The authentication methods to be included for all API calls.
