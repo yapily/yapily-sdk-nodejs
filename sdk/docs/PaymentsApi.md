@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 <a name="createPaymentInitiationUsingPOST"></a>
 # **createPaymentInitiationUsingPOST**
-> ApiResponseOfAuthorisationRequestResponse createPaymentInitiationUsingPOST(opts)
+> ApiResponseOfAuthorisationRequestResponse createPaymentInitiationUsingPOST(paymentAuthRequest)
 
 Initiate a new single payment for user to authorise
 
@@ -27,9 +27,8 @@ basicAuth.password = 'YOUR PASSWORD';
 
 var apiInstance = new YapilyApi.PaymentsApi();
 
-var opts = { 
-  'paymentAuthRequest': new YapilyApi.SortCodePaymentAuthRequest() // SortCodePaymentAuthRequest | paymentAuthRequest
-};
+var paymentAuthRequest = new YapilyApi.SortCodePaymentAuthRequest(); // SortCodePaymentAuthRequest | paymentAuthRequest
+
 
 var callback = function(error, data, response) {
   if (error) {
@@ -38,14 +37,14 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.createPaymentInitiationUsingPOST(opts, callback);
+apiInstance.createPaymentInitiationUsingPOST(paymentAuthRequest, callback);
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **paymentAuthRequest** | [**SortCodePaymentAuthRequest**](SortCodePaymentAuthRequest.md)| paymentAuthRequest | [optional] 
+ **paymentAuthRequest** | [**SortCodePaymentAuthRequest**](SortCodePaymentAuthRequest.md)| paymentAuthRequest | 
 
 ### Return type
 
@@ -62,7 +61,7 @@ Name | Type | Description  | Notes
 
 <a name="createPaymentUsingPOST"></a>
 # **createPaymentUsingPOST**
-> ApiResponseOfPaymentResponse createPaymentUsingPOST(consent, opts)
+> ApiResponseOfPaymentResponse createPaymentUsingPOST(consent, paymentRequest)
 
 Create a new single payment
 
@@ -80,9 +79,8 @@ var apiInstance = new YapilyApi.PaymentsApi();
 
 var consent = "consent_example"; // String | Consent Token
 
-var opts = { 
-  'paymentRequest': new YapilyApi.SortCodePaymentRequest() // SortCodePaymentRequest | paymentRequest
-};
+var paymentRequest = new YapilyApi.SortCodePaymentRequest(); // SortCodePaymentRequest | paymentRequest
+
 
 var callback = function(error, data, response) {
   if (error) {
@@ -91,7 +89,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.createPaymentUsingPOST(consent, opts, callback);
+apiInstance.createPaymentUsingPOST(consent, paymentRequest, callback);
 ```
 
 ### Parameters
@@ -99,7 +97,7 @@ apiInstance.createPaymentUsingPOST(consent, opts, callback);
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **consent** | **String**| Consent Token | 
- **paymentRequest** | [**SortCodePaymentRequest**](SortCodePaymentRequest.md)| paymentRequest | [optional] 
+ **paymentRequest** | [**SortCodePaymentRequest**](SortCodePaymentRequest.md)| paymentRequest | 
 
 ### Return type
 
