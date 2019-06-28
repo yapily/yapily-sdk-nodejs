@@ -6,6 +6,7 @@ Name | Type | Description | Notes
 **before** | **Date** |  | [optional] 
 **from** | **Date** |  | [optional] 
 **limit** | **Number** |  | [optional] 
+**offset** | **Number** |  | [optional] 
 **sort** | **String** |  | [optional] 
 
 

@@ -26,6 +26,10 @@ var basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
 
+// Configure OAuth2 access token for authorization: tokenAuth
+var tokenAuth = defaultClient.authentications['tokenAuth'];
+tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
+
 var apiInstance = new YapilyApi.ApplicationUsersApi();
 
 var newApplicationUser = new YapilyApi.NewApplicationUser(); // NewApplicationUser | newApplicationUser
@@ -53,7 +57,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[basicAuth](../README.md#basicAuth)
+[basicAuth](../README.md#basicAuth), [tokenAuth](../README.md#tokenAuth)
 
 ### HTTP request headers
 
@@ -62,7 +66,7 @@ Name | Type | Description  | Notes
 
 <a name="deleteUserUsingDELETE"></a>
 # **deleteUserUsingDELETE**
-> Object deleteUserUsingDELETE(userUuid)
+> ApiResponseOfUserDeleteResponse deleteUserUsingDELETE(userUuid)
 
 Delete an application user
 
@@ -75,6 +79,10 @@ var defaultClient = YapilyApi.ApiClient.instance;
 var basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
+
+// Configure OAuth2 access token for authorization: tokenAuth
+var tokenAuth = defaultClient.authentications['tokenAuth'];
+tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new YapilyApi.ApplicationUsersApi();
 
@@ -99,11 +107,11 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Object**
+[**ApiResponseOfUserDeleteResponse**](ApiResponseOfUserDeleteResponse.md)
 
 ### Authorization
 
-[basicAuth](../README.md#basicAuth)
+[basicAuth](../README.md#basicAuth), [tokenAuth](../README.md#tokenAuth)
 
 ### HTTP request headers
 
@@ -125,6 +133,10 @@ var defaultClient = YapilyApi.ApiClient.instance;
 var basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
+
+// Configure OAuth2 access token for authorization: tokenAuth
+var tokenAuth = defaultClient.authentications['tokenAuth'];
+tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new YapilyApi.ApplicationUsersApi();
 
@@ -153,7 +165,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[basicAuth](../README.md#basicAuth)
+[basicAuth](../README.md#basicAuth), [tokenAuth](../README.md#tokenAuth)
 
 ### HTTP request headers
 
@@ -176,6 +188,10 @@ var basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
 
+// Configure OAuth2 access token for authorization: tokenAuth
+var tokenAuth = defaultClient.authentications['tokenAuth'];
+tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
+
 var apiInstance = new YapilyApi.ApplicationUsersApi();
 
 var callback = function(error, data, response) {
@@ -197,7 +213,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-[basicAuth](../README.md#basicAuth)
+[basicAuth](../README.md#basicAuth), [tokenAuth](../README.md#tokenAuth)
 
 ### HTTP request headers
 

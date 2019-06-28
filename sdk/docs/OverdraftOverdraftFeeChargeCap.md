@@ -6,8 +6,8 @@ Name | Type | Description | Notes
 **cappingPeriod** | **String** |  | [optional] 
 **feeCapAmount** | **String** |  | [optional] 
 **feeCapOccurrence** | **Number** |  | [optional] 
-**feeMinMaxType** | **String** |  | [optional] 
 **feeType** | **[String]** |  | [optional] 
+**minMaxType** | **String** |  | [optional] 
 **notes** | **[String]** |  | [optional] 
 **otherFeeType** | [**[OverdraftOtherFeeType]**](OverdraftOtherFeeType.md) |  | [optional] 
 **overdraftControlIndicator** | **Boolean** |  | [optional] 
@@ -27,18 +27,9 @@ Name | Type | Description | Notes
 
 * `Week` (value: `"Week"`)
 
+* `AcademicTerm` (value: `"AcademicTerm"`)
+
 * `Year` (value: `"Year"`)
-
-
-
-
-<a name="FeeMinMaxTypeEnum"></a>
-## Enum: FeeMinMaxTypeEnum
-
-
-* `Minimum` (value: `"Minimum"`)
-
-* `Maximum` (value: `"Maximum"`)
 
 
 
@@ -67,7 +58,20 @@ Name | Type | Description | Notes
 
 * `UnauthorisedPaidTrans` (value: `"UnauthorisedPaidTrans"`)
 
+* `Other` (value: `"Other"`)
+
 * `UnauthorisedUnpaidTrans` (value: `"UnauthorisedUnpaidTrans"`)
+
+
+
+
+<a name="MinMaxTypeEnum"></a>
+## Enum: MinMaxTypeEnum
+
+
+* `Minimum` (value: `"Minimum"`)
+
+* `Maximum` (value: `"Maximum"`)
 
 
 

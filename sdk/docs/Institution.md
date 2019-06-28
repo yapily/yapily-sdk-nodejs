@@ -11,6 +11,7 @@ Name | Type | Description | Notes
 **credentialsType** | **String** |  | [optional] 
 **media** | [**[Media]**](Media.md) |  | [optional] 
 **features** | **[String]** |  | [optional] 
+**monitoring** | [**{String: MonitoringFeatureStatus}**](MonitoringFeatureStatus.md) |  | [optional] 
 
 
 <a name="EnvironmentTypeEnum"></a>
@@ -38,11 +39,15 @@ Name | Type | Description | Notes
 
 * `OPEN_BANKING` (value: `"OPEN_BANKING"`)
 
-* `OPEN_BANKING_SANDBOX` (value: `"OPEN_BANKING_SANDBOX"`)
+* `OPEN_BANKING_UK_MANUAL` (value: `"OPEN_BANKING_UK_MANUAL"`)
+
+* `OPEN_BANKING_UK_AUTO` (value: `"OPEN_BANKING_UK_AUTO"`)
 
 * `OPEN_BANKING_IBM` (value: `"OPEN_BANKING_IBM"`)
 
-* `OPEN_BANKING_KEY_SECRET_SANDBOX` (value: `"OPEN_BANKING_KEY_SECRET_SANDBOX"`)
+* `OPEN_BANKING_AUTO` (value: `"OPEN_BANKING_AUTO"`)
+
+* `OPEN_BANKING_MANUAL` (value: `"OPEN_BANKING_MANUAL"`)
 
 * `API_KEY` (value: `"API_KEY"`)
 
@@ -62,6 +67,12 @@ Name | Type | Description | Notes
 * `ACCOUNT` (value: `"ACCOUNT"`)
 
 * `ACCOUNT_TRANSACTIONS` (value: `"ACCOUNT_TRANSACTIONS"`)
+
+* `ACCOUNT_STATEMENTS` (value: `"ACCOUNT_STATEMENTS"`)
+
+* `ACCOUNT_STATEMENT` (value: `"ACCOUNT_STATEMENT"`)
+
+* `ACCOUNT_STATEMENT_FILE` (value: `"ACCOUNT_STATEMENT_FILE"`)
 
 * `ACCOUNT_TRANSACTIONS_WITH_MERCHANT` (value: `"ACCOUNT_TRANSACTIONS_WITH_MERCHANT"`)
 

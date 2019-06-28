@@ -28,6 +28,8 @@ Name | Type | Description | Notes
 
 * `Week` (value: `"Week"`)
 
+* `AcademicTerm` (value: `"AcademicTerm"`)
+
 * `Year` (value: `"Year"`)
 
 

@@ -5,8 +5,11 @@ All URIs are relative to *https://api.yapily.com*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**addConsentUsingPOST**](ConsentsApi.md#addConsentUsingPOST) | **POST** /users/{userUuid}/consents | Post consent
+[**createConsentWithCodeUsingPOST**](ConsentsApi.md#createConsentWithCodeUsingPOST) | **POST** /consent-auth-code | Post auth-code and auth-state
 [**deleteUsingDELETE**](ConsentsApi.md#deleteUsingDELETE) | **DELETE** /consents/{consentId} | Delete consent
 [**getConsentByIdUsingGET**](ConsentsApi.md#getConsentByIdUsingGET) | **GET** /consents/{consentId} | Get consent
+[**getConsentBySingleAccessConsentUsingPOST**](ConsentsApi.md#getConsentBySingleAccessConsentUsingPOST) | **POST** /consent-one-time-token | Post one time token
+[**getConsentsUsingGET**](ConsentsApi.md#getConsentsUsingGET) | **GET** /consents | Get consents
 [**getUserConsentsUsingGET**](ConsentsApi.md#getUserConsentsUsingGET) | **GET** /users/{userUuid}/consents | Get user consents
 
 
@@ -25,6 +28,10 @@ var defaultClient = YapilyApi.ApiClient.instance;
 var basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
+
+// Configure OAuth2 access token for authorization: tokenAuth
+var tokenAuth = defaultClient.authentications['tokenAuth'];
+tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new YapilyApi.ConsentsApi();
 
@@ -56,7 +63,61 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[basicAuth](../README.md#basicAuth)
+[basicAuth](../README.md#basicAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json;charset=UTF-8
+
+<a name="createConsentWithCodeUsingPOST"></a>
+# **createConsentWithCodeUsingPOST**
+> Consent createConsentWithCodeUsingPOST(consentByAuthCode)
+
+Post auth-code and auth-state
+
+### Example
+```javascript
+var YapilyApi = require('yapily_api');
+var defaultClient = YapilyApi.ApiClient.instance;
+
+// Configure HTTP basic authorization: basicAuth
+var basicAuth = defaultClient.authentications['basicAuth'];
+basicAuth.username = 'YOUR USERNAME';
+basicAuth.password = 'YOUR PASSWORD';
+
+// Configure OAuth2 access token for authorization: tokenAuth
+var tokenAuth = defaultClient.authentications['tokenAuth'];
+tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
+
+var apiInstance = new YapilyApi.ConsentsApi();
+
+var consentByAuthCode = new YapilyApi.ConsentAuthCodeRequest(); // ConsentAuthCodeRequest | consentByAuthCode
+
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.createConsentWithCodeUsingPOST(consentByAuthCode, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **consentByAuthCode** | [**ConsentAuthCodeRequest**](ConsentAuthCodeRequest.md)| consentByAuthCode | 
+
+### Return type
+
+[**Consent**](Consent.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [tokenAuth](../README.md#tokenAuth)
 
 ### HTTP request headers
 
@@ -65,7 +126,7 @@ Name | Type | Description  | Notes
 
 <a name="deleteUsingDELETE"></a>
 # **deleteUsingDELETE**
-> Object deleteUsingDELETE(consentId)
+> ApiResponseOfConsentDeleteResponse deleteUsingDELETE(consentId, opts)
 
 Delete consent
 
@@ -79,10 +140,17 @@ var basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
 
+// Configure OAuth2 access token for authorization: tokenAuth
+var tokenAuth = defaultClient.authentications['tokenAuth'];
+tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
+
 var apiInstance = new YapilyApi.ConsentsApi();
 
 var consentId = "consentId_example"; // String | consentId
 
+var opts = { 
+  'forceDelete': true // Boolean | forceDelete
+};
 
 var callback = function(error, data, response) {
   if (error) {
@@ -91,7 +159,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.deleteUsingDELETE(consentId, callback);
+apiInstance.deleteUsingDELETE(consentId, opts, callback);
 ```
 
 ### Parameters
@@ -99,14 +167,15 @@ apiInstance.deleteUsingDELETE(consentId, callback);
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **consentId** | **String**| consentId | 
+ **forceDelete** | **Boolean**| forceDelete | [optional] 
 
 ### Return type
 
-**Object**
+[**ApiResponseOfConsentDeleteResponse**](ApiResponseOfConsentDeleteResponse.md)
 
 ### Authorization
 
-[basicAuth](../README.md#basicAuth)
+[basicAuth](../README.md#basicAuth), [tokenAuth](../README.md#tokenAuth)
 
 ### HTTP request headers
 
@@ -128,6 +197,10 @@ var defaultClient = YapilyApi.ApiClient.instance;
 var basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
+
+// Configure OAuth2 access token for authorization: tokenAuth
+var tokenAuth = defaultClient.authentications['tokenAuth'];
+tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new YapilyApi.ConsentsApi();
 
@@ -156,7 +229,120 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[basicAuth](../README.md#basicAuth)
+[basicAuth](../README.md#basicAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json;charset=UTF-8
+
+<a name="getConsentBySingleAccessConsentUsingPOST"></a>
+# **getConsentBySingleAccessConsentUsingPOST**
+> Consent getConsentBySingleAccessConsentUsingPOST(oneTimeToken)
+
+Post one time token
+
+### Example
+```javascript
+var YapilyApi = require('yapily_api');
+var defaultClient = YapilyApi.ApiClient.instance;
+
+// Configure HTTP basic authorization: basicAuth
+var basicAuth = defaultClient.authentications['basicAuth'];
+basicAuth.username = 'YOUR USERNAME';
+basicAuth.password = 'YOUR PASSWORD';
+
+// Configure OAuth2 access token for authorization: tokenAuth
+var tokenAuth = defaultClient.authentications['tokenAuth'];
+tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
+
+var apiInstance = new YapilyApi.ConsentsApi();
+
+var oneTimeToken = new YapilyApi.OneTimeTokenRequest(); // OneTimeTokenRequest | oneTimeToken
+
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.getConsentBySingleAccessConsentUsingPOST(oneTimeToken, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **oneTimeToken** | [**OneTimeTokenRequest**](OneTimeTokenRequest.md)| oneTimeToken | 
+
+### Return type
+
+[**Consent**](Consent.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json;charset=UTF-8
+
+<a name="getConsentsUsingGET"></a>
+# **getConsentsUsingGET**
+> ApiListResponseOfConsent getConsentsUsingGET(opts)
+
+Get consents
+
+### Example
+```javascript
+var YapilyApi = require('yapily_api');
+var defaultClient = YapilyApi.ApiClient.instance;
+
+// Configure HTTP basic authorization: basicAuth
+var basicAuth = defaultClient.authentications['basicAuth'];
+basicAuth.username = 'YOUR USERNAME';
+basicAuth.password = 'YOUR PASSWORD';
+
+// Configure OAuth2 access token for authorization: tokenAuth
+var tokenAuth = defaultClient.authentications['tokenAuth'];
+tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
+
+var apiInstance = new YapilyApi.ConsentsApi();
+
+var opts = { 
+  'filterApplicationUserId': "filterApplicationUserId_example", // String | Filter consents by applicationUserId
+  'filterUserUuid': "filterUserUuid_example", // String | Filter consents by userUuid
+  'filterInstitution': "filterInstitution_example" // String | Use this parameter to filter consent by institution, using the Yapily institution Id
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.getConsentsUsingGET(opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **filterApplicationUserId** | **String**| Filter consents by applicationUserId | [optional] 
+ **filterUserUuid** | **String**| Filter consents by userUuid | [optional] 
+ **filterInstitution** | **String**| Use this parameter to filter consent by institution, using the Yapily institution Id | [optional] 
+
+### Return type
+
+[**ApiListResponseOfConsent**](ApiListResponseOfConsent.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [tokenAuth](../README.md#tokenAuth)
 
 ### HTTP request headers
 
@@ -179,12 +365,16 @@ var basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
 
+// Configure OAuth2 access token for authorization: tokenAuth
+var tokenAuth = defaultClient.authentications['tokenAuth'];
+tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
+
 var apiInstance = new YapilyApi.ConsentsApi();
 
 var userUuid = "userUuid_example"; // String | userUuid
 
 var opts = { 
-  'institutionId': "institutionId_example" // String | institutionId
+  'filterInstitution': "filterInstitution_example" // String | Use this parameter to filter consent by institution, using the Yapily institution Id. This replaces the deprecated `institutionId` query param.
 };
 
 var callback = function(error, data, response) {
@@ -202,7 +392,7 @@ apiInstance.getUserConsentsUsingGET(userUuid, opts, callback);
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **userUuid** | **String**| userUuid | 
- **institutionId** | **String**| institutionId | [optional] 
+ **filterInstitution** | **String**| Use this parameter to filter consent by institution, using the Yapily institution Id. This replaces the deprecated &#x60;institutionId&#x60; query param. | [optional] 
 
 ### Return type
 
@@ -210,7 +400,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[basicAuth](../README.md#basicAuth)
+[basicAuth](../README.md#basicAuth), [tokenAuth](../README.md#tokenAuth)
 
 ### HTTP request headers
 

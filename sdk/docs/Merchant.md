@@ -4,5 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **merchantName** | **String** |  | [optional] 
+**merchantCategoryCode** | **String** |  | [optional] 
 
 

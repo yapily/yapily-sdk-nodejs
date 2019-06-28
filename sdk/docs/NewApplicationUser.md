@@ -3,6 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**referenceId** | **String** |  | 
+**applicationUserId** | **String** |  | [optional] 
+**referenceId** | **String** |  | [optional] 
 
 

@@ -5,11 +5,16 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **String** |  | [optional] 
 **userUuid** | **String** |  | [optional] 
+**applicationUserId** | **String** |  | [optional] 
+**referenceId** | **String** |  | [optional] 
 **institutionId** | **String** |  | [optional] 
 **status** | **String** |  | [optional] 
 **createdAt** | **Date** |  | [optional] 
+**transactionFrom** | **Date** |  | [optional] 
+**transactionTo** | **Date** |  | [optional] 
 **expiresAt** | **Date** |  | [optional] 
-**timeToExpireInMillis** | **Number** |  | [optional] 
+**timeToExpireInMillis** | **Number** | Deprecated. Use &#x60;timeToExpire&#x60; instead. | [optional] 
+**timeToExpire** | **String** | ISO 8601 duration | [optional] 
 **featureScope** | **[String]** |  | [optional] 
 **consentToken** | **String** |  | [optional] 
 
@@ -19,6 +24,8 @@ Name | Type | Description | Notes
 
 
 * `AWAITING_AUTHORIZATION` (value: `"AWAITING_AUTHORIZATION"`)
+
+* `AWAITING_RE_AUTHORIZATION` (value: `"AWAITING_RE_AUTHORIZATION"`)
 
 * `AUTHORIZED` (value: `"AUTHORIZED"`)
 
@@ -48,6 +55,12 @@ Name | Type | Description | Notes
 * `ACCOUNT` (value: `"ACCOUNT"`)
 
 * `ACCOUNT_TRANSACTIONS` (value: `"ACCOUNT_TRANSACTIONS"`)
+
+* `ACCOUNT_STATEMENTS` (value: `"ACCOUNT_STATEMENTS"`)
+
+* `ACCOUNT_STATEMENT` (value: `"ACCOUNT_STATEMENT"`)
+
+* `ACCOUNT_STATEMENT_FILE` (value: `"ACCOUNT_STATEMENT_FILE"`)
 
 * `ACCOUNT_TRANSACTIONS_WITH_MERCHANT` (value: `"ACCOUNT_TRANSACTIONS_WITH_MERCHANT"`)
 

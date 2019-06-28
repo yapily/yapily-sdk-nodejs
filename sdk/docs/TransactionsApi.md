@@ -23,6 +23,10 @@ var basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
 
+// Configure OAuth2 access token for authorization: tokenAuth
+var tokenAuth = defaultClient.authentications['tokenAuth'];
+tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
+
 var apiInstance = new YapilyApi.TransactionsApi();
 
 var consent = "consent_example"; // String | Consent Token
@@ -34,7 +38,8 @@ var opts = {
   'from': "from_example", // String | from
   'before': "before_example", // String | before
   'limit': 56, // Number | limit
-  'sort': "sort_example" // String | sort
+  'sort': "sort_example", // String | sort
+  'offset': 56 // Number | offset
 };
 
 var callback = function(error, data, response) {
@@ -58,6 +63,7 @@ Name | Type | Description  | Notes
  **before** | **String**| before | [optional] 
  **limit** | **Number**| limit | [optional] 
  **sort** | **String**| sort | [optional] 
+ **offset** | **Number**| offset | [optional] 
 
 ### Return type
 
@@ -65,7 +71,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[basicAuth](../README.md#basicAuth)
+[basicAuth](../README.md#basicAuth), [tokenAuth](../README.md#tokenAuth)
 
 ### HTTP request headers
 

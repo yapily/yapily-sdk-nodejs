@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**ATM** | [**[ATMOpenDataATM]**](ATMOpenDataATM.md) |  | [optional] 
+**ATM** | [**[InlineResponse2001ATM]**](InlineResponse2001ATM.md) |  | [optional] 
 **brandName** | **String** |  | [optional] 
 
 

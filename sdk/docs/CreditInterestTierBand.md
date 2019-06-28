@@ -5,6 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **AER** | **String** |  | [optional] 
 **applicationFrequency** | **String** |  | [optional] 
+**bankInterestRate** | **String** |  | [optional] 
 **bankInterestRateType** | **String** |  | [optional] 
 **calculationFrequency** | **String** |  | [optional] 
 **depositInterestAppliedCoverage** | **String** |  | [optional] 
