@@ -17,6 +17,9 @@ Name | Type | Description | Notes
 **timeToExpire** | **String** | ISO 8601 duration | [optional] 
 **featureScope** | **[String]** |  | [optional] 
 **consentToken** | **String** |  | [optional] 
+**startsAt** | **Date** |  | [optional] 
+**totalMaxAmount** | **Number** |  | [optional] 
+**maxAmountPerRequest** | **Number** |  | [optional] 
 
 
 <a name="StatusEnum"></a>
@@ -73,6 +76,10 @@ Name | Type | Description | Notes
 * `CREATE_SINGLE_PAYMENT_SORTCODE` (value: `"CREATE_SINGLE_PAYMENT_SORTCODE"`)
 
 * `EXISTING_PAYMENTS_DETAILS` (value: `"EXISTING_PAYMENTS_DETAILS"`)
+
+* `INITIATE_PAYMENT` (value: `"INITIATE_PAYMENT"`)
+
+* `CREATE_PAYMENT` (value: `"CREATE_PAYMENT"`)
 
 * `TRANSFER` (value: `"TRANSFER"`)
 
