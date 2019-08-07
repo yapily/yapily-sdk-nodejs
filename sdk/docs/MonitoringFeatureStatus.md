@@ -20,6 +20,8 @@ Name | Type | Description | Notes
 
 * `Unknown` (value: `"Unknown"`)
 
+* `Expired` (value: `"Expired"`)
+
 
 
 

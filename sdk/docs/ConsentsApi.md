@@ -313,9 +313,8 @@ tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 var apiInstance = new YapilyApi.ConsentsApi();
 
 var opts = { 
-  'filterApplicationUserId': "filterApplicationUserId_example", // String | Filter consents by applicationUserId
-  'filterUserUuid': "filterUserUuid_example", // String | Filter consents by userUuid
-  'filterInstitution': "filterInstitution_example" // String | Use this parameter to filter consent by institution, using the Yapily institution Id
+  'filterApplicationUserId': ["filterApplicationUserId_example"], // [String] | Filter consents by applicationUserId
+  'filterInstitution': ["filterInstitution_example"] // [String] | Use this parameter to filter consent by institution, using the Yapily institution Id
 };
 
 var callback = function(error, data, response) {
@@ -332,9 +331,8 @@ apiInstance.getConsentsUsingGET(opts, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **filterApplicationUserId** | **String**| Filter consents by applicationUserId | [optional] 
- **filterUserUuid** | **String**| Filter consents by userUuid | [optional] 
- **filterInstitution** | **String**| Use this parameter to filter consent by institution, using the Yapily institution Id | [optional] 
+ **filterApplicationUserId** | [**[String]**](String.md)| Filter consents by applicationUserId | [optional] 
+ **filterInstitution** | [**[String]**](String.md)| Use this parameter to filter consent by institution, using the Yapily institution Id | [optional] 
 
 ### Return type
 
