@@ -17,10 +17,11 @@ Name | Type | Description | Notes
 **timeToExpire** | **String** | ISO 8601 duration | [optional] 
 **featureScope** | **[String]** |  | [optional] 
 **consentToken** | **String** |  | [optional] 
-**authorisationUrl** | **String** |  | [optional] 
 **startsAt** | **Date** |  | [optional] 
 **totalMaxAmount** | **Number** |  | [optional] 
 **maxAmountPerRequest** | **Number** |  | [optional] 
+**allowOverdraft** | **Boolean** |  | [optional] 
+**authorisationUrl** | **String** |  | [optional] 
 
 
 <a name="StatusEnum"></a>

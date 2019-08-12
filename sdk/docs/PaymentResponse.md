@@ -4,6 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **String** |  | [optional] 
+**paymentIdempotencyId** | **String** |  | [optional] 
 **institutionConsentId** | **String** |  | [optional] 
 **paymentLifecycleId** | **String** |  | [optional] 
 **status** | **String** |  | [optional] 

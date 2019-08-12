@@ -37,6 +37,8 @@ Name | Type | Description | Notes
 
 * `OAUTH2_NOSECRET` (value: `"OAUTH2_NOSECRET"`)
 
+* `OAUTH2_SIGNATURE` (value: `"OAUTH2_SIGNATURE"`)
+
 * `OPEN_BANKING` (value: `"OPEN_BANKING"`)
 
 * `OPEN_BANKING_UK_MANUAL` (value: `"OPEN_BANKING_UK_MANUAL"`)

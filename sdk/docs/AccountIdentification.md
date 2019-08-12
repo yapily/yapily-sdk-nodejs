@@ -29,6 +29,12 @@ Name | Type | Description | Notes
 
 * `MSISDN` (value: `"MSISDN"`)
 
+* `ABA` (value: `"ABA"`)
+
+* `ABA_WIRE` (value: `"ABA_WIRE"`)
+
+* `ABA_ACH` (value: `"ABA_ACH"`)
+
 
 
 

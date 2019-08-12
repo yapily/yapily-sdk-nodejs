@@ -20,6 +20,7 @@ Name | Type | Description | Notes
 **startsAt** | **Date** |  | [optional] 
 **totalMaxAmount** | **Number** |  | [optional] 
 **maxAmountPerRequest** | **Number** |  | [optional] 
+**allowOverdraft** | **Boolean** |  | [optional] 
 
 
 <a name="StatusEnum"></a>
