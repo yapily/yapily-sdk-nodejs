@@ -9,8 +9,8 @@ Method | HTTP request | Description
 [**deleteUsingDELETE**](ConsentsApi.md#deleteUsingDELETE) | **DELETE** /consents/{consentId} | Delete consent
 [**getConsentByIdUsingGET**](ConsentsApi.md#getConsentByIdUsingGET) | **GET** /consents/{consentId} | Get consent
 [**getConsentBySingleAccessConsentUsingPOST**](ConsentsApi.md#getConsentBySingleAccessConsentUsingPOST) | **POST** /consent-one-time-token | Post one time token
-[**getConsentsUsingGET**](ConsentsApi.md#getConsentsUsingGET) | **GET** /consents | Get consents
-[**getUserConsentsUsingGET**](ConsentsApi.md#getUserConsentsUsingGET) | **GET** /users/{userUuid}/consents | Get user consents
+[**getConsentsUsingGET**](ConsentsApi.md#getConsentsUsingGET) | **GET** /consents | Get consents sorted by creation date
+[**getUserConsentsUsingGET**](ConsentsApi.md#getUserConsentsUsingGET) | **GET** /users/{userUuid}/consents | Get latest user consents
 
 
 <a name="addConsentUsingPOST"></a>
@@ -294,7 +294,7 @@ Name | Type | Description  | Notes
 # **getConsentsUsingGET**
 > ApiListResponseOfConsent getConsentsUsingGET(opts)
 
-Get consents
+Get consents sorted by creation date
 
 ### Example
 ```javascript
@@ -313,8 +313,14 @@ tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 var apiInstance = new YapilyApi.ConsentsApi();
 
 var opts = { 
-  'filterApplicationUserId': ["filterApplicationUserId_example"], // [String] | Filter consents by applicationUserId
-  'filterInstitution': ["filterInstitution_example"] // [String] | Use this parameter to filter consent by institution, using the Yapily institution Id
+  'filterApplicationUserId': ["filterApplicationUserId_example"], // [String] | Filter consents by your application user Id (applicationUserId)
+  'filterUserUuid': ["filterUserUuid_example"], // [String] | Filter consents by Yapily user Id (userUuid)
+  'filterInstitution': ["filterInstitution_example"], // [String] | Use this parameter to filter consent by institution, using the Yapily institution Id
+  'filterStatus': ["filterStatus_example"], // [String] | Use this parameter to filter consent by status
+  'from': "from_example", // String | Use this parameter to filter consents created after the date specified
+  'before': "before_example", // String | Use this parameter to filter consents created before the date specified
+  'limit': 56, // Number | Use this parameter to limit consent results, max limit is 20
+  'offset': 0 // Number | Use this parameter to specify the offset of the results
 };
 
 var callback = function(error, data, response) {
@@ -331,8 +337,14 @@ apiInstance.getConsentsUsingGET(opts, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **filterApplicationUserId** | [**[String]**](String.md)| Filter consents by applicationUserId | [optional] 
+ **filterApplicationUserId** | [**[String]**](String.md)| Filter consents by your application user Id (applicationUserId) | [optional] 
+ **filterUserUuid** | [**[String]**](String.md)| Filter consents by Yapily user Id (userUuid) | [optional] 
  **filterInstitution** | [**[String]**](String.md)| Use this parameter to filter consent by institution, using the Yapily institution Id | [optional] 
+ **filterStatus** | [**[String]**](String.md)| Use this parameter to filter consent by status | [optional] 
+ **from** | **String**| Use this parameter to filter consents created after the date specified | [optional] 
+ **before** | **String**| Use this parameter to filter consents created before the date specified | [optional] 
+ **limit** | **Number**| Use this parameter to limit consent results, max limit is 20 | [optional] 
+ **offset** | **Number**| Use this parameter to specify the offset of the results | [optional] [default to 0]
 
 ### Return type
 
@@ -351,7 +363,7 @@ Name | Type | Description  | Notes
 # **getUserConsentsUsingGET**
 > [Consent] getUserConsentsUsingGET(userUuid, opts)
 
-Get user consents
+Get latest user consents
 
 ### Example
 ```javascript
@@ -372,7 +384,8 @@ var apiInstance = new YapilyApi.ConsentsApi();
 var userUuid = "userUuid_example"; // String | userUuid
 
 var opts = { 
-  'filterInstitution': "filterInstitution_example" // String | Use this parameter to filter consent by institution, using the Yapily institution Id. This replaces the deprecated `institutionId` query param.
+  'filterInstitution': "filterInstitution_example", // String | Use this parameter to filter consent by institution, using the Yapily institution Id. This replaces the deprecated `institutionId` query param.
+  'limit': 56 // Number | Use this parameter to limit consent results, max limit is 20
 };
 
 var callback = function(error, data, response) {
@@ -391,6 +404,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **userUuid** | **String**| userUuid | 
  **filterInstitution** | **String**| Use this parameter to filter consent by institution, using the Yapily institution Id. This replaces the deprecated &#x60;institutionId&#x60; query param. | [optional] 
+ **limit** | **Number**| Use this parameter to limit consent results, max limit is 20 | [optional] 
 
 ### Return type
 
