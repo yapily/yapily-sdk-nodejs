@@ -9,13 +9,25 @@ Name | Type | Description | Notes
 **paymentLifecycleId** | **String** |  | [optional] 
 **status** | **String** |  | [optional] 
 **statusDetails** | [**PaymentStatusDetails**](PaymentStatusDetails.md) |  | [optional] 
+**payeeDetails** | [**Payee**](Payee.md) |  | [optional] 
 **reference** | **String** |  | [optional] 
 **amount** | **Number** |  | [optional] 
 **currency** | **String** |  | [optional] 
 **amountDetails** | [**Amount**](Amount.md) |  | [optional] 
-**chargeDetails** | [**[ChargeDetails]**](ChargeDetails.md) |  | [optional] 
-**payeeDetails** | [**Payee**](Payee.md) |  | [optional] 
+**firstPaymentAmountDetails** | [**Amount**](Amount.md) |  | [optional] 
+**firstPaymentDateTime** | **Date** |  | [optional] 
+**nextPaymentAmountDetails** | [**Amount**](Amount.md) |  | [optional] 
+**nextPaymentDateTime** | **Date** |  | [optional] 
+**finalPaymentAmountDetails** | [**Amount**](Amount.md) |  | [optional] 
+**finalPaymentDateTime** | **Date** |  | [optional] 
 **createdAt** | **Date** |  | [optional] 
+**previousPaymentAmountDetails** | [**Amount**](Amount.md) |  | [optional] 
+**previousPaymentDateTime** | **Date** |  | [optional] 
+**chargeDetails** | [**[ChargeDetails]**](ChargeDetails.md) |  | [optional] 
+**scheduledPaymentType** | **String** |  | [optional] 
+**scheduledPaymentDateTime** | **Date** |  | [optional] 
+**frequencyDetails** | [**FrequencyResponse**](FrequencyResponse.md) |  | [optional] 
+**accountId** | **String** |  | [optional] 
 
 
 <a name="StatusEnum"></a>
@@ -33,6 +45,10 @@ Name | Type | Description | Notes
 * `EXPIRED` (value: `"EXPIRED"`)
 
 * `UNKNOWN` (value: `"UNKNOWN"`)
+
+* `ACTIVE` (value: `"ACTIVE"`)
+
+* `INACTIVE` (value: `"INACTIVE"`)
 
 
 

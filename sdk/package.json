@@ -1,6 +1,6 @@
 {
   "name": "yapily_api",
-  "version": "0.0.143",
+  "version": "0.0.145",
   "description": "To_access_endpoints_that_require_authentication_use_your_application_key_and_secret_created_in_the_Dashboard__httpsdashboard_yapily_com",
   "license": "Unlicense",
   "main": "src/index.js",

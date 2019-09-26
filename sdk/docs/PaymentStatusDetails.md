@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **statusReason** | **String** |  | [optional] 
 **statusReasonDescription** | **String** |  | [optional] 
 **statusUpdateDate** | **Date** |  | [optional] 
+**multiAuthorisationStatus** | [**MultiAuthorisation**](MultiAuthorisation.md) |  | [optional] 
 
 
 <a name="StatusEnum"></a>
@@ -24,6 +25,10 @@ Name | Type | Description | Notes
 * `EXPIRED` (value: `"EXPIRED"`)
 
 * `UNKNOWN` (value: `"UNKNOWN"`)
+
+* `ACTIVE` (value: `"ACTIVE"`)
+
+* `INACTIVE` (value: `"INACTIVE"`)
 
 
 
