@@ -4,11 +4,197 @@ All URIs are relative to *https://api.yapily.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**getAccountDirectDebitsUsingGET**](AccountsApi.md#getAccountDirectDebitsUsingGET) | **GET** /accounts/{accountId}/direct-debits | Get account direct debits
+[**getAccountPeriodicPaymentOrderUsingGET**](AccountsApi.md#getAccountPeriodicPaymentOrderUsingGET) | **GET** /accounts/{accountId}/periodic-payment-orders | Get account payments detail
+[**getAccountScheduledPaymentsUsingGET**](AccountsApi.md#getAccountScheduledPaymentsUsingGET) | **GET** /accounts/{accountId}/scheduled-payments | Get account scheduled payments
 [**getAccountUsingGET**](AccountsApi.md#getAccountUsingGET) | **GET** /accounts/{accountId} | Get account
 [**getAccountsUsingGET**](AccountsApi.md#getAccountsUsingGET) | **GET** /accounts | Get accounts
 [**initiateAccountRequestUsingPOST**](AccountsApi.md#initiateAccountRequestUsingPOST) | **POST** /account-auth-requests | Initiate a new account request for user to authorize
 [**reAuthoriseAccountUsingPATCH**](AccountsApi.md#reAuthoriseAccountUsingPATCH) | **PATCH** /account-auth-requests | Re-authorize account request
 
+
+<a name="getAccountDirectDebitsUsingGET"></a>
+# **getAccountDirectDebitsUsingGET**
+> ApiListResponseOfPaymentResponse getAccountDirectDebitsUsingGET(accountId, consent, opts)
+
+Get account direct debits
+
+### Example
+```javascript
+var YapilyApi = require('yapily_api');
+var defaultClient = YapilyApi.ApiClient.instance;
+
+// Configure HTTP basic authorization: basicAuth
+var basicAuth = defaultClient.authentications['basicAuth'];
+basicAuth.username = 'YOUR USERNAME';
+basicAuth.password = 'YOUR PASSWORD';
+
+// Configure OAuth2 access token for authorization: tokenAuth
+var tokenAuth = defaultClient.authentications['tokenAuth'];
+tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
+
+var apiInstance = new YapilyApi.AccountsApi();
+
+var accountId = "accountId_example"; // String | accountId
+
+var consent = "consent_example"; // String | Consent Token
+
+var opts = { 
+  'limit': 56 // Number | Use this parameter to limit account's direct debit results
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.getAccountDirectDebitsUsingGET(accountId, consent, opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **accountId** | **String**| accountId | 
+ **consent** | **String**| Consent Token | 
+ **limit** | **Number**| Use this parameter to limit account&#39;s direct debit results | [optional] 
+
+### Return type
+
+[**ApiListResponseOfPaymentResponse**](ApiListResponseOfPaymentResponse.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json;charset=UTF-8
+
+<a name="getAccountPeriodicPaymentOrderUsingGET"></a>
+# **getAccountPeriodicPaymentOrderUsingGET**
+> ApiListResponseOfPaymentResponse getAccountPeriodicPaymentOrderUsingGET(accountId, consent, opts)
+
+Get account payments detail
+
+### Example
+```javascript
+var YapilyApi = require('yapily_api');
+var defaultClient = YapilyApi.ApiClient.instance;
+
+// Configure HTTP basic authorization: basicAuth
+var basicAuth = defaultClient.authentications['basicAuth'];
+basicAuth.username = 'YOUR USERNAME';
+basicAuth.password = 'YOUR PASSWORD';
+
+// Configure OAuth2 access token for authorization: tokenAuth
+var tokenAuth = defaultClient.authentications['tokenAuth'];
+tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
+
+var apiInstance = new YapilyApi.AccountsApi();
+
+var accountId = "accountId_example"; // String | accountId
+
+var consent = "consent_example"; // String | Consent Token
+
+var opts = { 
+  'limit': 56 // Number | Use this parameter to limit account's periodic payment order results
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.getAccountPeriodicPaymentOrderUsingGET(accountId, consent, opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **accountId** | **String**| accountId | 
+ **consent** | **String**| Consent Token | 
+ **limit** | **Number**| Use this parameter to limit account&#39;s periodic payment order results | [optional] 
+
+### Return type
+
+[**ApiListResponseOfPaymentResponse**](ApiListResponseOfPaymentResponse.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json;charset=UTF-8
+
+<a name="getAccountScheduledPaymentsUsingGET"></a>
+# **getAccountScheduledPaymentsUsingGET**
+> ApiListResponseOfPaymentResponse getAccountScheduledPaymentsUsingGET(accountId, consent, opts)
+
+Get account scheduled payments
+
+### Example
+```javascript
+var YapilyApi = require('yapily_api');
+var defaultClient = YapilyApi.ApiClient.instance;
+
+// Configure HTTP basic authorization: basicAuth
+var basicAuth = defaultClient.authentications['basicAuth'];
+basicAuth.username = 'YOUR USERNAME';
+basicAuth.password = 'YOUR PASSWORD';
+
+// Configure OAuth2 access token for authorization: tokenAuth
+var tokenAuth = defaultClient.authentications['tokenAuth'];
+tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
+
+var apiInstance = new YapilyApi.AccountsApi();
+
+var accountId = "accountId_example"; // String | accountId
+
+var consent = "consent_example"; // String | Consent Token
+
+var opts = { 
+  'limit': 56 // Number | Use this parameter to limit account's scheduled payment results
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.getAccountScheduledPaymentsUsingGET(accountId, consent, opts, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **accountId** | **String**| accountId | 
+ **consent** | **String**| Consent Token | 
+ **limit** | **Number**| Use this parameter to limit account&#39;s scheduled payment results | [optional] 
+
+### Return type
+
+[**ApiListResponseOfPaymentResponse**](ApiListResponseOfPaymentResponse.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json;charset=UTF-8
 
 <a name="getAccountUsingGET"></a>
 # **getAccountUsingGET**

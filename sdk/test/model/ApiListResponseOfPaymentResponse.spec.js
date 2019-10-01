@@ -30,7 +30,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new YapilyApi.FrequencyResponse();
+    instance = new YapilyApi.ApiListResponseOfPaymentResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -49,34 +49,28 @@
       object[property] = value;
   }
 
-  describe('FrequencyResponse', function() {
-    it('should create an instance of FrequencyResponse', function() {
-      // uncomment below and update the code to test FrequencyResponse
-      //var instane = new YapilyApi.FrequencyResponse();
-      //expect(instance).to.be.a(YapilyApi.FrequencyResponse);
+  describe('ApiListResponseOfPaymentResponse', function() {
+    it('should create an instance of ApiListResponseOfPaymentResponse', function() {
+      // uncomment below and update the code to test ApiListResponseOfPaymentResponse
+      //var instane = new YapilyApi.ApiListResponseOfPaymentResponse();
+      //expect(instance).to.be.a(YapilyApi.ApiListResponseOfPaymentResponse);
     });
 
-    it('should have the property executionDay (base name: "executionDay")', function() {
-      // uncomment below and update the code to test the property executionDay
-      //var instane = new YapilyApi.FrequencyResponse();
+    it('should have the property meta (base name: "meta")', function() {
+      // uncomment below and update the code to test the property meta
+      //var instane = new YapilyApi.ApiListResponseOfPaymentResponse();
       //expect(instance).to.be();
     });
 
-    it('should have the property frequency (base name: "frequency")', function() {
-      // uncomment below and update the code to test the property frequency
-      //var instane = new YapilyApi.FrequencyResponse();
+    it('should have the property data (base name: "data")', function() {
+      // uncomment below and update the code to test the property data
+      //var instane = new YapilyApi.ApiListResponseOfPaymentResponse();
       //expect(instance).to.be();
     });
 
-    it('should have the property intervalMonth (base name: "intervalMonth")', function() {
-      // uncomment below and update the code to test the property intervalMonth
-      //var instane = new YapilyApi.FrequencyResponse();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property intervalWeek (base name: "intervalWeek")', function() {
-      // uncomment below and update the code to test the property intervalWeek
-      //var instane = new YapilyApi.FrequencyResponse();
+    it('should have the property links (base name: "links")', function() {
+      // uncomment below and update the code to test the property links
+      //var instane = new YapilyApi.ApiListResponseOfPaymentResponse();
       //expect(instance).to.be();
     });
 
