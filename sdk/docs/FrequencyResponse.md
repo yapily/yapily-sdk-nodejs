@@ -4,13 +4,13 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **executionDay** | **Number** |  | [optional] 
-**frequency** | **String** |  | [optional] 
+**frequencyType** | **String** |  | [optional] 
 **intervalMonth** | **Number** |  | [optional] 
 **intervalWeek** | **Number** |  | [optional] 
 
 
-<a name="FrequencyEnum"></a>
-## Enum: FrequencyEnum
+<a name="FrequencyTypeEnum"></a>
+## Enum: FrequencyTypeEnum
 
 
 * `DAILY` (value: `"DAILY"`)
