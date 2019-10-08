@@ -25,7 +25,7 @@ basicAuth.password = 'YOUR PASSWORD';
 
 var apiInstance = new YapilyApi.OAuthApi();
 
-var grantType = new YapilyApi.ModelObject(); // ModelObject | Grant type
+var grantType = "client_credentials"; // String | Grant type
 
 
 var callback = function(error, data, response) {
@@ -42,7 +42,7 @@ apiInstance.oauthToken(grantType, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **grantType** | [**ModelObject**](.md)| Grant type | [default to client_credentials]
+ **grantType** | **String**| Grant type | [default to client_credentials]
 
 ### Return type
 
