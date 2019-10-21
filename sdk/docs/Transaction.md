@@ -22,6 +22,7 @@ Name | Type | Description | Notes
 **proprietaryBankTransactionCode** | [**ProprietaryBankTransactionCode**](ProprietaryBankTransactionCode.md) |  | [optional] 
 **balance** | [**Balance**](Balance.md) | Running account balance after transaction has been applied | [optional] 
 **merchant** | [**Merchant**](Merchant.md) | Merchant details | [optional] 
+**categorisation** | [**Categorisation**](Categorisation.md) | Categorisation | [optional] 
 
 
 <a name="StatusEnum"></a>
