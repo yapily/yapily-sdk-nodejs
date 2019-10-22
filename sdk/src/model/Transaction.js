@@ -16,18 +16,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/AddressDetails', 'model/Amount', 'model/Balance', 'model/Categorisation', 'model/ChargeDetails', 'model/CurrencyExchange', 'model/IsoBankTransactionCode', 'model/Merchant', 'model/ProprietaryBankTransactionCode', 'model/StatementReference'], factory);
+    define(['ApiClient', 'model/AddressDetails', 'model/Amount', 'model/Balance', 'model/ChargeDetails', 'model/CurrencyExchange', 'model/IsoBankTransactionCode', 'model/Merchant', 'model/ProprietaryBankTransactionCode', 'model/StatementReference'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./AddressDetails'), require('./Amount'), require('./Balance'), require('./Categorisation'), require('./ChargeDetails'), require('./CurrencyExchange'), require('./IsoBankTransactionCode'), require('./Merchant'), require('./ProprietaryBankTransactionCode'), require('./StatementReference'));
+    module.exports = factory(require('../ApiClient'), require('./AddressDetails'), require('./Amount'), require('./Balance'), require('./ChargeDetails'), require('./CurrencyExchange'), require('./IsoBankTransactionCode'), require('./Merchant'), require('./ProprietaryBankTransactionCode'), require('./StatementReference'));
   } else {
     // Browser globals (root is window)
     if (!root.YapilyApi) {
       root.YapilyApi = {};
     }
-    root.YapilyApi.Transaction = factory(root.YapilyApi.ApiClient, root.YapilyApi.AddressDetails, root.YapilyApi.Amount, root.YapilyApi.Balance, root.YapilyApi.Categorisation, root.YapilyApi.ChargeDetails, root.YapilyApi.CurrencyExchange, root.YapilyApi.IsoBankTransactionCode, root.YapilyApi.Merchant, root.YapilyApi.ProprietaryBankTransactionCode, root.YapilyApi.StatementReference);
+    root.YapilyApi.Transaction = factory(root.YapilyApi.ApiClient, root.YapilyApi.AddressDetails, root.YapilyApi.Amount, root.YapilyApi.Balance, root.YapilyApi.ChargeDetails, root.YapilyApi.CurrencyExchange, root.YapilyApi.IsoBankTransactionCode, root.YapilyApi.Merchant, root.YapilyApi.ProprietaryBankTransactionCode, root.YapilyApi.StatementReference);
   }
-}(this, function(ApiClient, AddressDetails, Amount, Balance, Categorisation, ChargeDetails, CurrencyExchange, IsoBankTransactionCode, Merchant, ProprietaryBankTransactionCode, StatementReference) {
+}(this, function(ApiClient, AddressDetails, Amount, Balance, ChargeDetails, CurrencyExchange, IsoBankTransactionCode, Merchant, ProprietaryBankTransactionCode, StatementReference) {
   'use strict';
 
 
@@ -46,7 +46,6 @@
    */
   var exports = function() {
     var _this = this;
-
 
 
 
@@ -136,9 +135,6 @@
       }
       if (data.hasOwnProperty('merchant')) {
         obj['merchant'] = Merchant.constructFromObject(data['merchant']);
-      }
-      if (data.hasOwnProperty('categorisation')) {
-        obj['categorisation'] = Categorisation.constructFromObject(data['categorisation']);
       }
     }
     return obj;
@@ -233,11 +229,6 @@
    * @member {module:model/Merchant} merchant
    */
   exports.prototype['merchant'] = undefined;
-  /**
-   * Categorisation
-   * @member {module:model/Categorisation} categorisation
-   */
-  exports.prototype['categorisation'] = undefined;
 
 
   /**

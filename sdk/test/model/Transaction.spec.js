@@ -170,12 +170,6 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property categorisation (base name: "categorisation")', function() {
-      // uncomment below and update the code to test the property categorisation
-      //var instane = new YapilyApi.Transaction();
-      //expect(instance).to.be();
-    });
-
   });
 
 }));

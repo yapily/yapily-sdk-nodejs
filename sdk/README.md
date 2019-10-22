@@ -223,8 +223,6 @@ Class | Method | HTTP request | Description
  - [YapilyApi.Branch](docs/Branch.md)
  - [YapilyApi.BulkUserDelete](docs/BulkUserDelete.md)
  - [YapilyApi.BulkUserDeleteDetails](docs/BulkUserDeleteDetails.md)
- - [YapilyApi.Categorisation](docs/Categorisation.md)
- - [YapilyApi.Category](docs/Category.md)
  - [YapilyApi.ChargeDetails](docs/ChargeDetails.md)
  - [YapilyApi.Consent](docs/Consent.md)
  - [YapilyApi.ConsentAuthCodeRequest](docs/ConsentAuthCodeRequest.md)
