@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 <a name="createPaymentAuthorisationUsingPOST"></a>
 # **createPaymentAuthorisationUsingPOST**
-> ApiResponseOfAuthorisationRequestResponse createPaymentAuthorisationUsingPOST(paymentAuthRequest)
+> ApiResponseOfPaymentAuthorisationRequestResponse createPaymentAuthorisationUsingPOST(paymentAuthRequest)
 
 Initiate a payment for user to authorise
 
@@ -55,7 +55,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ApiResponseOfAuthorisationRequestResponse**](ApiResponseOfAuthorisationRequestResponse.md)
+[**ApiResponseOfPaymentAuthorisationRequestResponse**](ApiResponseOfPaymentAuthorisationRequestResponse.md)
 
 ### Authorization
 

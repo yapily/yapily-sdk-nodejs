@@ -16,11 +16,11 @@ Name | Type | Description | Notes
 **timeToExpireInMillis** | **Number** | Deprecated. Use &#x60;timeToExpire&#x60; instead. | [optional] 
 **timeToExpire** | **String** | ISO 8601 duration | [optional] 
 **featureScope** | **[String]** |  | [optional] 
-**consentToken** | **String** |  | [optional] 
 **startsAt** | **Date** |  | [optional] 
 **totalMaxAmount** | **Number** |  | [optional] 
 **maxAmountPerRequest** | **Number** |  | [optional] 
 **allowOverdraft** | **Boolean** |  | [optional] 
+**consentToken** | **String** |  | [optional] 
 **authorisationUrl** | **String** |  | [optional] 
 
 
@@ -35,6 +35,8 @@ Name | Type | Description | Notes
 * `AWAITING_RE_AUTHORIZATION` (value: `"AWAITING_RE_AUTHORIZATION"`)
 
 * `AUTHORIZED` (value: `"AUTHORIZED"`)
+
+* `CONSUMED` (value: `"CONSUMED"`)
 
 * `REJECTED` (value: `"REJECTED"`)
 
@@ -99,13 +101,11 @@ Name | Type | Description | Notes
 
 * `CREATE_DOMESTIC_SCHEDULED_PAYMENT` (value: `"CREATE_DOMESTIC_SCHEDULED_PAYMENT"`)
 
-* `INITIATE_DOMESTIC_PERIODIC_PAYMENT_ORDER` (value: `"INITIATE_DOMESTIC_PERIODIC_PAYMENT_ORDER"`)
+* `INITIATE_DOMESTIC_PERIODIC_PAYMENT` (value: `"INITIATE_DOMESTIC_PERIODIC_PAYMENT"`)
 
-* `CREATE_DOMESTIC_PERIODIC_PAYMENT_ORDER` (value: `"CREATE_DOMESTIC_PERIODIC_PAYMENT_ORDER"`)
+* `CREATE_DOMESTIC_PERIODIC_PAYMENT` (value: `"CREATE_DOMESTIC_PERIODIC_PAYMENT"`)
 
-* `INITIATE_DOMESTIC_PERIODIC_PAYMENT_ORDER_EXTENDED` (value: `"INITIATE_DOMESTIC_PERIODIC_PAYMENT_ORDER_EXTENDED"`)
-
-* `CREATE_DOMESTIC_PERIODIC_PAYMENT_ORDER_EXTENDED` (value: `"CREATE_DOMESTIC_PERIODIC_PAYMENT_ORDER_EXTENDED"`)
+* `PERIODIC_PAYMENT_FREQUENCY_EXTENDED` (value: `"PERIODIC_PAYMENT_FREQUENCY_EXTENDED"`)
 
 * `INITIATE_INTERNATIONAL_VARIABLE_RECURRING_PAYMENT` (value: `"INITIATE_INTERNATIONAL_VARIABLE_RECURRING_PAYMENT"`)
 

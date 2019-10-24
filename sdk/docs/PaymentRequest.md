@@ -11,6 +11,7 @@ Name | Type | Description | Notes
 **type** | **String** |  | [optional] 
 **paymentDateTime** | **Date** |  | [optional] 
 **payee** | [**Payee**](Payee.md) |  | 
+**periodicPayments** | [**PeriodicPaymentRequest**](PeriodicPaymentRequest.md) |  | [optional] 
 
 
 <a name="ContextTypeEnum"></a>
@@ -39,6 +40,8 @@ Name | Type | Description | Notes
 * `VARIABLE_RECURRING_PAYMENT` (value: `"DOMESTIC_VARIABLE_RECURRING_PAYMENT"`)
 
 * `SCHEDULED_PAYMENT` (value: `"DOMESTIC_SCHEDULED_PAYMENT"`)
+
+* `PERIODIC_PAYMENT` (value: `"DOMESTIC_PERIODIC_PAYMENT"`)
 
 
 
