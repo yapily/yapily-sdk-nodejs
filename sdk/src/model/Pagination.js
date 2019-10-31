@@ -36,7 +36,7 @@
   /**
    * The Pagination model module.
    * @module model/Pagination
-   * @version 0.0.159
+   * @version {yapily-api-version}
    */
 
   /**

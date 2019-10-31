@@ -36,7 +36,7 @@
   /**
    * The Institution model module.
    * @module model/Institution
-   * @version 0.0.159
+   * @version {yapily-api-version}
    */
 
   /**

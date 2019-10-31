@@ -21,7 +21,7 @@ Add an application user
 
 ### Example
 ```javascript
-var YapilyApi = require('yapily_api');
+var YapilyApi = require('yapily-api');
 var defaultClient = YapilyApi.ApiClient.instance;
 
 // Configure HTTP basic authorization: basicAuth
@@ -75,7 +75,7 @@ Delete an application user and sub-resources (including consent resources on ins
 
 ### Example
 ```javascript
-var YapilyApi = require('yapily_api');
+var YapilyApi = require('yapily-api');
 var defaultClient = YapilyApi.ApiClient.instance;
 
 // Configure HTTP basic authorization: basicAuth
@@ -129,7 +129,7 @@ Get details of a user deletion job
 
 ### Example
 ```javascript
-var YapilyApi = require('yapily_api');
+var YapilyApi = require('yapily-api');
 var defaultClient = YapilyApi.ApiClient.instance;
 
 // Configure HTTP basic authorization: basicAuth
@@ -183,7 +183,7 @@ Get details of all user deletion jobs
 
 ### Example
 ```javascript
-var YapilyApi = require('yapily_api');
+var YapilyApi = require('yapily-api');
 var defaultClient = YapilyApi.ApiClient.instance;
 
 // Configure HTTP basic authorization: basicAuth
@@ -231,7 +231,7 @@ Get an application user
 
 ### Example
 ```javascript
-var YapilyApi = require('yapily_api');
+var YapilyApi = require('yapily-api');
 var defaultClient = YapilyApi.ApiClient.instance;
 
 // Configure HTTP basic authorization: basicAuth
@@ -285,7 +285,7 @@ Get application users
 
 ### Example
 ```javascript
-var YapilyApi = require('yapily_api');
+var YapilyApi = require('yapily-api');
 var defaultClient = YapilyApi.ApiClient.instance;
 
 // Configure HTTP basic authorization: basicAuth
@@ -333,7 +333,7 @@ Start a job to delete application users by specifying their identifiers
 
 ### Example
 ```javascript
-var YapilyApi = require('yapily_api');
+var YapilyApi = require('yapily-api');
 var defaultClient = YapilyApi.ApiClient.instance;
 
 // Configure HTTP basic authorization: basicAuth

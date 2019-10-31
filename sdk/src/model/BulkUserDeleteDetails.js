@@ -36,7 +36,7 @@
   /**
    * The BulkUserDeleteDetails model module.
    * @module model/BulkUserDeleteDetails
-   * @version 0.0.159
+   * @version {yapily-api-version}
    */
 
   /**

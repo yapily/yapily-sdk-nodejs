@@ -36,7 +36,7 @@
   /**
    * The PaymentRequest model module.
    * @module model/PaymentRequest
-   * @version 0.0.159
+   * @version {yapily-api-version}
    */
 
   /**

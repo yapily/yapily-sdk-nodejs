@@ -17,7 +17,7 @@ Retrieve details for Yapily&#39;s institution features
 
 ### Example
 ```javascript
-var YapilyApi = require('yapily_api');
+var YapilyApi = require('yapily-api');
 var defaultClient = YapilyApi.ApiClient.instance;
 
 // Configure HTTP basic authorization: basicAuth
@@ -65,7 +65,7 @@ Retrieves details of a specific institution available in Yapily
 
 ### Example
 ```javascript
-var YapilyApi = require('yapily_api');
+var YapilyApi = require('yapily-api');
 var defaultClient = YapilyApi.ApiClient.instance;
 
 // Configure HTTP basic authorization: basicAuth
@@ -119,7 +119,7 @@ Retrieves the list of institutions available in Yapily
 
 ### Example
 ```javascript
-var YapilyApi = require('yapily_api');
+var YapilyApi = require('yapily-api');
 var defaultClient = YapilyApi.ApiClient.instance;
 
 // Configure HTTP basic authorization: basicAuth

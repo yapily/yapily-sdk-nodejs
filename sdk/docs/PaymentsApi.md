@@ -20,7 +20,7 @@ Initiate a payment for user to authorise
 
 ### Example
 ```javascript
-var YapilyApi = require('yapily_api');
+var YapilyApi = require('yapily-api');
 var defaultClient = YapilyApi.ApiClient.instance;
 
 // Configure HTTP basic authorization: basicAuth
@@ -74,7 +74,7 @@ Initiate a new single payment for user to authorise
 
 ### Example
 ```javascript
-var YapilyApi = require('yapily_api');
+var YapilyApi = require('yapily-api');
 var defaultClient = YapilyApi.ApiClient.instance;
 
 // Configure HTTP basic authorization: basicAuth
@@ -128,7 +128,7 @@ Create a payment
 
 ### Example
 ```javascript
-var YapilyApi = require('yapily_api');
+var YapilyApi = require('yapily-api');
 var defaultClient = YapilyApi.ApiClient.instance;
 
 // Configure HTTP basic authorization: basicAuth
@@ -185,7 +185,7 @@ Create a new single payment
 
 ### Example
 ```javascript
-var YapilyApi = require('yapily_api');
+var YapilyApi = require('yapily-api');
 var defaultClient = YapilyApi.ApiClient.instance;
 
 // Configure HTTP basic authorization: basicAuth
@@ -242,7 +242,7 @@ Get status of a payment
 
 ### Example
 ```javascript
-var YapilyApi = require('yapily_api');
+var YapilyApi = require('yapily-api');
 var defaultClient = YapilyApi.ApiClient.instance;
 
 // Configure HTTP basic authorization: basicAuth
@@ -299,7 +299,7 @@ Get payments detail
 
 ### Example
 ```javascript
-var YapilyApi = require('yapily_api');
+var YapilyApi = require('yapily-api');
 var defaultClient = YapilyApi.ApiClient.instance;
 
 // Configure HTTP basic authorization: basicAuth

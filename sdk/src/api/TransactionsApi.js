@@ -33,7 +33,7 @@
   /**
    * Transactions service.
    * @module api/TransactionsApi
-   * @version 0.0.159
+   * @version {yapily-api-version}
    */
 
   /**

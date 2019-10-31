@@ -36,7 +36,7 @@
   /**
    * The TransferResponse model module.
    * @module model/TransferResponse
-   * @version 0.0.159
+   * @version {yapily-api-version}
    */
 
   /**

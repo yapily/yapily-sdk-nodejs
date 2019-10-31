@@ -36,7 +36,7 @@
   /**
    * The Balance model module.
    * @module model/Balance
-   * @version 0.0.159
+   * @version {yapily-api-version}
    */
 
   /**

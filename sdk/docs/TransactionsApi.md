@@ -15,7 +15,7 @@ Get account transactions
 
 ### Example
 ```javascript
-var YapilyApi = require('yapily_api');
+var YapilyApi = require('yapily-api');
 var defaultClient = YapilyApi.ApiClient.instance;
 
 // Configure HTTP basic authorization: basicAuth

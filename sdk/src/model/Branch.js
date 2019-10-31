@@ -36,7 +36,7 @@
   /**
    * The Branch model module.
    * @module model/Branch
-   * @version 0.0.159
+   * @version {yapily-api-version}
    */
 
   /**

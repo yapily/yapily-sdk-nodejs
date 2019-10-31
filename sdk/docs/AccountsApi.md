@@ -21,7 +21,7 @@ Get account direct debits
 
 ### Example
 ```javascript
-var YapilyApi = require('yapily_api');
+var YapilyApi = require('yapily-api');
 var defaultClient = YapilyApi.ApiClient.instance;
 
 // Configure HTTP basic authorization: basicAuth
@@ -82,7 +82,7 @@ Get account payments detail
 
 ### Example
 ```javascript
-var YapilyApi = require('yapily_api');
+var YapilyApi = require('yapily-api');
 var defaultClient = YapilyApi.ApiClient.instance;
 
 // Configure HTTP basic authorization: basicAuth
@@ -143,7 +143,7 @@ Get account scheduled payments
 
 ### Example
 ```javascript
-var YapilyApi = require('yapily_api');
+var YapilyApi = require('yapily-api');
 var defaultClient = YapilyApi.ApiClient.instance;
 
 // Configure HTTP basic authorization: basicAuth
@@ -204,7 +204,7 @@ Get account
 
 ### Example
 ```javascript
-var YapilyApi = require('yapily_api');
+var YapilyApi = require('yapily-api');
 var defaultClient = YapilyApi.ApiClient.instance;
 
 // Configure HTTP basic authorization: basicAuth
@@ -261,7 +261,7 @@ Get accounts
 
 ### Example
 ```javascript
-var YapilyApi = require('yapily_api');
+var YapilyApi = require('yapily-api');
 var defaultClient = YapilyApi.ApiClient.instance;
 
 // Configure HTTP basic authorization: basicAuth
@@ -315,7 +315,7 @@ Initiate a new account request for user to authorize
 
 ### Example
 ```javascript
-var YapilyApi = require('yapily_api');
+var YapilyApi = require('yapily-api');
 var defaultClient = YapilyApi.ApiClient.instance;
 
 // Configure HTTP basic authorization: basicAuth
@@ -369,7 +369,7 @@ Re-authorize account request
 
 ### Example
 ```javascript
-var YapilyApi = require('yapily_api');
+var YapilyApi = require('yapily-api');
 var defaultClient = YapilyApi.ApiClient.instance;
 
 // Configure HTTP basic authorization: basicAuth

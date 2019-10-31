@@ -36,7 +36,7 @@
   /**
    * The ApiResponseOfUserDeleteResponse model module.
    * @module model/ApiResponseOfUserDeleteResponse
-   * @version 0.0.159
+   * @version {yapily-api-version}
    */
 
   /**

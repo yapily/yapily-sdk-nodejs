@@ -36,7 +36,7 @@
   /**
    * The OtherBankInterestType model module.
    * @module model/OtherBankInterestType
-   * @version 0.0.159
+   * @version {yapily-api-version}
    */
 
   /**

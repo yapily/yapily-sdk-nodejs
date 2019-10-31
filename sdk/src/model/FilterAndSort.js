@@ -36,7 +36,7 @@
   /**
    * The FilterAndSort model module.
    * @module model/FilterAndSort
-   * @version 0.0.159
+   * @version {yapily-api-version}
    */
 
   /**

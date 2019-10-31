@@ -1,8 +1,8 @@
 {
-  "name": "yapily_api",
-  "version": "0.0.159",
+  "name": "@yapily/yapily-api",
+  "version": "{@yapily/yapily-api-version}",
   "description": "To_access_endpoints_that_require_authentication_use_your_application_key_and_secret_created_in_the_Dashboard__httpsdashboard_yapily_com",
-  "license": "Unlicense",
+  "license": "MIT",
   "main": "src/index.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha --recursive"
@@ -17,5 +17,25 @@
     "mocha": "~2.3.4",
     "sinon": "1.17.3",
     "expect.js": "~0.3.1"
-  }
+  },
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yapily/yapily-sdk-nodejs.git"
+  },
+  "keywords": [
+    "api",
+    "sdk",
+    "yapily",
+    "yapily-api",
+    "yapily-sdk"
+  ],
+  "author": "yapily",
+  "bugs": {
+    "url": "https://github.com/yapily/yapily-sdk-nodejs/issues"
+  },
+  "homepage": "https://github.com/yapily/yapily-sdk-nodejs#readme"
 }

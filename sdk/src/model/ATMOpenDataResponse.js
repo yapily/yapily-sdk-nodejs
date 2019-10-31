@@ -36,7 +36,7 @@
   /**
    * The ATMOpenDataResponse model module.
    * @module model/ATMOpenDataResponse
-   * @version 0.0.159
+   * @version {yapily-api-version}
    */
 
   /**

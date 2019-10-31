@@ -36,7 +36,7 @@
   /**
    * The Transaction model module.
    * @module model/Transaction
-   * @version 0.0.159
+   * @version {yapily-api-version}
    */
 
   /**

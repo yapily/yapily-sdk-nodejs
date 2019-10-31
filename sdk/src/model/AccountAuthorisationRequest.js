@@ -36,7 +36,7 @@
   /**
    * The AccountAuthorisationRequest model module.
    * @module model/AccountAuthorisationRequest
-   * @version 0.0.159
+   * @version {yapily-api-version}
    */
 
   /**

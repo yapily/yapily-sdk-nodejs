@@ -36,7 +36,7 @@
   /**
    * The OverdraftOverdraftFeeChargeCap model module.
    * @module model/OverdraftOverdraftFeeChargeCap
-   * @version 0.0.159
+   * @version {yapily-api-version}
    */
 
   /**
