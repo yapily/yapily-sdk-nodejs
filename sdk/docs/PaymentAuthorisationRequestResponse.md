@@ -48,6 +48,8 @@ Name | Type | Description | Notes
 
 * `UNKNOWN` (value: `"UNKNOWN"`)
 
+* `INVALID` (value: `"INVALID"`)
+
 
 
 

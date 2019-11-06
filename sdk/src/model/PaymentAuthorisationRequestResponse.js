@@ -275,7 +275,12 @@
      * value: "UNKNOWN"
      * @const
      */
-    "UNKNOWN": "UNKNOWN"  };
+    "UNKNOWN": "UNKNOWN",
+    /**
+     * value: "INVALID"
+     * @const
+     */
+    "INVALID": "INVALID"  };
 
   /**
    * Allowed values for the <code>featureScope</code> property.
