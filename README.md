@@ -14,9 +14,8 @@ your API requests.
 
 ## Installation
 
-The SDK is currently available in the Yapily github repository and 
-can be included in your project 
-by adding it to your dependencies
+The SDK can be installed from [npm](https://www.npmjs.com/package/@yapily/yapily-api) and can be included in your 
+project by adding it to your dependencies
 
 #### npm
 
