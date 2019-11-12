@@ -36,7 +36,7 @@
   /**
    * The CreditCheck model module.
    * @module model/CreditCheck
-   * @version 0.0.160
+   * @version 0.0.159
    */
 
   /**

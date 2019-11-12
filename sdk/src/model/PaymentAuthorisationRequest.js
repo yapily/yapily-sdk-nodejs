@@ -36,7 +36,7 @@
   /**
    * The PaymentAuthorisationRequest model module.
    * @module model/PaymentAuthorisationRequest
-   * @version 0.0.160
+   * @version 0.0.159
    */
 
   /**

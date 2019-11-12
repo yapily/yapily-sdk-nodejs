@@ -36,7 +36,7 @@
   /**
    * The MonitoringFeatureStatus model module.
    * @module model/MonitoringFeatureStatus
-   * @version 0.0.160
+   * @version 0.0.159
    */
 
   /**

@@ -36,7 +36,7 @@
   /**
    * The CreditInterestCreditInterestEligibility model module.
    * @module model/CreditInterestCreditInterestEligibility
-   * @version 0.0.160
+   * @version 0.0.159
    */
 
   /**

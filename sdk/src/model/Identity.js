@@ -36,7 +36,7 @@
   /**
    * The Identity model module.
    * @module model/Identity
-   * @version 0.0.160
+   * @version 0.0.159
    */
 
   /**

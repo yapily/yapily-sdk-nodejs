@@ -36,7 +36,7 @@
   /**
    * The Branch model module.
    * @module model/Branch
-   * @version 0.0.160
+   * @version 0.0.159
    */
 
   /**

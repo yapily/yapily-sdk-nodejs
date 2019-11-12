@@ -36,7 +36,7 @@
   /**
    * The PersonalCurrentAccountBrand model module.
    * @module model/PersonalCurrentAccountBrand
-   * @version 0.0.160
+   * @version 0.0.159
    */
 
   /**

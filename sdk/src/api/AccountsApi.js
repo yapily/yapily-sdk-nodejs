@@ -33,7 +33,7 @@
   /**
    * Accounts service.
    * @module api/AccountsApi
-   * @version 0.0.160
+   * @version 0.0.159
    */
 
   /**

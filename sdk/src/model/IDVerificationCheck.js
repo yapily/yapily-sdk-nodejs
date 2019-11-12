@@ -36,7 +36,7 @@
   /**
    * The IDVerificationCheck model module.
    * @module model/IDVerificationCheck
-   * @version 0.0.160
+   * @version 0.0.159
    */
 
   /**

@@ -33,7 +33,7 @@
   /**
    * Institutions service.
    * @module api/InstitutionsApi
-   * @version 0.0.160
+   * @version 0.0.159
    */
 
   /**

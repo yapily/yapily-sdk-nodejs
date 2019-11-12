@@ -36,7 +36,7 @@
   /**
    * The ResponseMeta model module.
    * @module model/ResponseMeta
-   * @version 0.0.160
+   * @version 0.0.159
    */
 
   /**
