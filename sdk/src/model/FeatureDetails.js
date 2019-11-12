@@ -36,7 +36,7 @@
   /**
    * The FeatureDetails model module.
    * @module model/FeatureDetails
-   * @version {yapily-api-version}
+   * @version 0.0.159
    */
 
   /**

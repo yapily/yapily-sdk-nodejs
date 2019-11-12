@@ -36,7 +36,7 @@
   /**
    * The Media model module.
    * @module model/Media
-   * @version {yapily-api-version}
+   * @version 0.0.159
    */
 
   /**

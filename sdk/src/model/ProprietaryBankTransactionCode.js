@@ -36,7 +36,7 @@
   /**
    * The ProprietaryBankTransactionCode model module.
    * @module model/ProprietaryBankTransactionCode
-   * @version {yapily-api-version}
+   * @version 0.0.159
    */
 
   /**

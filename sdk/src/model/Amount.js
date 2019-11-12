@@ -36,7 +36,7 @@
   /**
    * The Amount model module.
    * @module model/Amount
-   * @version {yapily-api-version}
+   * @version 0.0.159
    */
 
   /**

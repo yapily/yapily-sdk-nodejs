@@ -36,7 +36,7 @@
   /**
    * The PaymentStatusDetails model module.
    * @module model/PaymentStatusDetails
-   * @version {yapily-api-version}
+   * @version 0.0.159
    */
 
   /**

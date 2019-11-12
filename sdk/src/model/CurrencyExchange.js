@@ -36,7 +36,7 @@
   /**
    * The CurrencyExchange model module.
    * @module model/CurrencyExchange
-   * @version {yapily-api-version}
+   * @version 0.0.159
    */
 
   /**

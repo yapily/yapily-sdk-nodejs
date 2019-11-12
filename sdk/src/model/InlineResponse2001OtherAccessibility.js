@@ -36,7 +36,7 @@
   /**
    * The InlineResponse2001OtherAccessibility model module.
    * @module model/InlineResponse2001OtherAccessibility
-   * @version {yapily-api-version}
+   * @version 0.0.159
    */
 
   /**

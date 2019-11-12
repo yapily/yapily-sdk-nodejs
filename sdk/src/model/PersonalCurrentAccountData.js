@@ -36,7 +36,7 @@
   /**
    * The PersonalCurrentAccountData model module.
    * @module model/PersonalCurrentAccountData
-   * @version {yapily-api-version}
+   * @version 0.0.159
    */
 
   /**

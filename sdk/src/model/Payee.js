@@ -36,7 +36,7 @@
   /**
    * The Payee model module.
    * @module model/Payee
-   * @version {yapily-api-version}
+   * @version 0.0.159
    */
 
   /**

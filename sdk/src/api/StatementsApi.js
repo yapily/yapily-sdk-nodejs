@@ -33,7 +33,7 @@
   /**
    * Statements service.
    * @module api/StatementsApi
-   * @version {yapily-api-version}
+   * @version 0.0.159
    */
 
   /**

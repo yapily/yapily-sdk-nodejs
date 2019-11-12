@@ -36,7 +36,7 @@
   /**
    * The Identity model module.
    * @module model/Identity
-   * @version {yapily-api-version}
+   * @version 0.0.159
    */
 
   /**

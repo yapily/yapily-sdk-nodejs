@@ -36,7 +36,7 @@
   /**
    * The IDVerificationCheck model module.
    * @module model/IDVerificationCheck
-   * @version {yapily-api-version}
+   * @version 0.0.159
    */
 
   /**

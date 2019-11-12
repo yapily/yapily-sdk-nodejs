@@ -36,7 +36,7 @@
   /**
    * The ApiListResponseOfFeatureDetails model module.
    * @module model/ApiListResponseOfFeatureDetails
-   * @version {yapily-api-version}
+   * @version 0.0.159
    */
 
   /**

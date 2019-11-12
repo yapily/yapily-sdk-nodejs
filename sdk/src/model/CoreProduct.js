@@ -36,7 +36,7 @@
   /**
    * The CoreProduct model module.
    * @module model/CoreProduct
-   * @version {yapily-api-version}
+   * @version 0.0.159
    */
 
   /**

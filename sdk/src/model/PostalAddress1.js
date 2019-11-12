@@ -36,7 +36,7 @@
   /**
    * The PostalAddress1 model module.
    * @module model/PostalAddress1
-   * @version {yapily-api-version}
+   * @version 0.0.159
    */
 
   /**

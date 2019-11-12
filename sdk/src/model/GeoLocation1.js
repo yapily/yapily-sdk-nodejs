@@ -36,7 +36,7 @@
   /**
    * The GeoLocation1 model module.
    * @module model/GeoLocation1
-   * @version {yapily-api-version}
+   * @version 0.0.159
    */
 
   /**

@@ -33,7 +33,7 @@
   /**
    * ApplicationUsers service.
    * @module api/ApplicationUsersApi
-   * @version {yapily-api-version}
+   * @version 0.0.159
    */
 
   /**

@@ -33,7 +33,7 @@
   /**
    * Accounts service.
    * @module api/AccountsApi
-   * @version {yapily-api-version}
+   * @version 0.0.159
    */
 
   /**

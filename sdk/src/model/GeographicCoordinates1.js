@@ -36,7 +36,7 @@
   /**
    * The GeographicCoordinates1 model module.
    * @module model/GeographicCoordinates1
-   * @version {yapily-api-version}
+   * @version 0.0.159
    */
 
   /**

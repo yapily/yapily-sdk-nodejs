@@ -36,7 +36,7 @@
   /**
    * The ATMMapServiceLinks model module.
    * @module model/ATMMapServiceLinks
-   * @version {yapily-api-version}
+   * @version 0.0.159
    */
 
   /**

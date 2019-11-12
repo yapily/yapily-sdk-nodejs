@@ -36,7 +36,7 @@
   /**
    * The AgeEligibility model module.
    * @module model/AgeEligibility
-   * @version {yapily-api-version}
+   * @version 0.0.159
    */
 
   /**

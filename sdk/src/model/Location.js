@@ -36,7 +36,7 @@
   /**
    * The Location model module.
    * @module model/Location
-   * @version {yapily-api-version}
+   * @version 0.0.159
    */
 
   /**

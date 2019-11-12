@@ -36,7 +36,7 @@
   /**
    * The PeriodicPaymentRequest model module.
    * @module model/PeriodicPaymentRequest
-   * @version {yapily-api-version}
+   * @version 0.0.159
    */
 
   /**

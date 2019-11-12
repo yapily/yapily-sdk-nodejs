@@ -36,7 +36,7 @@
   /**
    * The MonitoringFeatureStatus model module.
    * @module model/MonitoringFeatureStatus
-   * @version {yapily-api-version}
+   * @version 0.0.159
    */
 
   /**

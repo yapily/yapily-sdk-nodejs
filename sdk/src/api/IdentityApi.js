@@ -33,7 +33,7 @@
   /**
    * Identity service.
    * @module api/IdentityApi
-   * @version {yapily-api-version}
+   * @version 0.0.159
    */
 
   /**
