@@ -36,7 +36,7 @@
   /**
    * The AccountBalance model module.
    * @module model/AccountBalance
-   * @version {yapily-api-version}
+   * @version 0.0.160
    */
 
   /**

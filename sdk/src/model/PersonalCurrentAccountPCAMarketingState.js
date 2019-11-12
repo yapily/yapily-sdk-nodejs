@@ -36,7 +36,7 @@
   /**
    * The PersonalCurrentAccountPCAMarketingState model module.
    * @module model/PersonalCurrentAccountPCAMarketingState
-   * @version {yapily-api-version}
+   * @version 0.0.160
    */
 
   /**

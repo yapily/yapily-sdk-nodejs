@@ -36,7 +36,7 @@
   /**
    * The InlineResponse2001OtherATMServices model module.
    * @module model/InlineResponse2001OtherATMServices
-   * @version {yapily-api-version}
+   * @version 0.0.160
    */
 
   /**

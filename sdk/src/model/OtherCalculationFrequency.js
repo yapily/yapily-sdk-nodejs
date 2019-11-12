@@ -36,7 +36,7 @@
   /**
    * The OtherCalculationFrequency model module.
    * @module model/OtherCalculationFrequency
-   * @version {yapily-api-version}
+   * @version 0.0.160
    */
 
   /**

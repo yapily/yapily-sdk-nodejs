@@ -36,7 +36,7 @@
   /**
    * The Site model module.
    * @module model/Site
-   * @version {yapily-api-version}
+   * @version 0.0.160
    */
 
   /**

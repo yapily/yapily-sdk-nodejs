@@ -36,7 +36,7 @@
   /**
    * The ApiError model module.
    * @module model/ApiError
-   * @version {yapily-api-version}
+   * @version 0.0.160
    */
 
   /**

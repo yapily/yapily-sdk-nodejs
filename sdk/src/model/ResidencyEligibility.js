@@ -36,7 +36,7 @@
   /**
    * The ResidencyEligibility model module.
    * @module model/ResidencyEligibility
-   * @version {yapily-api-version}
+   * @version 0.0.160
    */
 
   /**

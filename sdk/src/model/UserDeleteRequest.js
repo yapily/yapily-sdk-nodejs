@@ -36,7 +36,7 @@
   /**
    * The UserDeleteRequest model module.
    * @module model/UserDeleteRequest
-   * @version {yapily-api-version}
+   * @version 0.0.160
    */
 
   /**

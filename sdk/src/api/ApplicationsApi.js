@@ -33,7 +33,7 @@
   /**
    * Applications service.
    * @module api/ApplicationsApi
-   * @version {yapily-api-version}
+   * @version 0.0.160
    */
 
   /**

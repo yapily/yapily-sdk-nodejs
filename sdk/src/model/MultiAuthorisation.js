@@ -36,7 +36,7 @@
   /**
    * The MultiAuthorisation model module.
    * @module model/MultiAuthorisation
-   * @version {yapily-api-version}
+   * @version 0.0.160
    */
 
   /**

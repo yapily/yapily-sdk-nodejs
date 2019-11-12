@@ -36,7 +36,7 @@
   /**
    * The AccountName model module.
    * @module model/AccountName
-   * @version {yapily-api-version}
+   * @version 0.0.160
    */
 
   /**

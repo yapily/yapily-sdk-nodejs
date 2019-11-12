@@ -36,7 +36,7 @@
   /**
    * The ApiListResponseOfAccount model module.
    * @module model/ApiListResponseOfAccount
-   * @version {yapily-api-version}
+   * @version 0.0.160
    */
 
   /**

@@ -36,7 +36,7 @@
   /**
    * The ApiListResponseOfBulkUserDelete model module.
    * @module model/ApiListResponseOfBulkUserDelete
-   * @version {yapily-api-version}
+   * @version 0.0.160
    */
 
   /**

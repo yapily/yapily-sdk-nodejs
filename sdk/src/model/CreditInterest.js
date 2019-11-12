@@ -36,7 +36,7 @@
   /**
    * The CreditInterest model module.
    * @module model/CreditInterest
-   * @version {yapily-api-version}
+   * @version 0.0.160
    */
 
   /**

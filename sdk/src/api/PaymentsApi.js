@@ -33,7 +33,7 @@
   /**
    * Payments service.
    * @module api/PaymentsApi
-   * @version {yapily-api-version}
+   * @version 0.0.160
    */
 
   /**

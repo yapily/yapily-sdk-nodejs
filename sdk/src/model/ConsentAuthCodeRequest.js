@@ -36,7 +36,7 @@
   /**
    * The ConsentAuthCodeRequest model module.
    * @module model/ConsentAuthCodeRequest
-   * @version {yapily-api-version}
+   * @version 0.0.160
    */
 
   /**

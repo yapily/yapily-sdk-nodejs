@@ -36,7 +36,7 @@
   /**
    * The MerchantInfo model module.
    * @module model/MerchantInfo
-   * @version {yapily-api-version}
+   * @version 0.0.160
    */
 
   /**

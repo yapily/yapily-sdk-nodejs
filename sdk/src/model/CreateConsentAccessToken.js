@@ -36,7 +36,7 @@
   /**
    * The CreateConsentAccessToken model module.
    * @module model/CreateConsentAccessToken
-   * @version {yapily-api-version}
+   * @version 0.0.160
    */
 
   /**

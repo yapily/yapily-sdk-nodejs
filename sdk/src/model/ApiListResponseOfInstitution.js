@@ -36,7 +36,7 @@
   /**
    * The ApiListResponseOfInstitution model module.
    * @module model/ApiListResponseOfInstitution
-   * @version {yapily-api-version}
+   * @version 0.0.160
    */
 
   /**

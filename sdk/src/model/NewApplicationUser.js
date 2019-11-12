@@ -36,7 +36,7 @@
   /**
    * The NewApplicationUser model module.
    * @module model/NewApplicationUser
-   * @version {yapily-api-version}
+   * @version 0.0.160
    */
 
   /**

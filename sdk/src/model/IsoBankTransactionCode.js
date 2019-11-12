@@ -36,7 +36,7 @@
   /**
    * The IsoBankTransactionCode model module.
    * @module model/IsoBankTransactionCode
-   * @version {yapily-api-version}
+   * @version 0.0.160
    */
 
   /**

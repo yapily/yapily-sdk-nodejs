@@ -36,7 +36,7 @@
   /**
    * The AccountStatement model module.
    * @module model/AccountStatement
-   * @version {yapily-api-version}
+   * @version 0.0.160
    */
 
   /**

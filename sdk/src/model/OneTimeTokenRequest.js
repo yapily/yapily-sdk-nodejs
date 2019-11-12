@@ -36,7 +36,7 @@
   /**
    * The OneTimeTokenRequest model module.
    * @module model/OneTimeTokenRequest
-   * @version {yapily-api-version}
+   * @version 0.0.160
    */
 
   /**

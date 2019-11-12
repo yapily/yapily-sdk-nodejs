@@ -36,7 +36,7 @@
   /**
    * The OtherFeeType model module.
    * @module model/OtherFeeType
-   * @version {yapily-api-version}
+   * @version 0.0.160
    */
 
   /**

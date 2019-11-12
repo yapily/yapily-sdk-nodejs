@@ -36,7 +36,7 @@
   /**
    * The OverdraftOverdraftFeesCharges1 model module.
    * @module model/OverdraftOverdraftFeesCharges1
-   * @version {yapily-api-version}
+   * @version 0.0.160
    */
 
   /**

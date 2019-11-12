@@ -36,7 +36,7 @@
   /**
    * The PaymentAuthorisationRequestResponse model module.
    * @module model/PaymentAuthorisationRequestResponse
-   * @version {yapily-api-version}
+   * @version 0.0.160
    */
 
   /**

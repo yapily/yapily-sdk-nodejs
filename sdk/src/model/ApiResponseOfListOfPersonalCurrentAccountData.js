@@ -36,7 +36,7 @@
   /**
    * The ApiResponseOfListOfPersonalCurrentAccountData model module.
    * @module model/ApiResponseOfListOfPersonalCurrentAccountData
-   * @version {yapily-api-version}
+   * @version 0.0.160
    */
 
   /**

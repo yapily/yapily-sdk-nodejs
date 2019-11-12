@@ -36,7 +36,7 @@
   /**
    * The ApiResponseOfIdentity model module.
    * @module model/ApiResponseOfIdentity
-   * @version {yapily-api-version}
+   * @version 0.0.160
    */
 
   /**

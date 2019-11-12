@@ -36,7 +36,7 @@
   /**
    * The Application model module.
    * @module model/Application
-   * @version {yapily-api-version}
+   * @version 0.0.160
    */
 
   /**

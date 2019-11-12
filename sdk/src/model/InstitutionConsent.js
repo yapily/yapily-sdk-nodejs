@@ -36,7 +36,7 @@
   /**
    * The InstitutionConsent model module.
    * @module model/InstitutionConsent
-   * @version {yapily-api-version}
+   * @version 0.0.160
    */
 
   /**

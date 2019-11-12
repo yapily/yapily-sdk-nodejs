@@ -36,7 +36,7 @@
   /**
    * The ChargeDetails model module.
    * @module model/ChargeDetails
-   * @version {yapily-api-version}
+   * @version 0.0.160
    */
 
   /**

@@ -36,7 +36,7 @@
   /**
    * The ResponseMeta model module.
    * @module model/ResponseMeta
-   * @version {yapily-api-version}
+   * @version 0.0.160
    */
 
   /**

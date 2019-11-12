@@ -36,7 +36,7 @@
   /**
    * The ApiListResponseOfPaymentResponse model module.
    * @module model/ApiListResponseOfPaymentResponse
-   * @version {yapily-api-version}
+   * @version 0.0.160
    */
 
   /**

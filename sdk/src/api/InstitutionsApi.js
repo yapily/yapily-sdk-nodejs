@@ -33,7 +33,7 @@
   /**
    * Institutions service.
    * @module api/InstitutionsApi
-   * @version {yapily-api-version}
+   * @version 0.0.160
    */
 
   /**

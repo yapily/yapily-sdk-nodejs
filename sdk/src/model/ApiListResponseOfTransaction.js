@@ -36,7 +36,7 @@
   /**
    * The ApiListResponseOfTransaction model module.
    * @module model/ApiListResponseOfTransaction
-   * @version {yapily-api-version}
+   * @version 0.0.160
    */
 
   /**

@@ -36,7 +36,7 @@
   /**
    * The ATMOpenDataBrand model module.
    * @module model/ATMOpenDataBrand
-   * @version {yapily-api-version}
+   * @version 0.0.160
    */
 
   /**

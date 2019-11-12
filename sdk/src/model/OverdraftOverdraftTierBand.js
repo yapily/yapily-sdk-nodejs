@@ -36,7 +36,7 @@
   /**
    * The OverdraftOverdraftTierBand model module.
    * @module model/OverdraftOverdraftTierBand
-   * @version {yapily-api-version}
+   * @version 0.0.160
    */
 
   /**

@@ -36,7 +36,7 @@
   /**
    * The AccountIdentification model module.
    * @module model/AccountIdentification
-   * @version {yapily-api-version}
+   * @version 0.0.160
    */
 
   /**
