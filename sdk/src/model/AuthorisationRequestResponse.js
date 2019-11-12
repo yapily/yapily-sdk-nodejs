@@ -36,7 +36,7 @@
   /**
    * The AuthorisationRequestResponse model module.
    * @module model/AuthorisationRequestResponse
-   * @version 0.0.159
+   * @version {yapily-api-version}
    */
 
   /**

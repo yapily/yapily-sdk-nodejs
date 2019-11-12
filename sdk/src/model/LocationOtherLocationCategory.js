@@ -36,7 +36,7 @@
   /**
    * The LocationOtherLocationCategory model module.
    * @module model/LocationOtherLocationCategory
-   * @version 0.0.159
+   * @version {yapily-api-version}
    */
 
   /**

@@ -36,7 +36,7 @@
   /**
    * The ApiResponseOfListOfATMOpenDataResponse model module.
    * @module model/ApiResponseOfListOfATMOpenDataResponse
-   * @version 0.0.159
+   * @version {yapily-api-version}
    */
 
   /**

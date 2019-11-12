@@ -33,7 +33,7 @@
   /**
    * Consents service.
    * @module api/ConsentsApi
-   * @version 0.0.159
+   * @version {yapily-api-version}
    */
 
   /**

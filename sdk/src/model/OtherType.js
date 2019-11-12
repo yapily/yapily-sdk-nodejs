@@ -36,7 +36,7 @@
   /**
    * The OtherType model module.
    * @module model/OtherType
-   * @version 0.0.159
+   * @version {yapily-api-version}
    */
 
   /**

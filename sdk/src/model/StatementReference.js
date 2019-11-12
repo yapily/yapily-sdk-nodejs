@@ -36,7 +36,7 @@
   /**
    * The StatementReference model module.
    * @module model/StatementReference
-   * @version 0.0.159
+   * @version {yapily-api-version}
    */
 
   /**

@@ -36,7 +36,7 @@
   /**
    * The CreditInterestTierBandSet model module.
    * @module model/CreditInterestTierBandSet
-   * @version 0.0.159
+   * @version {yapily-api-version}
    */
 
   /**

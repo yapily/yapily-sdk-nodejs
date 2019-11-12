@@ -36,7 +36,7 @@
   /**
    * The ApiResponseOfConsent model module.
    * @module model/ApiResponseOfConsent
-   * @version 0.0.159
+   * @version {yapily-api-version}
    */
 
   /**

@@ -33,7 +33,7 @@
   /**
    * OAuth service.
    * @module api/OAuthApi
-   * @version 0.0.159
+   * @version {yapily-api-version}
    */
 
   /**

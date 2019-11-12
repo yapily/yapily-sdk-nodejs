@@ -36,7 +36,7 @@
   /**
    * The OtherResidencyType model module.
    * @module model/OtherResidencyType
-   * @version 0.0.159
+   * @version {yapily-api-version}
    */
 
   /**

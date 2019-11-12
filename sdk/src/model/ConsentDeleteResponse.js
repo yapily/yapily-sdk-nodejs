@@ -36,7 +36,7 @@
   /**
    * The ConsentDeleteResponse model module.
    * @module model/ConsentDeleteResponse
-   * @version 0.0.159
+   * @version {yapily-api-version}
    */
 
   /**

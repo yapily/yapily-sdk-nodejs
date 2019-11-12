@@ -36,7 +36,7 @@
   /**
    * The Eligibility model module.
    * @module model/Eligibility
-   * @version 0.0.159
+   * @version {yapily-api-version}
    */
 
   /**

@@ -36,7 +36,7 @@
   /**
    * The CreditLine model module.
    * @module model/CreditLine
-   * @version 0.0.159
+   * @version {yapily-api-version}
    */
 
   /**

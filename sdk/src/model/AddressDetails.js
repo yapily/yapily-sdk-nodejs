@@ -36,7 +36,7 @@
   /**
    * The AddressDetails model module.
    * @module model/AddressDetails
-   * @version 0.0.159
+   * @version {yapily-api-version}
    */
 
   /**

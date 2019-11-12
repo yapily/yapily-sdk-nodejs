@@ -36,7 +36,7 @@
   /**
    * The Consent model module.
    * @module model/Consent
-   * @version 0.0.159
+   * @version {yapily-api-version}
    */
 
   /**

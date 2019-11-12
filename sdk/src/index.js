@@ -53,7 +53,7 @@
    * </pre>
    * </p>
    * @module index
-   * @version 0.0.159
+   * @version {yapily-api-version}
    */
   var exports = {
     /**

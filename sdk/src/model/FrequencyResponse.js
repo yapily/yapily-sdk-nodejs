@@ -36,7 +36,7 @@
   /**
    * The FrequencyResponse model module.
    * @module model/FrequencyResponse
-   * @version 0.0.159
+   * @version {yapily-api-version}
    */
 
   /**

@@ -36,7 +36,7 @@
   /**
    * The IsoCodeDetails model module.
    * @module model/IsoCodeDetails
-   * @version 0.0.159
+   * @version {yapily-api-version}
    */
 
   /**
