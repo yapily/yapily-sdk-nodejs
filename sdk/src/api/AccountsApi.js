@@ -404,7 +404,7 @@
       };
 
       var authNames = ['basicAuth', 'tokenAuth'];
-      var contentTypes = ['application/json;charset=UTF-8'];
+      var contentTypes = ['application/json'];
       var accepts = ['application/json;charset=UTF-8'];
       var returnType = ApiResponseOfAuthorisationRequestResponse;
 
