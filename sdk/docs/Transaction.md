@@ -28,21 +28,9 @@ Name | Type | Description | Notes
 ## Enum: StatusEnum
 
 
-* `ACCOUNT_CHECK` (value: `"ACCOUNT_CHECK"`)
-
 * `BOOKED` (value: `"BOOKED"`)
 
-* `DECLINED` (value: `"DECLINED"`)
-
 * `PENDING` (value: `"PENDING"`)
-
-* `REFUNDED` (value: `"REFUNDED"`)
-
-* `RETRYING` (value: `"RETRYING"`)
-
-* `REVERSED` (value: `"REVERSED"`)
-
-* `UPCOMING` (value: `"UPCOMING"`)
 
 
 
