@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@babel/cli": "^7.0.0",
-    "superagent": "3.7.0"
+    "superagent": "5.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
