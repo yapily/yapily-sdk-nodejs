@@ -1,6 +1,7 @@
 # YapilyApi.IdentityAddress
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **addressLines** | **[String]** |  | [optional] 

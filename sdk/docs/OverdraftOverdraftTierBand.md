@@ -1,6 +1,7 @@
 # YapilyApi.OverdraftOverdraftTierBand
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **bankGuaranteedIndicator** | **Boolean** |  | [optional] 
@@ -13,7 +14,7 @@ Name | Type | Description | Notes
 **tierValueMin** | **String** |  | [optional] 
 
 
-<a name="OverdraftInterestChargingCoverageEnum"></a>
+
 ## Enum: OverdraftInterestChargingCoverageEnum
 
 

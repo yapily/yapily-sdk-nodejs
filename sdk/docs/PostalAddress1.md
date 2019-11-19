@@ -1,6 +1,7 @@
 # YapilyApi.PostalAddress1
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **addressLine** | **[String]** |  | [optional] 

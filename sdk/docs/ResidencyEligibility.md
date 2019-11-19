@@ -1,6 +1,7 @@
 # YapilyApi.ResidencyEligibility
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **notes** | **[String]** |  | [optional] 
@@ -9,7 +10,7 @@ Name | Type | Description | Notes
 **residencyType** | **String** |  | [optional] 
 
 
-<a name="ResidencyTypeEnum"></a>
+
 ## Enum: ResidencyTypeEnum
 
 

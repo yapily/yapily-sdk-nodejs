@@ -1,6 +1,7 @@
 # YapilyApi.PaymentRequest
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **paymentIdempotencyId** | **String** |  | 
@@ -14,7 +15,7 @@ Name | Type | Description | Notes
 **periodicPayments** | [**PeriodicPaymentRequest**](PeriodicPaymentRequest.md) |  | [optional] 
 
 
-<a name="ContextTypeEnum"></a>
+
 ## Enum: ContextTypeEnum
 
 
@@ -31,7 +32,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="TypeEnum"></a>
+
 ## Enum: TypeEnum
 
 

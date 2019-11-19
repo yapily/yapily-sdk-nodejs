@@ -1,6 +1,7 @@
 # YapilyApi.OverdraftOverdraftFeeChargeDetail
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **applicationFrequency** | **String** |  | [optional] 
@@ -19,7 +20,7 @@ Name | Type | Description | Notes
 **overdraftFeeChargeCap** | [**OverdraftOverdraftFeeChargeCap**](OverdraftOverdraftFeeChargeCap.md) |  | [optional] 
 
 
-<a name="ApplicationFrequencyEnum"></a>
+
 ## Enum: ApplicationFrequencyEnum
 
 
@@ -66,7 +67,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="CalculationFrequencyEnum"></a>
+
 ## Enum: CalculationFrequencyEnum
 
 
@@ -113,7 +114,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="FeeRateTypeEnum"></a>
+
 ## Enum: FeeRateTypeEnum
 
 
@@ -128,7 +129,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="FeeTypeEnum"></a>
+
 ## Enum: FeeTypeEnum
 
 

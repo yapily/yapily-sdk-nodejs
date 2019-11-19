@@ -1,6 +1,7 @@
 # YapilyApi.AccountBalance
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **type** | **String** |  | [optional] 
@@ -10,7 +11,7 @@ Name | Type | Description | Notes
 **creditLines** | [**[CreditLine]**](CreditLine.md) |  | [optional] 
 
 
-<a name="TypeEnum"></a>
+
 ## Enum: TypeEnum
 
 

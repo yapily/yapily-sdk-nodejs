@@ -1,6 +1,6 @@
 # YapilyApi.InstitutionsOpenDataApi
 
-All URIs are relative to *https://api.yapily.com*
+All URIs are relative to *http://api.yapily.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -8,42 +8,39 @@ Method | HTTP request | Description
 [**getPersonalCurrentAccountsUsingGET**](InstitutionsOpenDataApi.md#getPersonalCurrentAccountsUsingGET) | **GET** /institutions/{institutionId}/personal-current-accounts | Retrieves details of personal current accounts for an institution
 
 
-<a name="getATMDataUsingGET"></a>
-# **getATMDataUsingGET**
+
+## getATMDataUsingGET
+
 > ApiResponseOfListOfATMOpenDataResponse getATMDataUsingGET(institutionId)
 
 Retrieves data about all ATMs of the selected institution
 
 ### Example
-```javascript
-var YapilyApi = require('yapily-api');
-var defaultClient = YapilyApi.ApiClient.instance;
 
+```javascript
+import YapilyApi from 'yapily-api';
+let defaultClient = YapilyApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
-var basicAuth = defaultClient.authentications['basicAuth'];
+let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
-
 // Configure OAuth2 access token for authorization: tokenAuth
-var tokenAuth = defaultClient.authentications['tokenAuth'];
+let tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new YapilyApi.InstitutionsOpenDataApi();
-
-var institutionId = "institutionId_example"; // String | institutionId
-
-
-var callback = function(error, data, response) {
+let apiInstance = new YapilyApi.InstitutionsOpenDataApi();
+let institutionId = "institutionId_example"; // String | institutionId
+apiInstance.getATMDataUsingGET(institutionId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getATMDataUsingGET(institutionId, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -59,45 +56,42 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json;charset=UTF-8
+- **Content-Type**: Not defined
+- **Accept**: application/json;charset=UTF-8
 
-<a name="getPersonalCurrentAccountsUsingGET"></a>
-# **getPersonalCurrentAccountsUsingGET**
+
+## getPersonalCurrentAccountsUsingGET
+
 > ApiResponseOfListOfPersonalCurrentAccountData getPersonalCurrentAccountsUsingGET(institutionId)
 
 Retrieves details of personal current accounts for an institution
 
 ### Example
-```javascript
-var YapilyApi = require('yapily-api');
-var defaultClient = YapilyApi.ApiClient.instance;
 
+```javascript
+import YapilyApi from 'yapily-api';
+let defaultClient = YapilyApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
-var basicAuth = defaultClient.authentications['basicAuth'];
+let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
-
 // Configure OAuth2 access token for authorization: tokenAuth
-var tokenAuth = defaultClient.authentications['tokenAuth'];
+let tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new YapilyApi.InstitutionsOpenDataApi();
-
-var institutionId = "institutionId_example"; // String | institutionId
-
-
-var callback = function(error, data, response) {
+let apiInstance = new YapilyApi.InstitutionsOpenDataApi();
+let institutionId = "institutionId_example"; // String | institutionId
+apiInstance.getPersonalCurrentAccountsUsingGET(institutionId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getPersonalCurrentAccountsUsingGET(institutionId, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -113,6 +107,6 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json;charset=UTF-8
+- **Content-Type**: Not defined
+- **Accept**: application/json;charset=UTF-8
 

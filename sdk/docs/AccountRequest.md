@@ -1,6 +1,7 @@
 # YapilyApi.AccountRequest
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **transactionFrom** | **Date** |  | [optional] 
@@ -9,7 +10,7 @@ Name | Type | Description | Notes
 **featureScope** | **[String]** |  | [optional] 
 
 
-<a name="[FeatureScopeEnum]"></a>
+
 ## Enum: [FeatureScopeEnum]
 
 

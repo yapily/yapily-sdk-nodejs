@@ -1,6 +1,7 @@
 # YapilyApi.MonitoringFeatureStatus
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **lastTested** | **Date** |  | [optional] 
@@ -8,7 +9,7 @@ Name | Type | Description | Notes
 **status** | **String** |  | [optional] 
 
 
-<a name="StatusEnum"></a>
+
 ## Enum: StatusEnum
 
 

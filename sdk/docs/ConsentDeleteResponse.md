@@ -1,6 +1,7 @@
 # YapilyApi.ConsentDeleteResponse
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **String** |  | [optional] 
@@ -10,7 +11,7 @@ Name | Type | Description | Notes
 **creationDate** | **Date** |  | [optional] 
 
 
-<a name="DeleteStatusEnum"></a>
+
 ## Enum: DeleteStatusEnum
 
 

@@ -1,6 +1,6 @@
 # YapilyApi.StatementsApi
 
-All URIs are relative to *https://api.yapily.com*
+All URIs are relative to *http://api.yapily.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -9,46 +9,41 @@ Method | HTTP request | Description
 [**getStatementsUsingGET**](StatementsApi.md#getStatementsUsingGET) | **GET** /accounts/{accountId}/statements | Get account statements
 
 
-<a name="getStatementFileUsingGET"></a>
-# **getStatementFileUsingGET**
-> &#39;String&#39; getStatementFileUsingGET(consent, accountId, statementId)
+
+## getStatementFileUsingGET
+
+> String getStatementFileUsingGET(consent, accountId, statementId)
 
 Get account statement file
 
 ### Example
-```javascript
-var YapilyApi = require('yapily-api');
-var defaultClient = YapilyApi.ApiClient.instance;
 
+```javascript
+import YapilyApi from 'yapily-api';
+let defaultClient = YapilyApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
-var basicAuth = defaultClient.authentications['basicAuth'];
+let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
-
 // Configure OAuth2 access token for authorization: tokenAuth
-var tokenAuth = defaultClient.authentications['tokenAuth'];
+let tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new YapilyApi.StatementsApi();
-
-var consent = "consent_example"; // String | Consent Token
-
-var accountId = "accountId_example"; // String | accountId
-
-var statementId = "statementId_example"; // String | statementId
-
-
-var callback = function(error, data, response) {
+let apiInstance = new YapilyApi.StatementsApi();
+let consent = "consent_example"; // String | Consent Token
+let accountId = "accountId_example"; // String | accountId
+let statementId = "statementId_example"; // String | statementId
+apiInstance.getStatementFileUsingGET(consent, accountId, statementId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getStatementFileUsingGET(consent, accountId, statementId, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -58,7 +53,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**&#39;String&#39;**
+**String**
 
 ### Authorization
 
@@ -66,49 +61,44 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: */*
+- **Content-Type**: Not defined
+- **Accept**: */*
 
-<a name="getStatementUsingGET"></a>
-# **getStatementUsingGET**
+
+## getStatementUsingGET
+
 > ApiResponseOfAccountStatement getStatementUsingGET(consent, accountId, statementId)
 
 Get account statement
 
 ### Example
-```javascript
-var YapilyApi = require('yapily-api');
-var defaultClient = YapilyApi.ApiClient.instance;
 
+```javascript
+import YapilyApi from 'yapily-api';
+let defaultClient = YapilyApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
-var basicAuth = defaultClient.authentications['basicAuth'];
+let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
-
 // Configure OAuth2 access token for authorization: tokenAuth
-var tokenAuth = defaultClient.authentications['tokenAuth'];
+let tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new YapilyApi.StatementsApi();
-
-var consent = "consent_example"; // String | Consent Token
-
-var accountId = "accountId_example"; // String | accountId
-
-var statementId = "statementId_example"; // String | statementId
-
-
-var callback = function(error, data, response) {
+let apiInstance = new YapilyApi.StatementsApi();
+let consent = "consent_example"; // String | Consent Token
+let accountId = "accountId_example"; // String | accountId
+let statementId = "statementId_example"; // String | statementId
+apiInstance.getStatementUsingGET(consent, accountId, statementId, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getStatementUsingGET(consent, accountId, statementId, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -126,54 +116,50 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json;charset=UTF-8
+- **Content-Type**: Not defined
+- **Accept**: application/json;charset=UTF-8
 
-<a name="getStatementsUsingGET"></a>
-# **getStatementsUsingGET**
+
+## getStatementsUsingGET
+
 > ApiListResponseOfAccountStatement getStatementsUsingGET(consent, accountId, opts)
 
 Get account statements
 
 ### Example
-```javascript
-var YapilyApi = require('yapily-api');
-var defaultClient = YapilyApi.ApiClient.instance;
 
+```javascript
+import YapilyApi from 'yapily-api';
+let defaultClient = YapilyApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
-var basicAuth = defaultClient.authentications['basicAuth'];
+let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
-
 // Configure OAuth2 access token for authorization: tokenAuth
-var tokenAuth = defaultClient.authentications['tokenAuth'];
+let tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new YapilyApi.StatementsApi();
-
-var consent = "consent_example"; // String | Consent Token
-
-var accountId = "accountId_example"; // String | accountId
-
-var opts = { 
+let apiInstance = new YapilyApi.StatementsApi();
+let consent = "consent_example"; // String | Consent Token
+let accountId = "accountId_example"; // String | accountId
+let opts = {
   'from': "from_example", // String | from
   'before': "before_example", // String | before
   'limit': 56, // Number | limit
   'sort': "sort_example", // String | sort
   'offset': 56 // Number | offset
 };
-
-var callback = function(error, data, response) {
+apiInstance.getStatementsUsingGET(consent, accountId, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getStatementsUsingGET(consent, accountId, opts, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -195,6 +181,6 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json;charset=UTF-8
+- **Content-Type**: Not defined
+- **Accept**: application/json;charset=UTF-8
 

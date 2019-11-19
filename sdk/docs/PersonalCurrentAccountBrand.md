@@ -1,6 +1,7 @@
 # YapilyApi.PersonalCurrentAccountBrand
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **brandName** | **String** |  | [optional] 

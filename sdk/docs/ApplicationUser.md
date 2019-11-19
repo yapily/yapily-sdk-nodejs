@@ -1,6 +1,7 @@
 # YapilyApi.ApplicationUser
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **uuid** | **String** | User UUID | [optional] 

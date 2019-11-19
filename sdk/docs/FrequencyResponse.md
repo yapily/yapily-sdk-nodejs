@@ -1,6 +1,7 @@
 # YapilyApi.FrequencyResponse
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **executionDay** | **Number** |  | [optional] 
@@ -9,7 +10,7 @@ Name | Type | Description | Notes
 **intervalWeek** | **Number** |  | [optional] 
 
 
-<a name="FrequencyTypeEnum"></a>
+
 ## Enum: FrequencyTypeEnum
 
 

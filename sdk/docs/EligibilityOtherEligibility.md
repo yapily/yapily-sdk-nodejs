@@ -1,6 +1,7 @@
 # YapilyApi.EligibilityOtherEligibility
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **amount** | **String** |  | [optional] 
@@ -14,7 +15,7 @@ Name | Type | Description | Notes
 **type** | **String** |  | [optional] 
 
 
-<a name="PeriodEnum"></a>
+
 ## Enum: PeriodEnum
 
 
@@ -35,7 +36,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="TypeEnum"></a>
+
 ## Enum: TypeEnum
 
 

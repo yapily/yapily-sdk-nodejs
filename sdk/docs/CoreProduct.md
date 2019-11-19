@@ -1,6 +1,7 @@
 # YapilyApi.CoreProduct
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **monthlyMaximumCharge** | **String** |  | [optional] 
@@ -11,7 +12,7 @@ Name | Type | Description | Notes
 **tcsAndCsURL** | **String** |  | [optional] 
 
 
-<a name="[SalesAccessChannelsEnum]"></a>
+
 ## Enum: [SalesAccessChannelsEnum]
 
 
@@ -28,7 +29,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="[ServicingAccessChannelsEnum]"></a>
+
 ## Enum: [ServicingAccessChannelsEnum]
 
 

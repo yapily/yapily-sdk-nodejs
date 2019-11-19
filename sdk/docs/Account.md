@@ -1,6 +1,7 @@
 # YapilyApi.Account
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **String** | Account Id returned by the institution if present | [optional] 
@@ -17,7 +18,7 @@ Name | Type | Description | Notes
 **accountBalances** | [**[AccountBalance]**](AccountBalance.md) |  | [optional] 
 
 
-<a name="UsageTypeEnum"></a>
+
 ## Enum: UsageTypeEnum
 
 
@@ -32,7 +33,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="AccountTypeEnum"></a>
+
 ## Enum: AccountTypeEnum
 
 

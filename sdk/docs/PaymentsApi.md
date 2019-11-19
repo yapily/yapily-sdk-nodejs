@@ -1,6 +1,6 @@
 # YapilyApi.PaymentsApi
 
-All URIs are relative to *https://api.yapily.com*
+All URIs are relative to *http://api.yapily.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -12,42 +12,39 @@ Method | HTTP request | Description
 [**getPaymentsUsingGET**](PaymentsApi.md#getPaymentsUsingGET) | **GET** /payments/{paymentId}/details | Get payments detail
 
 
-<a name="createPaymentAuthorisationUsingPOST"></a>
-# **createPaymentAuthorisationUsingPOST**
+
+## createPaymentAuthorisationUsingPOST
+
 > ApiResponseOfPaymentAuthorisationRequestResponse createPaymentAuthorisationUsingPOST(paymentAuthRequest)
 
 Initiate a payment for user to authorise
 
 ### Example
-```javascript
-var YapilyApi = require('yapily-api');
-var defaultClient = YapilyApi.ApiClient.instance;
 
+```javascript
+import YapilyApi from 'yapily-api';
+let defaultClient = YapilyApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
-var basicAuth = defaultClient.authentications['basicAuth'];
+let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
-
 // Configure OAuth2 access token for authorization: tokenAuth
-var tokenAuth = defaultClient.authentications['tokenAuth'];
+let tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new YapilyApi.PaymentsApi();
-
-var paymentAuthRequest = new YapilyApi.PaymentAuthorisationRequest(); // PaymentAuthorisationRequest | paymentAuthRequest
-
-
-var callback = function(error, data, response) {
+let apiInstance = new YapilyApi.PaymentsApi();
+let paymentAuthRequest = new YapilyApi.PaymentAuthorisationRequest(); // PaymentAuthorisationRequest | paymentAuthRequest
+apiInstance.createPaymentAuthorisationUsingPOST(paymentAuthRequest, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.createPaymentAuthorisationUsingPOST(paymentAuthRequest, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -63,45 +60,42 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json;charset=UTF-8
- - **Accept**: application/json;charset=UTF-8
+- **Content-Type**: application/json;charset=UTF-8
+- **Accept**: application/json;charset=UTF-8
 
-<a name="createPaymentAuthorisationWithSortCodeUsingPOST"></a>
-# **createPaymentAuthorisationWithSortCodeUsingPOST**
+
+## createPaymentAuthorisationWithSortCodeUsingPOST
+
 > ApiResponseOfAuthorisationRequestResponse createPaymentAuthorisationWithSortCodeUsingPOST(paymentAuthRequest)
 
 Initiate a new single payment for user to authorise
 
 ### Example
-```javascript
-var YapilyApi = require('yapily-api');
-var defaultClient = YapilyApi.ApiClient.instance;
 
+```javascript
+import YapilyApi from 'yapily-api';
+let defaultClient = YapilyApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
-var basicAuth = defaultClient.authentications['basicAuth'];
+let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
-
 // Configure OAuth2 access token for authorization: tokenAuth
-var tokenAuth = defaultClient.authentications['tokenAuth'];
+let tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new YapilyApi.PaymentsApi();
-
-var paymentAuthRequest = new YapilyApi.SortCodePaymentAuthRequest(); // SortCodePaymentAuthRequest | paymentAuthRequest
-
-
-var callback = function(error, data, response) {
+let apiInstance = new YapilyApi.PaymentsApi();
+let paymentAuthRequest = new YapilyApi.SortCodePaymentAuthRequest(); // SortCodePaymentAuthRequest | paymentAuthRequest
+apiInstance.createPaymentAuthorisationWithSortCodeUsingPOST(paymentAuthRequest, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.createPaymentAuthorisationWithSortCodeUsingPOST(paymentAuthRequest, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -117,47 +111,43 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json;charset=UTF-8
- - **Accept**: application/json;charset=UTF-8
+- **Content-Type**: application/json;charset=UTF-8
+- **Accept**: application/json;charset=UTF-8
 
-<a name="createPaymentUsingPOST"></a>
-# **createPaymentUsingPOST**
+
+## createPaymentUsingPOST
+
 > ApiResponseOfPaymentResponse createPaymentUsingPOST(consent, paymentRequest)
 
 Create a payment
 
 ### Example
-```javascript
-var YapilyApi = require('yapily-api');
-var defaultClient = YapilyApi.ApiClient.instance;
 
+```javascript
+import YapilyApi from 'yapily-api';
+let defaultClient = YapilyApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
-var basicAuth = defaultClient.authentications['basicAuth'];
+let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
-
 // Configure OAuth2 access token for authorization: tokenAuth
-var tokenAuth = defaultClient.authentications['tokenAuth'];
+let tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new YapilyApi.PaymentsApi();
-
-var consent = "consent_example"; // String | Consent Token
-
-var paymentRequest = new YapilyApi.PaymentRequest(); // PaymentRequest | paymentRequest
-
-
-var callback = function(error, data, response) {
+let apiInstance = new YapilyApi.PaymentsApi();
+let consent = "consent_example"; // String | Consent Token
+let paymentRequest = new YapilyApi.PaymentRequest(); // PaymentRequest | paymentRequest
+apiInstance.createPaymentUsingPOST(consent, paymentRequest, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.createPaymentUsingPOST(consent, paymentRequest, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -174,47 +164,43 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json;charset=UTF-8
- - **Accept**: application/json;charset=UTF-8
+- **Content-Type**: application/json;charset=UTF-8
+- **Accept**: application/json;charset=UTF-8
 
-<a name="createPaymentWithSortCodeUsingPOST"></a>
-# **createPaymentWithSortCodeUsingPOST**
+
+## createPaymentWithSortCodeUsingPOST
+
 > ApiResponseOfPaymentResponse createPaymentWithSortCodeUsingPOST(consent, paymentRequest)
 
 Create a new single payment
 
 ### Example
-```javascript
-var YapilyApi = require('yapily-api');
-var defaultClient = YapilyApi.ApiClient.instance;
 
+```javascript
+import YapilyApi from 'yapily-api';
+let defaultClient = YapilyApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
-var basicAuth = defaultClient.authentications['basicAuth'];
+let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
-
 // Configure OAuth2 access token for authorization: tokenAuth
-var tokenAuth = defaultClient.authentications['tokenAuth'];
+let tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new YapilyApi.PaymentsApi();
-
-var consent = "consent_example"; // String | Consent Token
-
-var paymentRequest = new YapilyApi.SortCodePaymentRequest(); // SortCodePaymentRequest | paymentRequest
-
-
-var callback = function(error, data, response) {
+let apiInstance = new YapilyApi.PaymentsApi();
+let consent = "consent_example"; // String | Consent Token
+let paymentRequest = new YapilyApi.SortCodePaymentRequest(); // SortCodePaymentRequest | paymentRequest
+apiInstance.createPaymentWithSortCodeUsingPOST(consent, paymentRequest, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.createPaymentWithSortCodeUsingPOST(consent, paymentRequest, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -231,47 +217,43 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json;charset=UTF-8
- - **Accept**: application/json;charset=UTF-8
+- **Content-Type**: application/json;charset=UTF-8
+- **Accept**: application/json;charset=UTF-8
 
-<a name="getPaymentStatusUsingGET"></a>
-# **getPaymentStatusUsingGET**
+
+## getPaymentStatusUsingGET
+
 > ApiResponseOfPaymentResponse getPaymentStatusUsingGET(paymentId, consent)
 
 Get status of a payment
 
 ### Example
-```javascript
-var YapilyApi = require('yapily-api');
-var defaultClient = YapilyApi.ApiClient.instance;
 
+```javascript
+import YapilyApi from 'yapily-api';
+let defaultClient = YapilyApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
-var basicAuth = defaultClient.authentications['basicAuth'];
+let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
-
 // Configure OAuth2 access token for authorization: tokenAuth
-var tokenAuth = defaultClient.authentications['tokenAuth'];
+let tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new YapilyApi.PaymentsApi();
-
-var paymentId = "paymentId_example"; // String | paymentId
-
-var consent = "consent_example"; // String | Consent Token
-
-
-var callback = function(error, data, response) {
+let apiInstance = new YapilyApi.PaymentsApi();
+let paymentId = "paymentId_example"; // String | paymentId
+let consent = "consent_example"; // String | Consent Token
+apiInstance.getPaymentStatusUsingGET(paymentId, consent, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getPaymentStatusUsingGET(paymentId, consent, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -288,47 +270,43 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json;charset=UTF-8
+- **Content-Type**: Not defined
+- **Accept**: application/json;charset=UTF-8
 
-<a name="getPaymentsUsingGET"></a>
-# **getPaymentsUsingGET**
+
+## getPaymentsUsingGET
+
 > ApiResponseOfPaymentResponses getPaymentsUsingGET(paymentId, consent)
 
 Get payments detail
 
 ### Example
-```javascript
-var YapilyApi = require('yapily-api');
-var defaultClient = YapilyApi.ApiClient.instance;
 
+```javascript
+import YapilyApi from 'yapily-api';
+let defaultClient = YapilyApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
-var basicAuth = defaultClient.authentications['basicAuth'];
+let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
-
 // Configure OAuth2 access token for authorization: tokenAuth
-var tokenAuth = defaultClient.authentications['tokenAuth'];
+let tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new YapilyApi.PaymentsApi();
-
-var paymentId = "paymentId_example"; // String | paymentId
-
-var consent = "consent_example"; // String | Consent Token
-
-
-var callback = function(error, data, response) {
+let apiInstance = new YapilyApi.PaymentsApi();
+let paymentId = "paymentId_example"; // String | paymentId
+let consent = "consent_example"; // String | Consent Token
+apiInstance.getPaymentsUsingGET(paymentId, consent, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getPaymentsUsingGET(paymentId, consent, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -345,6 +323,6 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json;charset=UTF-8
+- **Content-Type**: Not defined
+- **Accept**: application/json;charset=UTF-8
 

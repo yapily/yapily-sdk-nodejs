@@ -1,6 +1,7 @@
 # YapilyApi.PaymentResponse
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **String** |  | [optional] 
@@ -29,7 +30,7 @@ Name | Type | Description | Notes
 **frequency** | [**FrequencyResponse**](FrequencyResponse.md) |  | [optional] 
 
 
-<a name="StatusEnum"></a>
+
 ## Enum: StatusEnum
 
 

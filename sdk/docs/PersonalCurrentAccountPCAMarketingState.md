@@ -1,6 +1,7 @@
 # YapilyApi.PersonalCurrentAccountPCAMarketingState
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **coreProduct** | [**CoreProduct**](CoreProduct.md) |  | [optional] 

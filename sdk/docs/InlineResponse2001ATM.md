@@ -1,6 +1,7 @@
 # YapilyApi.InlineResponse2001ATM
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **aTMServices** | **[String]** |  | [optional] 
@@ -17,7 +18,7 @@ Name | Type | Description | Notes
 **supportedLanguages** | **[String]** |  | [optional] 
 
 
-<a name="[ATMServicesEnum]"></a>
+
 ## Enum: [ATMServicesEnum]
 
 
@@ -58,7 +59,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="[AccessibilityEnum]"></a>
+
 ## Enum: [AccessibilityEnum]
 
 

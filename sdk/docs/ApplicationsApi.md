@@ -1,6 +1,6 @@
 # YapilyApi.ApplicationsApi
 
-All URIs are relative to *https://api.yapily.com*
+All URIs are relative to *http://api.yapily.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -9,39 +9,38 @@ Method | HTTP request | Description
 [**revokeTokensUsingPOST**](ApplicationsApi.md#revokeTokensUsingPOST) | **POST** /revoke-tokens | Revoke existing access tokens for application, which will also generate a new public key discoverable via /jwks
 
 
-<a name="getApplicationMeUsingGET"></a>
-# **getApplicationMeUsingGET**
+
+## getApplicationMeUsingGET
+
 > Application getApplicationMeUsingGET()
 
 Returns the details of the application that owns the request credentials
 
 ### Example
-```javascript
-var YapilyApi = require('yapily-api');
-var defaultClient = YapilyApi.ApiClient.instance;
 
+```javascript
+import YapilyApi from 'yapily-api';
+let defaultClient = YapilyApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
-var basicAuth = defaultClient.authentications['basicAuth'];
+let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
-
 // Configure OAuth2 access token for authorization: tokenAuth
-var tokenAuth = defaultClient.authentications['tokenAuth'];
+let tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new YapilyApi.ApplicationsApi();
-
-var callback = function(error, data, response) {
+let apiInstance = new YapilyApi.ApplicationsApi();
+apiInstance.getApplicationMeUsingGET((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getApplicationMeUsingGET(callback);
+});
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -54,42 +53,41 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json;charset=UTF-8
+- **Content-Type**: Not defined
+- **Accept**: application/json;charset=UTF-8
 
-<a name="getJwksUsingGET"></a>
-# **getJwksUsingGET**
+
+## getJwksUsingGET
+
 > Object getJwksUsingGET()
 
 JSON Web Key Set (JWKS) for authenticated application
 
 ### Example
-```javascript
-var YapilyApi = require('yapily-api');
-var defaultClient = YapilyApi.ApiClient.instance;
 
+```javascript
+import YapilyApi from 'yapily-api';
+let defaultClient = YapilyApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
-var basicAuth = defaultClient.authentications['basicAuth'];
+let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
-
 // Configure OAuth2 access token for authorization: tokenAuth
-var tokenAuth = defaultClient.authentications['tokenAuth'];
+let tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new YapilyApi.ApplicationsApi();
-
-var callback = function(error, data, response) {
+let apiInstance = new YapilyApi.ApplicationsApi();
+apiInstance.getJwksUsingGET((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getJwksUsingGET(callback);
+});
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -102,42 +100,41 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json;charset=UTF-8
+- **Content-Type**: Not defined
+- **Accept**: application/json;charset=UTF-8
 
-<a name="revokeTokensUsingPOST"></a>
-# **revokeTokensUsingPOST**
+
+## revokeTokensUsingPOST
+
 > ResponseEntity revokeTokensUsingPOST()
 
 Revoke existing access tokens for application, which will also generate a new public key discoverable via /jwks
 
 ### Example
-```javascript
-var YapilyApi = require('yapily-api');
-var defaultClient = YapilyApi.ApiClient.instance;
 
+```javascript
+import YapilyApi from 'yapily-api';
+let defaultClient = YapilyApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
-var basicAuth = defaultClient.authentications['basicAuth'];
+let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
-
 // Configure OAuth2 access token for authorization: tokenAuth
-var tokenAuth = defaultClient.authentications['tokenAuth'];
+let tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new YapilyApi.ApplicationsApi();
-
-var callback = function(error, data, response) {
+let apiInstance = new YapilyApi.ApplicationsApi();
+apiInstance.revokeTokensUsingPOST((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.revokeTokensUsingPOST(callback);
+});
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -150,6 +147,6 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json;charset=UTF-8
+- **Content-Type**: Not defined
+- **Accept**: application/json;charset=UTF-8
 

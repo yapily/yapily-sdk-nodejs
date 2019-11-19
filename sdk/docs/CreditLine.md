@@ -1,13 +1,14 @@
 # YapilyApi.CreditLine
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **type** | **String** |  | [optional] 
 **creditLineAmount** | [**Amount**](Amount.md) |  | [optional] 
 
 
-<a name="TypeEnum"></a>
+
 ## Enum: TypeEnum
 
 

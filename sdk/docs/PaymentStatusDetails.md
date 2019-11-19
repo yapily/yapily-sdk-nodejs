@@ -1,6 +1,7 @@
 # YapilyApi.PaymentStatusDetails
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **status** | **String** |  | [optional] 
@@ -10,7 +11,7 @@ Name | Type | Description | Notes
 **multiAuthorisationStatus** | [**MultiAuthorisation**](MultiAuthorisation.md) |  | [optional] 
 
 
-<a name="StatusEnum"></a>
+
 ## Enum: StatusEnum
 
 

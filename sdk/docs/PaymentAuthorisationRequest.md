@@ -1,6 +1,7 @@
 # YapilyApi.PaymentAuthorisationRequest
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **userUuid** | **String** |  | [optional] 
@@ -18,7 +19,7 @@ Name | Type | Description | Notes
 **allowOverdraft** | **Boolean** |  | [optional] 
 
 
-<a name="TotalMaxAmountFrequencyEnum"></a>
+
 ## Enum: TotalMaxAmountFrequencyEnum
 
 

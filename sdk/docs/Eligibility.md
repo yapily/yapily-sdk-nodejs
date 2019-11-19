@@ -1,6 +1,7 @@
 # YapilyApi.Eligibility
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **ageEligibility** | [**AgeEligibility**](AgeEligibility.md) |  | [optional] 

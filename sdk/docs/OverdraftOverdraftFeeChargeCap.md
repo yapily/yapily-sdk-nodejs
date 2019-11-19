@@ -1,6 +1,7 @@
 # YapilyApi.OverdraftOverdraftFeeChargeCap
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **cappingPeriod** | **String** |  | [optional] 
@@ -13,7 +14,7 @@ Name | Type | Description | Notes
 **overdraftControlIndicator** | **Boolean** |  | [optional] 
 
 
-<a name="CappingPeriodEnum"></a>
+
 ## Enum: CappingPeriodEnum
 
 
@@ -34,7 +35,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="[FeeTypeEnum]"></a>
+
 ## Enum: [FeeTypeEnum]
 
 
@@ -65,7 +66,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="MinMaxTypeEnum"></a>
+
 ## Enum: MinMaxTypeEnum
 
 

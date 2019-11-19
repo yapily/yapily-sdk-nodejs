@@ -1,6 +1,7 @@
 # YapilyApi.FeatureDetails
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **feature** | **String** |  | [optional] 
@@ -8,7 +9,7 @@ Name | Type | Description | Notes
 **documentationUrl** | **String** |  | [optional] 
 
 
-<a name="FeatureEnum"></a>
+
 ## Enum: FeatureEnum
 
 

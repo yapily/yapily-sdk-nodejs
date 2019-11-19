@@ -1,6 +1,7 @@
 # YapilyApi.CreateConsentAccessToken
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **accessToken** | **String** |  | 

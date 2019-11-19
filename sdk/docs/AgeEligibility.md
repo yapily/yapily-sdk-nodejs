@@ -1,6 +1,7 @@
 # YapilyApi.AgeEligibility
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **maximumAge** | **Number** |  | [optional] 

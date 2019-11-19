@@ -1,6 +1,7 @@
 # YapilyApi.Institution
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **String** |  | [optional] 
@@ -14,7 +15,7 @@ Name | Type | Description | Notes
 **monitoring** | [**{String: MonitoringFeatureStatus}**](MonitoringFeatureStatus.md) |  | [optional] 
 
 
-<a name="EnvironmentTypeEnum"></a>
+
 ## Enum: EnvironmentTypeEnum
 
 
@@ -27,7 +28,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="CredentialsTypeEnum"></a>
+
 ## Enum: CredentialsTypeEnum
 
 
@@ -56,7 +57,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="[FeaturesEnum]"></a>
+
 ## Enum: [FeaturesEnum]
 
 

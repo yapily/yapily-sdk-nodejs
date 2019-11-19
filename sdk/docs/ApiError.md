@@ -1,6 +1,7 @@
 # YapilyApi.ApiError
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **code** | **Number** |  | [optional] 
@@ -10,7 +11,7 @@ Name | Type | Description | Notes
 **tracingId** | **String** |  | [optional] 
 
 
-<a name="StatusEnum"></a>
+
 ## Enum: StatusEnum
 
 

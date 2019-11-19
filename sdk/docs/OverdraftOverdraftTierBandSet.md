@@ -1,6 +1,7 @@
 # YapilyApi.OverdraftOverdraftTierBandSet
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **authorisedIndicator** | **Boolean** |  | [optional] 
@@ -14,7 +15,7 @@ Name | Type | Description | Notes
 **tierBandMethod** | **String** |  | [optional] 
 
 
-<a name="OverdraftTypeEnum"></a>
+
 ## Enum: OverdraftTypeEnum
 
 
@@ -27,7 +28,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="TierBandMethodEnum"></a>
+
 ## Enum: TierBandMethodEnum
 
 

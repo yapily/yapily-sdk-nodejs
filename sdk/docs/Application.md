@@ -1,6 +1,7 @@
 # YapilyApi.Application
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **uuid** | **String** | Application UUID | [optional] 

@@ -1,6 +1,7 @@
 # YapilyApi.Location
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **locationCategory** | **[String]** |  | [optional] 
@@ -10,7 +11,7 @@ Name | Type | Description | Notes
 **mapServiceLinks** | [**ATMMapServiceLinks**](ATMMapServiceLinks.md) |  | [optional] 
 
 
-<a name="[LocationCategoryEnum]"></a>
+
 ## Enum: [LocationCategoryEnum]
 
 

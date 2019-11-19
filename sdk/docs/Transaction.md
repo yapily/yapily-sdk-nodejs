@@ -1,6 +1,7 @@
 # YapilyApi.Transaction
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **String** | Transaction Id returned by the institution if present | [optional] 
@@ -12,7 +13,7 @@ Name | Type | Description | Notes
 **currency** | **String** | Deprecated. Use the currency value in &#x60;transactionAmount&#x60; instead | [optional] 
 **transactionAmount** | [**Amount**](Amount.md) |  | [optional] 
 **currencyExchange** | [**CurrencyExchange**](CurrencyExchange.md) |  | [optional] 
-**chargeDetails** | [**ChargeDetails**](ChargeDetails.md) | If present, contains details of any charges applied during this transaction | [optional] 
+**chargeDetails** | [**ChargeDetails**](ChargeDetails.md) |  | [optional] 
 **reference** | **String** | Transaction reference | [optional] 
 **statementReferences** | [**[StatementReference]**](StatementReference.md) |  | [optional] 
 **description** | **String** | Unstructured text containing details of the transaction. Usage varies according to the institution | [optional] 
@@ -20,11 +21,11 @@ Name | Type | Description | Notes
 **addressDetails** | [**AddressDetails**](AddressDetails.md) |  | [optional] 
 **isoBankTransactionCode** | [**IsoBankTransactionCode**](IsoBankTransactionCode.md) |  | [optional] 
 **proprietaryBankTransactionCode** | [**ProprietaryBankTransactionCode**](ProprietaryBankTransactionCode.md) |  | [optional] 
-**balance** | [**Balance**](Balance.md) | Running account balance after transaction has been applied | [optional] 
-**merchant** | [**Merchant**](Merchant.md) | Merchant details | [optional] 
+**balance** | [**Balance**](Balance.md) |  | [optional] 
+**merchant** | [**Merchant**](Merchant.md) |  | [optional] 
 
 
-<a name="StatusEnum"></a>
+
 ## Enum: StatusEnum
 
 

@@ -1,6 +1,7 @@
 # YapilyApi.CreditInterestTierBandSet
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **calculationMethod** | **String** |  | [optional] 
@@ -11,7 +12,7 @@ Name | Type | Description | Notes
 **tierBandMethod** | **String** |  | [optional] 
 
 
-<a name="CalculationMethodEnum"></a>
+
 ## Enum: CalculationMethodEnum
 
 
@@ -22,7 +23,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="DestinationEnum"></a>
+
 ## Enum: DestinationEnum
 
 
@@ -33,7 +34,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="TierBandMethodEnum"></a>
+
 ## Enum: TierBandMethodEnum
 
 

@@ -1,6 +1,7 @@
 # YapilyApi.CreditInterestTierBand
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **AER** | **String** |  | [optional] 
@@ -19,7 +20,7 @@ Name | Type | Description | Notes
 **tierValueMinimum** | **String** |  | [optional] 
 
 
-<a name="ApplicationFrequencyEnum"></a>
+
 ## Enum: ApplicationFrequencyEnum
 
 
@@ -44,7 +45,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="BankInterestRateTypeEnum"></a>
+
 ## Enum: BankInterestRateTypeEnum
 
 
@@ -59,7 +60,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="CalculationFrequencyEnum"></a>
+
 ## Enum: CalculationFrequencyEnum
 
 
@@ -84,7 +85,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="DepositInterestAppliedCoverageEnum"></a>
+
 ## Enum: DepositInterestAppliedCoverageEnum
 
 
@@ -95,7 +96,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="FixedVariableInterestRateTypeEnum"></a>
+
 ## Enum: FixedVariableInterestRateTypeEnum
 
 

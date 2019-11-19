@@ -1,58 +1,54 @@
 # YapilyApi.TransactionsApi
 
-All URIs are relative to *https://api.yapily.com*
+All URIs are relative to *http://api.yapily.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**getTransactionsUsingGET**](TransactionsApi.md#getTransactionsUsingGET) | **GET** /accounts/{accountId}/transactions | Get account transactions
 
 
-<a name="getTransactionsUsingGET"></a>
-# **getTransactionsUsingGET**
+
+## getTransactionsUsingGET
+
 > ApiListResponseOfTransaction getTransactionsUsingGET(consent, accountId, opts)
 
 Get account transactions
 
 ### Example
-```javascript
-var YapilyApi = require('yapily-api');
-var defaultClient = YapilyApi.ApiClient.instance;
 
+```javascript
+import YapilyApi from 'yapily-api';
+let defaultClient = YapilyApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
-var basicAuth = defaultClient.authentications['basicAuth'];
+let basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
-
 // Configure OAuth2 access token for authorization: tokenAuth
-var tokenAuth = defaultClient.authentications['tokenAuth'];
+let tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new YapilyApi.TransactionsApi();
-
-var consent = "consent_example"; // String | Consent Token
-
-var accountId = "accountId_example"; // String | accountId
-
-var opts = { 
-  '_with': ["_with_example"], // [String] | with
+let apiInstance = new YapilyApi.TransactionsApi();
+let consent = "consent_example"; // String | Consent Token
+let accountId = "accountId_example"; // String | accountId
+let opts = {
+  '_with': ["null"], // [String] | with
   'from': "from_example", // String | from
   'before': "before_example", // String | before
   'limit': 56, // Number | limit
   'sort': "sort_example", // String | sort
   'offset': 56 // Number | offset
 };
-
-var callback = function(error, data, response) {
+apiInstance.getTransactionsUsingGET(consent, accountId, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.getTransactionsUsingGET(consent, accountId, opts, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -75,6 +71,6 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json;charset=UTF-8
+- **Content-Type**: Not defined
+- **Accept**: application/json;charset=UTF-8
 

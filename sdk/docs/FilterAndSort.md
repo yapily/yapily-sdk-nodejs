@@ -1,6 +1,7 @@
 # YapilyApi.FilterAndSort
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **before** | **Date** |  | [optional] 
@@ -10,7 +11,7 @@ Name | Type | Description | Notes
 **sort** | **String** |  | [optional] 
 
 
-<a name="SortEnum"></a>
+
 ## Enum: SortEnum
 
 

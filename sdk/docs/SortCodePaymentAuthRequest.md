@@ -1,6 +1,7 @@
 # YapilyApi.SortCodePaymentAuthRequest
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **userUuid** | **String** |  | [optional] 

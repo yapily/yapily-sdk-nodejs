@@ -1,6 +1,7 @@
 # YapilyApi.IsoBankTransactionCode
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **domainCode** | [**IsoCodeDetails**](IsoCodeDetails.md) |  | [optional] 

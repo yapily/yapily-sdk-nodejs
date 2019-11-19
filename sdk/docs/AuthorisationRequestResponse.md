@@ -1,6 +1,7 @@
 # YapilyApi.AuthorisationRequestResponse
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **String** |  | [optional] 
@@ -24,7 +25,7 @@ Name | Type | Description | Notes
 **authorisationUrl** | **String** |  | [optional] 
 
 
-<a name="StatusEnum"></a>
+
 ## Enum: StatusEnum
 
 
@@ -53,7 +54,7 @@ Name | Type | Description | Notes
 
 
 
-<a name="[FeatureScopeEnum]"></a>
+
 ## Enum: [FeatureScopeEnum]
 
 

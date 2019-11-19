@@ -1,6 +1,7 @@
 # YapilyApi.CurrencyExchange
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **sourceCurrency** | **String** | ISO 4217 currency code denoting the currency of the creditor | [optional] 

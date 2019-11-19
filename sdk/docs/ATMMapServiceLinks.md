@@ -1,6 +1,7 @@
 # YapilyApi.ATMMapServiceLinks
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **bingMapsUrl** | **String** |  | [optional] 

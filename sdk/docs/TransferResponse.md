@@ -1,6 +1,7 @@
 # YapilyApi.TransferResponse
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **fromAccountId** | **String** |  | [optional] 
@@ -12,7 +13,7 @@ Name | Type | Description | Notes
 **currency** | **String** |  | [optional] 
 
 
-<a name="StatusEnum"></a>
+
 ## Enum: StatusEnum
 
 

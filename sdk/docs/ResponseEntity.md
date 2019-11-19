@@ -1,14 +1,15 @@
 # YapilyApi.ResponseEntity
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**body** | **Object** |  | [optional] 
+**body** | [**Object**](.md) |  | [optional] 
 **statusCode** | **String** |  | [optional] 
 **statusCodeValue** | **Number** |  | [optional] 
 
 
-<a name="StatusCodeEnum"></a>
+
 ## Enum: StatusCodeEnum
 
 

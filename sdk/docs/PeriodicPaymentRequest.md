@@ -1,6 +1,7 @@
 # YapilyApi.PeriodicPaymentRequest
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **frequency** | [**FrequencyRequest**](FrequencyRequest.md) |  | 

@@ -1,6 +1,7 @@
 # YapilyApi.Address
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **addressLines** | **[String]** |  | [optional] 
@@ -15,7 +16,7 @@ Name | Type | Description | Notes
 **subDepartment** | **String** |  | [optional] 
 
 
-<a name="AddressTypeEnum"></a>
+
 ## Enum: AddressTypeEnum
 
 

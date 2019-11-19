@@ -1,6 +1,7 @@
 # YapilyApi.BulkUserDelete
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **String** |  | [optional] 
@@ -9,7 +10,7 @@ Name | Type | Description | Notes
 **links** | **{String: String}** |  | [optional] 
 
 
-<a name="StatusEnum"></a>
+
 ## Enum: StatusEnum
 
 

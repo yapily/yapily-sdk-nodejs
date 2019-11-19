@@ -1,6 +1,7 @@
 # YapilyApi.SortCodePaymentRequest
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **senderAccountId** | **String** |  | [optional] 
@@ -15,7 +16,7 @@ Name | Type | Description | Notes
 **merchantInfo** | [**MerchantInfo**](MerchantInfo.md) |  | [optional] 
 
 
-<a name="TypeEnum"></a>
+
 ## Enum: TypeEnum
 
 
