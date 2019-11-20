@@ -19,24 +19,25 @@ Returns the details of the application that owns the request credentials
 ### Example
 
 ```javascript
-import YapilyApi from 'yapily-api';
-let defaultClient = YapilyApi.ApiClient.instance;
+var YapilyApi = require('@yapily/yapily-api');
+var defaultClient = YapilyApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
-let basicAuth = defaultClient.authentications['basicAuth'];
+var basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
 // Configure OAuth2 access token for authorization: tokenAuth
-let tokenAuth = defaultClient.authentications['tokenAuth'];
+var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new YapilyApi.ApplicationsApi();
-apiInstance.getApplicationMeUsingGET((error, data, response) => {
+var apiInstance = new YapilyApi.ApplicationsApi();
+var callback = function(error, data, response) {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-});
+};
+apiInstance.getApplicationMeUsingGET(callback);
 ```
 
 ### Parameters
@@ -66,24 +67,25 @@ JSON Web Key Set (JWKS) for authenticated application
 ### Example
 
 ```javascript
-import YapilyApi from 'yapily-api';
-let defaultClient = YapilyApi.ApiClient.instance;
+var YapilyApi = require('@yapily/yapily-api');
+var defaultClient = YapilyApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
-let basicAuth = defaultClient.authentications['basicAuth'];
+var basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
 // Configure OAuth2 access token for authorization: tokenAuth
-let tokenAuth = defaultClient.authentications['tokenAuth'];
+var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new YapilyApi.ApplicationsApi();
-apiInstance.getJwksUsingGET((error, data, response) => {
+var apiInstance = new YapilyApi.ApplicationsApi();
+var callback = function(error, data, response) {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-});
+};
+apiInstance.getJwksUsingGET(callback);
 ```
 
 ### Parameters
@@ -113,24 +115,25 @@ Revoke existing access tokens for application, which will also generate a new pu
 ### Example
 
 ```javascript
-import YapilyApi from 'yapily-api';
-let defaultClient = YapilyApi.ApiClient.instance;
+var YapilyApi = require('@yapily/yapily-api');
+var defaultClient = YapilyApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
-let basicAuth = defaultClient.authentications['basicAuth'];
+var basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
 // Configure OAuth2 access token for authorization: tokenAuth
-let tokenAuth = defaultClient.authentications['tokenAuth'];
+var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new YapilyApi.ApplicationsApi();
-apiInstance.revokeTokensUsingPOST((error, data, response) => {
+var apiInstance = new YapilyApi.ApplicationsApi();
+var callback = function(error, data, response) {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-});
+};
+apiInstance.revokeTokensUsingPOST(callback);
 ```
 
 ### Parameters

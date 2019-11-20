@@ -18,28 +18,30 @@ Retrieves data about all ATMs of the selected institution
 ### Example
 
 ```javascript
-import YapilyApi from 'yapily-api';
-let defaultClient = YapilyApi.ApiClient.instance;
+var YapilyApi = require('@yapily/yapily-api');
+var defaultClient = YapilyApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
-let basicAuth = defaultClient.authentications['basicAuth'];
+var basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
 // Configure OAuth2 access token for authorization: tokenAuth
-let tokenAuth = defaultClient.authentications['tokenAuth'];
+var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new YapilyApi.InstitutionsOpenDataApi();
-let institutionId = "institutionId_example"; // String | institutionId
-apiInstance.getATMDataUsingGET(institutionId, (error, data, response) => {
+var apiInstance = new YapilyApi.InstitutionsOpenDataApi();
+var institutionId = "institutionId_example"; // String | institutionId
+var callback = function(error, data, response) {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-});
+};
+apiInstance.getATMDataUsingGET(institutionId, callback);
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes
@@ -69,28 +71,30 @@ Retrieves details of personal current accounts for an institution
 ### Example
 
 ```javascript
-import YapilyApi from 'yapily-api';
-let defaultClient = YapilyApi.ApiClient.instance;
+var YapilyApi = require('@yapily/yapily-api');
+var defaultClient = YapilyApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
-let basicAuth = defaultClient.authentications['basicAuth'];
+var basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
 // Configure OAuth2 access token for authorization: tokenAuth
-let tokenAuth = defaultClient.authentications['tokenAuth'];
+var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new YapilyApi.InstitutionsOpenDataApi();
-let institutionId = "institutionId_example"; // String | institutionId
-apiInstance.getPersonalCurrentAccountsUsingGET(institutionId, (error, data, response) => {
+var apiInstance = new YapilyApi.InstitutionsOpenDataApi();
+var institutionId = "institutionId_example"; // String | institutionId
+var callback = function(error, data, response) {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-});
+};
+apiInstance.getPersonalCurrentAccountsUsingGET(institutionId, callback);
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes

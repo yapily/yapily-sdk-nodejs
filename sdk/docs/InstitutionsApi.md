@@ -19,24 +19,25 @@ Retrieve details for Yapily&#39;s institution features
 ### Example
 
 ```javascript
-import YapilyApi from 'yapily-api';
-let defaultClient = YapilyApi.ApiClient.instance;
+var YapilyApi = require('@yapily/yapily-api');
+var defaultClient = YapilyApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
-let basicAuth = defaultClient.authentications['basicAuth'];
+var basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
 // Configure OAuth2 access token for authorization: tokenAuth
-let tokenAuth = defaultClient.authentications['tokenAuth'];
+var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new YapilyApi.InstitutionsApi();
-apiInstance.getFeatureDetailsUsingGET((error, data, response) => {
+var apiInstance = new YapilyApi.InstitutionsApi();
+var callback = function(error, data, response) {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-});
+};
+apiInstance.getFeatureDetailsUsingGET(callback);
 ```
 
 ### Parameters
@@ -66,28 +67,30 @@ Retrieves details of a specific institution available in Yapily
 ### Example
 
 ```javascript
-import YapilyApi from 'yapily-api';
-let defaultClient = YapilyApi.ApiClient.instance;
+var YapilyApi = require('@yapily/yapily-api');
+var defaultClient = YapilyApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
-let basicAuth = defaultClient.authentications['basicAuth'];
+var basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
 // Configure OAuth2 access token for authorization: tokenAuth
-let tokenAuth = defaultClient.authentications['tokenAuth'];
+var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new YapilyApi.InstitutionsApi();
-let institutionId = "institutionId_example"; // String | institutionId
-apiInstance.getInstitutionUsingGET(institutionId, (error, data, response) => {
+var apiInstance = new YapilyApi.InstitutionsApi();
+var institutionId = "institutionId_example"; // String | institutionId
+var callback = function(error, data, response) {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-});
+};
+apiInstance.getInstitutionUsingGET(institutionId, callback);
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes
@@ -117,24 +120,25 @@ Retrieves the list of institutions available in Yapily
 ### Example
 
 ```javascript
-import YapilyApi from 'yapily-api';
-let defaultClient = YapilyApi.ApiClient.instance;
+var YapilyApi = require('@yapily/yapily-api');
+var defaultClient = YapilyApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
-let basicAuth = defaultClient.authentications['basicAuth'];
+var basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
 // Configure OAuth2 access token for authorization: tokenAuth
-let tokenAuth = defaultClient.authentications['tokenAuth'];
+var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new YapilyApi.InstitutionsApi();
-apiInstance.getInstitutionsUsingGET((error, data, response) => {
+var apiInstance = new YapilyApi.InstitutionsApi();
+var callback = function(error, data, response) {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-});
+};
+apiInstance.getInstitutionsUsingGET(callback);
 ```
 
 ### Parameters

@@ -23,29 +23,31 @@ Post consent
 ### Example
 
 ```javascript
-import YapilyApi from 'yapily-api';
-let defaultClient = YapilyApi.ApiClient.instance;
+var YapilyApi = require('@yapily/yapily-api');
+var defaultClient = YapilyApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
-let basicAuth = defaultClient.authentications['basicAuth'];
+var basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
 // Configure OAuth2 access token for authorization: tokenAuth
-let tokenAuth = defaultClient.authentications['tokenAuth'];
+var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new YapilyApi.ConsentsApi();
-let userUuid = "userUuid_example"; // String | userUuid
-let createConsentAccessToken = new YapilyApi.CreateConsentAccessToken(); // CreateConsentAccessToken | createConsentAccessToken
-apiInstance.addConsentUsingPOST(userUuid, createConsentAccessToken, (error, data, response) => {
+var apiInstance = new YapilyApi.ConsentsApi();
+var userUuid = "userUuid_example"; // String | userUuid
+var createConsentAccessToken = new YapilyApi.CreateConsentAccessToken(); // CreateConsentAccessToken | createConsentAccessToken
+var callback = function(error, data, response) {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-});
+};
+apiInstance.addConsentUsingPOST(userUuid, createConsentAccessToken, callback);
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes
@@ -76,28 +78,30 @@ Post auth-code and auth-state
 ### Example
 
 ```javascript
-import YapilyApi from 'yapily-api';
-let defaultClient = YapilyApi.ApiClient.instance;
+var YapilyApi = require('@yapily/yapily-api');
+var defaultClient = YapilyApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
-let basicAuth = defaultClient.authentications['basicAuth'];
+var basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
 // Configure OAuth2 access token for authorization: tokenAuth
-let tokenAuth = defaultClient.authentications['tokenAuth'];
+var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new YapilyApi.ConsentsApi();
-let consentByAuthCode = new YapilyApi.ConsentAuthCodeRequest(); // ConsentAuthCodeRequest | consentByAuthCode
-apiInstance.createConsentWithCodeUsingPOST(consentByAuthCode, (error, data, response) => {
+var apiInstance = new YapilyApi.ConsentsApi();
+var consentByAuthCode = new YapilyApi.ConsentAuthCodeRequest(); // ConsentAuthCodeRequest | consentByAuthCode
+var callback = function(error, data, response) {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-});
+};
+apiInstance.createConsentWithCodeUsingPOST(consentByAuthCode, callback);
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes
@@ -127,31 +131,33 @@ Delete consent
 ### Example
 
 ```javascript
-import YapilyApi from 'yapily-api';
-let defaultClient = YapilyApi.ApiClient.instance;
+var YapilyApi = require('@yapily/yapily-api');
+var defaultClient = YapilyApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
-let basicAuth = defaultClient.authentications['basicAuth'];
+var basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
 // Configure OAuth2 access token for authorization: tokenAuth
-let tokenAuth = defaultClient.authentications['tokenAuth'];
+var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new YapilyApi.ConsentsApi();
-let consentId = "consentId_example"; // String | consentId
-let opts = {
+var apiInstance = new YapilyApi.ConsentsApi();
+var consentId = "consentId_example"; // String | consentId
+var opts = {
   'forceDelete': true // Boolean | forceDelete
 };
-apiInstance.deleteUsingDELETE(consentId, opts, (error, data, response) => {
+var callback = function(error, data, response) {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-});
+};
+apiInstance.deleteUsingDELETE(consentId, opts, callback);
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes
@@ -182,28 +188,30 @@ Get consent
 ### Example
 
 ```javascript
-import YapilyApi from 'yapily-api';
-let defaultClient = YapilyApi.ApiClient.instance;
+var YapilyApi = require('@yapily/yapily-api');
+var defaultClient = YapilyApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
-let basicAuth = defaultClient.authentications['basicAuth'];
+var basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
 // Configure OAuth2 access token for authorization: tokenAuth
-let tokenAuth = defaultClient.authentications['tokenAuth'];
+var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new YapilyApi.ConsentsApi();
-let consentId = "consentId_example"; // String | consentId
-apiInstance.getConsentByIdUsingGET(consentId, (error, data, response) => {
+var apiInstance = new YapilyApi.ConsentsApi();
+var consentId = "consentId_example"; // String | consentId
+var callback = function(error, data, response) {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-});
+};
+apiInstance.getConsentByIdUsingGET(consentId, callback);
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes
@@ -233,28 +241,30 @@ Post one time token
 ### Example
 
 ```javascript
-import YapilyApi from 'yapily-api';
-let defaultClient = YapilyApi.ApiClient.instance;
+var YapilyApi = require('@yapily/yapily-api');
+var defaultClient = YapilyApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
-let basicAuth = defaultClient.authentications['basicAuth'];
+var basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
 // Configure OAuth2 access token for authorization: tokenAuth
-let tokenAuth = defaultClient.authentications['tokenAuth'];
+var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new YapilyApi.ConsentsApi();
-let oneTimeToken = new YapilyApi.OneTimeTokenRequest(); // OneTimeTokenRequest | oneTimeToken
-apiInstance.getConsentBySingleAccessConsentUsingPOST(oneTimeToken, (error, data, response) => {
+var apiInstance = new YapilyApi.ConsentsApi();
+var oneTimeToken = new YapilyApi.OneTimeTokenRequest(); // OneTimeTokenRequest | oneTimeToken
+var callback = function(error, data, response) {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-});
+};
+apiInstance.getConsentBySingleAccessConsentUsingPOST(oneTimeToken, callback);
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes
@@ -284,18 +294,18 @@ Get consents sorted by creation date
 ### Example
 
 ```javascript
-import YapilyApi from 'yapily-api';
-let defaultClient = YapilyApi.ApiClient.instance;
+var YapilyApi = require('@yapily/yapily-api');
+var defaultClient = YapilyApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
-let basicAuth = defaultClient.authentications['basicAuth'];
+var basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
 // Configure OAuth2 access token for authorization: tokenAuth
-let tokenAuth = defaultClient.authentications['tokenAuth'];
+var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new YapilyApi.ConsentsApi();
-let opts = {
+var apiInstance = new YapilyApi.ConsentsApi();
+var opts = {
   'filterApplicationUserId': ["null"], // [String] | Filter consents by your application user Id (applicationUserId)
   'filterUserUuid': ["null"], // [String] | Filter consents by Yapily user Id (userUuid)
   'filterInstitution': ["null"], // [String] | Use this parameter to filter consent by institution, using the Yapily institution Id
@@ -305,16 +315,18 @@ let opts = {
   'limit': 56, // Number | Use this parameter to limit consent results, max limit is 20
   'offset': 0 // Number | Use this parameter to specify the offset of the results
 };
-apiInstance.getConsentsUsingGET(opts, (error, data, response) => {
+var callback = function(error, data, response) {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-});
+};
+apiInstance.getConsentsUsingGET(opts, callback);
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes
@@ -351,32 +363,34 @@ Get latest user consents
 ### Example
 
 ```javascript
-import YapilyApi from 'yapily-api';
-let defaultClient = YapilyApi.ApiClient.instance;
+var YapilyApi = require('@yapily/yapily-api');
+var defaultClient = YapilyApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
-let basicAuth = defaultClient.authentications['basicAuth'];
+var basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
 // Configure OAuth2 access token for authorization: tokenAuth
-let tokenAuth = defaultClient.authentications['tokenAuth'];
+var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new YapilyApi.ConsentsApi();
-let userUuid = "userUuid_example"; // String | userUuid
-let opts = {
+var apiInstance = new YapilyApi.ConsentsApi();
+var userUuid = "userUuid_example"; // String | userUuid
+var opts = {
   'filterInstitution': "filterInstitution_example", // String | Use this parameter to filter consent by institution, using the Yapily institution Id. This replaces the deprecated `institutionId` query param.
   'limit': 56 // Number | Use this parameter to limit consent results, max limit is 20
 };
-apiInstance.getUserConsentsUsingGET(userUuid, opts, (error, data, response) => {
+var callback = function(error, data, response) {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-});
+};
+apiInstance.getUserConsentsUsingGET(userUuid, opts, callback);
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes

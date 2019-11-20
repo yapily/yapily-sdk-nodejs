@@ -17,25 +17,27 @@ Retrieve Access Token
 ### Example
 
 ```javascript
-import YapilyApi from 'yapily-api';
-let defaultClient = YapilyApi.ApiClient.instance;
+var YapilyApi = require('@yapily/yapily-api');
+var defaultClient = YapilyApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
-let basicAuth = defaultClient.authentications['basicAuth'];
+var basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
 
-let apiInstance = new YapilyApi.OAuthApi();
-let grantType = "'client_credentials'"; // String | Grant type
-apiInstance.oauthToken(grantType, (error, data, response) => {
+var apiInstance = new YapilyApi.OAuthApi();
+var grantType = "'client_credentials'"; // String | Grant type
+var callback = function(error, data, response) {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-});
+};
+apiInstance.oauthToken(grantType, callback);
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes

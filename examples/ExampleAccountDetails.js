@@ -3,7 +3,7 @@ const readline = require('readline')
 var util = require('util')
 
 var constants = require('./constants.js')
-var YapilyApi = require('yapily-api')
+var YapilyApi = require('@yapily/yapily-api')
 
 var defaultClient = YapilyApi.ApiClient.instance
 

@@ -23,32 +23,34 @@ Get account direct debits
 ### Example
 
 ```javascript
-import YapilyApi from 'yapily-api';
-let defaultClient = YapilyApi.ApiClient.instance;
+var YapilyApi = require('@yapily/yapily-api');
+var defaultClient = YapilyApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
-let basicAuth = defaultClient.authentications['basicAuth'];
+var basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
 // Configure OAuth2 access token for authorization: tokenAuth
-let tokenAuth = defaultClient.authentications['tokenAuth'];
+var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new YapilyApi.AccountsApi();
-let accountId = "accountId_example"; // String | accountId
-let consent = "consent_example"; // String | Consent Token
-let opts = {
+var apiInstance = new YapilyApi.AccountsApi();
+var accountId = "accountId_example"; // String | accountId
+var consent = "consent_example"; // String | Consent Token
+var opts = {
   'limit': 56 // Number | Use this parameter to limit account's direct debit results
 };
-apiInstance.getAccountDirectDebitsUsingGET(accountId, consent, opts, (error, data, response) => {
+var callback = function(error, data, response) {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-});
+};
+apiInstance.getAccountDirectDebitsUsingGET(accountId, consent, opts, callback);
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes
@@ -80,32 +82,34 @@ Get account payments detail
 ### Example
 
 ```javascript
-import YapilyApi from 'yapily-api';
-let defaultClient = YapilyApi.ApiClient.instance;
+var YapilyApi = require('@yapily/yapily-api');
+var defaultClient = YapilyApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
-let basicAuth = defaultClient.authentications['basicAuth'];
+var basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
 // Configure OAuth2 access token for authorization: tokenAuth
-let tokenAuth = defaultClient.authentications['tokenAuth'];
+var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new YapilyApi.AccountsApi();
-let accountId = "accountId_example"; // String | accountId
-let consent = "consent_example"; // String | Consent Token
-let opts = {
+var apiInstance = new YapilyApi.AccountsApi();
+var accountId = "accountId_example"; // String | accountId
+var consent = "consent_example"; // String | Consent Token
+var opts = {
   'limit': 56 // Number | Use this parameter to limit account's periodic payment order results
 };
-apiInstance.getAccountPeriodicPaymentsUsingGET(accountId, consent, opts, (error, data, response) => {
+var callback = function(error, data, response) {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-});
+};
+apiInstance.getAccountPeriodicPaymentsUsingGET(accountId, consent, opts, callback);
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes
@@ -137,32 +141,34 @@ Get account scheduled payments
 ### Example
 
 ```javascript
-import YapilyApi from 'yapily-api';
-let defaultClient = YapilyApi.ApiClient.instance;
+var YapilyApi = require('@yapily/yapily-api');
+var defaultClient = YapilyApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
-let basicAuth = defaultClient.authentications['basicAuth'];
+var basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
 // Configure OAuth2 access token for authorization: tokenAuth
-let tokenAuth = defaultClient.authentications['tokenAuth'];
+var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new YapilyApi.AccountsApi();
-let accountId = "accountId_example"; // String | accountId
-let consent = "consent_example"; // String | Consent Token
-let opts = {
+var apiInstance = new YapilyApi.AccountsApi();
+var accountId = "accountId_example"; // String | accountId
+var consent = "consent_example"; // String | Consent Token
+var opts = {
   'limit': 56 // Number | Use this parameter to limit account's scheduled payment results
 };
-apiInstance.getAccountScheduledPaymentsUsingGET(accountId, consent, opts, (error, data, response) => {
+var callback = function(error, data, response) {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-});
+};
+apiInstance.getAccountScheduledPaymentsUsingGET(accountId, consent, opts, callback);
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes
@@ -194,29 +200,31 @@ Get account
 ### Example
 
 ```javascript
-import YapilyApi from 'yapily-api';
-let defaultClient = YapilyApi.ApiClient.instance;
+var YapilyApi = require('@yapily/yapily-api');
+var defaultClient = YapilyApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
-let basicAuth = defaultClient.authentications['basicAuth'];
+var basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
 // Configure OAuth2 access token for authorization: tokenAuth
-let tokenAuth = defaultClient.authentications['tokenAuth'];
+var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new YapilyApi.AccountsApi();
-let consent = "consent_example"; // String | Consent Token
-let accountId = "accountId_example"; // String | accountId
-apiInstance.getAccountUsingGET(consent, accountId, (error, data, response) => {
+var apiInstance = new YapilyApi.AccountsApi();
+var consent = "consent_example"; // String | Consent Token
+var accountId = "accountId_example"; // String | accountId
+var callback = function(error, data, response) {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-});
+};
+apiInstance.getAccountUsingGET(consent, accountId, callback);
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes
@@ -247,28 +255,30 @@ Get accounts
 ### Example
 
 ```javascript
-import YapilyApi from 'yapily-api';
-let defaultClient = YapilyApi.ApiClient.instance;
+var YapilyApi = require('@yapily/yapily-api');
+var defaultClient = YapilyApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
-let basicAuth = defaultClient.authentications['basicAuth'];
+var basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
 // Configure OAuth2 access token for authorization: tokenAuth
-let tokenAuth = defaultClient.authentications['tokenAuth'];
+var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new YapilyApi.AccountsApi();
-let consent = "consent_example"; // String | Consent Token
-apiInstance.getAccountsUsingGET(consent, (error, data, response) => {
+var apiInstance = new YapilyApi.AccountsApi();
+var consent = "consent_example"; // String | Consent Token
+var callback = function(error, data, response) {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-});
+};
+apiInstance.getAccountsUsingGET(consent, callback);
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes
@@ -298,28 +308,30 @@ Initiate a new account request for user to authorize
 ### Example
 
 ```javascript
-import YapilyApi from 'yapily-api';
-let defaultClient = YapilyApi.ApiClient.instance;
+var YapilyApi = require('@yapily/yapily-api');
+var defaultClient = YapilyApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
-let basicAuth = defaultClient.authentications['basicAuth'];
+var basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
 // Configure OAuth2 access token for authorization: tokenAuth
-let tokenAuth = defaultClient.authentications['tokenAuth'];
+var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new YapilyApi.AccountsApi();
-let accountAuthRequest = new YapilyApi.AccountAuthorisationRequest(); // AccountAuthorisationRequest | accountAuthRequest
-apiInstance.initiateAccountRequestUsingPOST(accountAuthRequest, (error, data, response) => {
+var apiInstance = new YapilyApi.AccountsApi();
+var accountAuthRequest = new YapilyApi.AccountAuthorisationRequest(); // AccountAuthorisationRequest | accountAuthRequest
+var callback = function(error, data, response) {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-});
+};
+apiInstance.initiateAccountRequestUsingPOST(accountAuthRequest, callback);
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes
@@ -349,28 +361,30 @@ Re-authorize account request
 ### Example
 
 ```javascript
-import YapilyApi from 'yapily-api';
-let defaultClient = YapilyApi.ApiClient.instance;
+var YapilyApi = require('@yapily/yapily-api');
+var defaultClient = YapilyApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
-let basicAuth = defaultClient.authentications['basicAuth'];
+var basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
 // Configure OAuth2 access token for authorization: tokenAuth
-let tokenAuth = defaultClient.authentications['tokenAuth'];
+var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new YapilyApi.AccountsApi();
-let consent = "consent_example"; // String | Consent Token
-apiInstance.reAuthoriseAccountUsingPATCH(consent, (error, data, response) => {
+var apiInstance = new YapilyApi.AccountsApi();
+var consent = "consent_example"; // String | Consent Token
+var callback = function(error, data, response) {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-});
+};
+apiInstance.reAuthoriseAccountUsingPATCH(consent, callback);
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes

@@ -23,28 +23,30 @@ Add an application user
 ### Example
 
 ```javascript
-import YapilyApi from 'yapily-api';
-let defaultClient = YapilyApi.ApiClient.instance;
+var YapilyApi = require('@yapily/yapily-api');
+var defaultClient = YapilyApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
-let basicAuth = defaultClient.authentications['basicAuth'];
+var basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
 // Configure OAuth2 access token for authorization: tokenAuth
-let tokenAuth = defaultClient.authentications['tokenAuth'];
+var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new YapilyApi.ApplicationUsersApi();
-let newApplicationUser = new YapilyApi.NewApplicationUser(); // NewApplicationUser | newApplicationUser
-apiInstance.addUserUsingPOST(newApplicationUser, (error, data, response) => {
+var apiInstance = new YapilyApi.ApplicationUsersApi();
+var newApplicationUser = new YapilyApi.NewApplicationUser(); // NewApplicationUser | newApplicationUser
+var callback = function(error, data, response) {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-});
+};
+apiInstance.addUserUsingPOST(newApplicationUser, callback);
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes
@@ -74,28 +76,30 @@ Delete an application user and sub-resources (including consent resources on ins
 ### Example
 
 ```javascript
-import YapilyApi from 'yapily-api';
-let defaultClient = YapilyApi.ApiClient.instance;
+var YapilyApi = require('@yapily/yapily-api');
+var defaultClient = YapilyApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
-let basicAuth = defaultClient.authentications['basicAuth'];
+var basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
 // Configure OAuth2 access token for authorization: tokenAuth
-let tokenAuth = defaultClient.authentications['tokenAuth'];
+var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new YapilyApi.ApplicationUsersApi();
-let userUuid = "userUuid_example"; // String | userUuid
-apiInstance.deleteUserUsingDELETE(userUuid, (error, data, response) => {
+var apiInstance = new YapilyApi.ApplicationUsersApi();
+var userUuid = "userUuid_example"; // String | userUuid
+var callback = function(error, data, response) {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-});
+};
+apiInstance.deleteUserUsingDELETE(userUuid, callback);
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes
@@ -125,28 +129,30 @@ Get details of a user deletion job
 ### Example
 
 ```javascript
-import YapilyApi from 'yapily-api';
-let defaultClient = YapilyApi.ApiClient.instance;
+var YapilyApi = require('@yapily/yapily-api');
+var defaultClient = YapilyApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
-let basicAuth = defaultClient.authentications['basicAuth'];
+var basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
 // Configure OAuth2 access token for authorization: tokenAuth
-let tokenAuth = defaultClient.authentications['tokenAuth'];
+var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new YapilyApi.ApplicationUsersApi();
-let jobId = "jobId_example"; // String | job-id
-apiInstance.getDeleteUsersJobUsingGET(jobId, (error, data, response) => {
+var apiInstance = new YapilyApi.ApplicationUsersApi();
+var jobId = "jobId_example"; // String | job-id
+var callback = function(error, data, response) {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-});
+};
+apiInstance.getDeleteUsersJobUsingGET(jobId, callback);
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes
@@ -176,24 +182,25 @@ Get details of all user deletion jobs
 ### Example
 
 ```javascript
-import YapilyApi from 'yapily-api';
-let defaultClient = YapilyApi.ApiClient.instance;
+var YapilyApi = require('@yapily/yapily-api');
+var defaultClient = YapilyApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
-let basicAuth = defaultClient.authentications['basicAuth'];
+var basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
 // Configure OAuth2 access token for authorization: tokenAuth
-let tokenAuth = defaultClient.authentications['tokenAuth'];
+var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new YapilyApi.ApplicationUsersApi();
-apiInstance.getDeleteUsersJobsUsingGET((error, data, response) => {
+var apiInstance = new YapilyApi.ApplicationUsersApi();
+var callback = function(error, data, response) {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-});
+};
+apiInstance.getDeleteUsersJobsUsingGET(callback);
 ```
 
 ### Parameters
@@ -223,28 +230,30 @@ Get an application user
 ### Example
 
 ```javascript
-import YapilyApi from 'yapily-api';
-let defaultClient = YapilyApi.ApiClient.instance;
+var YapilyApi = require('@yapily/yapily-api');
+var defaultClient = YapilyApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
-let basicAuth = defaultClient.authentications['basicAuth'];
+var basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
 // Configure OAuth2 access token for authorization: tokenAuth
-let tokenAuth = defaultClient.authentications['tokenAuth'];
+var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new YapilyApi.ApplicationUsersApi();
-let userUuid = "userUuid_example"; // String | userUuid
-apiInstance.getUserUsingGET(userUuid, (error, data, response) => {
+var apiInstance = new YapilyApi.ApplicationUsersApi();
+var userUuid = "userUuid_example"; // String | userUuid
+var callback = function(error, data, response) {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-});
+};
+apiInstance.getUserUsingGET(userUuid, callback);
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes
@@ -274,24 +283,25 @@ Get application users
 ### Example
 
 ```javascript
-import YapilyApi from 'yapily-api';
-let defaultClient = YapilyApi.ApiClient.instance;
+var YapilyApi = require('@yapily/yapily-api');
+var defaultClient = YapilyApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
-let basicAuth = defaultClient.authentications['basicAuth'];
+var basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
 // Configure OAuth2 access token for authorization: tokenAuth
-let tokenAuth = defaultClient.authentications['tokenAuth'];
+var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new YapilyApi.ApplicationUsersApi();
-apiInstance.getUsersUsingGET((error, data, response) => {
+var apiInstance = new YapilyApi.ApplicationUsersApi();
+var callback = function(error, data, response) {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-});
+};
+apiInstance.getUsersUsingGET(callback);
 ```
 
 ### Parameters
@@ -321,28 +331,30 @@ Start a job to delete application users by specifying their identifiers
 ### Example
 
 ```javascript
-import YapilyApi from 'yapily-api';
-let defaultClient = YapilyApi.ApiClient.instance;
+var YapilyApi = require('@yapily/yapily-api');
+var defaultClient = YapilyApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
-let basicAuth = defaultClient.authentications['basicAuth'];
+var basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
 // Configure OAuth2 access token for authorization: tokenAuth
-let tokenAuth = defaultClient.authentications['tokenAuth'];
+var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new YapilyApi.ApplicationUsersApi();
-let userDeleteRequest = new YapilyApi.UserDeleteRequest(); // UserDeleteRequest | userDeleteRequest
-apiInstance.startDeleteUsersJobUsingPOST(userDeleteRequest, (error, data, response) => {
+var apiInstance = new YapilyApi.ApplicationUsersApi();
+var userDeleteRequest = new YapilyApi.UserDeleteRequest(); // UserDeleteRequest | userDeleteRequest
+var callback = function(error, data, response) {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-});
+};
+apiInstance.startDeleteUsersJobUsingPOST(userDeleteRequest, callback);
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes

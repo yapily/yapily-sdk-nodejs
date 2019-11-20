@@ -17,32 +17,34 @@ Transfer money from one account to another account accessible with the same cons
 ### Example
 
 ```javascript
-import YapilyApi from 'yapily-api';
-let defaultClient = YapilyApi.ApiClient.instance;
+var YapilyApi = require('@yapily/yapily-api');
+var defaultClient = YapilyApi.ApiClient.instance;
 // Configure HTTP basic authorization: basicAuth
-let basicAuth = defaultClient.authentications['basicAuth'];
+var basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
 // Configure OAuth2 access token for authorization: tokenAuth
-let tokenAuth = defaultClient.authentications['tokenAuth'];
+var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new YapilyApi.TransfersApi();
-let consent = "consent_example"; // String | Consent Token
-let accountId = "accountId_example"; // String | accountId
-let opts = {
+var apiInstance = new YapilyApi.TransfersApi();
+var consent = "consent_example"; // String | Consent Token
+var accountId = "accountId_example"; // String | accountId
+var opts = {
   'transferRequest': new YapilyApi.TransferRequest() // TransferRequest | transferRequest
 };
-apiInstance.transferUsingPUT(consent, accountId, opts, (error, data, response) => {
+var callback = function(error, data, response) {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-});
+};
+apiInstance.transferUsingPUT(consent, accountId, opts, callback);
 ```
 
 ### Parameters
+
 
 
 Name | Type | Description  | Notes

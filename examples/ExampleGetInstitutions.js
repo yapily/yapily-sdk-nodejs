@@ -1,4 +1,4 @@
-var YapilyApi = require('yapily-api');
+var YapilyApi = require('@yapily/yapily-api');
 var constants = require('./constants.js');
 
 var defaultClient = YapilyApi.ApiClient.instance;
