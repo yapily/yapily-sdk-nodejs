@@ -35,7 +35,7 @@
   /**
    * The PeriodicPaymentRequest model module.
    * @module model/PeriodicPaymentRequest
-   * @version 0.0.162
+   * @version 0.0.161
    */
 
   /**

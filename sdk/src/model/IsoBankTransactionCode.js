@@ -35,7 +35,7 @@
   /**
    * The IsoBankTransactionCode model module.
    * @module model/IsoBankTransactionCode
-   * @version 0.0.162
+   * @version 0.0.161
    */
 
   /**

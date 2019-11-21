@@ -35,7 +35,7 @@
   /**
    * The ApiResponseOfBulkUserDeleteDetails model module.
    * @module model/ApiResponseOfBulkUserDeleteDetails
-   * @version 0.0.162
+   * @version 0.0.161
    */
 
   /**
