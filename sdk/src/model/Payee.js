@@ -71,11 +71,11 @@
       if (data.hasOwnProperty('accountIdentifications')) {
         obj['accountIdentifications'] = ApiClient.convertToType(data['accountIdentifications'], [AccountIdentification]);
       }
-      if (data.hasOwnProperty('merchantCategoryCode')) {
-        obj['merchantCategoryCode'] = ApiClient.convertToType(data['merchantCategoryCode'], 'String');
-      }
       if (data.hasOwnProperty('merchantId')) {
         obj['merchantId'] = ApiClient.convertToType(data['merchantId'], 'String');
+      }
+      if (data.hasOwnProperty('merchantCategoryCode')) {
+        obj['merchantCategoryCode'] = ApiClient.convertToType(data['merchantCategoryCode'], 'String');
       }
     }
     return obj;
@@ -94,13 +94,13 @@
    */
   exports.prototype['accountIdentifications'] = undefined;
   /**
-   * @member {String} merchantCategoryCode
-   */
-  exports.prototype['merchantCategoryCode'] = undefined;
-  /**
    * @member {String} merchantId
    */
   exports.prototype['merchantId'] = undefined;
+  /**
+   * @member {String} merchantCategoryCode
+   */
+  exports.prototype['merchantCategoryCode'] = undefined;
 
 
 

@@ -164,6 +164,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property numberOfPayments (base name: "numberOfPayments")', function() {
+      // uncomment below and update the code to test the property numberOfPayments
+      //var instance = new YapilyApi.PaymentResponse();
+      //expect(instance).to.be();
+    });
+
     it('should have the property previousPaymentAmount (base name: "previousPaymentAmount")', function() {
       // uncomment below and update the code to test the property previousPaymentAmount
       //var instance = new YapilyApi.PaymentResponse();
@@ -196,6 +202,30 @@
 
     it('should have the property frequency (base name: "frequency")', function() {
       // uncomment below and update the code to test the property frequency
+      //var instance = new YapilyApi.PaymentResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property currencyOfTransfer (base name: "currencyOfTransfer")', function() {
+      // uncomment below and update the code to test the property currencyOfTransfer
+      //var instance = new YapilyApi.PaymentResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property purpose (base name: "purpose")', function() {
+      // uncomment below and update the code to test the property purpose
+      //var instance = new YapilyApi.PaymentResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property priority (base name: "priority")', function() {
+      // uncomment below and update the code to test the property priority
+      //var instance = new YapilyApi.PaymentResponse();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property exchangeRate (base name: "exchangeRate")', function() {
+      // uncomment below and update the code to test the property exchangeRate
       //var instance = new YapilyApi.PaymentResponse();
       //expect(instance).to.be();
     });

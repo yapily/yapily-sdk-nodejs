@@ -104,8 +104,14 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property periodicPayments (base name: "periodicPayments")', function() {
-      // uncomment below and update the code to test the property periodicPayments
+    it('should have the property periodicPayment (base name: "periodicPayment")', function() {
+      // uncomment below and update the code to test the property periodicPayment
+      //var instance = new YapilyApi.PaymentRequest();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property internationalPayment (base name: "internationalPayment")', function() {
+      // uncomment below and update the code to test the property internationalPayment
       //var instance = new YapilyApi.PaymentRequest();
       //expect(instance).to.be();
     });

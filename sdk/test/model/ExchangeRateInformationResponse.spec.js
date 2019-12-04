@@ -30,7 +30,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new YapilyApi.Payee();
+    instance = new YapilyApi.ExchangeRateInformationResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -49,40 +49,40 @@
       object[property] = value;
   }
 
-  describe('Payee', function() {
-    it('should create an instance of Payee', function() {
-      // uncomment below and update the code to test Payee
-      //var instance = new YapilyApi.Payee();
-      //expect(instance).to.be.a(YapilyApi.Payee);
+  describe('ExchangeRateInformationResponse', function() {
+    it('should create an instance of ExchangeRateInformationResponse', function() {
+      // uncomment below and update the code to test ExchangeRateInformationResponse
+      //var instance = new YapilyApi.ExchangeRateInformationResponse();
+      //expect(instance).to.be.a(YapilyApi.ExchangeRateInformationResponse);
     });
 
-    it('should have the property name (base name: "name")', function() {
-      // uncomment below and update the code to test the property name
-      //var instance = new YapilyApi.Payee();
+    it('should have the property exchangeRateExpiryDate (base name: "exchangeRateExpiryDate")', function() {
+      // uncomment below and update the code to test the property exchangeRateExpiryDate
+      //var instance = new YapilyApi.ExchangeRateInformationResponse();
       //expect(instance).to.be();
     });
 
-    it('should have the property address (base name: "address")', function() {
-      // uncomment below and update the code to test the property address
-      //var instance = new YapilyApi.Payee();
+    it('should have the property foreignExchangeContractReference (base name: "foreignExchangeContractReference")', function() {
+      // uncomment below and update the code to test the property foreignExchangeContractReference
+      //var instance = new YapilyApi.ExchangeRateInformationResponse();
       //expect(instance).to.be();
     });
 
-    it('should have the property accountIdentifications (base name: "accountIdentifications")', function() {
-      // uncomment below and update the code to test the property accountIdentifications
-      //var instance = new YapilyApi.Payee();
+    it('should have the property rate (base name: "rate")', function() {
+      // uncomment below and update the code to test the property rate
+      //var instance = new YapilyApi.ExchangeRateInformationResponse();
       //expect(instance).to.be();
     });
 
-    it('should have the property merchantId (base name: "merchantId")', function() {
-      // uncomment below and update the code to test the property merchantId
-      //var instance = new YapilyApi.Payee();
+    it('should have the property rateType (base name: "rateType")', function() {
+      // uncomment below and update the code to test the property rateType
+      //var instance = new YapilyApi.ExchangeRateInformationResponse();
       //expect(instance).to.be();
     });
 
-    it('should have the property merchantCategoryCode (base name: "merchantCategoryCode")', function() {
-      // uncomment below and update the code to test the property merchantCategoryCode
-      //var instance = new YapilyApi.Payee();
+    it('should have the property unitCurrency (base name: "unitCurrency")', function() {
+      // uncomment below and update the code to test the property unitCurrency
+      //var instance = new YapilyApi.ExchangeRateInformationResponse();
       //expect(instance).to.be();
     });
 

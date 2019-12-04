@@ -22,12 +22,17 @@ Name | Type | Description | Notes
 **finalPaymentAmount** | [**Amount**](Amount.md) |  | [optional] 
 **finalPaymentDateTime** | **Date** |  | [optional] 
 **createdAt** | **Date** |  | [optional] 
+**numberOfPayments** | **Number** |  | [optional] 
 **previousPaymentAmount** | [**Amount**](Amount.md) |  | [optional] 
 **previousPaymentDateTime** | **Date** |  | [optional] 
 **chargeDetails** | [**[ChargeDetails]**](ChargeDetails.md) |  | [optional] 
 **scheduledPaymentType** | **String** |  | [optional] 
 **scheduledPaymentDateTime** | **Date** |  | [optional] 
 **frequency** | [**FrequencyResponse**](FrequencyResponse.md) |  | [optional] 
+**currencyOfTransfer** | **String** |  | [optional] 
+**purpose** | **String** |  | [optional] 
+**priority** | **String** |  | [optional] 
+**exchangeRate** | [**ExchangeRateInformationResponse**](ExchangeRateInformationResponse.md) |  | [optional] 
 
 
 
@@ -49,6 +54,17 @@ Name | Type | Description | Notes
 * `ACTIVE` (value: `"ACTIVE"`)
 
 * `INACTIVE` (value: `"INACTIVE"`)
+
+
+
+
+
+## Enum: PriorityEnum
+
+
+* `NORMAL` (value: `"NORMAL"`)
+
+* `URGENT` (value: `"URGENT"`)
 
 
 

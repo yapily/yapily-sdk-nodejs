@@ -16,18 +16,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/Amount', 'model/ChargeDetails', 'model/FrequencyResponse', 'model/Payee', 'model/PaymentStatusDetails'], factory);
+    define(['ApiClient', 'model/Amount', 'model/ChargeDetails', 'model/ExchangeRateInformationResponse', 'model/FrequencyResponse', 'model/Payee', 'model/PaymentStatusDetails'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./Amount'), require('./ChargeDetails'), require('./FrequencyResponse'), require('./Payee'), require('./PaymentStatusDetails'));
+    module.exports = factory(require('../ApiClient'), require('./Amount'), require('./ChargeDetails'), require('./ExchangeRateInformationResponse'), require('./FrequencyResponse'), require('./Payee'), require('./PaymentStatusDetails'));
   } else {
     // Browser globals (root is window)
     if (!root.YapilyApi) {
       root.YapilyApi = {};
     }
-    root.YapilyApi.PaymentResponse = factory(root.YapilyApi.ApiClient, root.YapilyApi.Amount, root.YapilyApi.ChargeDetails, root.YapilyApi.FrequencyResponse, root.YapilyApi.Payee, root.YapilyApi.PaymentStatusDetails);
+    root.YapilyApi.PaymentResponse = factory(root.YapilyApi.ApiClient, root.YapilyApi.Amount, root.YapilyApi.ChargeDetails, root.YapilyApi.ExchangeRateInformationResponse, root.YapilyApi.FrequencyResponse, root.YapilyApi.Payee, root.YapilyApi.PaymentStatusDetails);
   }
-}(this, function(ApiClient, Amount, ChargeDetails, FrequencyResponse, Payee, PaymentStatusDetails) {
+}(this, function(ApiClient, Amount, ChargeDetails, ExchangeRateInformationResponse, FrequencyResponse, Payee, PaymentStatusDetails) {
   'use strict';
 
 
@@ -112,6 +112,9 @@
       if (data.hasOwnProperty('createdAt')) {
         obj['createdAt'] = ApiClient.convertToType(data['createdAt'], 'Date');
       }
+      if (data.hasOwnProperty('numberOfPayments')) {
+        obj['numberOfPayments'] = ApiClient.convertToType(data['numberOfPayments'], 'Number');
+      }
       if (data.hasOwnProperty('previousPaymentAmount')) {
         obj['previousPaymentAmount'] = Amount.constructFromObject(data['previousPaymentAmount']);
       }
@@ -129,6 +132,18 @@
       }
       if (data.hasOwnProperty('frequency')) {
         obj['frequency'] = FrequencyResponse.constructFromObject(data['frequency']);
+      }
+      if (data.hasOwnProperty('currencyOfTransfer')) {
+        obj['currencyOfTransfer'] = ApiClient.convertToType(data['currencyOfTransfer'], 'String');
+      }
+      if (data.hasOwnProperty('purpose')) {
+        obj['purpose'] = ApiClient.convertToType(data['purpose'], 'String');
+      }
+      if (data.hasOwnProperty('priority')) {
+        obj['priority'] = ApiClient.convertToType(data['priority'], 'String');
+      }
+      if (data.hasOwnProperty('exchangeRate')) {
+        obj['exchangeRate'] = ExchangeRateInformationResponse.constructFromObject(data['exchangeRate']);
       }
     }
     return obj;
@@ -207,6 +222,10 @@
    */
   exports.prototype['createdAt'] = undefined;
   /**
+   * @member {Number} numberOfPayments
+   */
+  exports.prototype['numberOfPayments'] = undefined;
+  /**
    * @member {module:model/Amount} previousPaymentAmount
    */
   exports.prototype['previousPaymentAmount'] = undefined;
@@ -230,6 +249,22 @@
    * @member {module:model/FrequencyResponse} frequency
    */
   exports.prototype['frequency'] = undefined;
+  /**
+   * @member {String} currencyOfTransfer
+   */
+  exports.prototype['currencyOfTransfer'] = undefined;
+  /**
+   * @member {String} purpose
+   */
+  exports.prototype['purpose'] = undefined;
+  /**
+   * @member {module:model/PaymentResponse.PriorityEnum} priority
+   */
+  exports.prototype['priority'] = undefined;
+  /**
+   * @member {module:model/ExchangeRateInformationResponse} exchangeRate
+   */
+  exports.prototype['exchangeRate'] = undefined;
 
 
   /**
@@ -278,6 +313,23 @@
      * @const
      */
     "INACTIVE": "INACTIVE"  };
+
+  /**
+   * Allowed values for the <code>priority</code> property.
+   * @enum {String}
+   * @readonly
+   */
+  exports.PriorityEnum = {
+    /**
+     * value: "NORMAL"
+     * @const
+     */
+    "NORMAL": "NORMAL",
+    /**
+     * value: "URGENT"
+     * @const
+     */
+    "URGENT": "URGENT"  };
 
 
   return exports;

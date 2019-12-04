@@ -109,11 +109,6 @@
      */
     "BBAN": "BBAN",
     /**
-     * value: "SWIFT"
-     * @const
-     */
-    "SWIFT": "SWIFT",
-    /**
      * value: "BIC"
      * @const
      */
@@ -133,6 +128,16 @@
      * @const
      */
     "MSISDN": "MSISDN",
+    /**
+     * value: "BSB"
+     * @const
+     */
+    "BSB": "BSB",
+    /**
+     * value: "NCC"
+     * @const
+     */
+    "NCC": "NCC",
     /**
      * value: "ABA"
      * @const

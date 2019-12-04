@@ -20,8 +20,6 @@ Name | Type | Description | Notes
 
 * `BBAN` (value: `"BBAN"`)
 
-* `SWIFT` (value: `"SWIFT"`)
-
 * `BIC` (value: `"BIC"`)
 
 * `PAN` (value: `"PAN"`)
@@ -29,6 +27,10 @@ Name | Type | Description | Notes
 * `MASKED_PAN` (value: `"MASKED_PAN"`)
 
 * `MSISDN` (value: `"MSISDN"`)
+
+* `BSB` (value: `"BSB"`)
+
+* `NCC` (value: `"NCC"`)
 
 * `ABA` (value: `"ABA"`)
 

@@ -134,26 +134,14 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property startsAt (base name: "startsAt")', function() {
-      // uncomment below and update the code to test the property startsAt
+    it('should have the property charges (base name: "charges")', function() {
+      // uncomment below and update the code to test the property charges
       //var instance = new YapilyApi.PaymentAuthorisationRequestResponse();
       //expect(instance).to.be();
     });
 
-    it('should have the property totalMaxAmount (base name: "totalMaxAmount")', function() {
-      // uncomment below and update the code to test the property totalMaxAmount
-      //var instance = new YapilyApi.PaymentAuthorisationRequestResponse();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property maxAmountPerRequest (base name: "maxAmountPerRequest")', function() {
-      // uncomment below and update the code to test the property maxAmountPerRequest
-      //var instance = new YapilyApi.PaymentAuthorisationRequestResponse();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property allowOverdraft (base name: "allowOverdraft")', function() {
-      // uncomment below and update the code to test the property allowOverdraft
+    it('should have the property exchangeRateInformation (base name: "exchangeRateInformation")', function() {
+      // uncomment below and update the code to test the property exchangeRateInformation
       //var instance = new YapilyApi.PaymentAuthorisationRequestResponse();
       //expect(instance).to.be();
     });

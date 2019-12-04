@@ -16,18 +16,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/AccountIdentification', 'model/Amount', 'model/Payee', 'model/PeriodicPaymentRequest'], factory);
+    define(['ApiClient', 'model/AccountIdentification', 'model/Amount', 'model/InternationalPaymentRequest', 'model/Payee', 'model/PeriodicPaymentRequest'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./AccountIdentification'), require('./Amount'), require('./Payee'), require('./PeriodicPaymentRequest'));
+    module.exports = factory(require('../ApiClient'), require('./AccountIdentification'), require('./Amount'), require('./InternationalPaymentRequest'), require('./Payee'), require('./PeriodicPaymentRequest'));
   } else {
     // Browser globals (root is window)
     if (!root.YapilyApi) {
       root.YapilyApi = {};
     }
-    root.YapilyApi.PaymentRequest = factory(root.YapilyApi.ApiClient, root.YapilyApi.AccountIdentification, root.YapilyApi.Amount, root.YapilyApi.Payee, root.YapilyApi.PeriodicPaymentRequest);
+    root.YapilyApi.PaymentRequest = factory(root.YapilyApi.ApiClient, root.YapilyApi.AccountIdentification, root.YapilyApi.Amount, root.YapilyApi.InternationalPaymentRequest, root.YapilyApi.Payee, root.YapilyApi.PeriodicPaymentRequest);
   }
-}(this, function(ApiClient, AccountIdentification, Amount, Payee, PeriodicPaymentRequest) {
+}(this, function(ApiClient, AccountIdentification, Amount, InternationalPaymentRequest, Payee, PeriodicPaymentRequest) {
   'use strict';
 
 
@@ -42,13 +42,13 @@
    * Constructs a new <code>PaymentRequest</code>.
    * @alias module:model/PaymentRequest
    * @class
-   * @param paymentIdempotencyId {String} 
+   * @param type {module:model/PaymentRequest.TypeEnum} 
    * @param payee {module:model/Payee} 
    */
-  var exports = function(paymentIdempotencyId, payee) {
+  var exports = function(type, payee) {
     var _this = this;
 
-    _this['paymentIdempotencyId'] = paymentIdempotencyId;
+    _this['type'] = type;
     _this['payee'] = payee;
   };
 
@@ -86,8 +86,11 @@
       if (data.hasOwnProperty('payee')) {
         obj['payee'] = Payee.constructFromObject(data['payee']);
       }
-      if (data.hasOwnProperty('periodicPayments')) {
-        obj['periodicPayments'] = PeriodicPaymentRequest.constructFromObject(data['periodicPayments']);
+      if (data.hasOwnProperty('periodicPayment')) {
+        obj['periodicPayment'] = PeriodicPaymentRequest.constructFromObject(data['periodicPayment']);
+      }
+      if (data.hasOwnProperty('internationalPayment')) {
+        obj['internationalPayment'] = InternationalPaymentRequest.constructFromObject(data['internationalPayment']);
       }
     }
     return obj;
@@ -126,9 +129,13 @@
    */
   exports.prototype['payee'] = undefined;
   /**
-   * @member {module:model/PeriodicPaymentRequest} periodicPayments
+   * @member {module:model/PeriodicPaymentRequest} periodicPayment
    */
-  exports.prototype['periodicPayments'] = undefined;
+  exports.prototype['periodicPayment'] = undefined;
+  /**
+   * @member {module:model/InternationalPaymentRequest} internationalPayment
+   */
+  exports.prototype['internationalPayment'] = undefined;
 
 
   /**
@@ -173,22 +180,27 @@
      * value: "DOMESTIC_PAYMENT"
      * @const
      */
-    "PAYMENT": "DOMESTIC_PAYMENT",
+    "DOMESTIC_PAYMENT": "DOMESTIC_PAYMENT",
     /**
      * value: "DOMESTIC_VARIABLE_RECURRING_PAYMENT"
      * @const
      */
-    "VARIABLE_RECURRING_PAYMENT": "DOMESTIC_VARIABLE_RECURRING_PAYMENT",
+    "DOMESTIC_VARIABLE_RECURRING_PAYMENT": "DOMESTIC_VARIABLE_RECURRING_PAYMENT",
     /**
      * value: "DOMESTIC_SCHEDULED_PAYMENT"
      * @const
      */
-    "SCHEDULED_PAYMENT": "DOMESTIC_SCHEDULED_PAYMENT",
+    "DOMESTIC_SCHEDULED_PAYMENT": "DOMESTIC_SCHEDULED_PAYMENT",
     /**
      * value: "DOMESTIC_PERIODIC_PAYMENT"
      * @const
      */
-    "PERIODIC_PAYMENT": "DOMESTIC_PERIODIC_PAYMENT"  };
+    "DOMESTIC_PERIODIC_PAYMENT": "DOMESTIC_PERIODIC_PAYMENT",
+    /**
+     * value: "INTERNATIONAL_PAYMENT"
+     * @const
+     */
+    "INTERNATIONAL_PAYMENT": "INTERNATIONAL_PAYMENT"  };
 
 
   return exports;

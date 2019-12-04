@@ -97,18 +97,6 @@
       if (data.hasOwnProperty('featureScope')) {
         obj['featureScope'] = ApiClient.convertToType(data['featureScope'], ['String']);
       }
-      if (data.hasOwnProperty('startsAt')) {
-        obj['startsAt'] = ApiClient.convertToType(data['startsAt'], 'Date');
-      }
-      if (data.hasOwnProperty('totalMaxAmount')) {
-        obj['totalMaxAmount'] = ApiClient.convertToType(data['totalMaxAmount'], 'Number');
-      }
-      if (data.hasOwnProperty('maxAmountPerRequest')) {
-        obj['maxAmountPerRequest'] = ApiClient.convertToType(data['maxAmountPerRequest'], 'Number');
-      }
-      if (data.hasOwnProperty('allowOverdraft')) {
-        obj['allowOverdraft'] = ApiClient.convertToType(data['allowOverdraft'], 'Boolean');
-      }
       if (data.hasOwnProperty('consentToken')) {
         obj['consentToken'] = ApiClient.convertToType(data['consentToken'], 'String');
       }
@@ -170,22 +158,6 @@
    * @member {Array.<module:model/Consent.FeatureScopeEnum>} featureScope
    */
   exports.prototype['featureScope'] = undefined;
-  /**
-   * @member {Date} startsAt
-   */
-  exports.prototype['startsAt'] = undefined;
-  /**
-   * @member {Number} totalMaxAmount
-   */
-  exports.prototype['totalMaxAmount'] = undefined;
-  /**
-   * @member {Number} maxAmountPerRequest
-   */
-  exports.prototype['maxAmountPerRequest'] = undefined;
-  /**
-   * @member {Boolean} allowOverdraft
-   */
-  exports.prototype['allowOverdraft'] = undefined;
   /**
    * @member {String} consentToken
    */
@@ -346,15 +318,15 @@
      */
     "EXISTING_PAYMENTS_DETAILS": "EXISTING_PAYMENTS_DETAILS",
     /**
-     * value: "INITIATE_PAYMENT"
+     * value: "INITIATE_DOMESTIC_SINGLE_PAYMENT"
      * @const
      */
-    "INITIATE_PAYMENT": "INITIATE_PAYMENT",
+    "INITIATE_DOMESTIC_SINGLE_PAYMENT": "INITIATE_DOMESTIC_SINGLE_PAYMENT",
     /**
-     * value: "CREATE_PAYMENT"
+     * value: "CREATE_DOMESTIC_SINGLE_PAYMENT"
      * @const
      */
-    "CREATE_PAYMENT": "CREATE_PAYMENT",
+    "CREATE_DOMESTIC_SINGLE_PAYMENT": "CREATE_DOMESTIC_SINGLE_PAYMENT",
     /**
      * value: "INITIATE_DOMESTIC_VARIABLE_RECURRING_PAYMENT"
      * @const
@@ -421,15 +393,15 @@
      */
     "CREATE_INTERNATIONAL_PERIODIC_PAYMENT_ORDER": "CREATE_INTERNATIONAL_PERIODIC_PAYMENT_ORDER",
     /**
-     * value: "INITIATE_INTERNATIONAL_PAYMENT"
+     * value: "INITIATE_INTERNATIONAL_SINGLE_PAYMENT"
      * @const
      */
-    "INITIATE_INTERNATIONAL_PAYMENT": "INITIATE_INTERNATIONAL_PAYMENT",
+    "INITIATE_INTERNATIONAL_SINGLE_PAYMENT": "INITIATE_INTERNATIONAL_SINGLE_PAYMENT",
     /**
-     * value: "CREATE_INTERNATIONAL_PAYMENT"
+     * value: "CREATE_INTERNATIONAL_SINGLE_PAYMENT"
      * @const
      */
-    "CREATE_INTERNATIONAL_PAYMENT": "CREATE_INTERNATIONAL_PAYMENT",
+    "CREATE_INTERNATIONAL_SINGLE_PAYMENT": "CREATE_INTERNATIONAL_SINGLE_PAYMENT",
     /**
      * value: "TRANSFER"
      * @const

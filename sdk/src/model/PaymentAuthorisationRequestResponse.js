@@ -16,18 +16,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient'], factory);
+    define(['ApiClient', 'model/ChargeDetails', 'model/ExchangeRateInformationResponse'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'));
+    module.exports = factory(require('../ApiClient'), require('./ChargeDetails'), require('./ExchangeRateInformationResponse'));
   } else {
     // Browser globals (root is window)
     if (!root.YapilyApi) {
       root.YapilyApi = {};
     }
-    root.YapilyApi.PaymentAuthorisationRequestResponse = factory(root.YapilyApi.ApiClient);
+    root.YapilyApi.PaymentAuthorisationRequestResponse = factory(root.YapilyApi.ApiClient, root.YapilyApi.ChargeDetails, root.YapilyApi.ExchangeRateInformationResponse);
   }
-}(this, function(ApiClient) {
+}(this, function(ApiClient, ChargeDetails, ExchangeRateInformationResponse) {
   'use strict';
 
 
@@ -97,17 +97,11 @@
       if (data.hasOwnProperty('featureScope')) {
         obj['featureScope'] = ApiClient.convertToType(data['featureScope'], ['String']);
       }
-      if (data.hasOwnProperty('startsAt')) {
-        obj['startsAt'] = ApiClient.convertToType(data['startsAt'], 'Date');
+      if (data.hasOwnProperty('charges')) {
+        obj['charges'] = ApiClient.convertToType(data['charges'], [ChargeDetails]);
       }
-      if (data.hasOwnProperty('totalMaxAmount')) {
-        obj['totalMaxAmount'] = ApiClient.convertToType(data['totalMaxAmount'], 'Number');
-      }
-      if (data.hasOwnProperty('maxAmountPerRequest')) {
-        obj['maxAmountPerRequest'] = ApiClient.convertToType(data['maxAmountPerRequest'], 'Number');
-      }
-      if (data.hasOwnProperty('allowOverdraft')) {
-        obj['allowOverdraft'] = ApiClient.convertToType(data['allowOverdraft'], 'Boolean');
+      if (data.hasOwnProperty('exchangeRateInformation')) {
+        obj['exchangeRateInformation'] = ExchangeRateInformationResponse.constructFromObject(data['exchangeRateInformation']);
       }
       if (data.hasOwnProperty('consentToken')) {
         obj['consentToken'] = ApiClient.convertToType(data['consentToken'], 'String');
@@ -174,21 +168,13 @@
    */
   exports.prototype['featureScope'] = undefined;
   /**
-   * @member {Date} startsAt
+   * @member {Array.<module:model/ChargeDetails>} charges
    */
-  exports.prototype['startsAt'] = undefined;
+  exports.prototype['charges'] = undefined;
   /**
-   * @member {Number} totalMaxAmount
+   * @member {module:model/ExchangeRateInformationResponse} exchangeRateInformation
    */
-  exports.prototype['totalMaxAmount'] = undefined;
-  /**
-   * @member {Number} maxAmountPerRequest
-   */
-  exports.prototype['maxAmountPerRequest'] = undefined;
-  /**
-   * @member {Boolean} allowOverdraft
-   */
-  exports.prototype['allowOverdraft'] = undefined;
+  exports.prototype['exchangeRateInformation'] = undefined;
   /**
    * @member {String} consentToken
    */
@@ -353,15 +339,15 @@
      */
     "EXISTING_PAYMENTS_DETAILS": "EXISTING_PAYMENTS_DETAILS",
     /**
-     * value: "INITIATE_PAYMENT"
+     * value: "INITIATE_DOMESTIC_SINGLE_PAYMENT"
      * @const
      */
-    "INITIATE_PAYMENT": "INITIATE_PAYMENT",
+    "INITIATE_DOMESTIC_SINGLE_PAYMENT": "INITIATE_DOMESTIC_SINGLE_PAYMENT",
     /**
-     * value: "CREATE_PAYMENT"
+     * value: "CREATE_DOMESTIC_SINGLE_PAYMENT"
      * @const
      */
-    "CREATE_PAYMENT": "CREATE_PAYMENT",
+    "CREATE_DOMESTIC_SINGLE_PAYMENT": "CREATE_DOMESTIC_SINGLE_PAYMENT",
     /**
      * value: "INITIATE_DOMESTIC_VARIABLE_RECURRING_PAYMENT"
      * @const
@@ -428,15 +414,15 @@
      */
     "CREATE_INTERNATIONAL_PERIODIC_PAYMENT_ORDER": "CREATE_INTERNATIONAL_PERIODIC_PAYMENT_ORDER",
     /**
-     * value: "INITIATE_INTERNATIONAL_PAYMENT"
+     * value: "INITIATE_INTERNATIONAL_SINGLE_PAYMENT"
      * @const
      */
-    "INITIATE_INTERNATIONAL_PAYMENT": "INITIATE_INTERNATIONAL_PAYMENT",
+    "INITIATE_INTERNATIONAL_SINGLE_PAYMENT": "INITIATE_INTERNATIONAL_SINGLE_PAYMENT",
     /**
-     * value: "CREATE_INTERNATIONAL_PAYMENT"
+     * value: "CREATE_INTERNATIONAL_SINGLE_PAYMENT"
      * @const
      */
-    "CREATE_INTERNATIONAL_PAYMENT": "CREATE_INTERNATIONAL_PAYMENT",
+    "CREATE_INTERNATIONAL_SINGLE_PAYMENT": "CREATE_INTERNATIONAL_SINGLE_PAYMENT",
     /**
      * value: "TRANSFER"
      * @const

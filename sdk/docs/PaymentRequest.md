@@ -4,15 +4,16 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**paymentIdempotencyId** | **String** |  | 
+**paymentIdempotencyId** | **String** |  | [optional] 
 **payerAccountIdentifications** | [**[AccountIdentification]**](AccountIdentification.md) |  | [optional] 
 **amount** | [**Amount**](Amount.md) |  | [optional] 
 **reference** | **String** |  | [optional] 
 **contextType** | **String** |  | [optional] 
-**type** | **String** |  | [optional] 
+**type** | **String** |  | 
 **paymentDateTime** | **Date** |  | [optional] 
 **payee** | [**Payee**](Payee.md) |  | 
-**periodicPayments** | [**PeriodicPaymentRequest**](PeriodicPaymentRequest.md) |  | [optional] 
+**periodicPayment** | [**PeriodicPaymentRequest**](PeriodicPaymentRequest.md) |  | [optional] 
+**internationalPayment** | [**InternationalPaymentRequest**](InternationalPaymentRequest.md) |  | [optional] 
 
 
 
@@ -36,13 +37,15 @@ Name | Type | Description | Notes
 ## Enum: TypeEnum
 
 
-* `PAYMENT` (value: `"DOMESTIC_PAYMENT"`)
+* `DOMESTIC_PAYMENT` (value: `"DOMESTIC_PAYMENT"`)
 
-* `VARIABLE_RECURRING_PAYMENT` (value: `"DOMESTIC_VARIABLE_RECURRING_PAYMENT"`)
+* `DOMESTIC_VARIABLE_RECURRING_PAYMENT` (value: `"DOMESTIC_VARIABLE_RECURRING_PAYMENT"`)
 
-* `SCHEDULED_PAYMENT` (value: `"DOMESTIC_SCHEDULED_PAYMENT"`)
+* `DOMESTIC_SCHEDULED_PAYMENT` (value: `"DOMESTIC_SCHEDULED_PAYMENT"`)
 
-* `PERIODIC_PAYMENT` (value: `"DOMESTIC_PERIODIC_PAYMENT"`)
+* `DOMESTIC_PERIODIC_PAYMENT` (value: `"DOMESTIC_PERIODIC_PAYMENT"`)
+
+* `INTERNATIONAL_PAYMENT` (value: `"INTERNATIONAL_PAYMENT"`)
 
 
 

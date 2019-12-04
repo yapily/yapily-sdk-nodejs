@@ -17,10 +17,8 @@ Name | Type | Description | Notes
 **timeToExpireInMillis** | **Number** | Deprecated. Use &#x60;timeToExpire&#x60; instead. | [optional] 
 **timeToExpire** | **String** | ISO 8601 duration | [optional] 
 **featureScope** | **[String]** |  | [optional] 
-**startsAt** | **Date** |  | [optional] 
-**totalMaxAmount** | **Number** |  | [optional] 
-**maxAmountPerRequest** | **Number** |  | [optional] 
-**allowOverdraft** | **Boolean** |  | [optional] 
+**charges** | [**[ChargeDetails]**](ChargeDetails.md) |  | [optional] 
+**exchangeRateInformation** | [**ExchangeRateInformationResponse**](ExchangeRateInformationResponse.md) |  | [optional] 
 **consentToken** | **String** |  | [optional] 
 **authorisationUrl** | **String** |  | [optional] 
 
@@ -92,9 +90,9 @@ Name | Type | Description | Notes
 
 * `EXISTING_PAYMENTS_DETAILS` (value: `"EXISTING_PAYMENTS_DETAILS"`)
 
-* `INITIATE_PAYMENT` (value: `"INITIATE_PAYMENT"`)
+* `INITIATE_DOMESTIC_SINGLE_PAYMENT` (value: `"INITIATE_DOMESTIC_SINGLE_PAYMENT"`)
 
-* `CREATE_PAYMENT` (value: `"CREATE_PAYMENT"`)
+* `CREATE_DOMESTIC_SINGLE_PAYMENT` (value: `"CREATE_DOMESTIC_SINGLE_PAYMENT"`)
 
 * `INITIATE_DOMESTIC_VARIABLE_RECURRING_PAYMENT` (value: `"INITIATE_DOMESTIC_VARIABLE_RECURRING_PAYMENT"`)
 
@@ -122,9 +120,9 @@ Name | Type | Description | Notes
 
 * `CREATE_INTERNATIONAL_PERIODIC_PAYMENT_ORDER` (value: `"CREATE_INTERNATIONAL_PERIODIC_PAYMENT_ORDER"`)
 
-* `INITIATE_INTERNATIONAL_PAYMENT` (value: `"INITIATE_INTERNATIONAL_PAYMENT"`)
+* `INITIATE_INTERNATIONAL_SINGLE_PAYMENT` (value: `"INITIATE_INTERNATIONAL_SINGLE_PAYMENT"`)
 
-* `CREATE_INTERNATIONAL_PAYMENT` (value: `"CREATE_INTERNATIONAL_PAYMENT"`)
+* `CREATE_INTERNATIONAL_SINGLE_PAYMENT` (value: `"CREATE_INTERNATIONAL_SINGLE_PAYMENT"`)
 
 * `TRANSFER` (value: `"TRANSFER"`)
 
