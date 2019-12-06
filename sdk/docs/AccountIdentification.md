@@ -38,6 +38,8 @@ Name | Type | Description | Notes
 
 * `ABA_ACH` (value: `"ABA_ACH"`)
 
+* `EMAIL` (value: `"EMAIL"`)
+
 
 
 

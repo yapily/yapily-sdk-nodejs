@@ -152,7 +152,12 @@
      * value: "ABA_ACH"
      * @const
      */
-    "ABA_ACH": "ABA_ACH"  };
+    "ABA_ACH": "ABA_ACH",
+    /**
+     * value: "EMAIL"
+     * @const
+     */
+    "EMAIL": "EMAIL"  };
 
 
   return exports;
