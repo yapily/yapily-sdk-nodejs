@@ -16,66 +16,70 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient'], factory);
+    define(['ApiClient', 'model/AccountIdentification'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'));
+    module.exports = factory(require('../ApiClient'), require('./AccountIdentification'));
   } else {
     // Browser globals (root is window)
     if (!root.YapilyApi) {
       root.YapilyApi = {};
     }
-    root.YapilyApi.IsoCodeDetails = factory(root.YapilyApi.ApiClient);
+    root.YapilyApi.Payer = factory(root.YapilyApi.ApiClient, root.YapilyApi.AccountIdentification);
   }
-}(this, function(ApiClient) {
+}(this, function(ApiClient, AccountIdentification) {
   'use strict';
 
 
 
   /**
-   * The IsoCodeDetails model module.
-   * @module model/IsoCodeDetails
+   * The Payer model module.
+   * @module model/Payer
    * @version 0.0.166
    */
 
   /**
-   * Constructs a new <code>IsoCodeDetails</code>.
-   * @alias module:model/IsoCodeDetails
+   * Constructs a new <code>Payer</code>.
+   * @alias module:model/Payer
    * @class
+   * @param name {String} 
+   * @param accountIdentifications {Array.<module:model/AccountIdentification>} 
    */
-  var exports = function() {
+  var exports = function(name, accountIdentifications) {
     var _this = this;
 
+    _this['name'] = name;
+    _this['accountIdentifications'] = accountIdentifications;
   };
 
   /**
-   * Constructs a <code>IsoCodeDetails</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>Payer</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/IsoCodeDetails} obj Optional instance to populate.
-   * @return {module:model/IsoCodeDetails} The populated <code>IsoCodeDetails</code> instance.
+   * @param {module:model/Payer} obj Optional instance to populate.
+   * @return {module:model/Payer} The populated <code>Payer</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
-      if (data.hasOwnProperty('code')) {
-        obj['code'] = ApiClient.convertToType(data['code'], 'String');
-      }
       if (data.hasOwnProperty('name')) {
         obj['name'] = ApiClient.convertToType(data['name'], 'String');
+      }
+      if (data.hasOwnProperty('accountIdentifications')) {
+        obj['accountIdentifications'] = ApiClient.convertToType(data['accountIdentifications'], [AccountIdentification]);
       }
     }
     return obj;
   }
 
   /**
-   * @member {String} code
-   */
-  exports.prototype['code'] = undefined;
-  /**
    * @member {String} name
    */
   exports.prototype['name'] = undefined;
+  /**
+   * @member {Array.<module:model/AccountIdentification>} accountIdentifications
+   */
+  exports.prototype['accountIdentifications'] = undefined;
 
 
 

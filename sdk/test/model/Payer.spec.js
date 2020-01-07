@@ -30,7 +30,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new YapilyApi.StatementsApi();
+    instance = new YapilyApi.Payer();
   });
 
   var getProperty = function(object, getter, property) {
@@ -49,37 +49,25 @@
       object[property] = value;
   }
 
-  describe('StatementsApi', function() {
-    describe('getStatementFileUsingGET', function() {
-      it('should call getStatementFileUsingGET successfully', function(done) {
-        //uncomment below and update the code to test getStatementFileUsingGET
-        //instance.getStatementFileUsingGET(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+  describe('Payer', function() {
+    it('should create an instance of Payer', function() {
+      // uncomment below and update the code to test Payer
+      //var instance = new YapilyApi.Payer();
+      //expect(instance).to.be.a(YapilyApi.Payer);
     });
-    describe('getStatementUsingGET', function() {
-      it('should call getStatementUsingGET successfully', function(done) {
-        //uncomment below and update the code to test getStatementUsingGET
-        //instance.getStatementUsingGET(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+
+    it('should have the property name (base name: "name")', function() {
+      // uncomment below and update the code to test the property name
+      //var instance = new YapilyApi.Payer();
+      //expect(instance).to.be();
     });
-    describe('getStatementsUsingGET', function() {
-      it('should call getStatementsUsingGET successfully', function(done) {
-        //uncomment below and update the code to test getStatementsUsingGET
-        //instance.getStatementsUsingGET(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+
+    it('should have the property accountIdentifications (base name: "accountIdentifications")', function() {
+      // uncomment below and update the code to test the property accountIdentifications
+      //var instance = new YapilyApi.Payer();
+      //expect(instance).to.be();
     });
+
   });
 
 }));
