@@ -25,65 +25,46 @@ npm install @yapily/yapily-api
 
 ## Usage
 
-Sample usage of the SDK can be seen in the `examples` folder.
+Sample usage of the SDK can be seen in the `examples` folder. To run any of the examples, follow the steps below:
 
-- Configure the application credentials
+### Configure the application credentials
 
-```javascript
-var defaultClient = YapilyApi.ApiClient.instance;
-var basicAuth = defaultClient.authentications['basicAuth']
-basicAuth.username = constants.APPLICATION_ID
-basicAuth.password = constants.APPLICATION_SECRET
-```
-
-- Retrieve a list of available financial institutions to connect to
-
-```javascript	
-var institutionsApi = new YapilyApi.InstitutionsApi()
-institutionsApi.getInstitutionsUsingGET(function(error,institutions) {})
-```
-
-
-- Creating users and retrieving users for your application registered in the Yapily Dashboard
-```javascript
-var usersApi =  new YapilyApi.ApplicationUsersApi()
-var appUser = new YapilyApi.ApplicationUser()
-appUser.appUserId = "Bojack"
-usersApi.addUserUsingPOST(appUser,function(error,user) {})
-usersApi.getUsersUsingGET(function(error,users) {})
-```
-
-
-- Receiving an authorisation URL your users to log into their institution
+Go to constants.js and fill in the following credentials. The more complex exmples will require you to define all of these 
+variables and will not work unless they are set.
 
 ```javascript
-var institutionAuthorisationUrl = YapilyApi.Auth.authDirectUrl('application-id','user-uuid','institution-id','callback url',"account")
-```
-
-- Receiving consents issued by your user authorizing
-```javascript
-var opts = {
-    "institutionId": institutionId
+module.exports = {
+    "APPLICATION_ID" : "{{APPLICATION_ID}}",
+    "APPLICATION_SECRET" : "{{APPLICATION_SECRET}}",
+    "USER_ID": "{{USER_ID}}",
+    "INSTITUTION_ID": "{{INSTITUTION_ID}}",
+    "CALLBACK_URL": "{{CALLBACK_URL}}"
 }
-//...
-consentsApi.getUserConsentsUsingGET(userUUID,opts,function(error,consents) {})
 ```
 
-- Returning user account details
+### Choose the example you wish to run
 
-```javascript
-var opts = { consent : consentToken };
-//...
-var accountsApi = new YapilyApi.AccountsApi();
-accountsApi.getAccountsUsingGET(opts, accountsCallback);
+All of the examples can be found in one of the following subdirectories in the `examples` folder:
+
+- Accounts
+- Application
+- Consents
+- Institutions
+- Users
+
+You must first install the dependencies for each example in the parents directory by running `npm install` 
+e.g. to run one of the `accounts` demos, first run: 
+
+```
+cd examples/accounts && npm install
 ```
 
-- Returning user identity details
-```javascript
-var opts = { consent : consentToken };
-//...
-var identitiesApi = new YapilyApi.IdentityApi();
-identitiesApi.identityUsingGET(opts, identityCallback);
+### Run the example
+
+Finally, run the example e.g. to run the `GetAccountDetailsWithNewConsent.js` demo, run:
+
+```
+node GetAccountDetailsWithNewConsent.js
 ```
 
 ## Further information
