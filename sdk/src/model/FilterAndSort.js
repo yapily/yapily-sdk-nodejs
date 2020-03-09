@@ -35,7 +35,7 @@
   /**
    * The FilterAndSort model module.
    * @module model/FilterAndSort
-   * @version 0.0.168
+   * @version 0.0.169
    */
 
   /**

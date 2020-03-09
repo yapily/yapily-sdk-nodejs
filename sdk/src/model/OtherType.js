@@ -35,7 +35,7 @@
   /**
    * The OtherType model module.
    * @module model/OtherType
-   * @version 0.0.168
+   * @version 0.0.169
    */
 
   /**

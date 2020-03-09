@@ -35,7 +35,7 @@
   /**
    * The InlineResponse2001ATM model module.
    * @module model/InlineResponse2001ATM
-   * @version 0.0.168
+   * @version 0.0.169
    */
 
   /**

@@ -35,7 +35,7 @@
   /**
    * The PersonalCurrentAccountPCAMarketingState model module.
    * @module model/PersonalCurrentAccountPCAMarketingState
-   * @version 0.0.168
+   * @version 0.0.169
    */
 
   /**
