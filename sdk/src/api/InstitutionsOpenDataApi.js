@@ -33,7 +33,7 @@
   /**
    * InstitutionsOpenData service.
    * @module api/InstitutionsOpenDataApi
-   * @version 0.0.170
+   * @version 0.0.171
    */
 
   /**

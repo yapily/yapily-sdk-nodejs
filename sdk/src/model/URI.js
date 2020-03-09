@@ -35,7 +35,7 @@
   /**
    * The URI model module.
    * @module model/URI
-   * @version 0.0.170
+   * @version 0.0.171
    */
 
   /**

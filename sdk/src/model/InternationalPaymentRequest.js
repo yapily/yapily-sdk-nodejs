@@ -35,7 +35,7 @@
   /**
    * The InternationalPaymentRequest model module.
    * @module model/InternationalPaymentRequest
-   * @version 0.0.170
+   * @version 0.0.171
    */
 
   /**
