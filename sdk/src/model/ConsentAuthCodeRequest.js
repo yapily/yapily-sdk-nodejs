@@ -35,7 +35,7 @@
   /**
    * The ConsentAuthCodeRequest model module.
    * @module model/ConsentAuthCodeRequest
-   * @version 0.0.167
+   * @version 0.0.168
    */
 
   /**

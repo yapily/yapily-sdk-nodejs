@@ -35,7 +35,7 @@
   /**
    * The ApiListResponseOfPaymentResponse model module.
    * @module model/ApiListResponseOfPaymentResponse
-   * @version 0.0.167
+   * @version 0.0.168
    */
 
   /**

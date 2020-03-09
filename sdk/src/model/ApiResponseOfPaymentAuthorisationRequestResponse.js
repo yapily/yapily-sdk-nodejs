@@ -35,7 +35,7 @@
   /**
    * The ApiResponseOfPaymentAuthorisationRequestResponse model module.
    * @module model/ApiResponseOfPaymentAuthorisationRequestResponse
-   * @version 0.0.167
+   * @version 0.0.168
    */
 
   /**

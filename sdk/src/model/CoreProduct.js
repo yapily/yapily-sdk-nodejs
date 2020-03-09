@@ -35,7 +35,7 @@
   /**
    * The CoreProduct model module.
    * @module model/CoreProduct
-   * @version 0.0.167
+   * @version 0.0.168
    */
 
   /**
