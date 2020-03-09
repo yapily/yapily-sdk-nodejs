@@ -35,7 +35,7 @@
   /**
    * The ATMOpenData model module.
    * @module model/ATMOpenData
-   * @version 0.0.169
+   * @version 0.0.170
    */
 
   /**

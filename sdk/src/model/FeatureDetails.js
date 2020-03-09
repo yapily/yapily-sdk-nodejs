@@ -35,7 +35,7 @@
   /**
    * The FeatureDetails model module.
    * @module model/FeatureDetails
-   * @version 0.0.169
+   * @version 0.0.170
    */
 
   /**

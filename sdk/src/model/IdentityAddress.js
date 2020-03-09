@@ -35,7 +35,7 @@
   /**
    * The IdentityAddress model module.
    * @module model/IdentityAddress
-   * @version 0.0.169
+   * @version 0.0.170
    */
 
   /**
