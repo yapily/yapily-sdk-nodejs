@@ -35,7 +35,7 @@
   /**
    * The Amount model module.
    * @module model/Amount
-   * @version 0.0.172
+   * @version 0.0.173
    */
 
   /**
