@@ -35,7 +35,7 @@
   /**
    * The SortCodePaymentRequest model module.
    * @module model/SortCodePaymentRequest
-   * @version 0.0.171
+   * @version 0.0.172
    */
 
   /**

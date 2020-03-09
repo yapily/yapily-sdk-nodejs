@@ -35,7 +35,7 @@
   /**
    * The ATMOpenDataResponse model module.
    * @module model/ATMOpenDataResponse
-   * @version 0.0.171
+   * @version 0.0.172
    */
 
   /**

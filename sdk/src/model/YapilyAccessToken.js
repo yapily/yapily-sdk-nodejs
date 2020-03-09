@@ -35,7 +35,7 @@
   /**
    * The YapilyAccessToken model module.
    * @module model/YapilyAccessToken
-   * @version 0.0.171
+   * @version 0.0.172
    */
 
   /**

@@ -35,7 +35,7 @@
   /**
    * The FrequencyResponse model module.
    * @module model/FrequencyResponse
-   * @version 0.0.171
+   * @version 0.0.172
    */
 
   /**

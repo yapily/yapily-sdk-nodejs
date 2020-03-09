@@ -35,7 +35,7 @@
   /**
    * The InstitutionConsent model module.
    * @module model/InstitutionConsent
-   * @version 0.0.171
+   * @version 0.0.172
    */
 
   /**
