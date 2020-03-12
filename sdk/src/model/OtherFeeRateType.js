@@ -35,7 +35,7 @@
   /**
    * The OtherFeeRateType model module.
    * @module model/OtherFeeRateType
-   * @version 0.0.172
+   * @version 0.0.173
    */
 
   /**

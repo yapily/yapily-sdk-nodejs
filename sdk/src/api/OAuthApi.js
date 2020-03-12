@@ -33,7 +33,7 @@
   /**
    * OAuth service.
    * @module api/OAuthApi
-   * @version 0.0.172
+   * @version 0.0.173
    */
 
   /**

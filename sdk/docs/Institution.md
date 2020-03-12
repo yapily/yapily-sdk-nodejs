@@ -54,6 +54,8 @@ Name | Type | Description | Notes
 
 * `API_KEY` (value: `"API_KEY"`)
 
+* `OPEN_BANKING_NO_KEY` (value: `"OPEN_BANKING_NO_KEY"`)
+
 
 
 

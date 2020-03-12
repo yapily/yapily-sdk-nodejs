@@ -33,7 +33,7 @@
   /**
    * Payments service.
    * @module api/PaymentsApi
-   * @version 0.0.172
+   * @version 0.0.173
    */
 
   /**

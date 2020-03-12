@@ -35,7 +35,7 @@
   /**
    * The Institution model module.
    * @module model/Institution
-   * @version 0.0.172
+   * @version 0.0.173
    */
 
   /**
@@ -209,7 +209,12 @@
      * value: "API_KEY"
      * @const
      */
-    "API_KEY": "API_KEY"  };
+    "API_KEY": "API_KEY",
+    /**
+     * value: "OPEN_BANKING_NO_KEY"
+     * @const
+     */
+    "OPEN_BANKING_NO_KEY": "OPEN_BANKING_NO_KEY"  };
 
   /**
    * Allowed values for the <code>features</code> property.
