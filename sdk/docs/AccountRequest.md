@@ -7,6 +7,8 @@ Name | Type | Description | Notes
 **transactionFrom** | **Date** |  | [optional] 
 **transactionTo** | **Date** |  | [optional] 
 **expiresAt** | **Date** |  | [optional] 
+**accountIdentifiers** | [**AccountInfo**](AccountInfo.md) |  | [optional] 
+**accountIdentifiersForTransaction** | [**[AccountInfo]**](AccountInfo.md) |  | [optional] 
 **featureScope** | **[String]** |  | [optional] 
 
 
@@ -39,6 +41,10 @@ Name | Type | Description | Notes
 * `ACCOUNT_TRANSACTIONS_WITH_MERCHANT` (value: `"ACCOUNT_TRANSACTIONS_WITH_MERCHANT"`)
 
 * `IDENTITY` (value: `"IDENTITY"`)
+
+* `ACCOUNTS_WITHOUT_BALANCE` (value: `"ACCOUNTS_WITHOUT_BALANCE"`)
+
+* `ACCOUNT_WITHOUT_BALANCE` (value: `"ACCOUNT_WITHOUT_BALANCE"`)
 
 * `INITIATE_SINGLE_PAYMENT_SORTCODE` (value: `"INITIATE_SINGLE_PAYMENT_SORTCODE"`)
 

@@ -30,7 +30,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new YapilyApi.ApiListResponseOfConsent();
+    instance = new YapilyApi.AccountInfo();
   });
 
   var getProperty = function(object, getter, property) {
@@ -49,28 +49,22 @@
       object[property] = value;
   }
 
-  describe('ApiListResponseOfConsent', function() {
-    it('should create an instance of ApiListResponseOfConsent', function() {
-      // uncomment below and update the code to test ApiListResponseOfConsent
-      //var instance = new YapilyApi.ApiListResponseOfConsent();
-      //expect(instance).to.be.a(YapilyApi.ApiListResponseOfConsent);
+  describe('AccountInfo', function() {
+    it('should create an instance of AccountInfo', function() {
+      // uncomment below and update the code to test AccountInfo
+      //var instance = new YapilyApi.AccountInfo();
+      //expect(instance).to.be.a(YapilyApi.AccountInfo);
     });
 
-    it('should have the property meta (base name: "meta")', function() {
-      // uncomment below and update the code to test the property meta
-      //var instance = new YapilyApi.ApiListResponseOfConsent();
+    it('should have the property accountId (base name: "accountId")', function() {
+      // uncomment below and update the code to test the property accountId
+      //var instance = new YapilyApi.AccountInfo();
       //expect(instance).to.be();
     });
 
-    it('should have the property data (base name: "data")', function() {
-      // uncomment below and update the code to test the property data
-      //var instance = new YapilyApi.ApiListResponseOfConsent();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property links (base name: "links")', function() {
-      // uncomment below and update the code to test the property links
-      //var instance = new YapilyApi.ApiListResponseOfConsent();
+    it('should have the property accountIdentification (base name: "accountIdentification")', function() {
+      // uncomment below and update the code to test the property accountIdentification
+      //var instance = new YapilyApi.AccountInfo();
       //expect(instance).to.be();
     });
 
