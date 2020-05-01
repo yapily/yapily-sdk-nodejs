@@ -1,6 +1,6 @@
 # YapilyApi.TransfersApi
 
-All URIs are relative to *http://api.yapily.com*
+All URIs are relative to *https://api.yapily.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------

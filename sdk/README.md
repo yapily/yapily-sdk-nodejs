@@ -117,7 +117,7 @@ api.getAccountDirectDebitsUsingGET(accountId, consent, opts, callback);
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *http://api.yapily.com*
+All URIs are relative to *https://api.yapily.com*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------

@@ -3,10 +3,10 @@ var constants = require('../constants.js')
 var StatusEnum = require('@yapily/yapily-api').Consent.StatusEnum;
 
 INSTITUTION_ID = constants.INSTITUTION_ID
-USER_ID = constants.USER_ID
+APPLICATION_USER_ID = constants.APPLICATION_USER_ID
 
 opts = {
-    "filterUserUuid": [ USER_ID ],
+    "filterApplicationUserId": [ APPLICATION_USER_ID ],
     "filterInstitution": [ INSTITUTION_ID ],
     "filterStatus": [ StatusEnum.EXPIRED ]
 }

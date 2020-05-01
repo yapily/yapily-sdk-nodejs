@@ -15,7 +15,7 @@ basicAuth.username = constants.APPLICATION_ID
 basicAuth.password = constants.APPLICATION_SECRET
 
 INSTITUTION_ID = constants.INSTITUTION_ID
-USER_ID = constants.USER_ID
+APPLICATION_USER_ID = constants.APPLICATION_USER_ID
 
 var createReadLine = function() {
 
@@ -27,13 +27,12 @@ var createReadLine = function() {
 
 var authorizationReadline = createReadLine()
 
-//Get an existing user
-ApplicationUserUtils.getUserUsingGET(USER_ID, function(error, user) {
+//Check for an existing user with application user Id
+ApplicationUserUtils.applicationUserExists(APPLICATION_USER_ID, function(error, user) {
     var now = new Date();
-    if(user) {
-
+    if (user) {
         //Create a new account authorisation request
-        AccountsUtil.initiateAccountRequestUsingPOST(USER_ID, INSTITUTION_ID, function(error, response) {
+        AccountsUtil.initiateAccountRequestUsingPOST(APPLICATION_USER_ID, INSTITUTION_ID, function(error, response) {
             if(response) {
                 var redirectUrl = response.data.authorisationUrl;
 
@@ -42,7 +41,7 @@ ApplicationUserUtils.getUserUsingGET(USER_ID, function(error, user) {
                     authorizationReadline.close()
 
                     opts = {
-                        "filterUserUuid": [ USER_ID ],
+                        "filterApplicationUserId": [ APPLICATION_USER_ID ],
                         "filterInstitution": [ INSTITUTION_ID ],
                         "from": new Date(now.getFullYear(), now.getMonth(), now.getDate(), now.getHours(), now.getMinutes(), 0, 0),
                         "limit": 1

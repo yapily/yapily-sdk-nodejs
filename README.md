@@ -36,7 +36,7 @@ variables and will not work unless they are set.
 module.exports = {
     "APPLICATION_ID" : "{{APPLICATION_ID}}",
     "APPLICATION_SECRET" : "{{APPLICATION_SECRET}}",
-    "USER_ID": "{{USER_ID}}",
+    "APPLICATION_USER_ID": "node-sdk@yapily.com",
     "INSTITUTION_ID": "{{INSTITUTION_ID}}",
     "CALLBACK_URL": "{{CALLBACK_URL}}"
 }

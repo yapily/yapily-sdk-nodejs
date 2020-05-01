@@ -15,9 +15,9 @@ var accountsApi = new YapilyApi.AccountsApi()
  * 
  * See: https://api.yapily.com/explorer#!/Accounts/initiateAccountRequestUsingPOST
  */
-module.exports.initiateAccountRequestUsingPOST = function(userUuid, institutionId, callback) {
+module.exports.initiateAccountRequestUsingPOST = function(applicationUserId, institutionId, callback) {
 
-    accountAuthorisationRequest.userUuid = userUuid;
+    accountAuthorisationRequest.applicationUserId = applicationUserId;
     accountAuthorisationRequest.institutionId = institutionId;
     console.log("\nCreating authorisation request object: \n\n", accountAuthorisationRequest)
 

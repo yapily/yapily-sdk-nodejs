@@ -15,7 +15,6 @@ basicAuth.username = constants.APPLICATION_ID
 basicAuth.password = constants.APPLICATION_SECRET
 
 INSTITUTION_ID = constants.INSTITUTION_ID
-USER_ID = constants.USER_ID
 
 //Add an existing consent Id
 CONSENT_ID="";
@@ -55,10 +54,10 @@ if (CONSENT_ID == null || CONSENT_ID == "")  {
                             ConsentUtils.getConsentByIdUsingGET(CONSENT_ID, function(error, checkConsent) {
                                 if(checkConsent) {
                                     if (checkConsent.data.status == StatusEnum.FAILED) {
-                                        console.log("\nYapily failed to re-authorise this token. You will need to create a new consent token.\n" +
+                                        console.log("\nYapily failed to re-authorise this token. You will need to create a new Consent.\n" +
                                         "See GetAccountDetailsWithNewConsent.js to create a new consent")
                                     } else if (checkConsent.data.status == StatusEnum.AUTHORIZED) {
-                                        console.log("\nConsent token for token with id '%s' was successfully re-authorised.", consentToken)
+                                        console.log("\nConsent with id '%s' was successfully re-authorised.", CONSENT_ID)
                                     }
                                 }
                             })
@@ -67,10 +66,10 @@ if (CONSENT_ID == null || CONSENT_ID == "")  {
                     }
                 })
             } else {
-                console.log("\nThe consent token for consent with id '%s' can no longer be re-authorised as the consent token is no longer valid", CONSENT_ID);
+                console.log("\nConsent with id '%s' can no longer be re-authorised as the consent token is no longer valid", CONSENT_ID);
             }
         } else {
-            console.log("\nCould not find consent with consent id '%s'", CONSENT_ID);
+            console.log("\nCould not find a Consent with id '%s'", CONSENT_ID);
         }
     })
 }

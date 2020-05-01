@@ -16,7 +16,7 @@ basicAuth.username = constants.APPLICATION_ID
 basicAuth.password = constants.APPLICATION_SECRET
 
 INSTITUTION_ID = constants.INSTITUTION_ID
-USER_ID = constants.USER_ID
+APPLICATION_USER_ID = constants.APPLICATION_USER_ID
 
 var createReadLine = function() {
 
@@ -29,12 +29,12 @@ var createReadLine = function() {
 var authorizationReadline = createReadLine()
 
 //Get an existing user
-ApplicationUserUtils.getUserUsingGET(USER_ID, function(error, user) {
+ApplicationUserUtils.getUsersUsingGET([APPLICATION_USER_ID], function(error, user) {
     var now = new Date();
     if(user) {
 
         opts = {
-            "filterUserUuid": [ USER_ID ],
+            "filterApplicationUserId": [ APPLICATION_USER_ID ],
             "filterInstitution": [ INSTITUTION_ID ],
             "filterStatus": [ StatusEnum.AUTHORIZED ],
             "limit": 1
