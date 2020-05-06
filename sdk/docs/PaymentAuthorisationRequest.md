@@ -10,13 +10,13 @@ Name | Type | Description | Notes
 **institutionId** | **String** |  | 
 **callback** | **String** |  | 
 **oneTimeToken** | **Boolean** |  | 
-**paymentRequest** | [**PaymentRequest**](PaymentRequest.md) |  | 
 **totalMaxAmount** | **Number** |  | [optional] 
 **totalMaxAmountFrequency** | **String** |  | [optional] 
 **maxAmountPerRequest** | **Number** |  | [optional] 
 **startsAt** | **Date** |  | [optional] 
 **expiresAt** | **Date** |  | [optional] 
 **allowOverdraft** | **Boolean** |  | [optional] 
+**paymentRequest** | [**PaymentRequest**](PaymentRequest.md) |  | 
 
 
 
