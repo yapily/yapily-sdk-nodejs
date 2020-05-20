@@ -56,6 +56,8 @@ Name | Type | Description | Notes
 
 * `OPEN_BANKING_NO_KEY` (value: `"OPEN_BANKING_NO_KEY"`)
 
+* `TOKEN_IO` (value: `"TOKEN_IO"`)
+
 
 
 
