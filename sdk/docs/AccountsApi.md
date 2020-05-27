@@ -301,7 +301,7 @@ Name | Type | Description  | Notes
 
 ## initiateAccountRequestUsingPOST
 
-> ApiResponseOfAuthorisationRequestResponse initiateAccountRequestUsingPOST(accountAuthRequest)
+> ApiResponseOfAuthorisationRequestResponse initiateAccountRequestUsingPOST(accountAuthRequest, opts)
 
 Initiate a new account request for user to authorize
 
@@ -320,6 +320,11 @@ tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new YapilyApi.AccountsApi();
 var accountAuthRequest = new YapilyApi.AccountAuthorisationRequest(); // AccountAuthorisationRequest | accountAuthRequest
+var opts = {
+  'psuId': "psuId_example", // String | PSU ID
+  'psuCorporateId': "psuCorporateId_example", // String | PSU ID CORPORATE
+  'psuIpAddress': "psuIpAddress_example" // String | PSU IP ADDRESS
+};
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -327,7 +332,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.initiateAccountRequestUsingPOST(accountAuthRequest, callback);
+apiInstance.initiateAccountRequestUsingPOST(accountAuthRequest, opts, callback);
 ```
 
 ### Parameters
@@ -337,6 +342,9 @@ apiInstance.initiateAccountRequestUsingPOST(accountAuthRequest, callback);
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **accountAuthRequest** | [**AccountAuthorisationRequest**](AccountAuthorisationRequest.md)| accountAuthRequest | 
+ **psuId** | **String**| PSU ID | [optional] 
+ **psuCorporateId** | **String**| PSU ID CORPORATE | [optional] 
+ **psuIpAddress** | **String**| PSU IP ADDRESS | [optional] 
 
 ### Return type
 
@@ -354,7 +362,7 @@ Name | Type | Description  | Notes
 
 ## reAuthoriseAccountUsingPATCH
 
-> ApiResponseOfAuthorisationRequestResponse reAuthoriseAccountUsingPATCH(consent)
+> ApiResponseOfAuthorisationRequestResponse reAuthoriseAccountUsingPATCH(consent, opts)
 
 Re-authorize account request
 
@@ -373,6 +381,11 @@ tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new YapilyApi.AccountsApi();
 var consent = "consent_example"; // String | Consent Token
+var opts = {
+  'psuId': "psuId_example", // String | PSU ID
+  'psuCorporateId': "psuCorporateId_example", // String | PSU ID CORPORATE
+  'psuIpAddress': "psuIpAddress_example" // String | PSU IP ADDRESS
+};
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -380,7 +393,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.reAuthoriseAccountUsingPATCH(consent, callback);
+apiInstance.reAuthoriseAccountUsingPATCH(consent, opts, callback);
 ```
 
 ### Parameters
@@ -390,6 +403,9 @@ apiInstance.reAuthoriseAccountUsingPATCH(consent, callback);
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **consent** | **String**| Consent Token | 
+ **psuId** | **String**| PSU ID | [optional] 
+ **psuCorporateId** | **String**| PSU ID CORPORATE | [optional] 
+ **psuIpAddress** | **String**| PSU IP ADDRESS | [optional] 
 
 ### Return type
 
