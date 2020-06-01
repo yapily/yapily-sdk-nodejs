@@ -23,6 +23,7 @@ Name | Type | Description | Notes
 **proprietaryBankTransactionCode** | [**ProprietaryBankTransactionCode**](ProprietaryBankTransactionCode.md) |  | [optional] 
 **balance** | [**Balance**](Balance.md) |  | [optional] 
 **merchant** | [**Merchant**](Merchant.md) |  | [optional] 
+**enrichment** | [**Enrichment**](Enrichment.md) |  | [optional] 
 **supplementaryData** | **String** | Additional information that can not be captured in the structured fields and/or any other specific block. | [optional] 
 
 

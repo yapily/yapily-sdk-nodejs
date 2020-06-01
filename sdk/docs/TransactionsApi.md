@@ -1,6 +1,6 @@
 # YapilyApi.TransactionsApi
 
-All URIs are relative to *https://api.yapily.com*
+All URIs are relative to *https://api.yapily.com:443*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------

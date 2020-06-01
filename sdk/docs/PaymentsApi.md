@@ -1,6 +1,6 @@
 # YapilyApi.PaymentsApi
 
-All URIs are relative to *https://api.yapily.com*
+All URIs are relative to *https://api.yapily.com:443*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -17,7 +17,7 @@ Method | HTTP request | Description
 
 ## createBulkPaymentAuthorisationUsingPOST
 
-> ApiResponseOfPaymentAuthorisationRequestResponse createBulkPaymentAuthorisationUsingPOST(paymentAuthRequest)
+> ApiResponseOfPaymentAuthorisationRequestResponse createBulkPaymentAuthorisationUsingPOST(paymentAuthRequest, opts)
 
 Initiate bulk payment for user to authorise
 
@@ -36,6 +36,11 @@ tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new YapilyApi.PaymentsApi();
 var paymentAuthRequest = new YapilyApi.BulkPaymentAuthorisationRequest(); // BulkPaymentAuthorisationRequest | paymentAuthRequest
+var opts = {
+  'psuId': "psuId_example", // String | PSU ID
+  'psuCorporateId': "psuCorporateId_example", // String | PSU ID CORPORATE
+  'psuIpAddress': "psuIpAddress_example" // String | PSU IP ADDRESS
+};
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -43,7 +48,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.createBulkPaymentAuthorisationUsingPOST(paymentAuthRequest, callback);
+apiInstance.createBulkPaymentAuthorisationUsingPOST(paymentAuthRequest, opts, callback);
 ```
 
 ### Parameters
@@ -53,6 +58,9 @@ apiInstance.createBulkPaymentAuthorisationUsingPOST(paymentAuthRequest, callback
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **paymentAuthRequest** | [**BulkPaymentAuthorisationRequest**](BulkPaymentAuthorisationRequest.md)| paymentAuthRequest | 
+ **psuId** | **String**| PSU ID | [optional] 
+ **psuCorporateId** | **String**| PSU ID CORPORATE | [optional] 
+ **psuIpAddress** | **String**| PSU IP ADDRESS | [optional] 
 
 ### Return type
 
@@ -125,7 +133,7 @@ Name | Type | Description  | Notes
 
 ## createPaymentAuthorisationUsingPOST
 
-> ApiResponseOfPaymentAuthorisationRequestResponse createPaymentAuthorisationUsingPOST(paymentAuthRequest)
+> ApiResponseOfPaymentAuthorisationRequestResponse createPaymentAuthorisationUsingPOST(paymentAuthRequest, opts)
 
 Initiate a payment for user to authorise
 
@@ -144,6 +152,11 @@ tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new YapilyApi.PaymentsApi();
 var paymentAuthRequest = new YapilyApi.PaymentAuthorisationRequest(); // PaymentAuthorisationRequest | paymentAuthRequest
+var opts = {
+  'psuId': "psuId_example", // String | PSU ID
+  'psuCorporateId': "psuCorporateId_example", // String | PSU ID CORPORATE
+  'psuIpAddress': "psuIpAddress_example" // String | PSU IP ADDRESS
+};
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -151,7 +164,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.createPaymentAuthorisationUsingPOST(paymentAuthRequest, callback);
+apiInstance.createPaymentAuthorisationUsingPOST(paymentAuthRequest, opts, callback);
 ```
 
 ### Parameters
@@ -161,6 +174,9 @@ apiInstance.createPaymentAuthorisationUsingPOST(paymentAuthRequest, callback);
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **paymentAuthRequest** | [**PaymentAuthorisationRequest**](PaymentAuthorisationRequest.md)| paymentAuthRequest | 
+ **psuId** | **String**| PSU ID | [optional] 
+ **psuCorporateId** | **String**| PSU ID CORPORATE | [optional] 
+ **psuIpAddress** | **String**| PSU IP ADDRESS | [optional] 
 
 ### Return type
 
@@ -178,7 +194,7 @@ Name | Type | Description  | Notes
 
 ## createPaymentAuthorisationWithSortCodeUsingPOST
 
-> ApiResponseOfAuthorisationRequestResponse createPaymentAuthorisationWithSortCodeUsingPOST(paymentAuthRequest)
+> ApiResponseOfAuthorisationRequestResponse createPaymentAuthorisationWithSortCodeUsingPOST(paymentAuthRequest, opts)
 
 Initiate a new single payment for user to authorise
 
@@ -197,6 +213,11 @@ tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new YapilyApi.PaymentsApi();
 var paymentAuthRequest = new YapilyApi.SortCodePaymentAuthRequest(); // SortCodePaymentAuthRequest | paymentAuthRequest
+var opts = {
+  'psuId': "psuId_example", // String | PSU ID
+  'psuCorporateId': "psuCorporateId_example", // String | PSU ID CORPORATE
+  'psuIpAddress': "psuIpAddress_example" // String | PSU IP ADDRESS
+};
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -204,7 +225,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.createPaymentAuthorisationWithSortCodeUsingPOST(paymentAuthRequest, callback);
+apiInstance.createPaymentAuthorisationWithSortCodeUsingPOST(paymentAuthRequest, opts, callback);
 ```
 
 ### Parameters
@@ -214,6 +235,9 @@ apiInstance.createPaymentAuthorisationWithSortCodeUsingPOST(paymentAuthRequest, 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **paymentAuthRequest** | [**SortCodePaymentAuthRequest**](SortCodePaymentAuthRequest.md)| paymentAuthRequest | 
+ **psuId** | **String**| PSU ID | [optional] 
+ **psuCorporateId** | **String**| PSU ID CORPORATE | [optional] 
+ **psuIpAddress** | **String**| PSU IP ADDRESS | [optional] 
 
 ### Return type
 
