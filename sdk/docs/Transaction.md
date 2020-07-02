@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **status** | **String** | The status of the transaction | [optional] 
 **amount** | **Number** | Deprecated. Use the amount value in &#x60;transactionAmount&#x60; instead | [optional] 
 **currency** | **String** | Deprecated. Use the currency value in &#x60;transactionAmount&#x60; instead | [optional] 
-**transactionAmount** | [**Amount**](Amount.md) |  | [optional] 
+**transactionAmount** | [**TransactionAmount**](TransactionAmount.md) |  | [optional] 
 **currencyExchange** | [**CurrencyExchange**](CurrencyExchange.md) |  | [optional] 
 **chargeDetails** | [**ChargeDetails**](ChargeDetails.md) |  | [optional] 
 **reference** | **String** | Transaction reference | [optional] 
