@@ -11,6 +11,7 @@ Method | HTTP request | Description
 [**getAccountsUsingGET**](AccountsApi.md#getAccountsUsingGET) | **GET** /accounts | Get accounts
 [**initiateAccountRequestUsingPOST**](AccountsApi.md#initiateAccountRequestUsingPOST) | **POST** /account-auth-requests | Initiate a new account request for user to authorize
 [**reAuthoriseAccountUsingPATCH**](AccountsApi.md#reAuthoriseAccountUsingPATCH) | **PATCH** /account-auth-requests | Re-authorize account request
+[**updatePreAuthoriseAccountConsentUsingPUT**](AccountsApi.md#updatePreAuthoriseAccountConsentUsingPUT) | **PUT** /account-auth-requests | Update pre authorize consent for user to authorise account
 
 
 
@@ -418,5 +419,68 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
+- **Accept**: application/json;charset=UTF-8
+
+
+## updatePreAuthoriseAccountConsentUsingPUT
+
+> ApiResponseOfAuthorisationRequestResponse updatePreAuthoriseAccountConsentUsingPUT(consent, accountAuthRequest, opts)
+
+Update pre authorize consent for user to authorise account
+
+### Example
+
+```javascript
+var YapilyApi = require('@yapily/yapily-api');
+var defaultClient = YapilyApi.ApiClient.instance;
+// Configure HTTP basic authorization: basicAuth
+var basicAuth = defaultClient.authentications['basicAuth'];
+basicAuth.username = 'YOUR USERNAME';
+basicAuth.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: tokenAuth
+var tokenAuth = defaultClient.authentications['tokenAuth'];
+tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
+
+var apiInstance = new YapilyApi.AccountsApi();
+var consent = "consent_example"; // String | Consent Token
+var accountAuthRequest = new YapilyApi.AccountAuthorisationRequest(); // AccountAuthorisationRequest | accountAuthRequest
+var opts = {
+  'psuId': "psuId_example", // String | PSU ID
+  'psuCorporateId': "psuCorporateId_example", // String | PSU ID CORPORATE
+  'psuIpAddress': "psuIpAddress_example" // String | PSU IP ADDRESS
+};
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.updatePreAuthoriseAccountConsentUsingPUT(consent, accountAuthRequest, opts, callback);
+```
+
+### Parameters
+
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **consent** | **String**| Consent Token | 
+ **accountAuthRequest** | [**AccountAuthorisationRequest**](AccountAuthorisationRequest.md)| accountAuthRequest | 
+ **psuId** | **String**| PSU ID | [optional] 
+ **psuCorporateId** | **String**| PSU ID CORPORATE | [optional] 
+ **psuIpAddress** | **String**| PSU IP ADDRESS | [optional] 
+
+### Return type
+
+[**ApiResponseOfAuthorisationRequestResponse**](ApiResponseOfAuthorisationRequestResponse.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/json;charset=UTF-8
 - **Accept**: application/json;charset=UTF-8
 

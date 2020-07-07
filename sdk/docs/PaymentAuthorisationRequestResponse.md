@@ -50,12 +50,18 @@ Name | Type | Description | Notes
 
 * `INVALID` (value: `"INVALID"`)
 
+* `AWAITING_PRE_AUTHORIZATION` (value: `"AWAITING_PRE_AUTHORIZATION"`)
+
+* `PRE_AUTHORIZED` (value: `"PRE_AUTHORIZED"`)
+
 
 
 
 
 ## Enum: [FeatureScopeEnum]
 
+
+* `INITIATE_PRE_AUTHORISATION` (value: `"INITIATE_PRE_AUTHORISATION"`)
 
 * `INITIATE_ACCOUNT_REQUEST` (value: `"INITIATE_ACCOUNT_REQUEST"`)
 

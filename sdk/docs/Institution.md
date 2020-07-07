@@ -56,6 +56,8 @@ Name | Type | Description | Notes
 
 * `OPEN_BANKING_NO_KEY` (value: `"OPEN_BANKING_NO_KEY"`)
 
+* `OPEN_BANKING_NO_TRANSPORT` (value: `"OPEN_BANKING_NO_TRANSPORT"`)
+
 * `TOKEN_IO` (value: `"TOKEN_IO"`)
 
 
@@ -64,6 +66,8 @@ Name | Type | Description | Notes
 
 ## Enum: [FeaturesEnum]
 
+
+* `INITIATE_PRE_AUTHORISATION` (value: `"INITIATE_PRE_AUTHORISATION"`)
 
 * `INITIATE_ACCOUNT_REQUEST` (value: `"INITIATE_ACCOUNT_REQUEST"`)
 
