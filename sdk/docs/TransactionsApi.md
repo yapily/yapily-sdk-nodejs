@@ -36,7 +36,8 @@ var opts = {
   'before': "before_example", // String | before
   'limit': 56, // Number | limit
   'sort': "sort_example", // String | sort
-  'offset': 56 // Number | offset
+  'offset': 56, // Number | offset
+  'cursor': "cursor_example" // String | cursor
 };
 var callback = function(error, data, response) {
   if (error) {
@@ -62,6 +63,7 @@ Name | Type | Description  | Notes
  **limit** | **Number**| limit | [optional] 
  **sort** | **String**| sort | [optional] 
  **offset** | **Number**| offset | [optional] 
+ **cursor** | **String**| cursor | [optional] 
 
 ### Return type
 
