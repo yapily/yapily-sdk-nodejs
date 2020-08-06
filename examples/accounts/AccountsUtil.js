@@ -21,7 +21,9 @@ module.exports.initiateAccountRequestUsingPOST = function(applicationUserId, ins
     accountAuthorisationRequest.institutionId = institutionId;
     console.log("\nCreating authorisation request object: \n\n", accountAuthorisationRequest)
 
-    accountsApi.initiateAccountRequestUsingPOST(accountAuthorisationRequest, function(error, response){
+    var opts = {};
+
+    accountsApi.initiateAccountRequestUsingPOST(accountAuthorisationRequest, opts, function(error, response){
         if(error) {
             console.log("\nError creating authorisation request: \n\n", error)
         } else {
@@ -38,9 +40,17 @@ module.exports.initiateAccountRequestUsingPOST = function(applicationUserId, ins
  */
 module.exports.reAuthoriseAccountUsingPATCH = function(consentToken, callback) {
 
-    accountsApi.reAuthoriseAccountUsingPATCH(consentToken, function(error, response){
+    var opts = {};
+
+    accountsApi.reAuthoriseAccountUsingPATCH(consentToken, opts, function(error, response){
         if(error) {
-            console.log("\nError re-authorising existing consent request: \n\n", error)
+            if (error.status == 403) {
+                console.log("\nError retrieving transactions with this consent. It is possible that the bank has revoked the token or it has expired. " +
+                    "Create a new consent to access the accounts. \n" +
+                    "You can run the accounts/ReAuthoriseConsent example using this consentToken to re-use the same feature scopes\n\n")
+            } else {
+                console.log("\nError retrieving transactions with this consent", error)
+            }
         } else {
             console.log("\nRe-authorising existing consent request: \n\n", response)
             callback(null, response);
@@ -58,7 +68,8 @@ module.exports.getAccountsUsingGET = function(consentToken, callback) {
     accountsApi.getAccountsUsingGET(consentToken, function(error, accounts) {
         if(error) {
             if (error.status == 403) {
-                console.log("\nError retrieving accounts with this consent. It is likely the bank has revoked the token. Create a new consent to access the accounts \n" +
+                console.log("\nError retrieving accounts with this consent. It is possible that the bank has revoked the token or it has expired. " +
+                    "Create a new consent to access the accounts \n" +
                     "You can run the accounts/ReAuthoriseConsent example using this consentToken to re-use the same feature scopes\n\n")
             } else {
                 console.log("\nError retrieving accounts with this consent", error)

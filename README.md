@@ -1,5 +1,5 @@
 # Yapily Node.js SDK
-[![GitHub version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=gh&type=6&v=0.0.220&x2=0)](http://badge.fury.io/gh/boennemann%2Fbadges)
+[![GitHub version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=gh&type=6&v=0.0.221&x2=0)](http://badge.fury.io/gh/boennemann%2Fbadges)
 
 This SDK was generated using [Swagger Code Generator](https://github.com/swagger-api/swagger-codegen). The SDK can be used as a module in your code and the examples demonstrate how to connect
 to financial institutions integrated with Yapily.
@@ -69,7 +69,6 @@ node GetAccountDetailsWithNewConsent.js
 
 ## Further information
 
-For more information on how to get connected, visit the
-[Yapily developer resources](https://github.com/yapily/developer-resources) repo.
+For more information on how to get connected, visit the [Yapily Knowledge Base](https://kb.yapily.com).
 
 ###### [Website](https://yapily.com) | [Legal](https://yapily.com/legal-policies) | [Contact Us](mailto:info@yapily.com) 

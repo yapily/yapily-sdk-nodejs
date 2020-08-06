@@ -7,6 +7,7 @@ var StatusEnum = require('@yapily/yapily-api').Consent.StatusEnum;
 
 var ApplicationUserUtils = require('../users/ApplicationUserUtils')
 var AccountsUtil = require('./AccountsUtil');
+var TransactionsUtil = require('./TransactionsUtil');
 var ConsentUtils = require('../consents/ConsentsUtils');
 
 var defaultClient = YapilyApi.ApiClient.instance
@@ -52,6 +53,12 @@ ApplicationUserUtils.getUsersUsingGET([APPLICATION_USER_ID], function(error, use
 
                     //Use this consentToken to get all the available accounts
                     AccountsUtil.getAccountsUsingGET(consentToken, function(error, accounts) {
+                        if(accounts) {
+                            var accountId = accounts.data[0].id;
+                            TransactionsUtil.getTransactionsUsingGET(consentToken, accountId, function(error, transactions){
+
+                            });
+                        }
                     })
                 }
             } else {

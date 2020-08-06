@@ -7,6 +7,7 @@ var YapilyApi = require('@yapily/yapily-api')
 var ApplicationUserUtils = require('../users/ApplicationUserUtils')
 var AccountsUtil = require('./AccountsUtil');
 var ConsentUtils = require('../consents/ConsentsUtils');
+var TransactionsUtil = require('./TransactionsUtil');
 
 var defaultClient = YapilyApi.ApiClient.instance
 
@@ -58,7 +59,12 @@ ApplicationUserUtils.applicationUserExists(APPLICATION_USER_ID, function(error, 
 
                                 //Use this consentToken to get all the available accounts
                                 AccountsUtil.getAccountsUsingGET(consentToken, function(error, accounts) {
-                              
+                                    if(accounts) {
+                                        var accountId = accounts.data[0].id;
+                                        TransactionsUtil.getTransactionsUsingGET(consentToken, accountId, function(error, transactions){
+            
+                                        });
+                                    }
                                 })
                             } else {
                                 console.log("\nCould not find consent token. Make sure you go to the authUrl and authorize consent before continuing.")
