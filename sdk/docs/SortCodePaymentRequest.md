@@ -14,6 +14,7 @@ Name | Type | Description | Notes
 **accountNumber** | **String** |  | 
 **sortCode** | **String** |  | 
 **merchantInfo** | [**MerchantInfo**](MerchantInfo.md) |  | [optional] 
+**readRefundAccount** | **Boolean** |  | [optional] 
 
 
 

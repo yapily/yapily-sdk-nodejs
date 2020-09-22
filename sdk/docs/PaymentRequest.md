@@ -14,6 +14,7 @@ Name | Type | Description | Notes
 **payee** | [**Payee**](Payee.md) |  | 
 **periodicPayment** | [**PeriodicPaymentRequest**](PeriodicPaymentRequest.md) |  | [optional] 
 **internationalPayment** | [**InternationalPaymentRequest**](InternationalPaymentRequest.md) |  | [optional] 
+**readRefundAccount** | **Boolean** |  | [optional] 
 
 
 
