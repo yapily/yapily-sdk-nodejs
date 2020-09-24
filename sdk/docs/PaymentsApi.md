@@ -79,7 +79,7 @@ Name | Type | Description  | Notes
 
 ## createBulkPaymentUsingPOST
 
-> ApiResponseOfPaymentResponse createBulkPaymentUsingPOST(consent, paymentRequest)
+> ApiResponseOfPaymentResponse createBulkPaymentUsingPOST(consent, paymentRequest, opts)
 
 Create bulk payment
 
@@ -99,6 +99,11 @@ tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 var apiInstance = new YapilyApi.PaymentsApi();
 var consent = "consent_example"; // String | Consent Token
 var paymentRequest = new YapilyApi.BulkPaymentRequest(); // BulkPaymentRequest | paymentRequest
+var opts = {
+  'psuId': "psuId_example", // String | PSU ID
+  'psuCorporateId': "psuCorporateId_example", // String | PSU ID CORPORATE
+  'psuIpAddress': "psuIpAddress_example" // String | PSU IP ADDRESS
+};
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -106,7 +111,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.createBulkPaymentUsingPOST(consent, paymentRequest, callback);
+apiInstance.createBulkPaymentUsingPOST(consent, paymentRequest, opts, callback);
 ```
 
 ### Parameters
@@ -117,6 +122,9 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **consent** | **String**| Consent Token | 
  **paymentRequest** | [**BulkPaymentRequest**](BulkPaymentRequest.md)| paymentRequest | 
+ **psuId** | **String**| PSU ID | [optional] 
+ **psuCorporateId** | **String**| PSU ID CORPORATE | [optional] 
+ **psuIpAddress** | **String**| PSU IP ADDRESS | [optional] 
 
 ### Return type
 
@@ -256,7 +264,7 @@ Name | Type | Description  | Notes
 
 ## createPaymentUsingPOST
 
-> ApiResponseOfPaymentResponse createPaymentUsingPOST(consent, paymentRequest)
+> ApiResponseOfPaymentResponse createPaymentUsingPOST(consent, paymentRequest, opts)
 
 Create a payment
 
@@ -276,6 +284,11 @@ tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 var apiInstance = new YapilyApi.PaymentsApi();
 var consent = "consent_example"; // String | Consent Token
 var paymentRequest = new YapilyApi.PaymentRequest(); // PaymentRequest | paymentRequest
+var opts = {
+  'psuId': "psuId_example", // String | PSU ID
+  'psuCorporateId': "psuCorporateId_example", // String | PSU ID CORPORATE
+  'psuIpAddress': "psuIpAddress_example" // String | PSU IP ADDRESS
+};
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -283,7 +296,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.createPaymentUsingPOST(consent, paymentRequest, callback);
+apiInstance.createPaymentUsingPOST(consent, paymentRequest, opts, callback);
 ```
 
 ### Parameters
@@ -294,6 +307,9 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **consent** | **String**| Consent Token | 
  **paymentRequest** | [**PaymentRequest**](PaymentRequest.md)| paymentRequest | 
+ **psuId** | **String**| PSU ID | [optional] 
+ **psuCorporateId** | **String**| PSU ID CORPORATE | [optional] 
+ **psuIpAddress** | **String**| PSU IP ADDRESS | [optional] 
 
 ### Return type
 
@@ -311,7 +327,7 @@ Name | Type | Description  | Notes
 
 ## createPaymentWithSortCodeUsingPOST
 
-> ApiResponseOfPaymentResponse createPaymentWithSortCodeUsingPOST(consent, paymentRequest)
+> ApiResponseOfPaymentResponse createPaymentWithSortCodeUsingPOST(consent, paymentRequest, opts)
 
 Create a new single payment
 
@@ -331,6 +347,11 @@ tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 var apiInstance = new YapilyApi.PaymentsApi();
 var consent = "consent_example"; // String | Consent Token
 var paymentRequest = new YapilyApi.SortCodePaymentRequest(); // SortCodePaymentRequest | paymentRequest
+var opts = {
+  'psuId': "psuId_example", // String | PSU ID
+  'psuCorporateId': "psuCorporateId_example", // String | PSU ID CORPORATE
+  'psuIpAddress': "psuIpAddress_example" // String | PSU IP ADDRESS
+};
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -338,7 +359,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.createPaymentWithSortCodeUsingPOST(consent, paymentRequest, callback);
+apiInstance.createPaymentWithSortCodeUsingPOST(consent, paymentRequest, opts, callback);
 ```
 
 ### Parameters
@@ -349,6 +370,9 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **consent** | **String**| Consent Token | 
  **paymentRequest** | [**SortCodePaymentRequest**](SortCodePaymentRequest.md)| paymentRequest | 
+ **psuId** | **String**| PSU ID | [optional] 
+ **psuCorporateId** | **String**| PSU ID CORPORATE | [optional] 
+ **psuIpAddress** | **String**| PSU IP ADDRESS | [optional] 
 
 ### Return type
 
@@ -366,7 +390,7 @@ Name | Type | Description  | Notes
 
 ## getPaymentStatusUsingGET
 
-> ApiResponseOfPaymentResponse getPaymentStatusUsingGET(paymentId, consent)
+> ApiResponseOfPaymentResponse getPaymentStatusUsingGET(paymentId, consent, opts)
 
 Get status of a payment
 
@@ -386,6 +410,11 @@ tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 var apiInstance = new YapilyApi.PaymentsApi();
 var paymentId = "paymentId_example"; // String | paymentId
 var consent = "consent_example"; // String | Consent Token
+var opts = {
+  'psuId': "psuId_example", // String | PSU ID
+  'psuCorporateId': "psuCorporateId_example", // String | PSU ID CORPORATE
+  'psuIpAddress': "psuIpAddress_example" // String | PSU IP ADDRESS
+};
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -393,7 +422,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getPaymentStatusUsingGET(paymentId, consent, callback);
+apiInstance.getPaymentStatusUsingGET(paymentId, consent, opts, callback);
 ```
 
 ### Parameters
@@ -404,6 +433,9 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **paymentId** | **String**| paymentId | 
  **consent** | **String**| Consent Token | 
+ **psuId** | **String**| PSU ID | [optional] 
+ **psuCorporateId** | **String**| PSU ID CORPORATE | [optional] 
+ **psuIpAddress** | **String**| PSU IP ADDRESS | [optional] 
 
 ### Return type
 
@@ -421,7 +453,7 @@ Name | Type | Description  | Notes
 
 ## getPaymentsUsingGET
 
-> ApiResponseOfPaymentResponses getPaymentsUsingGET(paymentId, consent)
+> ApiResponseOfPaymentResponses getPaymentsUsingGET(paymentId, consent, opts)
 
 Get payments detail
 
@@ -441,6 +473,11 @@ tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 var apiInstance = new YapilyApi.PaymentsApi();
 var paymentId = "paymentId_example"; // String | paymentId
 var consent = "consent_example"; // String | Consent Token
+var opts = {
+  'psuId': "psuId_example", // String | PSU ID
+  'psuCorporateId': "psuCorporateId_example", // String | PSU ID CORPORATE
+  'psuIpAddress': "psuIpAddress_example" // String | PSU IP ADDRESS
+};
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -448,7 +485,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getPaymentsUsingGET(paymentId, consent, callback);
+apiInstance.getPaymentsUsingGET(paymentId, consent, opts, callback);
 ```
 
 ### Parameters
@@ -459,6 +496,9 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **paymentId** | **String**| paymentId | 
  **consent** | **String**| Consent Token | 
+ **psuId** | **String**| PSU ID | [optional] 
+ **psuCorporateId** | **String**| PSU ID CORPORATE | [optional] 
+ **psuIpAddress** | **String**| PSU IP ADDRESS | [optional] 
 
 ### Return type
 
