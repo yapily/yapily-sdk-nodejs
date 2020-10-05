@@ -5,6 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **code** | **Number** |  | [optional] 
+**institutionError** | [**InstitutionError**](InstitutionError.md) |  | [optional] 
 **message** | **String** |  | [optional] 
 **source** | **String** |  | [optional] 
 **status** | **String** |  | [optional] 
