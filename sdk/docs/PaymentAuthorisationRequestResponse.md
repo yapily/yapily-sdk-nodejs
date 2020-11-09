@@ -21,6 +21,7 @@ Name | Type | Description | Notes
 **exchangeRateInformation** | [**ExchangeRateInformationResponse**](ExchangeRateInformationResponse.md) |  | [optional] 
 **consentToken** | **String** |  | [optional] 
 **authorisationUrl** | **String** |  | [optional] 
+**state** | **String** |  | [optional] 
 **qrCodeUrl** | **String** |  | [optional] 
 
 

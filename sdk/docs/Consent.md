@@ -18,6 +18,7 @@ Name | Type | Description | Notes
 **timeToExpire** | **String** | ISO 8601 duration | [optional] 
 **featureScope** | **[String]** |  | [optional] 
 **consentToken** | **String** |  | [optional] 
+**state** | **String** |  | [optional] 
 
 
 

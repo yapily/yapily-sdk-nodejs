@@ -20,6 +20,7 @@ Name | Type | Description | Notes
 **authorisationUrl** | **String** |  | [optional] 
 **consentToken** | **String** |  | [optional] 
 **qrCodeUrl** | **String** |  | [optional] 
+**state** | **String** |  | [optional] 
 
 
 
