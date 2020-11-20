@@ -35,6 +35,7 @@ Name | Type | Description | Notes
 **priority** | **String** |  | [optional] 
 **exchangeRate** | [**ExchangeRateInformationResponse**](ExchangeRateInformationResponse.md) |  | [optional] 
 **refundAccount** | [**RefundAccount**](RefundAccount.md) |  | [optional] 
+**bulkAmountSum** | **Number** | Control sum for bulk payments | [optional] 
 
 
 

@@ -50,6 +50,8 @@ Name | Type | Description | Notes
 
 * `OPEN_BANKING_AUTO` (value: `"OPEN_BANKING_AUTO"`)
 
+* `OPEN_BANKING_AUTO_EMAIL` (value: `"OPEN_BANKING_AUTO_EMAIL"`)
+
 * `OPEN_BANKING_MANUAL` (value: `"OPEN_BANKING_MANUAL"`)
 
 * `API_KEY` (value: `"API_KEY"`)

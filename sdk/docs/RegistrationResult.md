@@ -20,5 +20,6 @@ Name | Type | Description | Notes
 **clientSecret** | **String** |  | [optional] 
 **signingKeyStore** | **String** |  | [optional] 
 **transportKeyStore** | **String** |  | [optional] 
+**registrationResponse** | **String** |  | [optional] 
 
 

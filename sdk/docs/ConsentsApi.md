@@ -163,7 +163,7 @@ apiInstance.deleteUsingDELETE(consentId, opts, callback);
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **consentId** | **String**| consentId | 
- **forceDelete** | **Boolean**| forceDelete | [optional] 
+ **forceDelete** | **Boolean**| forceDelete | [optional] [default to true]
 
 ### Return type
 
