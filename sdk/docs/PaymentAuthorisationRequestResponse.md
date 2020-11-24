@@ -23,6 +23,7 @@ Name | Type | Description | Notes
 **authorisationUrl** | **String** |  | [optional] 
 **state** | **String** |  | [optional] 
 **qrCodeUrl** | **String** |  | [optional] 
+**authorizedAt** | **Date** |  | [optional] 
 
 
 

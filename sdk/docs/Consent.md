@@ -19,6 +19,7 @@ Name | Type | Description | Notes
 **featureScope** | **[String]** |  | [optional] 
 **consentToken** | **String** |  | [optional] 
 **state** | **String** |  | [optional] 
+**authorizedAt** | **Date** |  | [optional] 
 
 
 
