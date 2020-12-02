@@ -1,4 +1,4 @@
-# YapilyApi.RegistrationRequest
+# YapilyApi.RegistrationRequestManual
 
 ## Properties
 
@@ -6,7 +6,6 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **clientId** | **String** |  | [optional] 
 **clientSecret** | **String** |  | [optional] 
-**manual** | **Boolean** |  | [optional] 
 **tppId** | **String** |  | [optional] 
 **softwareId** | **String** |  | [optional] 
 **clientName** | **String** |  | [optional] 
