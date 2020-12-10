@@ -40,6 +40,8 @@ Name | Type | Description | Notes
 
 * `EMAIL` (value: `"EMAIL"`)
 
+* `ROLL_NUMBER` (value: `"ROLL_NUMBER"`)
+
 
 
 

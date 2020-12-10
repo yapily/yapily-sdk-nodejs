@@ -54,6 +54,8 @@ Name | Type | Description | Notes
 
 * `PRE_AUTHORIZED` (value: `"PRE_AUTHORIZED"`)
 
+* `AWAITING_DECOUPLED_AUTHORIZATION` (value: `"AWAITING_DECOUPLED_AUTHORIZATION"`)
+
 
 
 
