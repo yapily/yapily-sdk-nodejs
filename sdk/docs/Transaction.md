@@ -12,6 +12,7 @@ Name | Type | Description | Notes
 **amount** | **Number** | Deprecated. Use the amount value in &#x60;transactionAmount&#x60; instead | [optional] 
 **currency** | **String** | Deprecated. Use the currency value in &#x60;transactionAmount&#x60; instead | [optional] 
 **transactionAmount** | [**TransactionAmount**](TransactionAmount.md) |  | [optional] 
+**grossAmount** | [**Amount**](Amount.md) |  | [optional] 
 **currencyExchange** | [**CurrencyExchange**](CurrencyExchange.md) |  | [optional] 
 **chargeDetails** | [**ChargeDetails**](ChargeDetails.md) |  | [optional] 
 **reference** | **String** | Transaction reference | [optional] 
