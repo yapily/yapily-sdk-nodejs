@@ -20,6 +20,7 @@ Name | Type | Description | Notes
 **consentToken** | **String** |  | [optional] 
 **state** | **String** |  | [optional] 
 **authorizedAt** | **Date** |  | [optional] 
+**institutionConsentId** | **String** |  | [optional] 
 
 
 

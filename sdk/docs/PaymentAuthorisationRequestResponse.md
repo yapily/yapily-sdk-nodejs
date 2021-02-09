@@ -24,6 +24,7 @@ Name | Type | Description | Notes
 **state** | **String** |  | [optional] 
 **qrCodeUrl** | **String** |  | [optional] 
 **authorizedAt** | **Date** |  | [optional] 
+**institutionConsentId** | **String** |  | [optional] 
 
 
 
