@@ -170,6 +170,18 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property payeeDetails (base name: "payeeDetails")', function() {
+      // uncomment below and update the code to test the property payeeDetails
+      //var instance = new YapilyApi.Transaction();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property payerDetails (base name: "payerDetails")', function() {
+      // uncomment below and update the code to test the property payerDetails
+      //var instance = new YapilyApi.Transaction();
+      //expect(instance).to.be();
+    });
+
     it('should have the property merchant (base name: "merchant")', function() {
       // uncomment below and update the code to test the property merchant
       //var instance = new YapilyApi.Transaction();

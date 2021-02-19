@@ -16,18 +16,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/AddressDetails', 'model/Amount', 'model/Balance', 'model/ChargeDetails', 'model/CurrencyExchange', 'model/Enrichment', 'model/IsoBankTransactionCode', 'model/Merchant', 'model/ProprietaryBankTransactionCode', 'model/StatementReference', 'model/TransactionAmount'], factory);
+    define(['ApiClient', 'model/AddressDetails', 'model/Amount', 'model/Balance', 'model/ChargeDetails', 'model/CurrencyExchange', 'model/Enrichment', 'model/IsoBankTransactionCode', 'model/Merchant', 'model/Payee', 'model/Payer', 'model/ProprietaryBankTransactionCode', 'model/StatementReference', 'model/TransactionAmount'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./AddressDetails'), require('./Amount'), require('./Balance'), require('./ChargeDetails'), require('./CurrencyExchange'), require('./Enrichment'), require('./IsoBankTransactionCode'), require('./Merchant'), require('./ProprietaryBankTransactionCode'), require('./StatementReference'), require('./TransactionAmount'));
+    module.exports = factory(require('../ApiClient'), require('./AddressDetails'), require('./Amount'), require('./Balance'), require('./ChargeDetails'), require('./CurrencyExchange'), require('./Enrichment'), require('./IsoBankTransactionCode'), require('./Merchant'), require('./Payee'), require('./Payer'), require('./ProprietaryBankTransactionCode'), require('./StatementReference'), require('./TransactionAmount'));
   } else {
     // Browser globals (root is window)
     if (!root.YapilyApi) {
       root.YapilyApi = {};
     }
-    root.YapilyApi.Transaction = factory(root.YapilyApi.ApiClient, root.YapilyApi.AddressDetails, root.YapilyApi.Amount, root.YapilyApi.Balance, root.YapilyApi.ChargeDetails, root.YapilyApi.CurrencyExchange, root.YapilyApi.Enrichment, root.YapilyApi.IsoBankTransactionCode, root.YapilyApi.Merchant, root.YapilyApi.ProprietaryBankTransactionCode, root.YapilyApi.StatementReference, root.YapilyApi.TransactionAmount);
+    root.YapilyApi.Transaction = factory(root.YapilyApi.ApiClient, root.YapilyApi.AddressDetails, root.YapilyApi.Amount, root.YapilyApi.Balance, root.YapilyApi.ChargeDetails, root.YapilyApi.CurrencyExchange, root.YapilyApi.Enrichment, root.YapilyApi.IsoBankTransactionCode, root.YapilyApi.Merchant, root.YapilyApi.Payee, root.YapilyApi.Payer, root.YapilyApi.ProprietaryBankTransactionCode, root.YapilyApi.StatementReference, root.YapilyApi.TransactionAmount);
   }
-}(this, function(ApiClient, AddressDetails, Amount, Balance, ChargeDetails, CurrencyExchange, Enrichment, IsoBankTransactionCode, Merchant, ProprietaryBankTransactionCode, StatementReference, TransactionAmount) {
+}(this, function(ApiClient, AddressDetails, Amount, Balance, ChargeDetails, CurrencyExchange, Enrichment, IsoBankTransactionCode, Merchant, Payee, Payer, ProprietaryBankTransactionCode, StatementReference, TransactionAmount) {
   'use strict';
 
 
@@ -114,6 +114,12 @@
       }
       if (data.hasOwnProperty('balance')) {
         obj['balance'] = Balance.constructFromObject(data['balance']);
+      }
+      if (data.hasOwnProperty('payeeDetails')) {
+        obj['payeeDetails'] = Payee.constructFromObject(data['payeeDetails']);
+      }
+      if (data.hasOwnProperty('payerDetails')) {
+        obj['payerDetails'] = Payer.constructFromObject(data['payerDetails']);
       }
       if (data.hasOwnProperty('merchant')) {
         obj['merchant'] = Merchant.constructFromObject(data['merchant']);
@@ -214,6 +220,14 @@
    * @member {module:model/Balance} balance
    */
   exports.prototype['balance'] = undefined;
+  /**
+   * @member {module:model/Payee} payeeDetails
+   */
+  exports.prototype['payeeDetails'] = undefined;
+  /**
+   * @member {module:model/Payer} payerDetails
+   */
+  exports.prototype['payerDetails'] = undefined;
   /**
    * @member {module:model/Merchant} merchant
    */
