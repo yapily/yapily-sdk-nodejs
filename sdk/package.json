@@ -1,6 +1,6 @@
 {
   "name": "@yapily/yapily-api",
-  "version": "0.0.333",
+  "version": "0.0.334",
   "description": "To_access_endpoints_that_require_authentication_use_your_application_key_and_secret_created_in_the_Dashboard__https__dashboard_yapily_com",
   "license": "MIT",
   "main": "src/index.js",

@@ -9,6 +9,7 @@ Name | Type | Description | Notes
 **statusReasonDescription** | **String** |  | [optional] 
 **statusUpdateDate** | **Date** |  | [optional] 
 **multiAuthorisationStatus** | [**MultiAuthorisation**](MultiAuthorisation.md) |  | [optional] 
+**isoStatus** | [**PaymentIsoStatus**](PaymentIsoStatus.md) |  | [optional] 
 
 
 
