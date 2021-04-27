@@ -59,10 +59,15 @@
      * Get account balances
      * @param {String} consent Consent Token
      * @param {String} accountId accountId
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.psuId PSU ID
+     * @param {String} opts.psuCorporateId PSU ID CORPORATE
+     * @param {String} opts.psuIpAddress PSU IP ADDRESS
      * @param {module:api/BalancesApi~getAccountBalancesUsingGETCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/ApiResponseOfBalances}
      */
-    this.getAccountBalancesUsingGET = function(consent, accountId, callback) {
+    this.getAccountBalancesUsingGET = function(consent, accountId, opts, callback) {
+      opts = opts || {};
       var postBody = null;
       // verify the required parameter 'consent' is set
       if (consent === undefined || consent === null) {
@@ -81,7 +86,10 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'consent': consent
+        'consent': consent,
+        'psu-id': opts['psuId'],
+        'psu-corporate-id': opts['psuCorporateId'],
+        'psu-ip-address': opts['psuIpAddress']
       };
       var formParams = {
       };

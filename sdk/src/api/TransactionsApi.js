@@ -60,6 +60,9 @@
      * @param {String} consent Consent Token
      * @param {String} accountId accountId
      * @param {Object} opts Optional parameters
+     * @param {String} opts.psuId PSU ID
+     * @param {String} opts.psuCorporateId PSU ID CORPORATE
+     * @param {String} opts.psuIpAddress PSU IP ADDRESS
      * @param {Array.<String>} opts._with with
      * @param {String} opts.from from
      * @param {String} opts.before before
@@ -100,7 +103,10 @@
         },
       };
       var headerParams = {
-        'consent': consent
+        'consent': consent,
+        'psu-id': opts['psuId'],
+        'psu-corporate-id': opts['psuCorporateId'],
+        'psu-ip-address': opts['psuIpAddress']
       };
       var formParams = {
       };

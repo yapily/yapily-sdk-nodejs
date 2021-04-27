@@ -194,7 +194,7 @@ Name | Type | Description  | Notes
 
 ## getAccountUsingGET
 
-> ApiResponseOfAccount getAccountUsingGET(consent, accountId)
+> ApiResponseOfAccount getAccountUsingGET(consent, accountId, opts)
 
 Get account
 
@@ -214,6 +214,11 @@ tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 var apiInstance = new YapilyApi.AccountsApi();
 var consent = "consent_example"; // String | Consent Token
 var accountId = "accountId_example"; // String | accountId
+var opts = {
+  'psuId': "psuId_example", // String | PSU ID
+  'psuCorporateId': "psuCorporateId_example", // String | PSU ID CORPORATE
+  'psuIpAddress': "psuIpAddress_example" // String | PSU IP ADDRESS
+};
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -221,7 +226,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getAccountUsingGET(consent, accountId, callback);
+apiInstance.getAccountUsingGET(consent, accountId, opts, callback);
 ```
 
 ### Parameters
@@ -232,6 +237,9 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **consent** | **String**| Consent Token | 
  **accountId** | **String**| accountId | 
+ **psuId** | **String**| PSU ID | [optional] 
+ **psuCorporateId** | **String**| PSU ID CORPORATE | [optional] 
+ **psuIpAddress** | **String**| PSU IP ADDRESS | [optional] 
 
 ### Return type
 
@@ -249,7 +257,7 @@ Name | Type | Description  | Notes
 
 ## getAccountsUsingGET
 
-> ApiListResponseOfAccount getAccountsUsingGET(consent)
+> ApiListResponseOfAccount getAccountsUsingGET(consent, opts)
 
 Get accounts
 
@@ -268,6 +276,11 @@ tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new YapilyApi.AccountsApi();
 var consent = "consent_example"; // String | Consent Token
+var opts = {
+  'psuId': "psuId_example", // String | PSU ID
+  'psuCorporateId': "psuCorporateId_example", // String | PSU ID CORPORATE
+  'psuIpAddress': "psuIpAddress_example" // String | PSU IP ADDRESS
+};
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -275,7 +288,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getAccountsUsingGET(consent, callback);
+apiInstance.getAccountsUsingGET(consent, opts, callback);
 ```
 
 ### Parameters
@@ -285,6 +298,9 @@ apiInstance.getAccountsUsingGET(consent, callback);
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **consent** | **String**| Consent Token | 
+ **psuId** | **String**| PSU ID | [optional] 
+ **psuCorporateId** | **String**| PSU ID CORPORATE | [optional] 
+ **psuIpAddress** | **String**| PSU IP ADDRESS | [optional] 
 
 ### Return type
 

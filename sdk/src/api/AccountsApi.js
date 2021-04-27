@@ -221,10 +221,15 @@
      * Get account
      * @param {String} consent Consent Token
      * @param {String} accountId accountId
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.psuId PSU ID
+     * @param {String} opts.psuCorporateId PSU ID CORPORATE
+     * @param {String} opts.psuIpAddress PSU IP ADDRESS
      * @param {module:api/AccountsApi~getAccountUsingGETCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/ApiResponseOfAccount}
      */
-    this.getAccountUsingGET = function(consent, accountId, callback) {
+    this.getAccountUsingGET = function(consent, accountId, opts, callback) {
+      opts = opts || {};
       var postBody = null;
       // verify the required parameter 'consent' is set
       if (consent === undefined || consent === null) {
@@ -243,7 +248,10 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'consent': consent
+        'consent': consent,
+        'psu-id': opts['psuId'],
+        'psu-corporate-id': opts['psuCorporateId'],
+        'psu-ip-address': opts['psuIpAddress']
       };
       var formParams = {
       };
@@ -270,10 +278,15 @@
     /**
      * Get accounts
      * @param {String} consent Consent Token
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.psuId PSU ID
+     * @param {String} opts.psuCorporateId PSU ID CORPORATE
+     * @param {String} opts.psuIpAddress PSU IP ADDRESS
      * @param {module:api/AccountsApi~getAccountsUsingGETCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/ApiListResponseOfAccount}
      */
-    this.getAccountsUsingGET = function(consent, callback) {
+    this.getAccountsUsingGET = function(consent, opts, callback) {
+      opts = opts || {};
       var postBody = null;
       // verify the required parameter 'consent' is set
       if (consent === undefined || consent === null) {
@@ -287,7 +300,10 @@
       var collectionQueryParams = {
       };
       var headerParams = {
-        'consent': consent
+        'consent': consent,
+        'psu-id': opts['psuId'],
+        'psu-corporate-id': opts['psuCorporateId'],
+        'psu-ip-address': opts['psuIpAddress']
       };
       var formParams = {
       };

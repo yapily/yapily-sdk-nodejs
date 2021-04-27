@@ -148,6 +148,8 @@ Class | Method | HTTP request | Description
 *YapilyApi.ConsentsApi* | [**getConsentBySingleAccessConsentUsingPOST**](docs/ConsentsApi.md#getConsentBySingleAccessConsentUsingPOST) | **POST** /consent-one-time-token | Post one time token
 *YapilyApi.ConsentsApi* | [**getConsentsUsingGET**](docs/ConsentsApi.md#getConsentsUsingGET) | **GET** /consents | Get consents sorted by creation date
 *YapilyApi.ConsentsApi* | [**getUserConsentsUsingGET**](docs/ConsentsApi.md#getUserConsentsUsingGET) | **GET** /users/{userUuid}/consents | Get latest user consents
+*YapilyApi.EmbeddedAccountsApi* | [**initiateEmbeddedAccountRequestUsingPOST**](docs/EmbeddedAccountsApi.md#initiateEmbeddedAccountRequestUsingPOST) | **POST** /embedded-account-auth-requests | Initiate a new embedded account request for user to authorize
+*YapilyApi.EmbeddedAccountsApi* | [**updateEmbeddedAccountRequestUsingPUT**](docs/EmbeddedAccountsApi.md#updateEmbeddedAccountRequestUsingPUT) | **PUT** /embedded-account-auth-requests/{consentId} | Update an embedded account request with SCA info
 *YapilyApi.EmbeddedPaymentsApi* | [**createEmbeddedPaymentAuthorisationUsingPOST**](docs/EmbeddedPaymentsApi.md#createEmbeddedPaymentAuthorisationUsingPOST) | **POST** /embedded-payment-auth-requests | Initiate an embedded payment for user to authorise
 *YapilyApi.EmbeddedPaymentsApi* | [**updateEmbeddedPaymentAuthorisationUsingPUT**](docs/EmbeddedPaymentsApi.md#updateEmbeddedPaymentAuthorisationUsingPUT) | **PUT** /embedded-payment-auth-requests/{consentId} | Update an embedded payment initiation with SCA info
 *YapilyApi.IdentityApi* | [**getIdentityUsingGET**](docs/IdentityApi.md#getIdentityUsingGET) | **GET** /identity | Get identity
@@ -181,6 +183,7 @@ Class | Method | HTTP request | Description
  - [YapilyApi.Account](docs/Account.md)
  - [YapilyApi.AccountAuthorisationRequest](docs/AccountAuthorisationRequest.md)
  - [YapilyApi.AccountBalance](docs/AccountBalance.md)
+ - [YapilyApi.AccountEmbeddedAuthorisationRequest](docs/AccountEmbeddedAuthorisationRequest.md)
  - [YapilyApi.AccountIdentification](docs/AccountIdentification.md)
  - [YapilyApi.AccountInfo](docs/AccountInfo.md)
  - [YapilyApi.AccountName](docs/AccountName.md)
@@ -202,6 +205,7 @@ Class | Method | HTTP request | Description
  - [YapilyApi.ApiListResponseOfTransaction](docs/ApiListResponseOfTransaction.md)
  - [YapilyApi.ApiResponseOfAccount](docs/ApiResponseOfAccount.md)
  - [YapilyApi.ApiResponseOfAccountStatement](docs/ApiResponseOfAccountStatement.md)
+ - [YapilyApi.ApiResponseOfAuthorisationEmbeddedRequestResponse](docs/ApiResponseOfAuthorisationEmbeddedRequestResponse.md)
  - [YapilyApi.ApiResponseOfAuthorisationRequestResponse](docs/ApiResponseOfAuthorisationRequestResponse.md)
  - [YapilyApi.ApiResponseOfBalances](docs/ApiResponseOfBalances.md)
  - [YapilyApi.ApiResponseOfBulkUserDeleteDetails](docs/ApiResponseOfBulkUserDeleteDetails.md)
@@ -223,6 +227,7 @@ Class | Method | HTTP request | Description
  - [YapilyApi.ApiResponseOfUserDeleteResponse](docs/ApiResponseOfUserDeleteResponse.md)
  - [YapilyApi.Application](docs/Application.md)
  - [YapilyApi.ApplicationUser](docs/ApplicationUser.md)
+ - [YapilyApi.AuthorisationEmbeddedRequestResponse](docs/AuthorisationEmbeddedRequestResponse.md)
  - [YapilyApi.AuthorisationRequestResponse](docs/AuthorisationRequestResponse.md)
  - [YapilyApi.Balance](docs/Balance.md)
  - [YapilyApi.Balances](docs/Balances.md)

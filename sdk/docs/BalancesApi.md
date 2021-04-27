@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 ## getAccountBalancesUsingGET
 
-> ApiResponseOfBalances getAccountBalancesUsingGET(consent, accountId)
+> ApiResponseOfBalances getAccountBalancesUsingGET(consent, accountId, opts)
 
 Get account balances
 
@@ -30,6 +30,11 @@ tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 var apiInstance = new YapilyApi.BalancesApi();
 var consent = "consent_example"; // String | Consent Token
 var accountId = "accountId_example"; // String | accountId
+var opts = {
+  'psuId': "psuId_example", // String | PSU ID
+  'psuCorporateId': "psuCorporateId_example", // String | PSU ID CORPORATE
+  'psuIpAddress': "psuIpAddress_example" // String | PSU IP ADDRESS
+};
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -37,7 +42,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getAccountBalancesUsingGET(consent, accountId, callback);
+apiInstance.getAccountBalancesUsingGET(consent, accountId, opts, callback);
 ```
 
 ### Parameters
@@ -48,6 +53,9 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **consent** | **String**| Consent Token | 
  **accountId** | **String**| accountId | 
+ **psuId** | **String**| PSU ID | [optional] 
+ **psuCorporateId** | **String**| PSU ID CORPORATE | [optional] 
+ **psuIpAddress** | **String**| PSU IP ADDRESS | [optional] 
 
 ### Return type
 

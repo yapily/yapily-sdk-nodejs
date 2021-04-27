@@ -31,6 +31,9 @@ var apiInstance = new YapilyApi.TransactionsApi();
 var consent = "consent_example"; // String | Consent Token
 var accountId = "accountId_example"; // String | accountId
 var opts = {
+  'psuId': "psuId_example", // String | PSU ID
+  'psuCorporateId': "psuCorporateId_example", // String | PSU ID CORPORATE
+  'psuIpAddress': "psuIpAddress_example", // String | PSU IP ADDRESS
   '_with': ["null"], // [String] | with
   'from': "from_example", // String | from
   'before': "before_example", // String | before
@@ -57,6 +60,9 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **consent** | **String**| Consent Token | 
  **accountId** | **String**| accountId | 
+ **psuId** | **String**| PSU ID | [optional] 
+ **psuCorporateId** | **String**| PSU ID CORPORATE | [optional] 
+ **psuIpAddress** | **String**| PSU IP ADDRESS | [optional] 
  **_with** | [**[String]**](String.md)| with | [optional] 
  **from** | **String**| from | [optional] 
  **before** | **String**| before | [optional] 
