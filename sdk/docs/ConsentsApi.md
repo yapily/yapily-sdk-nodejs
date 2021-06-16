@@ -35,10 +35,10 @@ var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new YapilyApi.ConsentsApi();
-var userUuid = "userUuid_example"; // String | User uuid
+var userUuid = "userUuid_example"; // String | __Mandatory__. The Yapily generated UUID for the user.
 var createConsentAccessToken = new YapilyApi.CreateConsentAccessToken(); // CreateConsentAccessToken | createConsentAccessToken
 var opts = {
-  'xYapilyApiVersion': "xYapilyApiVersion_example" // String | Api Version
+  'xYapilyApiVersion': "xYapilyApiVersion_example" // String | __Optional__. Determines the API version to use. Valid values are `1.0` or `2.0-ALPHA`. Defaults to `1.0`
 };
 var callback = function(error, data, response) {
   if (error) {
@@ -56,9 +56,9 @@ apiInstance.addConsentUsingPOST(userUuid, createConsentAccessToken, opts, callba
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **userUuid** | **String**| User uuid | 
+ **userUuid** | **String**| __Mandatory__. The Yapily generated UUID for the user. | 
  **createConsentAccessToken** | [**CreateConsentAccessToken**](CreateConsentAccessToken.md)| createConsentAccessToken | 
- **xYapilyApiVersion** | **String**| Api Version | [optional] 
+ **xYapilyApiVersion** | **String**| __Optional__. Determines the API version to use. Valid values are &#x60;1.0&#x60; or &#x60;2.0-ALPHA&#x60;. Defaults to &#x60;1.0&#x60; | [optional] 
 
 ### Return type
 
@@ -96,7 +96,7 @@ tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 var apiInstance = new YapilyApi.ConsentsApi();
 var consentByAuthCode = new YapilyApi.ConsentAuthCodeRequest(); // ConsentAuthCodeRequest | consentByAuthCode
 var opts = {
-  'xYapilyApiVersion': "xYapilyApiVersion_example" // String | Api Version
+  'xYapilyApiVersion': "xYapilyApiVersion_example" // String | __Optional__. Determines the API version to use. Valid values are `1.0` or `2.0-ALPHA`. Defaults to `1.0`
 };
 var callback = function(error, data, response) {
   if (error) {
@@ -115,7 +115,7 @@ apiInstance.createConsentWithCodeUsingPOST(consentByAuthCode, opts, callback);
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **consentByAuthCode** | [**ConsentAuthCodeRequest**](ConsentAuthCodeRequest.md)| consentByAuthCode | 
- **xYapilyApiVersion** | **String**| Api Version | [optional] 
+ **xYapilyApiVersion** | **String**| __Optional__. Determines the API version to use. Valid values are &#x60;1.0&#x60; or &#x60;2.0-ALPHA&#x60;. Defaults to &#x60;1.0&#x60; | [optional] 
 
 ### Return type
 
@@ -153,7 +153,7 @@ tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 var apiInstance = new YapilyApi.ConsentsApi();
 var preAuthorisationRequest = new YapilyApi.PreAuthorisationRequest(); // PreAuthorisationRequest | preAuthorisationRequest
 var opts = {
-  'xYapilyApiVersion': "xYapilyApiVersion_example" // String | Api Version
+  'xYapilyApiVersion': "xYapilyApiVersion_example" // String | __Optional__. Determines the API version to use. Valid values are `1.0` or `2.0-ALPHA`. Defaults to `1.0`
 };
 var callback = function(error, data, response) {
   if (error) {
@@ -172,7 +172,7 @@ apiInstance.createPreAuthorisationRequestUsingPOST(preAuthorisationRequest, opts
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **preAuthorisationRequest** | [**PreAuthorisationRequest**](PreAuthorisationRequest.md)| preAuthorisationRequest | 
- **xYapilyApiVersion** | **String**| Api Version | [optional] 
+ **xYapilyApiVersion** | **String**| __Optional__. Determines the API version to use. Valid values are &#x60;1.0&#x60; or &#x60;2.0-ALPHA&#x60;. Defaults to &#x60;1.0&#x60; | [optional] 
 
 ### Return type
 
@@ -208,10 +208,10 @@ var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new YapilyApi.ConsentsApi();
-var consentId = "consentId_example"; // String | Consent Id
+var consentId = "consentId_example"; // String | __Mandatory__. The consent Id of the `Consent` to update.
 var opts = {
-  'xYapilyApiVersion': "xYapilyApiVersion_example", // String | Api Version
-  'forceDelete': true // Boolean | Force delete
+  'xYapilyApiVersion': "xYapilyApiVersion_example", // String | __Optional__. Determines the API version to use. Valid values are `1.0` or `2.0-ALPHA`. Defaults to `1.0`
+  'forceDelete': true // Boolean | __Optional__. Whether to force the deletion.
 };
 var callback = function(error, data, response) {
   if (error) {
@@ -229,9 +229,9 @@ apiInstance.deleteUsingDELETE(consentId, opts, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **consentId** | **String**| Consent Id | 
- **xYapilyApiVersion** | **String**| Api Version | [optional] 
- **forceDelete** | **Boolean**| Force delete | [optional] [default to true]
+ **consentId** | **String**| __Mandatory__. The consent Id of the &#x60;Consent&#x60; to update. | 
+ **xYapilyApiVersion** | **String**| __Optional__. Determines the API version to use. Valid values are &#x60;1.0&#x60; or &#x60;2.0-ALPHA&#x60;. Defaults to &#x60;1.0&#x60; | [optional] 
+ **forceDelete** | **Boolean**| __Optional__. Whether to force the deletion. | [optional] [default to true]
 
 ### Return type
 
@@ -267,9 +267,9 @@ var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new YapilyApi.ConsentsApi();
-var consentId = "consentId_example"; // String | Consent Id
+var consentId = "consentId_example"; // String | __Mandatory__. The consent Id of the `Consent` to update.
 var opts = {
-  'xYapilyApiVersion': "xYapilyApiVersion_example" // String | Api Version
+  'xYapilyApiVersion': "xYapilyApiVersion_example" // String | __Optional__. Determines the API version to use. Valid values are `1.0` or `2.0-ALPHA`. Defaults to `1.0`
 };
 var callback = function(error, data, response) {
   if (error) {
@@ -287,8 +287,8 @@ apiInstance.getConsentByIdUsingGET(consentId, opts, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **consentId** | **String**| Consent Id | 
- **xYapilyApiVersion** | **String**| Api Version | [optional] 
+ **consentId** | **String**| __Mandatory__. The consent Id of the &#x60;Consent&#x60; to update. | 
+ **xYapilyApiVersion** | **String**| __Optional__. Determines the API version to use. Valid values are &#x60;1.0&#x60; or &#x60;2.0-ALPHA&#x60;. Defaults to &#x60;1.0&#x60; | [optional] 
 
 ### Return type
 
@@ -326,7 +326,7 @@ tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 var apiInstance = new YapilyApi.ConsentsApi();
 var oneTimeToken = new YapilyApi.OneTimeTokenRequest(); // OneTimeTokenRequest | oneTimeToken
 var opts = {
-  'xYapilyApiVersion': "xYapilyApiVersion_example" // String | Api Version
+  'xYapilyApiVersion': "xYapilyApiVersion_example" // String | __Optional__. Determines the API version to use. Valid values are `1.0` or `2.0-ALPHA`. Defaults to `1.0`
 };
 var callback = function(error, data, response) {
   if (error) {
@@ -345,7 +345,7 @@ apiInstance.getConsentBySingleAccessConsentUsingPOST(oneTimeToken, opts, callbac
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **oneTimeToken** | [**OneTimeTokenRequest**](OneTimeTokenRequest.md)| oneTimeToken | 
- **xYapilyApiVersion** | **String**| Api Version | [optional] 
+ **xYapilyApiVersion** | **String**| __Optional__. Determines the API version to use. Valid values are &#x60;1.0&#x60; or &#x60;2.0-ALPHA&#x60;. Defaults to &#x60;1.0&#x60; | [optional] 
 
 ### Return type
 
@@ -382,15 +382,15 @@ tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new YapilyApi.ConsentsApi();
 var opts = {
-  'xYapilyApiVersion': "xYapilyApiVersion_example", // String | Api Version
-  'filterApplicationUserId': ["null"], // [String] | Filter consents by your application user Id (applicationUserId)
-  'filterUserUuid': ["null"], // [String] | Filter consents by Yapily user Id (userUuid)
-  'filterInstitution': ["null"], // [String] | Use this parameter to filter consent by institution, using the Yapily institution Id
-  'filterStatus': ["null"], // [String] | Use this parameter to filter consent by status
-  'from': "from_example", // String | Use this parameter to filter consents created after the date specified
-  'before': "before_example", // String | Use this parameter to filter consents created before the date specified
+  'xYapilyApiVersion': "xYapilyApiVersion_example", // String | __Optional__. Determines the API version to use. Valid values are `1.0` or `2.0-ALPHA`. Defaults to `1.0`
+  'filterApplicationUserId': ["null"], // [String] | __Optional__. Filter records based on the list of `applicationUserId` users provided.
+  'filterUserUuid': ["null"], // [String] | __Optional__. Filter records based on the list of `userUuid` users provided.
+  'filterInstitution': ["null"], // [String] | __Optional__. Filter records based on the list of `Institution` provided.
+  'filterStatus': ["null"], // [String] | __Optional__. Filter records based on the list of `Consent` [statuses](https://docs.yapily.com/api/#tocS_AuthorisationStatus).
+  'from': "from_example", // String | __Optional__. Returned transactions will be on or after this date (yyyy-MM-dd'T'HH:mm:ss.SSSZ). 
+  'before': "before_example", // String | __Optional__. Returned transactions will be on or before this date (yyyy-MM-dd'T'HH:mm:ss.SSSZ).
   'limit': 56, // Number | Use this parameter to limit consent results, max limit is 20
-  'offset': 0 // Number | Use this parameter to specify the offset of the results
+  'offset': 0 // Number | __Optional__. The number of transaction records to be skipped. Used primarily with paginated results.
 };
 var callback = function(error, data, response) {
   if (error) {
@@ -408,15 +408,15 @@ apiInstance.getConsentsUsingGET(opts, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **xYapilyApiVersion** | **String**| Api Version | [optional] 
- **filterApplicationUserId** | [**[String]**](String.md)| Filter consents by your application user Id (applicationUserId) | [optional] 
- **filterUserUuid** | [**[String]**](String.md)| Filter consents by Yapily user Id (userUuid) | [optional] 
- **filterInstitution** | [**[String]**](String.md)| Use this parameter to filter consent by institution, using the Yapily institution Id | [optional] 
- **filterStatus** | [**[String]**](String.md)| Use this parameter to filter consent by status | [optional] 
- **from** | **String**| Use this parameter to filter consents created after the date specified | [optional] 
- **before** | **String**| Use this parameter to filter consents created before the date specified | [optional] 
+ **xYapilyApiVersion** | **String**| __Optional__. Determines the API version to use. Valid values are &#x60;1.0&#x60; or &#x60;2.0-ALPHA&#x60;. Defaults to &#x60;1.0&#x60; | [optional] 
+ **filterApplicationUserId** | [**[String]**](String.md)| __Optional__. Filter records based on the list of &#x60;applicationUserId&#x60; users provided. | [optional] 
+ **filterUserUuid** | [**[String]**](String.md)| __Optional__. Filter records based on the list of &#x60;userUuid&#x60; users provided. | [optional] 
+ **filterInstitution** | [**[String]**](String.md)| __Optional__. Filter records based on the list of &#x60;Institution&#x60; provided. | [optional] 
+ **filterStatus** | [**[String]**](String.md)| __Optional__. Filter records based on the list of &#x60;Consent&#x60; [statuses](https://docs.yapily.com/api/#tocS_AuthorisationStatus). | [optional] 
+ **from** | **String**| __Optional__. Returned transactions will be on or after this date (yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSSZ).  | [optional] 
+ **before** | **String**| __Optional__. Returned transactions will be on or before this date (yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSSZ). | [optional] 
  **limit** | **Number**| Use this parameter to limit consent results, max limit is 20 | [optional] 
- **offset** | **Number**| Use this parameter to specify the offset of the results | [optional] [default to 0]
+ **offset** | **Number**| __Optional__. The number of transaction records to be skipped. Used primarily with paginated results. | [optional] [default to 0]
 
 ### Return type
 
@@ -452,10 +452,10 @@ var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new YapilyApi.ConsentsApi();
-var userUuid = "userUuid_example"; // String | User uuid
+var userUuid = "userUuid_example"; // String | __Mandatory__. The Yapily generated UUID for the user.
 var opts = {
-  'xYapilyApiVersion': "xYapilyApiVersion_example", // String | Api Version
-  'filterInstitution': "filterInstitution_example", // String | Use this parameter to filter consent by institution, using the Yapily institution Id. This replaces the deprecated `institutionId` query param.
+  'xYapilyApiVersion': "xYapilyApiVersion_example", // String | __Optional__. Determines the API version to use. Valid values are `1.0` or `2.0-ALPHA`. Defaults to `1.0`
+  'institutionId': "institutionId_example", // String | Use this parameter to filter consent by institution, using the Yapily institution Id. This replaces the deprecated `institutionId` query param.
   'limit': 56 // Number | Use this parameter to limit consent results, max limit is 20
 };
 var callback = function(error, data, response) {
@@ -474,9 +474,9 @@ apiInstance.getUserConsentsUsingGET(userUuid, opts, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **userUuid** | **String**| User uuid | 
- **xYapilyApiVersion** | **String**| Api Version | [optional] 
- **filterInstitution** | **String**| Use this parameter to filter consent by institution, using the Yapily institution Id. This replaces the deprecated &#x60;institutionId&#x60; query param. | [optional] 
+ **userUuid** | **String**| __Mandatory__. The Yapily generated UUID for the user. | 
+ **xYapilyApiVersion** | **String**| __Optional__. Determines the API version to use. Valid values are &#x60;1.0&#x60; or &#x60;2.0-ALPHA&#x60;. Defaults to &#x60;1.0&#x60; | [optional] 
+ **institutionId** | **String**| Use this parameter to filter consent by institution, using the Yapily institution Id. This replaces the deprecated &#x60;institutionId&#x60; query param. | [optional] 
  **limit** | **Number**| Use this parameter to limit consent results, max limit is 20 | [optional] 
 
 ### Return type

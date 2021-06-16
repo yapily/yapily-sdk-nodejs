@@ -11,7 +11,7 @@ Method | HTTP request | Description
 [**createPaymentUsingPOST**](PaymentsApi.md#createPaymentUsingPOST) | **POST** /payments | Create a payment
 [**createPaymentWithSortCodeUsingPOST**](PaymentsApi.md#createPaymentWithSortCodeUsingPOST) | **POST** /payment-sortcode | Create a new single payment
 [**getPaymentStatusUsingGET**](PaymentsApi.md#getPaymentStatusUsingGET) | **GET** /payments/{paymentId} | Get status of a payment
-[**getPaymentsUsingGET**](PaymentsApi.md#getPaymentsUsingGET) | **GET** /payments/{paymentId}/details | Get payments detail
+[**getPaymentsUsingGET**](PaymentsApi.md#getPaymentsUsingGET) | **GET** /payments/{paymentId}/details | Get payments details
 [**updatePaymentAuthorisationUsingPUT**](PaymentsApi.md#updatePaymentAuthorisationUsingPUT) | **PUT** /payment-auth-requests | Update pre authorize consent for user to authorise payment
 
 
@@ -38,10 +38,10 @@ tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 var apiInstance = new YapilyApi.PaymentsApi();
 var paymentAuthRequest = new YapilyApi.BulkPaymentAuthorisationRequest(); // BulkPaymentAuthorisationRequest | paymentAuthRequest
 var opts = {
-  'xYapilyApiVersion': "xYapilyApiVersion_example", // String | Api Version
-  'psuId': "psuId_example", // String | PSU ID
-  'psuCorporateId': "psuCorporateId_example", // String | PSU ID CORPORATE
-  'psuIpAddress': "psuIpAddress_example" // String | PSU IP ADDRESS
+  'xYapilyApiVersion': "xYapilyApiVersion_example", // String | __Optional__. Determines the API version to use. Valid values are `1.0` or `2.0-ALPHA`. Defaults to `1.0`
+  'psuId': "psuId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a personal account. <br><br>See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required.
+  'psuCorporateId': "psuCorporateId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a business account. <br><br>See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required.
+  'psuIpAddress': "psuIpAddress_example" // String | __Conditional__. The IP address of the PSU. <br><br>See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required.
 };
 var callback = function(error, data, response) {
   if (error) {
@@ -60,10 +60,10 @@ apiInstance.createBulkPaymentAuthorisationUsingPOST(paymentAuthRequest, opts, ca
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **paymentAuthRequest** | [**BulkPaymentAuthorisationRequest**](BulkPaymentAuthorisationRequest.md)| paymentAuthRequest | 
- **xYapilyApiVersion** | **String**| Api Version | [optional] 
- **psuId** | **String**| PSU ID | [optional] 
- **psuCorporateId** | **String**| PSU ID CORPORATE | [optional] 
- **psuIpAddress** | **String**| PSU IP ADDRESS | [optional] 
+ **xYapilyApiVersion** | **String**| __Optional__. Determines the API version to use. Valid values are &#x60;1.0&#x60; or &#x60;2.0-ALPHA&#x60;. Defaults to &#x60;1.0&#x60; | [optional] 
+ **psuId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a personal account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required. | [optional] 
+ **psuCorporateId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a business account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required. | [optional] 
+ **psuIpAddress** | **String**| __Conditional__. The IP address of the PSU. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required. | [optional] 
 
 ### Return type
 
@@ -99,13 +99,13 @@ var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new YapilyApi.PaymentsApi();
-var consent = "consent_example"; // String | Consent Token
+var consent = "consent_example"; // String | __Mandatory__. The `consent-token` containing the user's authorisation to make the request.
 var paymentRequest = new YapilyApi.BulkPaymentRequest(); // BulkPaymentRequest | paymentRequest
 var opts = {
-  'xYapilyApiVersion': "xYapilyApiVersion_example", // String | Api Version
-  'psuId': "psuId_example", // String | PSU ID
-  'psuCorporateId': "psuCorporateId_example", // String | PSU ID CORPORATE
-  'psuIpAddress': "psuIpAddress_example" // String | PSU IP ADDRESS
+  'xYapilyApiVersion': "xYapilyApiVersion_example", // String | __Optional__. Determines the API version to use. Valid values are `1.0` or `2.0-ALPHA`. Defaults to `1.0`
+  'psuId': "psuId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a personal account. <br><br>See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required.
+  'psuCorporateId': "psuCorporateId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a business account. <br><br>See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required.
+  'psuIpAddress': "psuIpAddress_example" // String | __Conditional__. The IP address of the PSU. <br><br>See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required.
 };
 var callback = function(error, data, response) {
   if (error) {
@@ -123,12 +123,12 @@ apiInstance.createBulkPaymentUsingPOST(consent, paymentRequest, opts, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **consent** | **String**| Consent Token | 
+ **consent** | **String**| __Mandatory__. The &#x60;consent-token&#x60; containing the user&#39;s authorisation to make the request. | 
  **paymentRequest** | [**BulkPaymentRequest**](BulkPaymentRequest.md)| paymentRequest | 
- **xYapilyApiVersion** | **String**| Api Version | [optional] 
- **psuId** | **String**| PSU ID | [optional] 
- **psuCorporateId** | **String**| PSU ID CORPORATE | [optional] 
- **psuIpAddress** | **String**| PSU IP ADDRESS | [optional] 
+ **xYapilyApiVersion** | **String**| __Optional__. Determines the API version to use. Valid values are &#x60;1.0&#x60; or &#x60;2.0-ALPHA&#x60;. Defaults to &#x60;1.0&#x60; | [optional] 
+ **psuId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a personal account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required. | [optional] 
+ **psuCorporateId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a business account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required. | [optional] 
+ **psuIpAddress** | **String**| __Conditional__. The IP address of the PSU. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required. | [optional] 
 
 ### Return type
 
@@ -166,10 +166,10 @@ tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 var apiInstance = new YapilyApi.PaymentsApi();
 var paymentAuthRequest = new YapilyApi.PaymentAuthorisationRequest(); // PaymentAuthorisationRequest | paymentAuthRequest
 var opts = {
-  'xYapilyApiVersion': "xYapilyApiVersion_example", // String | Api Version
-  'psuId': "psuId_example", // String | PSU ID
-  'psuCorporateId': "psuCorporateId_example", // String | PSU ID CORPORATE
-  'psuIpAddress': "psuIpAddress_example" // String | PSU IP ADDRESS
+  'xYapilyApiVersion': "xYapilyApiVersion_example", // String | __Optional__. Determines the API version to use. Valid values are `1.0` or `2.0-ALPHA`. Defaults to `1.0`
+  'psuId': "psuId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a personal account. <br><br>See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required.
+  'psuCorporateId': "psuCorporateId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a business account. <br><br>See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required.
+  'psuIpAddress': "psuIpAddress_example" // String | __Conditional__. The IP address of the PSU. <br><br>See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required.
 };
 var callback = function(error, data, response) {
   if (error) {
@@ -188,10 +188,10 @@ apiInstance.createPaymentAuthorisationUsingPOST(paymentAuthRequest, opts, callba
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **paymentAuthRequest** | [**PaymentAuthorisationRequest**](PaymentAuthorisationRequest.md)| paymentAuthRequest | 
- **xYapilyApiVersion** | **String**| Api Version | [optional] 
- **psuId** | **String**| PSU ID | [optional] 
- **psuCorporateId** | **String**| PSU ID CORPORATE | [optional] 
- **psuIpAddress** | **String**| PSU IP ADDRESS | [optional] 
+ **xYapilyApiVersion** | **String**| __Optional__. Determines the API version to use. Valid values are &#x60;1.0&#x60; or &#x60;2.0-ALPHA&#x60;. Defaults to &#x60;1.0&#x60; | [optional] 
+ **psuId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a personal account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required. | [optional] 
+ **psuCorporateId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a business account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required. | [optional] 
+ **psuIpAddress** | **String**| __Conditional__. The IP address of the PSU. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required. | [optional] 
 
 ### Return type
 
@@ -229,10 +229,10 @@ tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 var apiInstance = new YapilyApi.PaymentsApi();
 var paymentAuthRequest = new YapilyApi.SortCodePaymentAuthRequest(); // SortCodePaymentAuthRequest | paymentAuthRequest
 var opts = {
-  'xYapilyApiVersion': "xYapilyApiVersion_example", // String | Api Version
-  'psuId': "psuId_example", // String | PSU ID
-  'psuCorporateId': "psuCorporateId_example", // String | PSU ID CORPORATE
-  'psuIpAddress': "psuIpAddress_example" // String | PSU IP ADDRESS
+  'xYapilyApiVersion': "xYapilyApiVersion_example", // String | __Optional__. Determines the API version to use. Valid values are `1.0` or `2.0-ALPHA`. Defaults to `1.0`
+  'psuId': "psuId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a personal account. <br><br>See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required.
+  'psuCorporateId': "psuCorporateId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a business account. <br><br>See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required.
+  'psuIpAddress': "psuIpAddress_example" // String | __Conditional__. The IP address of the PSU. <br><br>See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required.
 };
 var callback = function(error, data, response) {
   if (error) {
@@ -251,10 +251,10 @@ apiInstance.createPaymentAuthorisationWithSortCodeUsingPOST(paymentAuthRequest, 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **paymentAuthRequest** | [**SortCodePaymentAuthRequest**](SortCodePaymentAuthRequest.md)| paymentAuthRequest | 
- **xYapilyApiVersion** | **String**| Api Version | [optional] 
- **psuId** | **String**| PSU ID | [optional] 
- **psuCorporateId** | **String**| PSU ID CORPORATE | [optional] 
- **psuIpAddress** | **String**| PSU IP ADDRESS | [optional] 
+ **xYapilyApiVersion** | **String**| __Optional__. Determines the API version to use. Valid values are &#x60;1.0&#x60; or &#x60;2.0-ALPHA&#x60;. Defaults to &#x60;1.0&#x60; | [optional] 
+ **psuId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a personal account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required. | [optional] 
+ **psuCorporateId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a business account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required. | [optional] 
+ **psuIpAddress** | **String**| __Conditional__. The IP address of the PSU. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required. | [optional] 
 
 ### Return type
 
@@ -290,13 +290,13 @@ var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new YapilyApi.PaymentsApi();
-var consent = "consent_example"; // String | Consent Token
+var consent = "consent_example"; // String | __Mandatory__. The `consent-token` containing the user's authorisation to make the request.
 var paymentRequest = new YapilyApi.PaymentRequest(); // PaymentRequest | paymentRequest
 var opts = {
-  'xYapilyApiVersion': "xYapilyApiVersion_example", // String | Api Version
-  'psuId': "psuId_example", // String | PSU ID
-  'psuCorporateId': "psuCorporateId_example", // String | PSU ID CORPORATE
-  'psuIpAddress': "psuIpAddress_example" // String | PSU IP ADDRESS
+  'xYapilyApiVersion': "xYapilyApiVersion_example", // String | __Optional__. Determines the API version to use. Valid values are `1.0` or `2.0-ALPHA`. Defaults to `1.0`
+  'psuId': "psuId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a personal account. <br><br>See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required.
+  'psuCorporateId': "psuCorporateId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a business account. <br><br>See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required.
+  'psuIpAddress': "psuIpAddress_example" // String | __Conditional__. The IP address of the PSU. <br><br>See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required.
 };
 var callback = function(error, data, response) {
   if (error) {
@@ -314,12 +314,12 @@ apiInstance.createPaymentUsingPOST(consent, paymentRequest, opts, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **consent** | **String**| Consent Token | 
+ **consent** | **String**| __Mandatory__. The &#x60;consent-token&#x60; containing the user&#39;s authorisation to make the request. | 
  **paymentRequest** | [**PaymentRequest**](PaymentRequest.md)| paymentRequest | 
- **xYapilyApiVersion** | **String**| Api Version | [optional] 
- **psuId** | **String**| PSU ID | [optional] 
- **psuCorporateId** | **String**| PSU ID CORPORATE | [optional] 
- **psuIpAddress** | **String**| PSU IP ADDRESS | [optional] 
+ **xYapilyApiVersion** | **String**| __Optional__. Determines the API version to use. Valid values are &#x60;1.0&#x60; or &#x60;2.0-ALPHA&#x60;. Defaults to &#x60;1.0&#x60; | [optional] 
+ **psuId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a personal account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required. | [optional] 
+ **psuCorporateId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a business account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required. | [optional] 
+ **psuIpAddress** | **String**| __Conditional__. The IP address of the PSU. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required. | [optional] 
 
 ### Return type
 
@@ -355,13 +355,13 @@ var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new YapilyApi.PaymentsApi();
-var consent = "consent_example"; // String | Consent Token
+var consent = "consent_example"; // String | __Mandatory__. The `consent-token` containing the user's authorisation to make the request.
 var paymentRequest = new YapilyApi.SortCodePaymentRequest(); // SortCodePaymentRequest | paymentRequest
 var opts = {
-  'xYapilyApiVersion': "xYapilyApiVersion_example", // String | Api Version
-  'psuId': "psuId_example", // String | PSU ID
-  'psuCorporateId': "psuCorporateId_example", // String | PSU ID CORPORATE
-  'psuIpAddress': "psuIpAddress_example" // String | PSU IP ADDRESS
+  'xYapilyApiVersion': "xYapilyApiVersion_example", // String | __Optional__. Determines the API version to use. Valid values are `1.0` or `2.0-ALPHA`. Defaults to `1.0`
+  'psuId': "psuId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a personal account. <br><br>See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required.
+  'psuCorporateId': "psuCorporateId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a business account. <br><br>See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required.
+  'psuIpAddress': "psuIpAddress_example" // String | __Conditional__. The IP address of the PSU. <br><br>See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required.
 };
 var callback = function(error, data, response) {
   if (error) {
@@ -379,12 +379,12 @@ apiInstance.createPaymentWithSortCodeUsingPOST(consent, paymentRequest, opts, ca
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **consent** | **String**| Consent Token | 
+ **consent** | **String**| __Mandatory__. The &#x60;consent-token&#x60; containing the user&#39;s authorisation to make the request. | 
  **paymentRequest** | [**SortCodePaymentRequest**](SortCodePaymentRequest.md)| paymentRequest | 
- **xYapilyApiVersion** | **String**| Api Version | [optional] 
- **psuId** | **String**| PSU ID | [optional] 
- **psuCorporateId** | **String**| PSU ID CORPORATE | [optional] 
- **psuIpAddress** | **String**| PSU IP ADDRESS | [optional] 
+ **xYapilyApiVersion** | **String**| __Optional__. Determines the API version to use. Valid values are &#x60;1.0&#x60; or &#x60;2.0-ALPHA&#x60;. Defaults to &#x60;1.0&#x60; | [optional] 
+ **psuId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a personal account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required. | [optional] 
+ **psuCorporateId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a business account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required. | [optional] 
+ **psuIpAddress** | **String**| __Conditional__. The IP address of the PSU. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required. | [optional] 
 
 ### Return type
 
@@ -420,13 +420,13 @@ var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new YapilyApi.PaymentsApi();
-var paymentId = "paymentId_example"; // String | Payment Id
-var consent = "consent_example"; // String | Consent Token
+var paymentId = "paymentId_example"; // String | __Mandatory__. The payment Id of the payment.
+var consent = "consent_example"; // String | __Mandatory__. The `consent-token` containing the user's authorisation to make the request.
 var opts = {
-  'xYapilyApiVersion': "xYapilyApiVersion_example", // String | Api Version
-  'psuId': "psuId_example", // String | PSU ID
-  'psuCorporateId': "psuCorporateId_example", // String | PSU ID CORPORATE
-  'psuIpAddress': "psuIpAddress_example" // String | PSU IP ADDRESS
+  'xYapilyApiVersion': "xYapilyApiVersion_example", // String | __Optional__. Determines the API version to use. Valid values are `1.0` or `2.0-ALPHA`. Defaults to `1.0`
+  'psuId': "psuId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a personal account. <br><br>See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required.
+  'psuCorporateId': "psuCorporateId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a business account. <br><br>See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required.
+  'psuIpAddress': "psuIpAddress_example" // String | __Conditional__. The IP address of the PSU. <br><br>See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required.
 };
 var callback = function(error, data, response) {
   if (error) {
@@ -444,12 +444,12 @@ apiInstance.getPaymentStatusUsingGET(paymentId, consent, opts, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **paymentId** | **String**| Payment Id | 
- **consent** | **String**| Consent Token | 
- **xYapilyApiVersion** | **String**| Api Version | [optional] 
- **psuId** | **String**| PSU ID | [optional] 
- **psuCorporateId** | **String**| PSU ID CORPORATE | [optional] 
- **psuIpAddress** | **String**| PSU IP ADDRESS | [optional] 
+ **paymentId** | **String**| __Mandatory__. The payment Id of the payment. | 
+ **consent** | **String**| __Mandatory__. The &#x60;consent-token&#x60; containing the user&#39;s authorisation to make the request. | 
+ **xYapilyApiVersion** | **String**| __Optional__. Determines the API version to use. Valid values are &#x60;1.0&#x60; or &#x60;2.0-ALPHA&#x60;. Defaults to &#x60;1.0&#x60; | [optional] 
+ **psuId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a personal account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required. | [optional] 
+ **psuCorporateId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a business account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required. | [optional] 
+ **psuIpAddress** | **String**| __Conditional__. The IP address of the PSU. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required. | [optional] 
 
 ### Return type
 
@@ -469,7 +469,7 @@ Name | Type | Description  | Notes
 
 > ApiResponseOfPaymentResponses getPaymentsUsingGET(paymentId, consent, opts)
 
-Get payments detail
+Get payments details
 
 ### Example
 
@@ -485,13 +485,13 @@ var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new YapilyApi.PaymentsApi();
-var paymentId = "paymentId_example"; // String | Payment Id
-var consent = "consent_example"; // String | Consent Token
+var paymentId = "paymentId_example"; // String | __Mandatory__. The payment Id of the payment.
+var consent = "consent_example"; // String | __Mandatory__. The `consent-token` containing the user's authorisation to make the request.
 var opts = {
-  'xYapilyApiVersion': "xYapilyApiVersion_example", // String | Api Version
-  'psuId': "psuId_example", // String | PSU ID
-  'psuCorporateId': "psuCorporateId_example", // String | PSU ID CORPORATE
-  'psuIpAddress': "psuIpAddress_example" // String | PSU IP ADDRESS
+  'xYapilyApiVersion': "xYapilyApiVersion_example", // String | __Optional__. Determines the API version to use. Valid values are `1.0` or `2.0-ALPHA`. Defaults to `1.0`
+  'psuId': "psuId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a personal account. <br><br>See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required.
+  'psuCorporateId': "psuCorporateId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a business account. <br><br>See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required.
+  'psuIpAddress': "psuIpAddress_example" // String | __Conditional__. The IP address of the PSU. <br><br>See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required.
 };
 var callback = function(error, data, response) {
   if (error) {
@@ -509,12 +509,12 @@ apiInstance.getPaymentsUsingGET(paymentId, consent, opts, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **paymentId** | **String**| Payment Id | 
- **consent** | **String**| Consent Token | 
- **xYapilyApiVersion** | **String**| Api Version | [optional] 
- **psuId** | **String**| PSU ID | [optional] 
- **psuCorporateId** | **String**| PSU ID CORPORATE | [optional] 
- **psuIpAddress** | **String**| PSU IP ADDRESS | [optional] 
+ **paymentId** | **String**| __Mandatory__. The payment Id of the payment. | 
+ **consent** | **String**| __Mandatory__. The &#x60;consent-token&#x60; containing the user&#39;s authorisation to make the request. | 
+ **xYapilyApiVersion** | **String**| __Optional__. Determines the API version to use. Valid values are &#x60;1.0&#x60; or &#x60;2.0-ALPHA&#x60;. Defaults to &#x60;1.0&#x60; | [optional] 
+ **psuId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a personal account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required. | [optional] 
+ **psuCorporateId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a business account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required. | [optional] 
+ **psuIpAddress** | **String**| __Conditional__. The IP address of the PSU. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required. | [optional] 
 
 ### Return type
 
@@ -550,13 +550,13 @@ var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new YapilyApi.PaymentsApi();
-var consent = "consent_example"; // String | Consent Token
+var consent = "consent_example"; // String | __Mandatory__. The `consent-token` containing the user's authorisation to make the request.
 var paymentAuthRequest = new YapilyApi.PaymentAuthorisationRequest(); // PaymentAuthorisationRequest | paymentAuthRequest
 var opts = {
-  'xYapilyApiVersion': "xYapilyApiVersion_example", // String | Api Version
-  'psuId': "psuId_example", // String | PSU ID
-  'psuCorporateId': "psuCorporateId_example", // String | PSU ID CORPORATE
-  'psuIpAddress': "psuIpAddress_example" // String | PSU IP ADDRESS
+  'xYapilyApiVersion': "xYapilyApiVersion_example", // String | __Optional__. Determines the API version to use. Valid values are `1.0` or `2.0-ALPHA`. Defaults to `1.0`
+  'psuId': "psuId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a personal account. <br><br>See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required.
+  'psuCorporateId': "psuCorporateId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a business account. <br><br>See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required.
+  'psuIpAddress': "psuIpAddress_example" // String | __Conditional__. The IP address of the PSU. <br><br>See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required.
 };
 var callback = function(error, data, response) {
   if (error) {
@@ -574,12 +574,12 @@ apiInstance.updatePaymentAuthorisationUsingPUT(consent, paymentAuthRequest, opts
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **consent** | **String**| Consent Token | 
+ **consent** | **String**| __Mandatory__. The &#x60;consent-token&#x60; containing the user&#39;s authorisation to make the request. | 
  **paymentAuthRequest** | [**PaymentAuthorisationRequest**](PaymentAuthorisationRequest.md)| paymentAuthRequest | 
- **xYapilyApiVersion** | **String**| Api Version | [optional] 
- **psuId** | **String**| PSU ID | [optional] 
- **psuCorporateId** | **String**| PSU ID CORPORATE | [optional] 
- **psuIpAddress** | **String**| PSU IP ADDRESS | [optional] 
+ **xYapilyApiVersion** | **String**| __Optional__. Determines the API version to use. Valid values are &#x60;1.0&#x60; or &#x60;2.0-ALPHA&#x60;. Defaults to &#x60;1.0&#x60; | [optional] 
+ **psuId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a personal account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required. | [optional] 
+ **psuCorporateId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a business account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required. | [optional] 
+ **psuIpAddress** | **String**| __Conditional__. The IP address of the PSU. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required. | [optional] 
 
 ### Return type
 

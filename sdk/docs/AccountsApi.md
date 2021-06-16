@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**getAccountScheduledPaymentsUsingGET**](AccountsApi.md#getAccountScheduledPaymentsUsingGET) | **GET** /accounts/{accountId}/scheduled-payments | Get account scheduled payments
 [**getAccountUsingGET**](AccountsApi.md#getAccountUsingGET) | **GET** /accounts/{accountId} | Get account
 [**getAccountsUsingGET**](AccountsApi.md#getAccountsUsingGET) | **GET** /accounts | Get accounts
+[**getBeneficiariesUsingGET**](AccountsApi.md#getBeneficiariesUsingGET) | **GET** /accounts/{accountId}/beneficiaries | Get Beneficiaries
 [**initiateAccountRequestUsingPOST**](AccountsApi.md#initiateAccountRequestUsingPOST) | **POST** /account-auth-requests | Initiate a new account request for user to authorize
 [**reAuthoriseAccountUsingPATCH**](AccountsApi.md#reAuthoriseAccountUsingPATCH) | **PATCH** /account-auth-requests | Re-authorise account request
 [**updatePreAuthoriseAccountConsentUsingPUT**](AccountsApi.md#updatePreAuthoriseAccountConsentUsingPUT) | **PUT** /account-auth-requests | Update pre authorize consent for user to authorise account
@@ -35,11 +36,11 @@ var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new YapilyApi.AccountsApi();
-var accountId = "accountId_example"; // String | Account Id
-var consent = "consent_example"; // String | Consent Token
+var accountId = "accountId_example"; // String | __Mandatory__. The account Id of the user's bank account.
+var consent = "consent_example"; // String | __Mandatory__. The `consent-token` containing the user's authorisation to make the request.
 var opts = {
-  'xYapilyApiVersion': "xYapilyApiVersion_example", // String | Api Version
-  'limit': 56 // Number | Use this parameter to limit account's direct debit results
+  'xYapilyApiVersion': "xYapilyApiVersion_example", // String | __Optional__. Determines the API version to use. Valid values are `1.0` or `2.0-ALPHA`. Defaults to `1.0`
+  'limit': 56 // Number | __Optional__. The maximum number of transaction records to be returned. Must be between 0 and 1000.
 };
 var callback = function(error, data, response) {
   if (error) {
@@ -57,10 +58,10 @@ apiInstance.getAccountDirectDebitsUsingGET(accountId, consent, opts, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **accountId** | **String**| Account Id | 
- **consent** | **String**| Consent Token | 
- **xYapilyApiVersion** | **String**| Api Version | [optional] 
- **limit** | **Number**| Use this parameter to limit account&#39;s direct debit results | [optional] 
+ **accountId** | **String**| __Mandatory__. The account Id of the user&#39;s bank account. | 
+ **consent** | **String**| __Mandatory__. The &#x60;consent-token&#x60; containing the user&#39;s authorisation to make the request. | 
+ **xYapilyApiVersion** | **String**| __Optional__. Determines the API version to use. Valid values are &#x60;1.0&#x60; or &#x60;2.0-ALPHA&#x60;. Defaults to &#x60;1.0&#x60; | [optional] 
+ **limit** | **Number**| __Optional__. The maximum number of transaction records to be returned. Must be between 0 and 1000. | [optional] 
 
 ### Return type
 
@@ -96,11 +97,11 @@ var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new YapilyApi.AccountsApi();
-var accountId = "accountId_example"; // String | Account Id
-var consent = "consent_example"; // String | Consent Token
+var accountId = "accountId_example"; // String | __Mandatory__. The account Id of the user's bank account.
+var consent = "consent_example"; // String | __Mandatory__. The `consent-token` containing the user's authorisation to make the request.
 var opts = {
-  'xYapilyApiVersion': "xYapilyApiVersion_example", // String | Api Version
-  'limit': 56 // Number | Use this parameter to limit account's periodic payment order results
+  'xYapilyApiVersion': "xYapilyApiVersion_example", // String | __Optional__. Determines the API version to use. Valid values are `1.0` or `2.0-ALPHA`. Defaults to `1.0`
+  'limit': 56 // Number | __Optional__. The maximum number of transaction records to be returned. Must be between 0 and 1000.
 };
 var callback = function(error, data, response) {
   if (error) {
@@ -118,10 +119,10 @@ apiInstance.getAccountPeriodicPaymentsUsingGET(accountId, consent, opts, callbac
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **accountId** | **String**| Account Id | 
- **consent** | **String**| Consent Token | 
- **xYapilyApiVersion** | **String**| Api Version | [optional] 
- **limit** | **Number**| Use this parameter to limit account&#39;s periodic payment order results | [optional] 
+ **accountId** | **String**| __Mandatory__. The account Id of the user&#39;s bank account. | 
+ **consent** | **String**| __Mandatory__. The &#x60;consent-token&#x60; containing the user&#39;s authorisation to make the request. | 
+ **xYapilyApiVersion** | **String**| __Optional__. Determines the API version to use. Valid values are &#x60;1.0&#x60; or &#x60;2.0-ALPHA&#x60;. Defaults to &#x60;1.0&#x60; | [optional] 
+ **limit** | **Number**| __Optional__. The maximum number of transaction records to be returned. Must be between 0 and 1000. | [optional] 
 
 ### Return type
 
@@ -157,11 +158,11 @@ var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new YapilyApi.AccountsApi();
-var accountId = "accountId_example"; // String | Account Id
-var consent = "consent_example"; // String | Consent Token
+var accountId = "accountId_example"; // String | __Mandatory__. The account Id of the user's bank account.
+var consent = "consent_example"; // String | __Mandatory__. The `consent-token` containing the user's authorisation to make the request.
 var opts = {
-  'xYapilyApiVersion': "xYapilyApiVersion_example", // String | Api Version
-  'limit': 56 // Number | Use this parameter to limit account's scheduled payment results
+  'xYapilyApiVersion': "xYapilyApiVersion_example", // String | __Optional__. Determines the API version to use. Valid values are `1.0` or `2.0-ALPHA`. Defaults to `1.0`
+  'limit': 56 // Number | __Optional__. The maximum number of transaction records to be returned. Must be between 0 and 1000.
 };
 var callback = function(error, data, response) {
   if (error) {
@@ -179,10 +180,10 @@ apiInstance.getAccountScheduledPaymentsUsingGET(accountId, consent, opts, callba
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **accountId** | **String**| Account Id | 
- **consent** | **String**| Consent Token | 
- **xYapilyApiVersion** | **String**| Api Version | [optional] 
- **limit** | **Number**| Use this parameter to limit account&#39;s scheduled payment results | [optional] 
+ **accountId** | **String**| __Mandatory__. The account Id of the user&#39;s bank account. | 
+ **consent** | **String**| __Mandatory__. The &#x60;consent-token&#x60; containing the user&#39;s authorisation to make the request. | 
+ **xYapilyApiVersion** | **String**| __Optional__. Determines the API version to use. Valid values are &#x60;1.0&#x60; or &#x60;2.0-ALPHA&#x60;. Defaults to &#x60;1.0&#x60; | [optional] 
+ **limit** | **Number**| __Optional__. The maximum number of transaction records to be returned. Must be between 0 and 1000. | [optional] 
 
 ### Return type
 
@@ -200,7 +201,7 @@ Name | Type | Description  | Notes
 
 ## getAccountUsingGET
 
-> ApiResponseOfAccount getAccountUsingGET(consent, accountId, opts)
+> ApiResponseOfAccount getAccountUsingGET(accountId, consent, opts)
 
 Get account
 
@@ -218,13 +219,13 @@ var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new YapilyApi.AccountsApi();
-var consent = "consent_example"; // String | Consent Token
-var accountId = "accountId_example"; // String | Account Id
+var accountId = "accountId_example"; // String | __Mandatory__. The account Id of the user's bank account.
+var consent = "consent_example"; // String | __Mandatory__. The `consent-token` containing the user's authorisation to make the request.
 var opts = {
-  'xYapilyApiVersion': "xYapilyApiVersion_example", // String | Api Version
-  'psuId': "psuId_example", // String | PSU ID
-  'psuCorporateId': "psuCorporateId_example", // String | PSU ID CORPORATE
-  'psuIpAddress': "psuIpAddress_example" // String | PSU IP ADDRESS
+  'xYapilyApiVersion': "xYapilyApiVersion_example", // String | __Optional__. Determines the API version to use. Valid values are `1.0` or `2.0-ALPHA`. Defaults to `1.0`
+  'psuId': "psuId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a personal account. <br><br>See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required.
+  'psuCorporateId': "psuCorporateId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a business account. <br><br>See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required.
+  'psuIpAddress': "psuIpAddress_example" // String | __Conditional__. The IP address of the PSU. <br><br>See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required.
 };
 var callback = function(error, data, response) {
   if (error) {
@@ -233,7 +234,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getAccountUsingGET(consent, accountId, opts, callback);
+apiInstance.getAccountUsingGET(accountId, consent, opts, callback);
 ```
 
 ### Parameters
@@ -242,12 +243,12 @@ apiInstance.getAccountUsingGET(consent, accountId, opts, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **consent** | **String**| Consent Token | 
- **accountId** | **String**| Account Id | 
- **xYapilyApiVersion** | **String**| Api Version | [optional] 
- **psuId** | **String**| PSU ID | [optional] 
- **psuCorporateId** | **String**| PSU ID CORPORATE | [optional] 
- **psuIpAddress** | **String**| PSU IP ADDRESS | [optional] 
+ **accountId** | **String**| __Mandatory__. The account Id of the user&#39;s bank account. | 
+ **consent** | **String**| __Mandatory__. The &#x60;consent-token&#x60; containing the user&#39;s authorisation to make the request. | 
+ **xYapilyApiVersion** | **String**| __Optional__. Determines the API version to use. Valid values are &#x60;1.0&#x60; or &#x60;2.0-ALPHA&#x60;. Defaults to &#x60;1.0&#x60; | [optional] 
+ **psuId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a personal account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required. | [optional] 
+ **psuCorporateId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a business account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required. | [optional] 
+ **psuIpAddress** | **String**| __Conditional__. The IP address of the PSU. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required. | [optional] 
 
 ### Return type
 
@@ -283,12 +284,12 @@ var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new YapilyApi.AccountsApi();
-var consent = "consent_example"; // String | Consent Token
+var consent = "consent_example"; // String | __Mandatory__. The `consent-token` containing the user's authorisation to make the request.
 var opts = {
-  'xYapilyApiVersion': "xYapilyApiVersion_example", // String | Api Version
-  'psuId': "psuId_example", // String | PSU ID
-  'psuCorporateId': "psuCorporateId_example", // String | PSU ID CORPORATE
-  'psuIpAddress': "psuIpAddress_example" // String | PSU IP ADDRESS
+  'xYapilyApiVersion': "xYapilyApiVersion_example", // String | __Optional__. Determines the API version to use. Valid values are `1.0` or `2.0-ALPHA`. Defaults to `1.0`
+  'psuId': "psuId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a personal account. <br><br>See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required.
+  'psuCorporateId': "psuCorporateId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a business account. <br><br>See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required.
+  'psuIpAddress': "psuIpAddress_example" // String | __Conditional__. The IP address of the PSU. <br><br>See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required.
 };
 var callback = function(error, data, response) {
   if (error) {
@@ -306,15 +307,74 @@ apiInstance.getAccountsUsingGET(consent, opts, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **consent** | **String**| Consent Token | 
- **xYapilyApiVersion** | **String**| Api Version | [optional] 
- **psuId** | **String**| PSU ID | [optional] 
- **psuCorporateId** | **String**| PSU ID CORPORATE | [optional] 
- **psuIpAddress** | **String**| PSU IP ADDRESS | [optional] 
+ **consent** | **String**| __Mandatory__. The &#x60;consent-token&#x60; containing the user&#39;s authorisation to make the request. | 
+ **xYapilyApiVersion** | **String**| __Optional__. Determines the API version to use. Valid values are &#x60;1.0&#x60; or &#x60;2.0-ALPHA&#x60;. Defaults to &#x60;1.0&#x60; | [optional] 
+ **psuId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a personal account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required. | [optional] 
+ **psuCorporateId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a business account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required. | [optional] 
+ **psuIpAddress** | **String**| __Conditional__. The IP address of the PSU. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required. | [optional] 
 
 ### Return type
 
 [**ApiListResponseOfAccount**](ApiListResponseOfAccount.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [tokenAuth](../README.md#tokenAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json;charset=UTF-8
+
+
+## getBeneficiariesUsingGET
+
+> ApiResponseOfListOfBeneficiary getBeneficiariesUsingGET(accountId, consent, opts)
+
+Get Beneficiaries
+
+### Example
+
+```javascript
+var YapilyApi = require('@yapily/yapily-api');
+var defaultClient = YapilyApi.ApiClient.instance;
+// Configure HTTP basic authorization: basicAuth
+var basicAuth = defaultClient.authentications['basicAuth'];
+basicAuth.username = 'YOUR USERNAME';
+basicAuth.password = 'YOUR PASSWORD';
+// Configure OAuth2 access token for authorization: tokenAuth
+var tokenAuth = defaultClient.authentications['tokenAuth'];
+tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
+
+var apiInstance = new YapilyApi.AccountsApi();
+var accountId = "accountId_example"; // String | __Mandatory__. The account Id of the user's bank account.
+var consent = "consent_example"; // String | __Mandatory__. The `consent-token` containing the user's authorisation to make the request.
+var opts = {
+  'xYapilyApiVersion': "xYapilyApiVersion_example" // String | __Optional__. Determines the API version to use. Valid values are `1.0` or `2.0-ALPHA`. Defaults to `1.0`
+};
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.getBeneficiariesUsingGET(accountId, consent, opts, callback);
+```
+
+### Parameters
+
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **accountId** | **String**| __Mandatory__. The account Id of the user&#39;s bank account. | 
+ **consent** | **String**| __Mandatory__. The &#x60;consent-token&#x60; containing the user&#39;s authorisation to make the request. | 
+ **xYapilyApiVersion** | **String**| __Optional__. Determines the API version to use. Valid values are &#x60;1.0&#x60; or &#x60;2.0-ALPHA&#x60;. Defaults to &#x60;1.0&#x60; | [optional] 
+
+### Return type
+
+[**ApiResponseOfListOfBeneficiary**](ApiResponseOfListOfBeneficiary.md)
 
 ### Authorization
 
@@ -348,10 +408,10 @@ tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 var apiInstance = new YapilyApi.AccountsApi();
 var accountAuthRequest = new YapilyApi.AccountAuthorisationRequest(); // AccountAuthorisationRequest | accountAuthRequest
 var opts = {
-  'xYapilyApiVersion': "xYapilyApiVersion_example", // String | Api Version
-  'psuId': "psuId_example", // String | PSU ID
-  'psuCorporateId': "psuCorporateId_example", // String | PSU ID CORPORATE
-  'psuIpAddress': "psuIpAddress_example" // String | PSU IP ADDRESS
+  'xYapilyApiVersion': "xYapilyApiVersion_example", // String | __Optional__. Determines the API version to use. Valid values are `1.0` or `2.0-ALPHA`. Defaults to `1.0`
+  'psuId': "psuId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a personal account. <br><br>See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required.
+  'psuCorporateId': "psuCorporateId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a business account. <br><br>See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required.
+  'psuIpAddress': "psuIpAddress_example" // String | __Conditional__. The IP address of the PSU. <br><br>See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required.
 };
 var callback = function(error, data, response) {
   if (error) {
@@ -370,10 +430,10 @@ apiInstance.initiateAccountRequestUsingPOST(accountAuthRequest, opts, callback);
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **accountAuthRequest** | [**AccountAuthorisationRequest**](AccountAuthorisationRequest.md)| accountAuthRequest | 
- **xYapilyApiVersion** | **String**| Api Version | [optional] 
- **psuId** | **String**| PSU ID | [optional] 
- **psuCorporateId** | **String**| PSU ID CORPORATE | [optional] 
- **psuIpAddress** | **String**| PSU IP ADDRESS | [optional] 
+ **xYapilyApiVersion** | **String**| __Optional__. Determines the API version to use. Valid values are &#x60;1.0&#x60; or &#x60;2.0-ALPHA&#x60;. Defaults to &#x60;1.0&#x60; | [optional] 
+ **psuId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a personal account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required. | [optional] 
+ **psuCorporateId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a business account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required. | [optional] 
+ **psuIpAddress** | **String**| __Conditional__. The IP address of the PSU. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required. | [optional] 
 
 ### Return type
 
@@ -409,12 +469,12 @@ var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new YapilyApi.AccountsApi();
-var consent = "consent_example"; // String | Consent Token
+var consent = "consent_example"; // String | __Mandatory__. The `consent-token` containing the user's authorisation to make the request.
 var opts = {
-  'xYapilyApiVersion': "xYapilyApiVersion_example", // String | Api Version
-  'psuId': "psuId_example", // String | PSU ID
-  'psuCorporateId': "psuCorporateId_example", // String | PSU ID CORPORATE
-  'psuIpAddress': "psuIpAddress_example" // String | PSU IP ADDRESS
+  'xYapilyApiVersion': "xYapilyApiVersion_example", // String | __Optional__. Determines the API version to use. Valid values are `1.0` or `2.0-ALPHA`. Defaults to `1.0`
+  'psuId': "psuId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a personal account. <br><br>See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required.
+  'psuCorporateId': "psuCorporateId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a business account. <br><br>See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required.
+  'psuIpAddress': "psuIpAddress_example" // String | __Conditional__. The IP address of the PSU. <br><br>See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required.
 };
 var callback = function(error, data, response) {
   if (error) {
@@ -432,11 +492,11 @@ apiInstance.reAuthoriseAccountUsingPATCH(consent, opts, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **consent** | **String**| Consent Token | 
- **xYapilyApiVersion** | **String**| Api Version | [optional] 
- **psuId** | **String**| PSU ID | [optional] 
- **psuCorporateId** | **String**| PSU ID CORPORATE | [optional] 
- **psuIpAddress** | **String**| PSU IP ADDRESS | [optional] 
+ **consent** | **String**| __Mandatory__. The &#x60;consent-token&#x60; containing the user&#39;s authorisation to make the request. | 
+ **xYapilyApiVersion** | **String**| __Optional__. Determines the API version to use. Valid values are &#x60;1.0&#x60; or &#x60;2.0-ALPHA&#x60;. Defaults to &#x60;1.0&#x60; | [optional] 
+ **psuId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a personal account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required. | [optional] 
+ **psuCorporateId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a business account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required. | [optional] 
+ **psuIpAddress** | **String**| __Conditional__. The IP address of the PSU. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required. | [optional] 
 
 ### Return type
 
@@ -472,13 +532,13 @@ var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new YapilyApi.AccountsApi();
-var consent = "consent_example"; // String | Consent Token
+var consent = "consent_example"; // String | __Mandatory__. The `consent-token` containing the user's authorisation to make the request.
 var accountAuthRequest = new YapilyApi.AccountAuthorisationRequest(); // AccountAuthorisationRequest | accountAuthRequest
 var opts = {
-  'xYapilyApiVersion': "xYapilyApiVersion_example", // String | Api Version
-  'psuId': "psuId_example", // String | PSU ID
-  'psuCorporateId': "psuCorporateId_example", // String | PSU ID CORPORATE
-  'psuIpAddress': "psuIpAddress_example" // String | PSU IP ADDRESS
+  'xYapilyApiVersion': "xYapilyApiVersion_example", // String | __Optional__. Determines the API version to use. Valid values are `1.0` or `2.0-ALPHA`. Defaults to `1.0`
+  'psuId': "psuId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a personal account. <br><br>See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required.
+  'psuCorporateId': "psuCorporateId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a business account. <br><br>See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required.
+  'psuIpAddress': "psuIpAddress_example" // String | __Conditional__. The IP address of the PSU. <br><br>See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required.
 };
 var callback = function(error, data, response) {
   if (error) {
@@ -496,12 +556,12 @@ apiInstance.updatePreAuthoriseAccountConsentUsingPUT(consent, accountAuthRequest
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **consent** | **String**| Consent Token | 
+ **consent** | **String**| __Mandatory__. The &#x60;consent-token&#x60; containing the user&#39;s authorisation to make the request. | 
  **accountAuthRequest** | [**AccountAuthorisationRequest**](AccountAuthorisationRequest.md)| accountAuthRequest | 
- **xYapilyApiVersion** | **String**| Api Version | [optional] 
- **psuId** | **String**| PSU ID | [optional] 
- **psuCorporateId** | **String**| PSU ID CORPORATE | [optional] 
- **psuIpAddress** | **String**| PSU IP ADDRESS | [optional] 
+ **xYapilyApiVersion** | **String**| __Optional__. Determines the API version to use. Valid values are &#x60;1.0&#x60; or &#x60;2.0-ALPHA&#x60;. Defaults to &#x60;1.0&#x60; | [optional] 
+ **psuId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a personal account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required. | [optional] 
+ **psuCorporateId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a business account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required. | [optional] 
+ **psuIpAddress** | **String**| __Conditional__. The IP address of the PSU. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/knowledge/psu_identifiers/) to see if this header is required. | [optional] 
 
 ### Return type
 

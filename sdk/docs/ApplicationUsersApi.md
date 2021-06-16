@@ -36,7 +36,7 @@ tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 var apiInstance = new YapilyApi.ApplicationUsersApi();
 var newApplicationUser = new YapilyApi.NewApplicationUser(); // NewApplicationUser | newApplicationUser
 var opts = {
-  'xYapilyApiVersion': "xYapilyApiVersion_example" // String | Api Version
+  'xYapilyApiVersion': "xYapilyApiVersion_example" // String | __Optional__. Determines the API version to use. Valid values are `1.0` or `2.0-ALPHA`. Defaults to `1.0`
 };
 var callback = function(error, data, response) {
   if (error) {
@@ -55,7 +55,7 @@ apiInstance.addUserUsingPOST(newApplicationUser, opts, callback);
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **newApplicationUser** | [**NewApplicationUser**](NewApplicationUser.md)| newApplicationUser | 
- **xYapilyApiVersion** | **String**| Api Version | [optional] 
+ **xYapilyApiVersion** | **String**| __Optional__. Determines the API version to use. Valid values are &#x60;1.0&#x60; or &#x60;2.0-ALPHA&#x60;. Defaults to &#x60;1.0&#x60; | [optional] 
 
 ### Return type
 
@@ -91,9 +91,9 @@ var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new YapilyApi.ApplicationUsersApi();
-var userUuid = "userUuid_example"; // String | User uuid
+var userUuid = "userUuid_example"; // String | __Mandatory__. The Yapily generated UUID for the user.
 var opts = {
-  'xYapilyApiVersion': "xYapilyApiVersion_example" // String | Api Version
+  'xYapilyApiVersion': "xYapilyApiVersion_example" // String | __Optional__. Determines the API version to use. Valid values are `1.0` or `2.0-ALPHA`. Defaults to `1.0`
 };
 var callback = function(error, data, response) {
   if (error) {
@@ -111,8 +111,8 @@ apiInstance.deleteUserUsingDELETE(userUuid, opts, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **userUuid** | **String**| User uuid | 
- **xYapilyApiVersion** | **String**| Api Version | [optional] 
+ **userUuid** | **String**| __Mandatory__. The Yapily generated UUID for the user. | 
+ **xYapilyApiVersion** | **String**| __Optional__. Determines the API version to use. Valid values are &#x60;1.0&#x60; or &#x60;2.0-ALPHA&#x60;. Defaults to &#x60;1.0&#x60; | [optional] 
 
 ### Return type
 
@@ -249,9 +249,9 @@ var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new YapilyApi.ApplicationUsersApi();
-var userUuid = "userUuid_example"; // String | User uuid
+var userUuid = "userUuid_example"; // String | __Mandatory__. The Yapily generated UUID for the user.
 var opts = {
-  'xYapilyApiVersion': "xYapilyApiVersion_example" // String | Api Version
+  'xYapilyApiVersion': "xYapilyApiVersion_example" // String | __Optional__. Determines the API version to use. Valid values are `1.0` or `2.0-ALPHA`. Defaults to `1.0`
 };
 var callback = function(error, data, response) {
   if (error) {
@@ -269,8 +269,8 @@ apiInstance.getUserUsingGET(userUuid, opts, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **userUuid** | **String**| User uuid | 
- **xYapilyApiVersion** | **String**| Api Version | [optional] 
+ **userUuid** | **String**| __Mandatory__. The Yapily generated UUID for the user. | 
+ **xYapilyApiVersion** | **String**| __Optional__. Determines the API version to use. Valid values are &#x60;1.0&#x60; or &#x60;2.0-ALPHA&#x60;. Defaults to &#x60;1.0&#x60; | [optional] 
 
 ### Return type
 
@@ -307,8 +307,8 @@ tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new YapilyApi.ApplicationUsersApi();
 var opts = {
-  'xYapilyApiVersion': "xYapilyApiVersion_example", // String | Api Version
-  'filterApplicationUserId': ["null"] // [String] | Filter users by the provided application user Id (applicationUserId) when the user was created.
+  'xYapilyApiVersion': "xYapilyApiVersion_example", // String | __Optional__. Determines the API version to use. Valid values are `1.0` or `2.0-ALPHA`. Defaults to `1.0`
+  'filterApplicationUserId': ["null"] // [String] | __Optional__. Filter records based on the list of `applicationUserId` users provided.
 };
 var callback = function(error, data, response) {
   if (error) {
@@ -326,8 +326,8 @@ apiInstance.getUsersUsingGET(opts, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **xYapilyApiVersion** | **String**| Api Version | [optional] 
- **filterApplicationUserId** | [**[String]**](String.md)| Filter users by the provided application user Id (applicationUserId) when the user was created. | [optional] 
+ **xYapilyApiVersion** | **String**| __Optional__. Determines the API version to use. Valid values are &#x60;1.0&#x60; or &#x60;2.0-ALPHA&#x60;. Defaults to &#x60;1.0&#x60; | [optional] 
+ **filterApplicationUserId** | [**[String]**](String.md)| __Optional__. Filter records based on the list of &#x60;applicationUserId&#x60; users provided. | [optional] 
 
 ### Return type
 

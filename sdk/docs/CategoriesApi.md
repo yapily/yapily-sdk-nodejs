@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 ## getCategoriesUsingGET
 
-> ApiListResponseOfCategory getCategoriesUsingGET(country)
+> ApiListResponseOfCategory getCategoriesUsingGET(country, opts)
 
 Retrieves a list of categories returned by the Yapily Categorisation engine for a given locale
 
@@ -28,7 +28,10 @@ var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new YapilyApi.CategoriesApi();
-var country = "country_example"; // String | country
+var country = "country_example"; // String | __Mandatory__. The 2 letter country code e.g. 'GB'.
+var opts = {
+  'xYapilyApiVersion': "xYapilyApiVersion_example" // String | __Optional__. Determines the API version to use. Valid values are `1.0` or `2.0-ALPHA`. Defaults to `1.0`
+};
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
@@ -36,7 +39,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getCategoriesUsingGET(country, callback);
+apiInstance.getCategoriesUsingGET(country, opts, callback);
 ```
 
 ### Parameters
@@ -45,7 +48,8 @@ apiInstance.getCategoriesUsingGET(country, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **country** | **String**| country | 
+ **country** | **String**| __Mandatory__. The 2 letter country code e.g. &#39;GB&#39;. | 
+ **xYapilyApiVersion** | **String**| __Optional__. Determines the API version to use. Valid values are &#x60;1.0&#x60; or &#x60;2.0-ALPHA&#x60;. Defaults to &#x60;1.0&#x60; | [optional] 
 
 ### Return type
 

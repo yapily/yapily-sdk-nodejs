@@ -1,18 +1,18 @@
-# YapilyApi.BeneficiariesApi
+# YapilyApi.ApplicationApi
 
 All URIs are relative to *https://api.yapily.com:443*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getBeneficiariesUsingGET**](BeneficiariesApi.md#getBeneficiariesUsingGET) | **GET** /accounts/{accountId}/beneficiaries | Get beneficiaries
+[**getApplicationMeUsingGET**](ApplicationApi.md#getApplicationMeUsingGET) | **GET** /me | Returns the details of the application that owns the request credentials
 
 
 
-## getBeneficiariesUsingGET
+## getApplicationMeUsingGET
 
-> ApiResponseOfListOfBeneficiary getBeneficiariesUsingGET(accountId, consent, opts)
+> Application getApplicationMeUsingGET(opts)
 
-Get beneficiaries
+Returns the details of the application that owns the request credentials
 
 ### Example
 
@@ -27,11 +27,9 @@ basicAuth.password = 'YOUR PASSWORD';
 var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new YapilyApi.BeneficiariesApi();
-var accountId = "accountId_example"; // String | Account Id
-var consent = "consent_example"; // String | Consent Token
+var apiInstance = new YapilyApi.ApplicationApi();
 var opts = {
-  'xYapilyApiVersion': "xYapilyApiVersion_example" // String | Api Version
+  'xYapilyApiVersion': "xYapilyApiVersion_example" // String | __Optional__. Determines the API version to use. Valid values are `1.0` or `2.0-ALPHA`. Defaults to `1.0`
 };
 var callback = function(error, data, response) {
   if (error) {
@@ -40,7 +38,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getBeneficiariesUsingGET(accountId, consent, opts, callback);
+apiInstance.getApplicationMeUsingGET(opts, callback);
 ```
 
 ### Parameters
@@ -49,13 +47,11 @@ apiInstance.getBeneficiariesUsingGET(accountId, consent, opts, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **accountId** | **String**| Account Id | 
- **consent** | **String**| Consent Token | 
- **xYapilyApiVersion** | **String**| Api Version | [optional] 
+ **xYapilyApiVersion** | **String**| __Optional__. Determines the API version to use. Valid values are &#x60;1.0&#x60; or &#x60;2.0-ALPHA&#x60;. Defaults to &#x60;1.0&#x60; | [optional] 
 
 ### Return type
 
-[**ApiResponseOfListOfBeneficiary**](ApiResponseOfListOfBeneficiary.md)
+[**Application**](Application.md)
 
 ### Authorization
 

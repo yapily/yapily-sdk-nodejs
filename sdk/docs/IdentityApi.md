@@ -28,9 +28,9 @@ var tokenAuth = defaultClient.authentications['tokenAuth'];
 tokenAuth.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new YapilyApi.IdentityApi();
-var consent = "consent_example"; // String | Consent Token
+var consent = "consent_example"; // String | __Mandatory__. The `consent-token` containing the user's authorisation to make the request.
 var opts = {
-  'xYapilyApiVersion': "xYapilyApiVersion_example" // String | Api Version
+  'xYapilyApiVersion': "xYapilyApiVersion_example" // String | __Optional__. Determines the API version to use. Valid values are `1.0` or `2.0-ALPHA`. Defaults to `1.0`
 };
 var callback = function(error, data, response) {
   if (error) {
@@ -48,8 +48,8 @@ apiInstance.getIdentityUsingGET(consent, opts, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **consent** | **String**| Consent Token | 
- **xYapilyApiVersion** | **String**| Api Version | [optional] 
+ **consent** | **String**| __Mandatory__. The &#x60;consent-token&#x60; containing the user&#39;s authorisation to make the request. | 
+ **xYapilyApiVersion** | **String**| __Optional__. Determines the API version to use. Valid values are &#x60;1.0&#x60; or &#x60;2.0-ALPHA&#x60;. Defaults to &#x60;1.0&#x60; | [optional] 
 
 ### Return type
 
