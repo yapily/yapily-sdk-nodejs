@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **institutionId** | **String** |  | 
 **callback** | **String** |  | 
 **oneTimeToken** | **Boolean** |  | 
+**redirect** | [**RedirectRequest**](RedirectRequest.md) |  | [optional] 
 **paymentRequest** | [**BulkPaymentRequest**](BulkPaymentRequest.md) |  | 
 
 

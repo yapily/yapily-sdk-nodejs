@@ -9,7 +9,8 @@ Name | Type | Description | Notes
 **forwardParameters** | **[String]** |  | [optional] 
 **institutionId** | **String** |  | 
 **callback** | **String** |  | 
-**oneTimeToken** | **Boolean** |  | 
+**redirect** | [**RedirectRequest**](RedirectRequest.md) |  | [optional] 
 **accountRequest** | [**AccountRequest**](AccountRequest.md) |  | [optional] 
+**oneTimeToken** | **Boolean** |  | 
 
 
