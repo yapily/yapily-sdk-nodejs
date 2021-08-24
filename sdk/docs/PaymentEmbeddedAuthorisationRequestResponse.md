@@ -24,6 +24,7 @@ Name | Type | Description | Notes
 **state** | **String** |  | [optional] 
 **qrCodeUrl** | **String** |  | [optional] 
 **authorizedAt** | **Date** |  | [optional] 
+**explanation** | **String** |  | [optional] 
 **scaMethods** | [**[ScaMethod]**](ScaMethod.md) |  | [optional] 
 **institutionConsentId** | **String** |  | [optional] 
 **selectedScaMethod** | [**ScaMethod**](ScaMethod.md) |  | [optional] 
@@ -56,6 +57,8 @@ Name | Type | Description | Notes
 * `INVALID` (value: `"INVALID"`)
 
 * `AWAITING_PRE_AUTHORIZATION` (value: `"AWAITING_PRE_AUTHORIZATION"`)
+
+* `AWAITING_DECOUPLED_PRE_AUTHORIZATION` (value: `"AWAITING_DECOUPLED_PRE_AUTHORIZATION"`)
 
 * `PRE_AUTHORIZED` (value: `"PRE_AUTHORIZED"`)
 

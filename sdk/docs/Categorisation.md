@@ -4,6 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**category** | [**Category**](Category.md) |  | [optional] 
+**categories** | **[String]** | Categories | [optional] 
+**source** | **String** | Source | [optional] 
 
 

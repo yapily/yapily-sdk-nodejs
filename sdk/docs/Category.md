@@ -4,7 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**label** | **String** |  | [optional] 
-**id** | **String** |  | [optional] 
+**id** | **String** | Category ID | [optional] 
+**label** | **String** | Category label | [optional] 
+**country** | **String** | Category country | [optional] 
+**subcategories** | [**[Subcategory]**](Subcategory.md) |  | [optional] 
 
 
