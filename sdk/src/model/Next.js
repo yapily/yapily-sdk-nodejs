@@ -35,7 +35,7 @@
   /**
    * The Next model module.
    * @module model/Next
-   * @version 1.120.0
+   * @version 1.123.0
    */
 
   /**

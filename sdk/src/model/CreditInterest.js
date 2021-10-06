@@ -35,7 +35,7 @@
   /**
    * The CreditInterest model module.
    * @module model/CreditInterest
-   * @version 1.120.0
+   * @version 1.123.0
    */
 
   /**
