@@ -4,28 +4,15 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **String** |  | [optional] 
-**name** | **String** |  | [optional] 
-**fullName** | **String** |  | [optional] 
-**countries** | [**[Country]**](Country.md) |  | [optional] 
-**environmentType** | **String** |  | [optional] 
+**countries** | [**[Country]**](Country.md) | An array of &#x60;Country&#x60; denoting which regions the &#x60;Institution&#x60; provides coverage for | [optional] 
 **credentialsType** | **String** |  | [optional] 
-**media** | [**[Media]**](Media.md) |  | [optional] 
+**environmentType** | **String** |  | [optional] 
 **features** | **[String]** |  | [optional] 
+**fullName** | **String** | The full name of the &#x60;Institution&#x60; | [optional] 
+**id** | **String** | The Yapily Id for the &#x60;Institution&#x60; | [optional] 
+**media** | [**[Media]**](Media.md) | Contains links to the logo and the icons for the &#x60;Institution&#x60; | [optional] 
 **monitoring** | [**{String: MonitoringFeatureStatus}**](MonitoringFeatureStatus.md) |  | [optional] 
-
-
-
-## Enum: EnvironmentTypeEnum
-
-
-* `SANDBOX` (value: `"SANDBOX"`)
-
-* `MOCK` (value: `"MOCK"`)
-
-* `LIVE` (value: `"LIVE"`)
-
-
+**name** | **String** | The friendly name of the &#x60;Institution&#x60; | [optional] 
 
 
 
@@ -63,6 +50,19 @@ Name | Type | Description | Notes
 * `OPEN_BANKING_NO_TRANSPORT` (value: `"OPEN_BANKING_NO_TRANSPORT"`)
 
 * `TOKEN_IO` (value: `"TOKEN_IO"`)
+
+
+
+
+
+## Enum: EnvironmentTypeEnum
+
+
+* `SANDBOX` (value: `"SANDBOX"`)
+
+* `MOCK` (value: `"MOCK"`)
+
+* `LIVE` (value: `"LIVE"`)
 
 
 
@@ -125,6 +125,8 @@ Name | Type | Description | Notes
 
 * `INITIATE_EMBEDDED_DOMESTIC_SINGLE_PAYMENT` (value: `"INITIATE_EMBEDDED_DOMESTIC_SINGLE_PAYMENT"`)
 
+* `INITIATE_EMBEDDED_BULK_PAYMENT` (value: `"INITIATE_EMBEDDED_BULK_PAYMENT"`)
+
 * `CREATE_DOMESTIC_SINGLE_PAYMENT` (value: `"CREATE_DOMESTIC_SINGLE_PAYMENT"`)
 
 * `INITIATE_DOMESTIC_SINGLE_INSTANT_PAYMENT` (value: `"INITIATE_DOMESTIC_SINGLE_INSTANT_PAYMENT"`)
@@ -164,8 +166,6 @@ Name | Type | Description | Notes
 * `INITIATE_BULK_PAYMENT` (value: `"INITIATE_BULK_PAYMENT"`)
 
 * `CREATE_BULK_PAYMENT` (value: `"CREATE_BULK_PAYMENT"`)
-
-* `INITIATE_EMBEDDED_BULK_PAYMENT` (value: `"INITIATE_EMBEDDED_BULK_PAYMENT"`)
 
 * `TRANSFER` (value: `"TRANSFER"`)
 
