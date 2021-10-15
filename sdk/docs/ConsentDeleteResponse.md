@@ -4,11 +4,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **String** |  | [optional] 
-**deleteStatus** | **String** |  | [optional] 
-**institutionId** | **String** |  | [optional] 
-**institutionConsentId** | **String** |  | [optional] 
 **creationDate** | **Date** |  | [optional] 
+**deleteStatus** | **String** |  | [optional] 
+**id** | **String** |  | [optional] 
+**institutionConsentId** | **String** |  | [optional] 
+**institutionId** | **String** |  | [optional] 
 
 
 

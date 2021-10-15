@@ -4,13 +4,13 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**uuid** | **String** | Application UUID | [optional] 
-**name** | **String** |  | [optional] 
 **active** | **Boolean** |  | [optional] 
 **authCallbacks** | **[String]** |  | [optional] 
+**created** | **Date** |  | [optional] 
 **institutions** | [**[Institution]**](Institution.md) |  | [optional] 
 **media** | [**[Media]**](Media.md) |  | [optional] 
-**created** | **Date** |  | [optional] 
+**name** | **String** |  | [optional] 
 **updated** | **Date** |  | [optional] 
+**uuid** | **String** |  | [optional] 
 
 

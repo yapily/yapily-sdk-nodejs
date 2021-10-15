@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **String** |  | [optional] 
-**deleteStatus** | **String** |  | [optional] 
 **creationDate** | **Date** |  | [optional] 
+**deleteStatus** | **String** |  | [optional] 
+**id** | **String** |  | [optional] 
 **userConsents** | [**[ConsentDeleteResponse]**](ConsentDeleteResponse.md) |  | [optional] 
 
 
