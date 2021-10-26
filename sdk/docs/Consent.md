@@ -4,64 +4,23 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **String** |  | [optional] 
-**userUuid** | **String** |  | [optional] 
 **applicationUserId** | **String** |  | [optional] 
-**referenceId** | **String** |  | [optional] 
-**institutionId** | **String** |  | [optional] 
-**status** | **String** |  | [optional] 
+**authorizedAt** | **Date** |  | [optional] 
+**consentToken** | **String** |  | [optional] 
 **createdAt** | **Date** |  | [optional] 
+**expiresAt** | **Date** |  | [optional] 
+**featureScope** | **[String]** |  | [optional] 
+**id** | **String** |  | [optional] 
+**institutionConsentId** | **String** |  | [optional] 
+**institutionId** | **String** |  | [optional] 
+**referenceId** | **String** |  | [optional] 
+**state** | **String** |  | [optional] 
+**status** | **String** |  | [optional] 
+**timeToExpire** | **String** |  | [optional] 
+**timeToExpireInMillis** | **Number** |  | [optional] 
 **transactionFrom** | **Date** |  | [optional] 
 **transactionTo** | **Date** |  | [optional] 
-**expiresAt** | **Date** |  | [optional] 
-**timeToExpireInMillis** | **Number** | Deprecated. Use &#x60;timeToExpire&#x60; instead. | [optional] 
-**timeToExpire** | **String** | ISO 8601 duration | [optional] 
-**featureScope** | **[String]** |  | [optional] 
-**consentToken** | **String** |  | [optional] 
-**state** | **String** |  | [optional] 
-**authorizedAt** | **Date** |  | [optional] 
-**institutionConsentId** | **String** |  | [optional] 
-
-
-
-## Enum: StatusEnum
-
-
-* `AWAITING_AUTHORIZATION` (value: `"AWAITING_AUTHORIZATION"`)
-
-* `AWAITING_FURTHER_AUTHORIZATION` (value: `"AWAITING_FURTHER_AUTHORIZATION"`)
-
-* `AWAITING_RE_AUTHORIZATION` (value: `"AWAITING_RE_AUTHORIZATION"`)
-
-* `AUTHORIZED` (value: `"AUTHORIZED"`)
-
-* `CONSUMED` (value: `"CONSUMED"`)
-
-* `REJECTED` (value: `"REJECTED"`)
-
-* `REVOKED` (value: `"REVOKED"`)
-
-* `FAILED` (value: `"FAILED"`)
-
-* `EXPIRED` (value: `"EXPIRED"`)
-
-* `UNKNOWN` (value: `"UNKNOWN"`)
-
-* `INVALID` (value: `"INVALID"`)
-
-* `AWAITING_PRE_AUTHORIZATION` (value: `"AWAITING_PRE_AUTHORIZATION"`)
-
-* `AWAITING_DECOUPLED_PRE_AUTHORIZATION` (value: `"AWAITING_DECOUPLED_PRE_AUTHORIZATION"`)
-
-* `PRE_AUTHORIZED` (value: `"PRE_AUTHORIZED"`)
-
-* `AWAITING_DECOUPLED_AUTHORIZATION` (value: `"AWAITING_DECOUPLED_AUTHORIZATION"`)
-
-* `AWAITING_SCA_METHOD` (value: `"AWAITING_SCA_METHOD"`)
-
-* `AWAITING_SCA_CODE` (value: `"AWAITING_SCA_CODE"`)
-
-
+**userUuid** | **String** |  | [optional] 
 
 
 
@@ -122,6 +81,8 @@ Name | Type | Description | Notes
 
 * `CREATE_DOMESTIC_SINGLE_PAYMENT` (value: `"CREATE_DOMESTIC_SINGLE_PAYMENT"`)
 
+* `INITIATE_EMBEDDED_BULK_PAYMENT` (value: `"INITIATE_EMBEDDED_BULK_PAYMENT"`)
+
 * `INITIATE_DOMESTIC_SINGLE_INSTANT_PAYMENT` (value: `"INITIATE_DOMESTIC_SINGLE_INSTANT_PAYMENT"`)
 
 * `CREATE_DOMESTIC_SINGLE_INSTANT_PAYMENT` (value: `"CREATE_DOMESTIC_SINGLE_INSTANT_PAYMENT"`)
@@ -160,8 +121,6 @@ Name | Type | Description | Notes
 
 * `CREATE_BULK_PAYMENT` (value: `"CREATE_BULK_PAYMENT"`)
 
-* `INITIATE_EMBEDDED_BULK_PAYMENT` (value: `"INITIATE_EMBEDDED_BULK_PAYMENT"`)
-
 * `TRANSFER` (value: `"TRANSFER"`)
 
 * `OPEN_DATA_PERSONAL_CURRENT_ACCOUNTS` (value: `"OPEN_DATA_PERSONAL_CURRENT_ACCOUNTS"`)
@@ -179,6 +138,45 @@ Name | Type | Description | Notes
 * `READ_INTERNATIONAL_SCHEDULED_REFUND` (value: `"READ_INTERNATIONAL_SCHEDULED_REFUND"`)
 
 * `ACCOUNT_BENEFICIARIES` (value: `"ACCOUNT_BENEFICIARIES"`)
+
+
+
+
+
+## Enum: StatusEnum
+
+
+* `AWAITING_AUTHORIZATION` (value: `"AWAITING_AUTHORIZATION"`)
+
+* `AWAITING_FURTHER_AUTHORIZATION` (value: `"AWAITING_FURTHER_AUTHORIZATION"`)
+
+* `AWAITING_RE_AUTHORIZATION` (value: `"AWAITING_RE_AUTHORIZATION"`)
+
+* `AUTHORIZED` (value: `"AUTHORIZED"`)
+
+* `CONSUMED` (value: `"CONSUMED"`)
+
+* `REJECTED` (value: `"REJECTED"`)
+
+* `REVOKED` (value: `"REVOKED"`)
+
+* `FAILED` (value: `"FAILED"`)
+
+* `EXPIRED` (value: `"EXPIRED"`)
+
+* `UNKNOWN` (value: `"UNKNOWN"`)
+
+* `INVALID` (value: `"INVALID"`)
+
+* `AWAITING_PRE_AUTHORIZATION` (value: `"AWAITING_PRE_AUTHORIZATION"`)
+
+* `PRE_AUTHORIZED` (value: `"PRE_AUTHORIZED"`)
+
+* `AWAITING_DECOUPLED_AUTHORIZATION` (value: `"AWAITING_DECOUPLED_AUTHORIZATION"`)
+
+* `AWAITING_SCA_METHOD` (value: `"AWAITING_SCA_METHOD"`)
+
+* `AWAITING_SCA_CODE` (value: `"AWAITING_SCA_CODE"`)
 
 
 
