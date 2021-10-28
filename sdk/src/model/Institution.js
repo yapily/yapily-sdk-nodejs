@@ -35,7 +35,7 @@
   /**
    * The Institution model module.
    * @module model/Institution
-   * @version 1.158.0
+   * @version 1.159.0
    */
 
   /**

@@ -35,7 +35,7 @@
   /**
    * The BulkUserDeleteDetails model module.
    * @module model/BulkUserDeleteDetails
-   * @version 1.158.0
+   * @version 1.159.0
    */
 
   /**

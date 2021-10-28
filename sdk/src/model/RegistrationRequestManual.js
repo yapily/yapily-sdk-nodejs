@@ -35,7 +35,7 @@
   /**
    * The RegistrationRequestManual model module.
    * @module model/RegistrationRequestManual
-   * @version 1.158.0
+   * @version 1.159.0
    */
 
   /**

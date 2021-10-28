@@ -35,7 +35,7 @@
   /**
    * The Location model module.
    * @module model/Location
-   * @version 1.158.0
+   * @version 1.159.0
    */
 
   /**

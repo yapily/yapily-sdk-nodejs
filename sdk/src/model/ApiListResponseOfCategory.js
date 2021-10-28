@@ -35,7 +35,7 @@
   /**
    * The ApiListResponseOfCategory model module.
    * @module model/ApiListResponseOfCategory
-   * @version 1.158.0
+   * @version 1.159.0
    */
 
   /**

@@ -35,7 +35,7 @@
   /**
    * The ApiResponseOfConsentDeleteResponse model module.
    * @module model/ApiResponseOfConsentDeleteResponse
-   * @version 1.158.0
+   * @version 1.159.0
    */
 
   /**
