@@ -35,7 +35,7 @@
   /**
    * The PreAuthorisationRequest model module.
    * @module model/PreAuthorisationRequest
-   * @version 1.163.0
+   * @version 1.167.0
    */
 
   /**

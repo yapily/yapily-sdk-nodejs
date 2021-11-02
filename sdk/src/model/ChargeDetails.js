@@ -35,7 +35,7 @@
   /**
    * The ChargeDetails model module.
    * @module model/ChargeDetails
-   * @version 1.163.0
+   * @version 1.167.0
    */
 
   /**

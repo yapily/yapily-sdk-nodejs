@@ -35,7 +35,7 @@
   /**
    * The CreateConsentAccessToken model module.
    * @module model/CreateConsentAccessToken
-   * @version 1.163.0
+   * @version 1.167.0
    */
 
   /**

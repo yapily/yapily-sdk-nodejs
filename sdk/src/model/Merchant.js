@@ -35,7 +35,7 @@
   /**
    * The Merchant model module.
    * @module model/Merchant
-   * @version 1.163.0
+   * @version 1.167.0
    */
 
   /**

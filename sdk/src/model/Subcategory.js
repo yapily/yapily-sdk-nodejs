@@ -35,7 +35,7 @@
   /**
    * The Subcategory model module.
    * @module model/Subcategory
-   * @version 1.163.0
+   * @version 1.167.0
    */
 
   /**
