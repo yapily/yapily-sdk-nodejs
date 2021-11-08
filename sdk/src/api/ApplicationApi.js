@@ -33,7 +33,7 @@
   /**
    * Application service.
    * @module api/ApplicationApi
-   * @version 1.169.0
+   * @version 1.174.0
    */
 
   /**

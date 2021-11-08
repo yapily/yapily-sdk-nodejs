@@ -35,7 +35,7 @@
   /**
    * The ScaMethod model module.
    * @module model/ScaMethod
-   * @version 1.169.0
+   * @version 1.174.0
    */
 
   /**

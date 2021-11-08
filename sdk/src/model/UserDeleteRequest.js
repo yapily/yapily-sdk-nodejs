@@ -35,7 +35,7 @@
   /**
    * The UserDeleteRequest model module.
    * @module model/UserDeleteRequest
-   * @version 1.169.0
+   * @version 1.174.0
    */
 
   /**

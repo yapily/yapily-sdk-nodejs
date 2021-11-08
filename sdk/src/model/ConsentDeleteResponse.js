@@ -35,7 +35,7 @@
   /**
    * The ConsentDeleteResponse model module.
    * @module model/ConsentDeleteResponse
-   * @version 1.169.0
+   * @version 1.174.0
    */
 
   /**

@@ -33,7 +33,7 @@
   /**
    * Identity service.
    * @module api/IdentityApi
-   * @version 1.169.0
+   * @version 1.174.0
    */
 
   /**
