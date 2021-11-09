@@ -35,7 +35,7 @@
   /**
    * The OtherResidencyType model module.
    * @module model/OtherResidencyType
-   * @version 1.174.0
+   * @version 1.176.0
    */
 
   /**
