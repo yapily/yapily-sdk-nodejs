@@ -35,7 +35,7 @@
   /**
    * The ApiResponseOfPaymentResponses model module.
    * @module model/ApiResponseOfPaymentResponses
-   * @version 1.176.0
+   * @version 1.179.0
    */
 
   /**

@@ -35,7 +35,7 @@
   /**
    * The ATMMapServiceLinks model module.
    * @module model/ATMMapServiceLinks
-   * @version 1.176.0
+   * @version 1.179.0
    */
 
   /**

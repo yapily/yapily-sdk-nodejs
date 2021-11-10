@@ -35,7 +35,7 @@
   /**
    * The Enrichment model module.
    * @module model/Enrichment
-   * @version 1.176.0
+   * @version 1.179.0
    */
 
   /**

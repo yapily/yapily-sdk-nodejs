@@ -35,7 +35,7 @@
   /**
    * The ApiError model module.
    * @module model/ApiError
-   * @version 1.176.0
+   * @version 1.179.0
    */
 
   /**
