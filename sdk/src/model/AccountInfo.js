@@ -35,7 +35,7 @@
   /**
    * The AccountInfo model module.
    * @module model/AccountInfo
-   * @version 1.179.0
+   * @version 1.181.0
    */
 
   /**

@@ -35,7 +35,7 @@
   /**
    * The RegistrationResult model module.
    * @module model/RegistrationResult
-   * @version 1.179.0
+   * @version 1.181.0
    */
 
   /**

@@ -35,7 +35,7 @@
   /**
    * The IsoCodeDetails model module.
    * @module model/IsoCodeDetails
-   * @version 1.179.0
+   * @version 1.181.0
    */
 
   /**

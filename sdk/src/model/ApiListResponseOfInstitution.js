@@ -35,7 +35,7 @@
   /**
    * The ApiListResponseOfInstitution model module.
    * @module model/ApiListResponseOfInstitution
-   * @version 1.179.0
+   * @version 1.181.0
    */
 
   /**

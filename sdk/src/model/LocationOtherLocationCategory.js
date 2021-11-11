@@ -35,7 +35,7 @@
   /**
    * The LocationOtherLocationCategory model module.
    * @module model/LocationOtherLocationCategory
-   * @version 1.179.0
+   * @version 1.181.0
    */
 
   /**

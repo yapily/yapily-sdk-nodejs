@@ -33,7 +33,7 @@
   /**
    * EmbeddedPayments service.
    * @module api/EmbeddedPaymentsApi
-   * @version 1.179.0
+   * @version 1.181.0
    */
 
   /**
