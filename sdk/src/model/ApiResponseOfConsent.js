@@ -35,7 +35,7 @@
   /**
    * The ApiResponseOfConsent model module.
    * @module model/ApiResponseOfConsent
-   * @version 1.181.0
+   * @version 1.186.0
    */
 
   /**

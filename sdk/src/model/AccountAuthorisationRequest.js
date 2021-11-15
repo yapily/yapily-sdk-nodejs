@@ -35,7 +35,7 @@
   /**
    * The AccountAuthorisationRequest model module.
    * @module model/AccountAuthorisationRequest
-   * @version 1.181.0
+   * @version 1.186.0
    */
 
   /**

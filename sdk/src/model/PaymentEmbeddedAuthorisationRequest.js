@@ -35,7 +35,7 @@
   /**
    * The PaymentEmbeddedAuthorisationRequest model module.
    * @module model/PaymentEmbeddedAuthorisationRequest
-   * @version 1.181.0
+   * @version 1.186.0
    */
 
   /**

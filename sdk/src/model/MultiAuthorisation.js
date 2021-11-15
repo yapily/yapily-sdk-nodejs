@@ -35,7 +35,7 @@
   /**
    * The MultiAuthorisation model module.
    * @module model/MultiAuthorisation
-   * @version 1.181.0
+   * @version 1.186.0
    */
 
   /**

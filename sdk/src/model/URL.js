@@ -35,7 +35,7 @@
   /**
    * The URL model module.
    * @module model/URL
-   * @version 1.181.0
+   * @version 1.186.0
    */
 
   /**
