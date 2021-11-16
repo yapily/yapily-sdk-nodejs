@@ -33,7 +33,7 @@
   /**
    * Transfers service.
    * @module api/TransfersApi
-   * @version 1.186.0
+   * @version 1.187.0
    */
 
   /**

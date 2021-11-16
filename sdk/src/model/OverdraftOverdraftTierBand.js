@@ -35,7 +35,7 @@
   /**
    * The OverdraftOverdraftTierBand model module.
    * @module model/OverdraftOverdraftTierBand
-   * @version 1.186.0
+   * @version 1.187.0
    */
 
   /**

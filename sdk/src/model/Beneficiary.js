@@ -35,7 +35,7 @@
   /**
    * The Beneficiary model module.
    * @module model/Beneficiary
-   * @version 1.186.0
+   * @version 1.187.0
    */
 
   /**

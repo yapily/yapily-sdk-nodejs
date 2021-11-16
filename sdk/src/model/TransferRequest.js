@@ -35,7 +35,7 @@
   /**
    * The TransferRequest model module.
    * @module model/TransferRequest
-   * @version 1.186.0
+   * @version 1.187.0
    */
 
   /**

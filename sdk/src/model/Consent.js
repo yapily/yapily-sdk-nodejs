@@ -35,7 +35,7 @@
   /**
    * The Consent model module.
    * @module model/Consent
-   * @version 1.186.0
+   * @version 1.187.0
    */
 
   /**

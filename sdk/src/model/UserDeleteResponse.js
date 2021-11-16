@@ -35,7 +35,7 @@
   /**
    * The UserDeleteResponse model module.
    * @module model/UserDeleteResponse
-   * @version 1.186.0
+   * @version 1.187.0
    */
 
   /**

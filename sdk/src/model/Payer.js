@@ -35,7 +35,7 @@
   /**
    * The Payer model module.
    * @module model/Payer
-   * @version 1.186.0
+   * @version 1.187.0
    */
 
   /**
