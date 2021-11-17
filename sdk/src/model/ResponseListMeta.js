@@ -35,7 +35,7 @@
   /**
    * The ResponseListMeta model module.
    * @module model/ResponseListMeta
-   * @version 1.187.0
+   * @version 1.189.0
    */
 
   /**

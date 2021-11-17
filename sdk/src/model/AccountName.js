@@ -35,7 +35,7 @@
   /**
    * The AccountName model module.
    * @module model/AccountName
-   * @version 1.187.0
+   * @version 1.189.0
    */
 
   /**

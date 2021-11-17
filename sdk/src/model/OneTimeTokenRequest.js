@@ -35,7 +35,7 @@
   /**
    * The OneTimeTokenRequest model module.
    * @module model/OneTimeTokenRequest
-   * @version 1.187.0
+   * @version 1.189.0
    */
 
   /**

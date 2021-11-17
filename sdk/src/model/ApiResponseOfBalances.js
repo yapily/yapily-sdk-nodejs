@@ -35,7 +35,7 @@
   /**
    * The ApiResponseOfBalances model module.
    * @module model/ApiResponseOfBalances
-   * @version 1.187.0
+   * @version 1.189.0
    */
 
   /**
