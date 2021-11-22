@@ -35,7 +35,7 @@
   /**
    * The Overdraft model module.
    * @module model/Overdraft
-   * @version 1.189.0
+   * @version 1.193.0
    */
 
   /**

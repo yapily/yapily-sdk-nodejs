@@ -35,7 +35,7 @@
   /**
    * The TransactionAmount model module.
    * @module model/TransactionAmount
-   * @version 1.189.0
+   * @version 1.193.0
    */
 
   /**
