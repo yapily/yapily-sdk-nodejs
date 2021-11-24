@@ -35,7 +35,7 @@
   /**
    * The PersonalCurrentAccountPCA model module.
    * @module model/PersonalCurrentAccountPCA
-   * @version 1.193.0
+   * @version 1.193.2
    */
 
   /**

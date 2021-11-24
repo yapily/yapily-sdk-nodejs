@@ -35,7 +35,7 @@
   /**
    * The EligibilityOtherEligibility model module.
    * @module model/EligibilityOtherEligibility
-   * @version 1.193.0
+   * @version 1.193.2
    */
 
   /**

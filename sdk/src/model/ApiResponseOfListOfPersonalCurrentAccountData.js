@@ -35,7 +35,7 @@
   /**
    * The ApiResponseOfListOfPersonalCurrentAccountData model module.
    * @module model/ApiResponseOfListOfPersonalCurrentAccountData
-   * @version 1.193.0
+   * @version 1.193.2
    */
 
   /**

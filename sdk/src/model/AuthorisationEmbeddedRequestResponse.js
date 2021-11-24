@@ -35,7 +35,7 @@
   /**
    * The AuthorisationEmbeddedRequestResponse model module.
    * @module model/AuthorisationEmbeddedRequestResponse
-   * @version 1.193.0
+   * @version 1.193.2
    */
 
   /**
