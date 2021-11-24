@@ -35,7 +35,7 @@
   /**
    * The InstitutionError model module.
    * @module model/InstitutionError
-   * @version 1.198.0
+   * @version 1.198.1
    */
 
   /**

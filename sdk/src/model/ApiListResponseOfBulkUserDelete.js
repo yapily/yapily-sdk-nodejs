@@ -35,7 +35,7 @@
   /**
    * The ApiListResponseOfBulkUserDelete model module.
    * @module model/ApiListResponseOfBulkUserDelete
-   * @version 1.198.0
+   * @version 1.198.1
    */
 
   /**
