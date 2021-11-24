@@ -35,7 +35,7 @@
   /**
    * The PostalAddress1 model module.
    * @module model/PostalAddress1
-   * @version 1.193.2
+   * @version 1.198.0
    */
 
   /**

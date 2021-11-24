@@ -35,7 +35,7 @@
   /**
    * The ApiResponseOfIdentity model module.
    * @module model/ApiResponseOfIdentity
-   * @version 1.193.2
+   * @version 1.198.0
    */
 
   /**

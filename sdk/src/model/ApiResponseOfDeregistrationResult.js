@@ -35,7 +35,7 @@
   /**
    * The ApiResponseOfDeregistrationResult model module.
    * @module model/ApiResponseOfDeregistrationResult
-   * @version 1.193.2
+   * @version 1.198.0
    */
 
   /**

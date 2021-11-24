@@ -35,7 +35,7 @@
   /**
    * The OtherCalculationFrequency model module.
    * @module model/OtherCalculationFrequency
-   * @version 1.193.2
+   * @version 1.198.0
    */
 
   /**

@@ -33,7 +33,7 @@
   /**
    * Consents service.
    * @module api/ConsentsApi
-   * @version 1.193.2
+   * @version 1.198.0
    */
 
   /**

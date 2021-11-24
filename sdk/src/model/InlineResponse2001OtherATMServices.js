@@ -35,7 +35,7 @@
   /**
    * The InlineResponse2001OtherATMServices model module.
    * @module model/InlineResponse2001OtherATMServices
-   * @version 1.193.2
+   * @version 1.198.0
    */
 
   /**
