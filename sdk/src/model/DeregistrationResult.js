@@ -35,7 +35,7 @@
   /**
    * The DeregistrationResult model module.
    * @module model/DeregistrationResult
-   * @version 1.198.1
+   * @version 1.198.3
    */
 
   /**

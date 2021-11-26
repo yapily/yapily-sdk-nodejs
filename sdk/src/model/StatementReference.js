@@ -35,7 +35,7 @@
   /**
    * The StatementReference model module.
    * @module model/StatementReference
-   * @version 1.198.1
+   * @version 1.198.3
    */
 
   /**

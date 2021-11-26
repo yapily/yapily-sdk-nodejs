@@ -35,7 +35,7 @@
   /**
    * The ResidencyEligibility model module.
    * @module model/ResidencyEligibility
-   * @version 1.198.1
+   * @version 1.198.3
    */
 
   /**

@@ -35,7 +35,7 @@
   /**
    * The ExchangeRateInformation model module.
    * @module model/ExchangeRateInformation
-   * @version 1.198.1
+   * @version 1.198.3
    */
 
   /**

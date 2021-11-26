@@ -35,7 +35,7 @@
   /**
    * The OtherApplicationFrequency model module.
    * @module model/OtherApplicationFrequency
-   * @version 1.198.1
+   * @version 1.198.3
    */
 
   /**

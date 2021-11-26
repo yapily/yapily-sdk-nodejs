@@ -35,7 +35,7 @@
   /**
    * The OverdraftOverdraftFeeChargeCap model module.
    * @module model/OverdraftOverdraftFeeChargeCap
-   * @version 1.198.1
+   * @version 1.198.3
    */
 
   /**

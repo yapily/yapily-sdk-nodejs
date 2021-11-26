@@ -35,7 +35,7 @@
   /**
    * The OtherFeeType model module.
    * @module model/OtherFeeType
-   * @version 1.198.1
+   * @version 1.198.3
    */
 
   /**

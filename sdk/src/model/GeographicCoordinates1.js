@@ -35,7 +35,7 @@
   /**
    * The GeographicCoordinates1 model module.
    * @module model/GeographicCoordinates1
-   * @version 1.198.1
+   * @version 1.198.3
    */
 
   /**

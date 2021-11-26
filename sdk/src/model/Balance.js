@@ -35,7 +35,7 @@
   /**
    * The Balance model module.
    * @module model/Balance
-   * @version 1.198.1
+   * @version 1.198.3
    */
 
   /**

@@ -35,7 +35,7 @@
   /**
    * The ApiResponseOfAuthorisationRequestResponse model module.
    * @module model/ApiResponseOfAuthorisationRequestResponse
-   * @version 1.198.1
+   * @version 1.198.3
    */
 
   /**

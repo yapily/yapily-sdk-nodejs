@@ -35,7 +35,7 @@
   /**
    * The PaymentStatusDetails model module.
    * @module model/PaymentStatusDetails
-   * @version 1.198.1
+   * @version 1.198.3
    */
 
   /**

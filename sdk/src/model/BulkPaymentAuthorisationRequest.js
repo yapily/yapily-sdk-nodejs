@@ -35,7 +35,7 @@
   /**
    * The BulkPaymentAuthorisationRequest model module.
    * @module model/BulkPaymentAuthorisationRequest
-   * @version 1.198.1
+   * @version 1.198.3
    */
 
   /**
