@@ -35,7 +35,7 @@
   /**
    * The CurrencyExchange model module.
    * @module model/CurrencyExchange
-   * @version 1.198.3
+   * @version 1.205.0
    */
 
   /**

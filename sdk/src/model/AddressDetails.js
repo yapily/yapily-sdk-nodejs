@@ -35,7 +35,7 @@
   /**
    * The AddressDetails model module.
    * @module model/AddressDetails
-   * @version 1.198.3
+   * @version 1.205.0
    */
 
   /**

@@ -35,7 +35,7 @@
   /**
    * The PersonalCurrentAccountData model module.
    * @module model/PersonalCurrentAccountData
-   * @version 1.198.3
+   * @version 1.205.0
    */
 
   /**

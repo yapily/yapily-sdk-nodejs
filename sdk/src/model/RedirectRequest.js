@@ -35,7 +35,7 @@
   /**
    * The RedirectRequest model module.
    * @module model/RedirectRequest
-   * @version 1.198.3
+   * @version 1.205.0
    */
 
   /**

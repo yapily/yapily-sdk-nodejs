@@ -35,7 +35,7 @@
   /**
    * The ApiListResponseOfTransaction model module.
    * @module model/ApiListResponseOfTransaction
-   * @version 1.198.3
+   * @version 1.205.0
    */
 
   /**
