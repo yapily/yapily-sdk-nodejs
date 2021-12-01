@@ -35,7 +35,7 @@
   /**
    * The AccountEmbeddedAuthorisationRequest model module.
    * @module model/AccountEmbeddedAuthorisationRequest
-   * @version 1.205.0
+   * @version 1.207.0
    */
 
   /**

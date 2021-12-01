@@ -33,7 +33,7 @@
   /**
    * Transactions service.
    * @module api/TransactionsApi
-   * @version 1.205.0
+   * @version 1.207.0
    */
 
   /**

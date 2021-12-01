@@ -35,7 +35,7 @@
   /**
    * The AccountStatement model module.
    * @module model/AccountStatement
-   * @version 1.205.0
+   * @version 1.207.0
    */
 
   /**
