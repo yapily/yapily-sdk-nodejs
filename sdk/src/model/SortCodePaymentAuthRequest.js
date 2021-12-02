@@ -35,7 +35,7 @@
   /**
    * The SortCodePaymentAuthRequest model module.
    * @module model/SortCodePaymentAuthRequest
-   * @version 1.207.0
+   * @version 1.208.0
    */
 
   /**
