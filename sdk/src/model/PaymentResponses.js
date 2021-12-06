@@ -35,7 +35,7 @@
   /**
    * The PaymentResponses model module.
    * @module model/PaymentResponses
-   * @version 1.208.0
+   * @version 1.211.0
    */
 
   /**

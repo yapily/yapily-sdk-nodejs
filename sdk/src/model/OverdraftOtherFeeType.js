@@ -35,7 +35,7 @@
   /**
    * The OverdraftOtherFeeType model module.
    * @module model/OverdraftOtherFeeType
-   * @version 1.208.0
+   * @version 1.211.0
    */
 
   /**
