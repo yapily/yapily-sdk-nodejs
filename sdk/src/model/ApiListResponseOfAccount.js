@@ -35,7 +35,7 @@
   /**
    * The ApiListResponseOfAccount model module.
    * @module model/ApiListResponseOfAccount
-   * @version 1.214.0
+   * @version 1.219.0
    */
 
   /**

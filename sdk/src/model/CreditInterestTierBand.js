@@ -35,7 +35,7 @@
   /**
    * The CreditInterestTierBand model module.
    * @module model/CreditInterestTierBand
-   * @version 1.214.0
+   * @version 1.219.0
    */
 
   /**
