@@ -35,7 +35,7 @@
   /**
    * The FrequencyRequest model module.
    * @module model/FrequencyRequest
-   * @version 1.220.0
+   * @version 1.221.0
    */
 
   /**

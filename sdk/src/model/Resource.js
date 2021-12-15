@@ -35,7 +35,7 @@
   /**
    * The Resource model module.
    * @module model/Resource
-   * @version 1.220.0
+   * @version 1.221.0
    */
 
   /**

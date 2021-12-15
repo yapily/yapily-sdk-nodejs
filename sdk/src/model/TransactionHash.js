@@ -35,7 +35,7 @@
   /**
    * The TransactionHash model module.
    * @module model/TransactionHash
-   * @version 1.220.0
+   * @version 1.221.0
    */
 
   /**

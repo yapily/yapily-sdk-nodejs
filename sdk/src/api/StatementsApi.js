@@ -33,7 +33,7 @@
   /**
    * Statements service.
    * @module api/StatementsApi
-   * @version 1.220.0
+   * @version 1.221.0
    */
 
   /**
