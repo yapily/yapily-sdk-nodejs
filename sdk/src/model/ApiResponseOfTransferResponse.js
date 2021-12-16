@@ -35,7 +35,7 @@
   /**
    * The ApiResponseOfTransferResponse model module.
    * @module model/ApiResponseOfTransferResponse
-   * @version 1.221.0
+   * @version 1.225.0
    */
 
   /**
