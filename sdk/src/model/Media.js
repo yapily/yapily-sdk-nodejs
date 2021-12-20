@@ -35,7 +35,7 @@
   /**
    * The Media model module.
    * @module model/Media
-   * @version 1.225.0
+   * @version 1.229.0
    */
 
   /**

@@ -35,7 +35,7 @@
   /**
    * The ExchangeRateInformationResponse model module.
    * @module model/ExchangeRateInformationResponse
-   * @version 1.225.0
+   * @version 1.229.0
    */
 
   /**

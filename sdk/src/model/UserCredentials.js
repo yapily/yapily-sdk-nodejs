@@ -35,7 +35,7 @@
   /**
    * The UserCredentials model module.
    * @module model/UserCredentials
-   * @version 1.225.0
+   * @version 1.229.0
    */
 
   /**

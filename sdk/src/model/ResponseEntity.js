@@ -35,7 +35,7 @@
   /**
    * The ResponseEntity model module.
    * @module model/ResponseEntity
-   * @version 1.225.0
+   * @version 1.229.0
    */
 
   /**
