@@ -35,7 +35,7 @@
   /**
    * The BeneficiaryPayee model module.
    * @module model/BeneficiaryPayee
-   * @version 1.229.0
+   * @version 1.232.1
    */
 
   /**

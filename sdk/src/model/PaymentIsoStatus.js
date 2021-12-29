@@ -35,7 +35,7 @@
   /**
    * The PaymentIsoStatus model module.
    * @module model/PaymentIsoStatus
-   * @version 1.229.0
+   * @version 1.232.1
    */
 
   /**

@@ -35,7 +35,7 @@
   /**
    * The RegistrationRequestAuto model module.
    * @module model/RegistrationRequestAuto
-   * @version 1.229.0
+   * @version 1.232.1
    */
 
   /**

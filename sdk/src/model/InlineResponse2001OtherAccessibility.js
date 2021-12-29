@@ -35,7 +35,7 @@
   /**
    * The InlineResponse2001OtherAccessibility model module.
    * @module model/InlineResponse2001OtherAccessibility
-   * @version 1.229.0
+   * @version 1.232.1
    */
 
   /**

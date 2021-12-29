@@ -35,7 +35,7 @@
   /**
    * The ApiResponseOfListOfBeneficiary model module.
    * @module model/ApiResponseOfListOfBeneficiary
-   * @version 1.229.0
+   * @version 1.232.1
    */
 
   /**

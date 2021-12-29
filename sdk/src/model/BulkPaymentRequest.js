@@ -35,7 +35,7 @@
   /**
    * The BulkPaymentRequest model module.
    * @module model/BulkPaymentRequest
-   * @version 1.229.0
+   * @version 1.232.1
    */
 
   /**
