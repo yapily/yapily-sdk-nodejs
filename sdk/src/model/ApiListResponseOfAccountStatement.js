@@ -35,7 +35,7 @@
   /**
    * The ApiListResponseOfAccountStatement model module.
    * @module model/ApiListResponseOfAccountStatement
-   * @version 1.232.1
+   * @version 1.232.2
    */
 
   /**

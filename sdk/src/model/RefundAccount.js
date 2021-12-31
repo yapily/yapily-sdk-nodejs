@@ -35,7 +35,7 @@
   /**
    * The RefundAccount model module.
    * @module model/RefundAccount
-   * @version 1.232.1
+   * @version 1.232.2
    */
 
   /**

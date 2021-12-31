@@ -33,7 +33,7 @@
   /**
    * EmbeddedAccounts service.
    * @module api/EmbeddedAccountsApi
-   * @version 1.232.1
+   * @version 1.232.2
    */
 
   /**

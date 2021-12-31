@@ -33,7 +33,7 @@
   /**
    * ApplicationUsers service.
    * @module api/ApplicationUsersApi
-   * @version 1.232.1
+   * @version 1.232.2
    */
 
   /**

@@ -35,7 +35,7 @@
   /**
    * The ApiResponseOfListOfRegistrationResult model module.
    * @module model/ApiResponseOfListOfRegistrationResult
-   * @version 1.232.1
+   * @version 1.232.2
    */
 
   /**

@@ -35,7 +35,7 @@
   /**
    * The MerchantInfo model module.
    * @module model/MerchantInfo
-   * @version 1.232.1
+   * @version 1.232.2
    */
 
   /**
