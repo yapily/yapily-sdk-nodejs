@@ -35,7 +35,7 @@
   /**
    * The EnrichmentMerchant model module.
    * @module model/EnrichmentMerchant
-   * @version 1.232.2
+   * @version 1.249.0
    */
 
   /**

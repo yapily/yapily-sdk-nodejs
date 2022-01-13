@@ -35,7 +35,7 @@
   /**
    * The Transaction model module.
    * @module model/Transaction
-   * @version 1.232.2
+   * @version 1.249.0
    */
 
   /**

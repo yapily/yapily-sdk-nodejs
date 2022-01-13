@@ -35,7 +35,7 @@
   /**
    * The ApplicationUser model module.
    * @module model/ApplicationUser
-   * @version 1.232.2
+   * @version 1.249.0
    */
 
   /**

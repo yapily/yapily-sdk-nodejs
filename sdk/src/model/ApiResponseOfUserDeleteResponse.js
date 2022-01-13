@@ -35,7 +35,7 @@
   /**
    * The ApiResponseOfUserDeleteResponse model module.
    * @module model/ApiResponseOfUserDeleteResponse
-   * @version 1.232.2
+   * @version 1.249.0
    */
 
   /**
