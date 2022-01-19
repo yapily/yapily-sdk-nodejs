@@ -35,7 +35,7 @@
   /**
    * The ApiResponseOfListOfATMOpenDataResponse model module.
    * @module model/ApiResponseOfListOfATMOpenDataResponse
-   * @version 1.249.0
+   * @version 1.251.0
    */
 
   /**

@@ -35,7 +35,7 @@
   /**
    * The ProprietaryBankTransactionCode model module.
    * @module model/ProprietaryBankTransactionCode
-   * @version 1.249.0
+   * @version 1.251.0
    */
 
   /**

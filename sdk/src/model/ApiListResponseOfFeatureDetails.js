@@ -35,7 +35,7 @@
   /**
    * The ApiListResponseOfFeatureDetails model module.
    * @module model/ApiListResponseOfFeatureDetails
-   * @version 1.249.0
+   * @version 1.251.0
    */
 
   /**

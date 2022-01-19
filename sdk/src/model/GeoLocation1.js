@@ -35,7 +35,7 @@
   /**
    * The GeoLocation1 model module.
    * @module model/GeoLocation1
-   * @version 1.249.0
+   * @version 1.251.0
    */
 
   /**
