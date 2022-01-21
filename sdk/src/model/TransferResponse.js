@@ -35,7 +35,7 @@
   /**
    * The TransferResponse model module.
    * @module model/TransferResponse
-   * @version 1.251.0
+   * @version 1.251.1
    */
 
   /**

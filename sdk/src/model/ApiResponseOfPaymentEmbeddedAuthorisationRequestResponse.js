@@ -35,7 +35,7 @@
   /**
    * The ApiResponseOfPaymentEmbeddedAuthorisationRequestResponse model module.
    * @module model/ApiResponseOfPaymentEmbeddedAuthorisationRequestResponse
-   * @version 1.251.0
+   * @version 1.251.1
    */
 
   /**

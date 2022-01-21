@@ -35,7 +35,7 @@
   /**
    * The Categorisation model module.
    * @module model/Categorisation
-   * @version 1.251.0
+   * @version 1.251.1
    */
 
   /**
