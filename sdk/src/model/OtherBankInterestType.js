@@ -35,7 +35,7 @@
   /**
    * The OtherBankInterestType model module.
    * @module model/OtherBankInterestType
-   * @version 1.251.1
+   * @version 1.251.2
    */
 
   /**

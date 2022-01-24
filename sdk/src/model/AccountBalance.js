@@ -35,7 +35,7 @@
   /**
    * The AccountBalance model module.
    * @module model/AccountBalance
-   * @version 1.251.1
+   * @version 1.251.2
    */
 
   /**

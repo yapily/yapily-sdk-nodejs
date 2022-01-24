@@ -35,7 +35,7 @@
   /**
    * The ATMOpenDataBrand model module.
    * @module model/ATMOpenDataBrand
-   * @version 1.251.1
+   * @version 1.251.2
    */
 
   /**

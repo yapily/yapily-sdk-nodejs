@@ -35,7 +35,7 @@
   /**
    * The ApiResponseOfSSAResult model module.
    * @module model/ApiResponseOfSSAResult
-   * @version 1.251.1
+   * @version 1.251.2
    */
 
   /**

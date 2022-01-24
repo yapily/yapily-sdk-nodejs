@@ -35,7 +35,7 @@
   /**
    * The ApiResponseOfAccountStatement model module.
    * @module model/ApiResponseOfAccountStatement
-   * @version 1.251.1
+   * @version 1.251.2
    */
 
   /**

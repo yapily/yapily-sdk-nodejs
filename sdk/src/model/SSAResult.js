@@ -35,7 +35,7 @@
   /**
    * The SSAResult model module.
    * @module model/SSAResult
-   * @version 1.251.1
+   * @version 1.251.2
    */
 
   /**

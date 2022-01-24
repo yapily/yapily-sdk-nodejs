@@ -35,7 +35,7 @@
   /**
    * The CreditLine model module.
    * @module model/CreditLine
-   * @version 1.251.1
+   * @version 1.251.2
    */
 
   /**
