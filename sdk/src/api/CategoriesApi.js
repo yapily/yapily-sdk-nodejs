@@ -33,7 +33,7 @@
   /**
    * Categories service.
    * @module api/CategoriesApi
-   * @version 1.251.2
+   * @version 1.259.0
    */
 
   /**

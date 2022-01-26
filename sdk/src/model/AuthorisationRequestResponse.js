@@ -35,7 +35,7 @@
   /**
    * The AuthorisationRequestResponse model module.
    * @module model/AuthorisationRequestResponse
-   * @version 1.251.2
+   * @version 1.259.0
    */
 
   /**
