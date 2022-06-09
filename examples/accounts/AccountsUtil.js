@@ -8,7 +8,8 @@ basicAuth.username = constants.APPLICATION_ID
 basicAuth.password = constants.APPLICATION_SECRET
 
 var accountAuthorisationRequest = new YapilyApi.AccountAuthorisationRequest();
-var accountsApi = new YapilyApi.AccountsApi()
+var authApi = new YapilyApi.AuthorisationsApi()
+var accountsApi = new YapilyApi.FinancialDataApi()
 
 /**
  * Yapily POST /account-auth-requests endpoint
@@ -23,7 +24,7 @@ module.exports.initiateAccountRequestUsingPOST = function(applicationUserId, ins
 
     var opts = {};
 
-    accountsApi.initiateAccountRequestUsingPOST(accountAuthorisationRequest, opts, function(error, response){
+    authApi.initiateAccountRequest(accountAuthorisationRequest, opts, function(error, response){
         if(error) {
             console.log("\nError creating authorisation request: \n\n", error)
         } else {
@@ -42,7 +43,7 @@ module.exports.reAuthoriseAccountUsingPATCH = function(consentToken, callback) {
 
     var opts = {};
 
-    accountsApi.reAuthoriseAccountUsingPATCH(consentToken, opts, function(error, response){
+    authApi.reAuthoriseAccount(consentToken, opts, function(error, response){
         if(error) {
             if (error.status == 403) {
                 console.log("\nError retrieving transactions with this consent. It is possible that the bank has revoked the token or it has expired. " +
@@ -65,7 +66,7 @@ module.exports.reAuthoriseAccountUsingPATCH = function(consentToken, callback) {
  */
 module.exports.getAccountsUsingGET = function(consentToken, callback) {
     
-    accountsApi.getAccountsUsingGET(consentToken, function(error, accounts) {
+    accountsApi.getAccounts(consentToken, function(error, accounts) {
         if(error) {
             if (error.status == 403) {
                 console.log("\nError retrieving accounts with this consent. It is possible that the bank has revoked the token or it has expired. " +

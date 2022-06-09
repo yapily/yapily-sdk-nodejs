@@ -3,7 +3,6 @@ var util = require('util')
 
 var constants = require('../constants.js')
 var YapilyApi = require('@yapily/yapily-api')
-var StatusEnum = require('@yapily/yapily-api').Consent.StatusEnum;
 
 var ApplicationUserUtils = require('../users/ApplicationUserUtils')
 var AccountsUtil = require('./AccountsUtil');
@@ -37,7 +36,7 @@ ApplicationUserUtils.getUsersUsingGET([APPLICATION_USER_ID], function(error, use
         opts = {
             "filterApplicationUserId": [ APPLICATION_USER_ID ],
             "filterInstitution": [ INSTITUTION_ID ],
-            "filterStatus": [ StatusEnum.AUTHORIZED ],
+            "filterStatus": [ YapilyApi.AuthorisationStatus.AUTHORIZED ],
             "limit": 1
         }
 

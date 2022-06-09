@@ -7,14 +7,14 @@ var basicAuth = defaultClient.authentications['basicAuth']
 basicAuth.username = constants.APPLICATION_ID
 basicAuth.password = constants.APPLICATION_SECRET
 
-var applicationsApi = new YapilyApi.ApplicationsApi()
+var applicationsApi = new YapilyApi.ApplicationApi()
 
 /**
  * Yapily GET /me endpoint
  * 
  * See: https://api.yapily.com/explorer#!/Applications/getApplicationMeUsingGET
  */
-applicationsApi.getApplicationMeUsingGET(function(error, response) {
+applicationsApi.getApplicationMe(function(error, response) {
     if(error) {
         console.error(error);
     } else {

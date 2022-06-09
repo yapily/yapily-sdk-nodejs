@@ -1,0 +1,29 @@
+{
+  "name": "yapily-sdk-examples",
+  "version": "2.2.0",
+  "description": "Demo project for managing scripts in the SDK examples",
+  "main": "''",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yapily/yapily-sdk-nodejs.git"
+  },
+  "keywords": [
+    "api",
+    "sdk",
+    "yapily",
+    "yapily-api",
+    "yapily-sdk"
+  ],
+  "author": "yapily",
+  "bugs": {
+    "url": "https://github.com/yapily/yapily-sdk-nodejs/issues"
+  },
+  "homepage": "https://github.com/yapily/yapily-sdk-nodejs#readme",
+  "dependencies": {
+    "superagent": "^7.1.3",
+    "@yapily/yapily-api": "file:../sdk/dist"
+  }
+}

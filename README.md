@@ -1,8 +1,7 @@
-# Yapily Node.js SDK
-[![GitHub version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=gh&type=6&v=1.259.0&x2=0)](http://badge.fury.io/gh/boennemann%2Fbadges)
+# Yapily Node.js SDK 
+[![GitHub version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=gh&type=6&v=&x2=0)](http://badge.fury.io/gh/boennemann%2Fbadges)
 
-This SDK was generated using [Swagger Code Generator](https://github.com/swagger-api/swagger-codegen). The SDK can be used as a module in your code and the examples demonstrate how to connect
-to financial institutions integrated with Yapily.
+This SDK library was generated using [OpenApi Generator](https://github.com/OpenAPITools/openapi-generator). The SDK can be used as a module in your code and the examples demonstrate how to connect to financial institutions integrated with Yapily.
 
 ## Requirements
 

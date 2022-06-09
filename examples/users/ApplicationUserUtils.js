@@ -7,7 +7,7 @@ var basicAuth = defaultClient.authentications['basicAuth'];
 basicAuth.username = constants.APPLICATION_ID
 basicAuth.password = constants.APPLICATION_SECRET
 
-var api = new YapilyApi.ApplicationUsersApi()
+var api = new YapilyApi.UsersApi()
 
 /**
  * Yapily GET /Users endpoint
@@ -20,7 +20,7 @@ module.exports.getUsersUsingGET = function(applicationUserIdsArray, callback) {
         opts.filterApplicationUserId = applicationUserIdsArray;
         console.log("\n Filter on applicationUserIds: ", applicationUserIdsArray);
     }
-    api.getUsersUsingGET(opts, function(error, response) {
+    api.getUsers(opts, function(error, response) {
         if(error) {
             console.log("\nCould not get all users:\n\n", error);
         } else {
@@ -36,7 +36,7 @@ module.exports.getUsersUsingGET = function(applicationUserIdsArray, callback) {
  * See: https://api.yapily.com/explorer#!/Application_Users/getUserUsingGET
  */
 module.exports.getUserUsingGET = function(uuid, callback) {
-    api.getUserUsingGET(uuid, function(error, response) {
+    api.getUser(uuid, function(error, response) {
         if(error) {
             console.log("\nCould not get user with userUuid '%s'\n\n", uuid, error);
         } else {
@@ -55,7 +55,7 @@ module.exports.addUserUsingPOST = function(applicationUserId, callback) {
     var user = new YapilyApi.ApplicationUser();
     user.applicationUserId = applicationUserId;
 
-    api.addUserUsingPOST(user, function(error, response) {
+    api.addUser(user, function(error, response) {
         if(error) {
             console.log("\nCould not create new user:\n\n", error);
         } else {
@@ -71,7 +71,7 @@ module.exports.addUserUsingPOST = function(applicationUserId, callback) {
  * See: https://api.yapily.com/explorer#!/Application_Users/deleteUserUsingDELETE
  */
 module.exports.deleteUserUsingDELETE = function(user) {
-    api.deleteUserUsingDELETE(user.uuid, function(error, response) {
+    api.deleteUser(user.uuid, function(error, response) {
         if(error) {
             console.log("\nCould not delete user with userUuid '%s'\n\n", user.uuid, error);
         } else {
@@ -85,7 +85,7 @@ module.exports.applicationUserExists = function(applicationUserId, callback) {
     var user = new YapilyApi.ApplicationUser();
     user.applicationUserId = applicationUserId;
 
-    api.addUserUsingPOST(user, function(error, response) {
+    api.addUser(user, function(error, response) {
         if(error) {
             if(error.status === 409) {
                 console.log("\nUser already exists.\n\n");

@@ -14,7 +14,7 @@ var institutionsApi = new YapilyApi.InstitutionsApi()
  * See: https://api.yapily.com/explorer#!/Institutions/getFeatureDetailsUsingGET
  */
 module.exports.getFeatureDetailsUsingGET = function(callback) {
-    institutionsApi.getFeatureDetailsUsingGET(function(error, features) {
+    institutionsApi.getFeatureDetails(function(error, features) {
         if (error) {
             console.error("\nCould not retrieve features:\n\n", error);
         } else {
@@ -30,7 +30,7 @@ module.exports.getFeatureDetailsUsingGET = function(callback) {
  * See: https://api.yapily.com/explorer#!/Institutions/getInstitutionsUsingGET
  */
 module.exports.getInstitutionsUsingGET = function(callback) {
-    institutionsApi.getInstitutionsUsingGET(function(error, institutions) {
+    institutionsApi.getInstitutions(function(error, institutions) {
         if (error) {
             console.error("\nCould not retrieve all institutions:\n\n", error);
         } else {
@@ -46,7 +46,7 @@ module.exports.getInstitutionsUsingGET = function(callback) {
  * See: https://api.yapily.com/explorer#!/Institutions/getInstitutionUsingGET
  */
 module.exports.getInstitutionUsingGET = function(institutionId, callback) {
-    institutionsApi.getInstitutionUsingGET(institutionId, function(error, institutions) {
+    institutionsApi.getInstitution(institutionId, function(error, institutions) {
         if (error) {
             console.error("\nCould not retrieve the institution '" + institutionId + "':\n\n", error);
         } else {
