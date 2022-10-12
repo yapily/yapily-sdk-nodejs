@@ -4,40 +4,30 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **String** | Transaction Id returned by the institution if present | [optional] 
-**_date** | **Date** | Transaction date as defined by the institution | [optional] 
-**bookingDateTime** | **Date** | Date and (if available) time that transaction is posted | [optional] 
-**valueDateTime** | **Date** | The actual or expected date and time transaction is cleared | [optional] 
-**status** | **String** | The status of the transaction | [optional] 
-**amount** | **Number** | Deprecated. Use the amount value in &#x60;transactionAmount&#x60; instead | [optional] 
-**currency** | **String** | Deprecated. Use the currency value in &#x60;transactionAmount&#x60; instead | [optional] 
-**transactionAmount** | [**TransactionAmount**](TransactionAmount.md) |  | [optional] 
+**id** | **String** |  | [optional] 
+**date** | **Date** |  | [optional] 
+**bookingDateTime** | **Date** |  | [optional] 
+**valueDateTime** | **Date** |  | [optional] 
+**status** | [**TransactionStatusEnum**](TransactionStatusEnum.md) |  | [optional] 
+**amount** | **Number** |  | [optional] 
+**currency** | **String** |  | [optional] 
+**transactionAmount** | [**Amount**](Amount.md) |  | [optional] 
 **grossAmount** | [**Amount**](Amount.md) |  | [optional] 
 **currencyExchange** | [**CurrencyExchange**](CurrencyExchange.md) |  | [optional] 
-**chargeDetails** | [**ChargeDetails**](ChargeDetails.md) |  | [optional] 
-**reference** | **String** | Transaction reference | [optional] 
+**chargeDetails** | [**TransactionChargeDetails**](TransactionChargeDetails.md) |  | [optional] 
+**reference** | **String** |  | [optional] 
 **statementReferences** | [**[StatementReference]**](StatementReference.md) |  | [optional] 
-**description** | **String** | Unstructured text containing details of the transaction. Usage varies according to the institution | [optional] 
-**transactionInformation** | **[String]** | Further information related to the transaction. Usage varies according to the institution | [optional] 
+**description** | **String** |  | [optional] 
+**transactionInformation** | **[String]** |  | [optional] 
 **addressDetails** | [**AddressDetails**](AddressDetails.md) |  | [optional] 
 **isoBankTransactionCode** | [**IsoBankTransactionCode**](IsoBankTransactionCode.md) |  | [optional] 
 **proprietaryBankTransactionCode** | [**ProprietaryBankTransactionCode**](ProprietaryBankTransactionCode.md) |  | [optional] 
-**balance** | [**Balance**](Balance.md) |  | [optional] 
+**balance** | [**TransactionBalance**](TransactionBalance.md) |  | [optional] 
 **payeeDetails** | [**Payee**](Payee.md) |  | [optional] 
 **payerDetails** | [**Payer**](Payer.md) |  | [optional] 
 **merchant** | [**Merchant**](Merchant.md) |  | [optional] 
 **enrichment** | [**Enrichment**](Enrichment.md) |  | [optional] 
-**supplementaryData** | [**Object**](.md) | Additional information that can not be captured in the structured fields and/or any other specific block. | [optional] 
-
-
-
-## Enum: StatusEnum
-
-
-* `BOOKED` (value: `"BOOKED"`)
-
-* `PENDING` (value: `"PENDING"`)
-
-
+**supplementaryData** | **Object** |  | [optional] 
+**transactionMutability** | **String** | __Optional__. Specifies the Mutability of the Transaction record.&lt;ul&gt;&lt;li&gt;A transaction with a &#x60;Status&#x60; of &#x60;Pending&#x60; is mutable.&lt;/li&gt;&lt;li&gt;A transaction with a &#x60;Status&#x60; of &#x60;Booked&#x60; where the &#x60;TransactionMutability&#x60; flag is not specified is not guaranteed to be immutable (although in most instances it will be).&lt;/li&gt;&lt;li&gt;A transaction with a &#x60;Status&#x60; of &#x60;Booked&#x60; with the &#x60;TransactionMutability&#x60; flag set to &#x60;Immutable&#x60; is immutable.&lt;/li&gt;&lt;li&gt;A transaction with a &#x60;Status&#x60; of &#x60;Booked&#x60; with the &#x60;TransactionMutability&#x60; flag set to &#x60;Mutable&#x60; is mutable.&lt;/li&gt;&lt;/ul&gt; | [optional] 
 
 

@@ -4,42 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**code** | **String** |  | [optional] 
-**name** | **String** |  | [optional] 
-
-
-
-## Enum: CodeEnum
-
-
-* `ACCC` (value: `"ACCC"`)
-
-* `ACCP` (value: `"ACCP"`)
-
-* `ACSC` (value: `"ACSC"`)
-
-* `ACSP` (value: `"ACSP"`)
-
-* `ACTC` (value: `"ACTC"`)
-
-* `ACWC` (value: `"ACWC"`)
-
-* `ACWP` (value: `"ACWP"`)
-
-* `RCVD` (value: `"RCVD"`)
-
-* `PDNG` (value: `"PDNG"`)
-
-* `RJCT` (value: `"RJCT"`)
-
-* `CANC` (value: `"CANC"`)
-
-* `ACFC` (value: `"ACFC"`)
-
-* `PATC` (value: `"PATC"`)
-
-* `PART` (value: `"PART"`)
-
-
+**code** | [**PaymentIsoStatusCodeEnum**](PaymentIsoStatusCodeEnum.md) |  | [optional] 
+**name** | **String** | The full name of the ISO 20022 &#x60;PaymentStatusCode&#x60;. | [optional] 
 
 

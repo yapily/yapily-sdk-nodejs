@@ -4,44 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**type** | **String** |  | 
-**identification** | **String** |  | 
-
-
-
-## Enum: TypeEnum
-
-
-* `SORT_CODE` (value: `"SORT_CODE"`)
-
-* `ACCOUNT_NUMBER` (value: `"ACCOUNT_NUMBER"`)
-
-* `IBAN` (value: `"IBAN"`)
-
-* `BBAN` (value: `"BBAN"`)
-
-* `BIC` (value: `"BIC"`)
-
-* `PAN` (value: `"PAN"`)
-
-* `MASKED_PAN` (value: `"MASKED_PAN"`)
-
-* `MSISDN` (value: `"MSISDN"`)
-
-* `BSB` (value: `"BSB"`)
-
-* `NCC` (value: `"NCC"`)
-
-* `ABA` (value: `"ABA"`)
-
-* `ABA_WIRE` (value: `"ABA_WIRE"`)
-
-* `ABA_ACH` (value: `"ABA_ACH"`)
-
-* `EMAIL` (value: `"EMAIL"`)
-
-* `ROLL_NUMBER` (value: `"ROLL_NUMBER"`)
-
-
+**type** | [**AccountIdentificationType**](AccountIdentificationType.md) |  | 
+**identification** | **String** | __Mandatory__. The value associated with the account identification type.&lt;br&gt;&lt;br&gt; See [Account Identification Combinations](https://docs.yapily.com/pages/key-concepts/payments/payment-execution/intro-to-payment-execution/#account-identifications-combinations) for more information on the format of the values. | 
 
 

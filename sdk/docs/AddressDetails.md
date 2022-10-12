@@ -4,6 +4,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**addressLine** | **String** |  | [optional] 
+**addressLine** | **String** | Information, in free format text, that identifies a specific address. | [optional] 
 
 

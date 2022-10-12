@@ -4,22 +4,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**before** | **Date** |  | [optional] 
-**cursor** | **String** |  | [optional] 
 **from** | **Date** |  | [optional] 
+**before** | **Date** |  | [optional] 
 **limit** | **Number** |  | [optional] 
+**sort** | [**SortEnum**](SortEnum.md) |  | [optional] 
 **offset** | **Number** |  | [optional] 
-**sort** | **String** |  | [optional] 
-
-
-
-## Enum: SortEnum
-
-
-* `date` (value: `"date"`)
-
-* `-date` (value: `"-date"`)
-
-
+**cursor** | **String** |  | [optional] 
 
 

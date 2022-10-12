@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **String** |  | [optional] 
-**startDateTime** | **Date** |  | [optional] 
-**endDateTime** | **Date** |  | [optional] 
-**creationDateTime** | **Date** |  | [optional] 
+**id** | **String** | Unique identifier for the statement. | [optional] 
+**startDateTime** | **Date** | Date and time of when the statement period starts. | [optional] 
+**endDateTime** | **Date** | Date and time of when the statement period ends. | [optional] 
+**creationDateTime** | **Date** | Date and time of when the statement was created. | [optional] 
 
 

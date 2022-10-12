@@ -4,13 +4,13 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**active** | **Boolean** |  | [optional] 
+**uuid** | **String** | Unique identification for the &#x60;Application&#x60; as assigned by Yapily. | [optional] 
+**name** | **String** | The individual name of the &#x60;Application&#x60;. | [optional] 
+**active** | **Boolean** | States whether an &#x60;Application&#x60; is active. | [optional] 
 **authCallbacks** | **[String]** |  | [optional] 
-**created** | **Date** |  | [optional] 
 **institutions** | [**[Institution]**](Institution.md) |  | [optional] 
 **media** | [**[Media]**](Media.md) |  | [optional] 
-**name** | **String** |  | [optional] 
-**updated** | **Date** |  | [optional] 
-**uuid** | **String** |  | [optional] 
+**created** | **Date** | Date and time of when the application was created. | [optional] 
+**updated** | **Date** | Date and time of when the application was last updated. | [optional] 
 
 

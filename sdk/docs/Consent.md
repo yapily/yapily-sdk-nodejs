@@ -4,180 +4,24 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**applicationUserId** | **String** |  | [optional] 
-**authorizedAt** | **Date** |  | [optional] 
-**consentToken** | **String** |  | [optional] 
-**createdAt** | **Date** |  | [optional] 
-**expiresAt** | **Date** |  | [optional] 
-**featureScope** | **[String]** |  | [optional] 
 **id** | **String** |  | [optional] 
-**institutionConsentId** | **String** |  | [optional] 
-**institutionId** | **String** |  | [optional] 
+**userUuid** | **String** |  | [optional] 
+**applicationUserId** | **String** |  | [optional] 
 **referenceId** | **String** |  | [optional] 
-**state** | **String** |  | [optional] 
-**status** | **String** |  | [optional] 
-**timeToExpire** | **String** |  | [optional] 
-**timeToExpireInMillis** | **Number** |  | [optional] 
+**institutionId** | **String** |  | [optional] 
+**status** | [**AuthorisationStatus**](AuthorisationStatus.md) |  | [optional] 
+**createdAt** | **Date** |  | [optional] 
 **transactionFrom** | **Date** |  | [optional] 
 **transactionTo** | **Date** |  | [optional] 
-**userUuid** | **String** |  | [optional] 
-
-
-
-## Enum: [FeatureScopeEnum]
-
-
-* `INITIATE_PRE_AUTHORISATION` (value: `"INITIATE_PRE_AUTHORISATION"`)
-
-* `INITIATE_PRE_AUTHORISATION_ACCOUNTS` (value: `"INITIATE_PRE_AUTHORISATION_ACCOUNTS"`)
-
-* `INITIATE_PRE_AUTHORISATION_PAYMENTS` (value: `"INITIATE_PRE_AUTHORISATION_PAYMENTS"`)
-
-* `INITIATE_ACCOUNT_REQUEST` (value: `"INITIATE_ACCOUNT_REQUEST"`)
-
-* `INITIATE_EMBEDDED_ACCOUNT_REQUEST` (value: `"INITIATE_EMBEDDED_ACCOUNT_REQUEST"`)
-
-* `ACCOUNT_REQUEST_DETAILS` (value: `"ACCOUNT_REQUEST_DETAILS"`)
-
-* `ACCOUNTS` (value: `"ACCOUNTS"`)
-
-* `ACCOUNT` (value: `"ACCOUNT"`)
-
-* `ACCOUNT_TRANSACTIONS` (value: `"ACCOUNT_TRANSACTIONS"`)
-
-* `ACCOUNT_STATEMENTS` (value: `"ACCOUNT_STATEMENTS"`)
-
-* `ACCOUNT_STATEMENT` (value: `"ACCOUNT_STATEMENT"`)
-
-* `ACCOUNT_STATEMENT_FILE` (value: `"ACCOUNT_STATEMENT_FILE"`)
-
-* `ACCOUNT_SCHEDULED_PAYMENTS` (value: `"ACCOUNT_SCHEDULED_PAYMENTS"`)
-
-* `ACCOUNT_DIRECT_DEBITS` (value: `"ACCOUNT_DIRECT_DEBITS"`)
-
-* `ACCOUNT_PERIODIC_PAYMENTS` (value: `"ACCOUNT_PERIODIC_PAYMENTS"`)
-
-* `ACCOUNT_TRANSACTIONS_WITH_MERCHANT` (value: `"ACCOUNT_TRANSACTIONS_WITH_MERCHANT"`)
-
-* `IDENTITY` (value: `"IDENTITY"`)
-
-* `ACCOUNTS_WITHOUT_BALANCE` (value: `"ACCOUNTS_WITHOUT_BALANCE"`)
-
-* `ACCOUNT_WITHOUT_BALANCE` (value: `"ACCOUNT_WITHOUT_BALANCE"`)
-
-* `ACCOUNT_BALANCES` (value: `"ACCOUNT_BALANCES"`)
-
-* `INITIATE_SINGLE_PAYMENT_SORTCODE` (value: `"INITIATE_SINGLE_PAYMENT_SORTCODE"`)
-
-* `EXISTING_PAYMENT_INITIATION_DETAILS` (value: `"EXISTING_PAYMENT_INITIATION_DETAILS"`)
-
-* `CREATE_SINGLE_PAYMENT_SORTCODE` (value: `"CREATE_SINGLE_PAYMENT_SORTCODE"`)
-
-* `EXISTING_PAYMENTS_DETAILS` (value: `"EXISTING_PAYMENTS_DETAILS"`)
-
-* `INITIATE_DOMESTIC_SINGLE_PAYMENT` (value: `"INITIATE_DOMESTIC_SINGLE_PAYMENT"`)
-
-* `INITIATE_EMBEDDED_DOMESTIC_SINGLE_PAYMENT` (value: `"INITIATE_EMBEDDED_DOMESTIC_SINGLE_PAYMENT"`)
-
-* `CREATE_DOMESTIC_SINGLE_PAYMENT` (value: `"CREATE_DOMESTIC_SINGLE_PAYMENT"`)
-
-* `INITIATE_EMBEDDED_BULK_PAYMENT` (value: `"INITIATE_EMBEDDED_BULK_PAYMENT"`)
-
-* `INITIATE_DOMESTIC_SINGLE_INSTANT_PAYMENT` (value: `"INITIATE_DOMESTIC_SINGLE_INSTANT_PAYMENT"`)
-
-* `CREATE_DOMESTIC_SINGLE_INSTANT_PAYMENT` (value: `"CREATE_DOMESTIC_SINGLE_INSTANT_PAYMENT"`)
-
-* `INITIATE_DOMESTIC_VARIABLE_RECURRING_PAYMENT` (value: `"INITIATE_DOMESTIC_VARIABLE_RECURRING_PAYMENT"`)
-
-* `CREATE_DOMESTIC_VARIABLE_RECURRING_PAYMENT` (value: `"CREATE_DOMESTIC_VARIABLE_RECURRING_PAYMENT"`)
-
-* `INITIATE_DOMESTIC_SCHEDULED_PAYMENT` (value: `"INITIATE_DOMESTIC_SCHEDULED_PAYMENT"`)
-
-* `CREATE_DOMESTIC_SCHEDULED_PAYMENT` (value: `"CREATE_DOMESTIC_SCHEDULED_PAYMENT"`)
-
-* `INITIATE_DOMESTIC_PERIODIC_PAYMENT` (value: `"INITIATE_DOMESTIC_PERIODIC_PAYMENT"`)
-
-* `CREATE_DOMESTIC_PERIODIC_PAYMENT` (value: `"CREATE_DOMESTIC_PERIODIC_PAYMENT"`)
-
-* `PERIODIC_PAYMENT_FREQUENCY_EXTENDED` (value: `"PERIODIC_PAYMENT_FREQUENCY_EXTENDED"`)
-
-* `INITIATE_INTERNATIONAL_VARIABLE_RECURRING_PAYMENT` (value: `"INITIATE_INTERNATIONAL_VARIABLE_RECURRING_PAYMENT"`)
-
-* `CREATE_INTERNATIONAL_VARIABLE_RECURRING_PAYMENT` (value: `"CREATE_INTERNATIONAL_VARIABLE_RECURRING_PAYMENT"`)
-
-* `INITIATE_INTERNATIONAL_SCHEDULED_PAYMENT` (value: `"INITIATE_INTERNATIONAL_SCHEDULED_PAYMENT"`)
-
-* `CREATE_INTERNATIONAL_SCHEDULED_PAYMENT` (value: `"CREATE_INTERNATIONAL_SCHEDULED_PAYMENT"`)
-
-* `INITIATE_INTERNATIONAL_PERIODIC_PAYMENT` (value: `"INITIATE_INTERNATIONAL_PERIODIC_PAYMENT"`)
-
-* `CREATE_INTERNATIONAL_PERIODIC_PAYMENT` (value: `"CREATE_INTERNATIONAL_PERIODIC_PAYMENT"`)
-
-* `INITIATE_INTERNATIONAL_SINGLE_PAYMENT` (value: `"INITIATE_INTERNATIONAL_SINGLE_PAYMENT"`)
-
-* `CREATE_INTERNATIONAL_SINGLE_PAYMENT` (value: `"CREATE_INTERNATIONAL_SINGLE_PAYMENT"`)
-
-* `INITIATE_BULK_PAYMENT` (value: `"INITIATE_BULK_PAYMENT"`)
-
-* `CREATE_BULK_PAYMENT` (value: `"CREATE_BULK_PAYMENT"`)
-
-* `TRANSFER` (value: `"TRANSFER"`)
-
-* `OPEN_DATA_PERSONAL_CURRENT_ACCOUNTS` (value: `"OPEN_DATA_PERSONAL_CURRENT_ACCOUNTS"`)
-
-* `OPEN_DATA_ATMS` (value: `"OPEN_DATA_ATMS"`)
-
-* `READ_DOMESTIC_SINGLE_REFUND` (value: `"READ_DOMESTIC_SINGLE_REFUND"`)
-
-* `READ_DOMESTIC_SCHEDULED_REFUND` (value: `"READ_DOMESTIC_SCHEDULED_REFUND"`)
-
-* `READ_DOMESTIC_PERIODIC_PAYMENT_REFUND` (value: `"READ_DOMESTIC_PERIODIC_PAYMENT_REFUND"`)
-
-* `READ_INTERNATIONAL_SINGLE_REFUND` (value: `"READ_INTERNATIONAL_SINGLE_REFUND"`)
-
-* `READ_INTERNATIONAL_SCHEDULED_REFUND` (value: `"READ_INTERNATIONAL_SCHEDULED_REFUND"`)
-
-* `ACCOUNT_BENEFICIARIES` (value: `"ACCOUNT_BENEFICIARIES"`)
-
-
-
-
-
-## Enum: StatusEnum
-
-
-* `AWAITING_AUTHORIZATION` (value: `"AWAITING_AUTHORIZATION"`)
-
-* `AWAITING_FURTHER_AUTHORIZATION` (value: `"AWAITING_FURTHER_AUTHORIZATION"`)
-
-* `AWAITING_RE_AUTHORIZATION` (value: `"AWAITING_RE_AUTHORIZATION"`)
-
-* `AUTHORIZED` (value: `"AUTHORIZED"`)
-
-* `CONSUMED` (value: `"CONSUMED"`)
-
-* `REJECTED` (value: `"REJECTED"`)
-
-* `REVOKED` (value: `"REVOKED"`)
-
-* `FAILED` (value: `"FAILED"`)
-
-* `EXPIRED` (value: `"EXPIRED"`)
-
-* `UNKNOWN` (value: `"UNKNOWN"`)
-
-* `INVALID` (value: `"INVALID"`)
-
-* `AWAITING_PRE_AUTHORIZATION` (value: `"AWAITING_PRE_AUTHORIZATION"`)
-
-* `PRE_AUTHORIZED` (value: `"PRE_AUTHORIZED"`)
-
-* `AWAITING_DECOUPLED_AUTHORIZATION` (value: `"AWAITING_DECOUPLED_AUTHORIZATION"`)
-
-* `AWAITING_SCA_METHOD` (value: `"AWAITING_SCA_METHOD"`)
-
-* `AWAITING_SCA_CODE` (value: `"AWAITING_SCA_CODE"`)
-
-
+**expiresAt** | **Date** |  | [optional] 
+**timeToExpireInMillis** | **Number** |  | [optional] 
+**timeToExpire** | **String** |  | [optional] 
+**featureScope** | [**[FeatureEnum]**](FeatureEnum.md) |  | [optional] 
+**consentToken** | **String** |  | [optional] 
+**state** | **String** |  | [optional] 
+**authorizedAt** | **Date** |  | [optional] 
+**lastConfirmedAt** | **Date** | The time that the PSU last confirmed access to their account information, either through full authentication with the institution, or through reconfirmation with the TPP. | [optional] 
+**reconfirmBy** | **Date** | The time by which the consent should be reconfirmed to ensure continued access to the account information. | [optional] 
+**institutionConsentId** | **String** |  | [optional] 
 
 

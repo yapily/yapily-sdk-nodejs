@@ -4,28 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**type** | **String** |  | [optional] 
+**type** | [**CreditLineType**](CreditLineType.md) |  | [optional] 
 **creditLineAmount** | [**Amount**](Amount.md) |  | [optional] 
-
-
-
-## Enum: TypeEnum
-
-
-* `AVAILABLE` (value: `"AVAILABLE"`)
-
-* `CREDIT` (value: `"CREDIT"`)
-
-* `EMERGENCY` (value: `"EMERGENCY"`)
-
-* `PRE_AGREED` (value: `"PRE_AGREED"`)
-
-* `TEMPORARY` (value: `"TEMPORARY"`)
-
-* `OTHER` (value: `"OTHER"`)
-
-* `UNKNOWN` (value: `"UNKNOWN"`)
-
-
 
 

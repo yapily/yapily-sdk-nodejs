@@ -1,0 +1,18 @@
+# YapilyApi.VirtualAccountClientBusinessType
+
+## Enum
+
+
+* `SOLE_TRADER` (value: `"SOLE_TRADER"`)
+
+* `LIMITED_LIABILITY` (value: `"LIMITED_LIABILITY"`)
+
+* `CHARITY` (value: `"CHARITY"`)
+
+* `PUBLIC_LIMITED_COMPANY` (value: `"PUBLIC_LIMITED_COMPANY"`)
+
+* `ORDINARY_PARTNERSHIP` (value: `"ORDINARY_PARTNERSHIP"`)
+
+* `LIMITED_PARTNERSHIP` (value: `"LIMITED_PARTNERSHIP"`)
+
+

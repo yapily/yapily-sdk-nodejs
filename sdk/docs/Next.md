@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**before** | **Date** |  | [optional] 
-**cursor** | **String** |  | [optional] 
 **from** | **Date** |  | [optional] 
+**before** | **Date** |  | [optional] 
 **limit** | **Number** |  | [optional] 
+**cursor** | **String** |  | [optional] 
 
 

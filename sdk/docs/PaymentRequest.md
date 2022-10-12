@@ -4,58 +4,16 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**paymentIdempotencyId** | **String** |  | [optional] 
+**paymentIdempotencyId** | **String** | __Mandatory__. A unique identifier that you must provide to identify the payment. This can be any alpha-numeric string but is limited to a maximum of 35 characters. | 
 **payer** | [**Payer**](Payer.md) |  | [optional] 
-**amount** | [**Amount**](Amount.md) |  | [optional] 
-**reference** | **String** |  | [optional] 
-**contextType** | **String** |  | [optional] 
-**type** | **String** |  | 
-**paymentDateTime** | **Date** |  | [optional] 
+**reference** | **String** | __Optional__. The payment reference or description. Limited to a maximum of 18 characters long. | [optional] 
+**contextType** | [**PaymentContextType**](PaymentContextType.md) |  | [optional] 
+**type** | [**PaymentType**](PaymentType.md) |  | 
 **payee** | [**Payee**](Payee.md) |  | 
 **periodicPayment** | [**PeriodicPaymentRequest**](PeriodicPaymentRequest.md) |  | [optional] 
 **internationalPayment** | [**InternationalPaymentRequest**](InternationalPaymentRequest.md) |  | [optional] 
-**readRefundAccount** | **Boolean** |  | [optional] 
-
-
-
-## Enum: ContextTypeEnum
-
-
-* `BILL` (value: `"BILL"`)
-
-* `GOODS` (value: `"GOODS"`)
-
-* `SERVICES` (value: `"SERVICES"`)
-
-* `OTHER` (value: `"OTHER"`)
-
-* `PERSON_TO_PERSON` (value: `"PERSON_TO_PERSON"`)
-
-
-
-
-
-## Enum: TypeEnum
-
-
-* `DOMESTIC_PAYMENT` (value: `"DOMESTIC_PAYMENT"`)
-
-* `DOMESTIC_INSTANT_PAYMENT` (value: `"DOMESTIC_INSTANT_PAYMENT"`)
-
-* `DOMESTIC_VARIABLE_RECURRING_PAYMENT` (value: `"DOMESTIC_VARIABLE_RECURRING_PAYMENT"`)
-
-* `DOMESTIC_SCHEDULED_PAYMENT` (value: `"DOMESTIC_SCHEDULED_PAYMENT"`)
-
-* `DOMESTIC_PERIODIC_PAYMENT` (value: `"DOMESTIC_PERIODIC_PAYMENT"`)
-
-* `INTERNATIONAL_PAYMENT` (value: `"INTERNATIONAL_PAYMENT"`)
-
-* `INTERNATIONAL_SCHEDULED_PAYMENT` (value: `"INTERNATIONAL_SCHEDULED_PAYMENT"`)
-
-* `INTERNATIONAL_PERIODIC_PAYMENT` (value: `"INTERNATIONAL_PERIODIC_PAYMENT"`)
-
-* `BULK_PAYMENT` (value: `"BULK_PAYMENT"`)
-
-
+**amount** | [**Amount**](Amount.md) |  | 
+**paymentDateTime** | **Date** | __Conditional__. Used to specify the date of the payment when the payment type is one of the following:&lt;ul&gt;    &lt;li&gt;&lt;code&gt;DOMESTIC_SCHEDULED_PAYMENT&lt;/code&gt;&lt;/li&gt;    &lt;li&gt;&lt;code&gt;DOMESTIC_PERIODIC_PAYMENT&lt;/code&gt;&lt;/li&gt;    &lt;li&gt;&lt;code&gt;INTERNATIONAL_SCHEDULED_PAYMENT&lt;/code&gt;&lt;/li&gt;    &lt;li&gt;&lt;code&gt;INTERNATIONAL_PERIODIC_PAYMENT&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt; | [optional] 
+**readRefundAccount** | **Boolean** | __Optional__. Used to request the payer details in the payment response when the &#x60;Institution&#x60; provides the feature &#x60;READ_DOMESTIC_SINGLE_REFUND&#x60;.&lt;br&gt;&lt;br&gt;See [Reverse Payments](https://docs.yapily.com/pages/knowledge/open-banking/reverse_payments/) for more information. | [optional] 
 
 

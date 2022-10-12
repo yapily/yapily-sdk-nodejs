@@ -4,21 +4,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**creationDate** | **Date** |  | [optional] 
-**deleteStatus** | **String** |  | [optional] 
 **id** | **String** |  | [optional] 
-**institutionConsentId** | **String** |  | [optional] 
+**deleteStatus** | [**DeleteStatusEnum**](DeleteStatusEnum.md) |  | [optional] 
 **institutionId** | **String** |  | [optional] 
-
-
-
-## Enum: DeleteStatusEnum
-
-
-* `SUCCESS` (value: `"SUCCESS"`)
-
-* `FAILED` (value: `"FAILED"`)
-
-
+**institutionConsentId** | **String** |  | [optional] 
+**creationDate** | **Date** |  | [optional] 
 
 

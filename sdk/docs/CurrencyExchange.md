@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**sourceCurrency** | **String** | ISO 4217 currency code denoting the currency of the creditor | [optional] 
-**targetCurrency** | **String** | ISO 4217 currency code denoting the currency of the debtor | [optional] 
-**unitCurrency** | **String** | ISO 4217 currency code denoting the currency used to set the exchange rate (GBP is the unit currency in the conversion of 1 GBP &#x3D; x CUR) | [optional] 
-**exchangeRate** | **Number** | Currency exchange rate | [optional] 
+**sourceCurrency** | **String** | Currency from which an amount is to be converted. | [optional] 
+**targetCurrency** | **String** | Currency to which an amount is to be converted. | [optional] 
+**unitCurrency** | **String** | The currency in which the rate of exchange is expressed in a currency exchange. In the example 1GBP &#x3D; xxxCUR, the unit currency is GBP. | [optional] 
+**exchangeRate** | **Number** | The factor used for conversion of an amount from one currency to another. This reflects the price at which one currency was bought with another currency. | [optional] 
 
 

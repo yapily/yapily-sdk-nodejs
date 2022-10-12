@@ -4,20 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**creationDate** | **Date** |  | [optional] 
-**deleteStatus** | **String** |  | [optional] 
 **id** | **String** |  | [optional] 
+**deleteStatus** | [**DeleteStatusEnum**](DeleteStatusEnum.md) |  | [optional] 
+**creationDate** | **Date** |  | [optional] 
 **userConsents** | [**[ConsentDeleteResponse]**](ConsentDeleteResponse.md) |  | [optional] 
-
-
-
-## Enum: DeleteStatusEnum
-
-
-* `SUCCESS` (value: `"SUCCESS"`)
-
-* `FAILED` (value: `"FAILED"`)
-
-
 
 

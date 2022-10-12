@@ -4,87 +4,18 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **String** | Account Id returned by the institution if present | [optional] 
-**type** | **String** |  | [optional] 
+**id** | **String** | Unique identifier of the account. | [optional] 
+**type** | **String** | Specifies the type of account e.g. (BUSINESS_CURRENT). | [optional] 
 **description** | **String** | Product name as defined by the financial institution for this account | [optional] 
-**balance** | **Number** |  | [optional] 
-**currency** | **String** | ISO 4217 currency code | [optional] 
-**usageType** | **String** |  | [optional] 
-**accountType** | **String** |  | [optional] 
-**nickname** | **String** | Name of the account as defined by the financial institution or the end user | [optional] 
-**details** | **String** | Specifications that might be provided by the institution - characteristics of the account - characteristics of the relevant card | [optional] 
+**balance** | **Number** | Main / headline balance for the account. &lt;br&gt;&lt;br&gt; Use of this field is recommended as fallback only. Instead, use of the typed balances (accountBalances) is recommended. | [optional] 
+**currency** | **String** | Currency the bank account balance is denoted in. &lt;br&gt;&lt;br&gt; Specified as a 3-letter ISO 4217 currency code | [optional] 
+**usageType** | [**UsageType**](UsageType.md) |  | [optional] 
+**accountType** | [**AccountType**](AccountType.md) |  | [optional] 
+**nickname** | **String** | Nickname of the account that was provided by the account owner. &lt;br&gt;&lt;br&gt; May be used to aid identification of the account. | [optional] 
+**details** | **String** | Supplementary specifications that might be provided by the Bank. These provide further characteristics about the account. | [optional] 
 **accountNames** | [**[AccountName]**](AccountName.md) |  | [optional] 
 **accountIdentifications** | [**[AccountIdentification]**](AccountIdentification.md) |  | [optional] 
 **accountBalances** | [**[AccountBalance]**](AccountBalance.md) |  | [optional] 
-
-
-
-## Enum: UsageTypeEnum
-
-
-* `PERSONAL` (value: `"PERSONAL"`)
-
-* `BUSINESS` (value: `"BUSINESS"`)
-
-* `OTHER` (value: `"OTHER"`)
-
-* `UNKNOWN` (value: `"UNKNOWN"`)
-
-
-
-
-
-## Enum: AccountTypeEnum
-
-
-* `CASH_TRADING` (value: `"CASH_TRADING"`)
-
-* `CASH_INCOME` (value: `"CASH_INCOME"`)
-
-* `CASH_PAYMENT` (value: `"CASH_PAYMENT"`)
-
-* `CHARGE_CARD` (value: `"CHARGE_CARD"`)
-
-* `CHARGES` (value: `"CHARGES"`)
-
-* `COMMISSION` (value: `"COMMISSION"`)
-
-* `CREDIT_CARD` (value: `"CREDIT_CARD"`)
-
-* `CURRENT` (value: `"CURRENT"`)
-
-* `E_MONEY` (value: `"E_MONEY"`)
-
-* `LIMITED_LIQUIDITY_SAVINGS_ACCOUNT` (value: `"LIMITED_LIQUIDITY_SAVINGS_ACCOUNT"`)
-
-* `LOAN` (value: `"LOAN"`)
-
-* `MARGINAL_LENDING` (value: `"MARGINAL_LENDING"`)
-
-* `MONEY_MARKET` (value: `"MONEY_MARKET"`)
-
-* `MORTGAGE` (value: `"MORTGAGE"`)
-
-* `NON_RESIDENT_EXTERNAL` (value: `"NON_RESIDENT_EXTERNAL"`)
-
-* `OTHER` (value: `"OTHER"`)
-
-* `OVERDRAFT` (value: `"OVERDRAFT"`)
-
-* `OVERNIGHT_DEPOSIT` (value: `"OVERNIGHT_DEPOSIT"`)
-
-* `PREPAID_CARD` (value: `"PREPAID_CARD"`)
-
-* `SALARY` (value: `"SALARY"`)
-
-* `SAVINGS` (value: `"SAVINGS"`)
-
-* `SETTLEMENT` (value: `"SETTLEMENT"`)
-
-* `TAX` (value: `"TAX"`)
-
-* `UNKNOWN` (value: `"UNKNOWN"`)
-
-
+**consolidatedAccountInformation** | [**ConsolidatedAccountInformation**](ConsolidatedAccountInformation.md) |  | [optional] 
 
 
