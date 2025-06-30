@@ -8,9 +8,9 @@ Method | HTTP request | Description
 [**createSweepingAuthorisation**](VariableRecurringPaymentsApi.md#createSweepingAuthorisation) | **POST** /variable-recurring-payments/sweeping/consents | Create Sweeping Variable Recurring Payment Authorisation
 [**createVrpFundsConfirmation**](VariableRecurringPaymentsApi.md#createVrpFundsConfirmation) | **POST** /variable-recurring-payments/funds-confirmation | Confirm Funds for Variable Recurring Payment
 [**createVrpPayment**](VariableRecurringPaymentsApi.md#createVrpPayment) | **POST** /variable-recurring-payments/payments | Create Variable Recurring Payment
+[**getNonSweepingVrpConsentById**](VariableRecurringPaymentsApi.md#getNonSweepingVrpConsentById) | **GET** /variable-recurring-payments/non-sweeping/consents/{consentId} | Get Non-Sweeping Variable Recurring Payment Consent Details
 [**getSweepingVrpConsentById**](VariableRecurringPaymentsApi.md#getSweepingVrpConsentById) | **GET** /variable-recurring-payments/sweeping/consents/{consentId} | Get Sweeping Variable Recurring Payment Consent Details
 [**getVrpPaymentDetails**](VariableRecurringPaymentsApi.md#getVrpPaymentDetails) | **GET** /variable-recurring-payments/payments/{paymentId}/details | Get Variable Recurring Payment Details
-[**getpNonSweepingVrpConsentById**](VariableRecurringPaymentsApi.md#getpNonSweepingVrpConsentById) | **GET** /variable-recurring-payments/non-sweeping/consents/{consentId} | Get Non-Sweeping Variable Recurring Payment Consent Details
 
 
 
@@ -33,7 +33,7 @@ basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
 
 let apiInstance = new YapilyApi.VariableRecurringPaymentsApi();
-let nonSweepingAuthorisationRequest = {"applicationUserId":"john.doe@company.com","institutionId":"modelo-sandbox","callback":"https://display-parameters.com/","controlParameters":{"psuAuthenticationMethods":["SCA_NOT_REQUIRED"],"periodicLimits":[{"totalMaxAmount":{"amount":100,"currency":"GBP"},"frequency":"DAILY","alignment":"CONSENT","maxNumberOfPayments":1}],"maxAmountPerPayment":{"amount":10,"currency":"GBP"},"maxCumulativeAmount":{"amount":100,"currency":"GBP"},"maxCumulativeNumberOfPayments":10},"initiationDetails":{"reference":"Bill Payment","payer":{"name":"John Doe","accountIdentifications":[{"type":"ACCOUNT_NUMBER","identification":"87654321"},{"type":"SORT_CODE","identification":"654321"}]},"payee":{"name":"Thames Water","accountIdentifications":[{"type":"ACCOUNT_NUMBER","identification":"12345678"},{"type":"SORT_CODE","identification":"123456"}]}}}; // NonSweepingAuthorisationRequest | 
+let nonSweepingAuthorisationRequest = {"applicationUserId":"string","institutionId":"modelo-sandbox","callback":"https://display-parameters.com/","controlParameters":{"psuAuthenticationMethods":["SCA_NOT_REQUIRED"],"periodicLimits":[{"totalMaxAmount":{"amount":100,"currency":"GBP"},"frequency":"DAILY","alignment":"CONSENT","maxNumberOfPayments":1}],"maxAmountPerPayment":{"amount":10,"currency":"GBP"},"maxCumulativeAmount":{"amount":100,"currency":"GBP"},"maxCumulativeNumberOfPayments":10,"recurringPaymentCategory":"ONGOING"},"initiationDetails":{"reference":"Bill Payment","payer":{"name":"John Doe","accountIdentifications":[{"type":"ACCOUNT_NUMBER","identification":"87654321"},{"type":"SORT_CODE","identification":"654321"}]},"payee":{"name":"Thames Water","accountIdentifications":[{"type":"ACCOUNT_NUMBER","identification":"12345678"},{"type":"SORT_CODE","identification":"123456"}]}},"complianceData":{"payer":{"type":"BUSINESS","business":{"name":"Company LTD","registrationNumber":"COM123NO","registeredAddress":{"addressLine1":"123 Queens Street","addressLine2":"Unit 13","townName":"York","postCode":"12345","country":"GB"},"tradingAddress":{"addressLine1":"123 Queens Street","addressLine2":"Unit 13","townName":"York","postCode":"12345","country":"GB"}}}}}; // NonSweepingAuthorisationRequest | 
 apiInstance.createNonSweepingAuthorisation(nonSweepingAuthorisationRequest, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -83,7 +83,7 @@ basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
 
 let apiInstance = new YapilyApi.VariableRecurringPaymentsApi();
-let sweepingAuthorisationRequest = {"applicationUserId":"john.doe@company.com","institutionId":"modelo-sandbox","callback":"https://display-parameters.com/","controlParameters":{"psuAuthenticationMethods":["SCA_NOT_REQUIRED"],"periodicLimits":[{"totalMaxAmount":{"amount":100,"currency":"GBP"},"frequency":"DAILY","alignment":"CONSENT"}],"maxAmountPerPayment":{"amount":10,"currency":"GBP"}},"initiationDetails":{"reference":"Own Account Sweeping","payer":{"name":"John Doe","accountIdentifications":[{"type":"ACCOUNT_NUMBER","identification":"87654321"},{"type":"SORT_CODE","identification":"654321"}]},"payee":{"name":"John Doe","accountIdentifications":[{"type":"ACCOUNT_NUMBER","identification":"12345678"},{"type":"SORT_CODE","identification":"123456"}]}}}; // SweepingAuthorisationRequest | 
+let sweepingAuthorisationRequest = {"applicationUserId":"string","institutionId":"modelo-sandbox","callback":"https://display-parameters.com/","controlParameters":{"psuAuthenticationMethods":["SCA_NOT_REQUIRED"],"periodicLimits":[{"totalMaxAmount":{"amount":100,"currency":"GBP"},"frequency":"DAILY","alignment":"CONSENT"}],"maxAmountPerPayment":{"amount":10,"currency":"GBP"}},"initiationDetails":{"reference":"Own Account Sweeping","payer":{"name":"John Doe","accountIdentifications":[{"type":"ACCOUNT_NUMBER","identification":"87654321"},{"type":"SORT_CODE","identification":"654321"}]},"payee":{"name":"John Doe","accountIdentifications":[{"type":"ACCOUNT_NUMBER","identification":"12345678"},{"type":"SORT_CODE","identification":"123456"}]}},"complianceData":{"payer":{"type":"INDIVIDUAL","individual":{"name":"John Doe","birthDate":"2000-08-12"}}}}; // SweepingAuthorisationRequest | 
 apiInstance.createSweepingAuthorisation(sweepingAuthorisationRequest, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -120,7 +120,7 @@ Name | Type | Description  | Notes
 
 Confirm Funds for Variable Recurring Payment
 
-Used to confirm funds on the Payer account to execute Variable Recurring Payments after obtaining the user&#39;s authorisation. &lt;br&gt;&lt;br&gt;Features:&lt;ul&gt;&lt;li&gt;&#x60;VARIABLE_RECURRING_PAYMENT_FUNDS_CONFIRMATION&#x60;&lt;/li&gt;&lt;/ul&gt;
+Confirms whether there are available funds on the Payer account to execute a Variable Recurring Payment after obtaining the user&#39;s authorisation. &lt;br&gt;&lt;br&gt;Features:&lt;ul&gt;&lt;li&gt;&#x60;VARIABLE_RECURRING_PAYMENT_FUNDS_CONFIRMATION&#x60;&lt;/li&gt;&lt;/ul&gt;
 
 ### Example
 
@@ -172,7 +172,7 @@ Name | Type | Description  | Notes
 
 Create Variable Recurring Payment
 
-Used to submit a Variable Recurring Payments transaction after obtaining the user&#39;s authorisation. First make sure that the payment feature you wish to execute is supported by the bank by checking the features array in [GET Institution](https://docs.yapily.com/api/#get-institution). &lt;br&gt;&lt;br&gt;Features:&lt;ul&gt;&lt;li&gt;&#x60;CREATE_DOMESTIC_VARIABLE_RECURRING_PAYMENT_SWEEPING&#x60;&lt;/li&gt;&lt;li&gt;&#x60;CREATE_DOMESTIC_VARIABLE_RECURRING_PAYMENT_NONSWEEPING&#x60;&lt;/li&gt;&lt;/ul&gt;
+Creates a Variable Recurring Payment transaction after obtaining the user&#39;s authorisation.&lt;br&gt;&lt;br&gt;Features:&lt;ul&gt;&lt;li&gt;&#x60;CREATE_DOMESTIC_VARIABLE_RECURRING_PAYMENT_SWEEPING&#x60;&lt;/li&gt;&lt;li&gt;&#x60;CREATE_DOMESTIC_VARIABLE_RECURRING_PAYMENT_NONSWEEPING&#x60;&lt;/li&gt;&lt;/ul&gt;
 
 ### Example
 
@@ -215,6 +215,56 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: application/json;charset=UTF-8
+- **Accept**: application/json;charset=UTF-8
+
+
+## getNonSweepingVrpConsentById
+
+> ApiResponseOfNonSweepingAuthorisationResponse getNonSweepingVrpConsentById(consentId)
+
+Get Non-Sweeping Variable Recurring Payment Consent Details
+
+Get Non-Sweeping Variable Recurring Payments consent details using the consent Id
+
+### Example
+
+```javascript
+import YapilyApi from 'yapily-api';
+let defaultClient = YapilyApi.ApiClient.instance;
+// Configure HTTP basic authorization: basicAuth
+let basicAuth = defaultClient.authentications['basicAuth'];
+basicAuth.username = 'YOUR USERNAME';
+basicAuth.password = 'YOUR PASSWORD';
+
+let apiInstance = new YapilyApi.VariableRecurringPaymentsApi();
+let consentId = "consentId_example"; // String | __Mandatory__. The consent Id of the `Variable Recurring Payments Consent` to retrieve.
+apiInstance.getNonSweepingVrpConsentById(consentId, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **consentId** | **String**| __Mandatory__. The consent Id of the &#x60;Variable Recurring Payments Consent&#x60; to retrieve. | 
+
+### Return type
+
+[**ApiResponseOfNonSweepingAuthorisationResponse**](ApiResponseOfNonSweepingAuthorisationResponse.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
 - **Accept**: application/json;charset=UTF-8
 
 
@@ -309,56 +359,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**ApiResponseOfSubmissionResponse**](ApiResponseOfSubmissionResponse.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json;charset=UTF-8
-
-
-## getpNonSweepingVrpConsentById
-
-> ApiResponseOfNonSweepingAuthorisationResponse getpNonSweepingVrpConsentById(consentId)
-
-Get Non-Sweeping Variable Recurring Payment Consent Details
-
-Get Non-Sweeping Variable Recurring Payments consent details using the consent Id
-
-### Example
-
-```javascript
-import YapilyApi from 'yapily-api';
-let defaultClient = YapilyApi.ApiClient.instance;
-// Configure HTTP basic authorization: basicAuth
-let basicAuth = defaultClient.authentications['basicAuth'];
-basicAuth.username = 'YOUR USERNAME';
-basicAuth.password = 'YOUR PASSWORD';
-
-let apiInstance = new YapilyApi.VariableRecurringPaymentsApi();
-let consentId = "consentId_example"; // String | __Mandatory__. The consent Id of the `Variable Recurring Payments Consent` to retrieve.
-apiInstance.getpNonSweepingVrpConsentById(consentId, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **consentId** | **String**| __Mandatory__. The consent Id of the &#x60;Variable Recurring Payments Consent&#x60; to retrieve. | 
-
-### Return type
-
-[**ApiResponseOfNonSweepingAuthorisationResponse**](ApiResponseOfNonSweepingAuthorisationResponse.md)
 
 ### Authorization
 

@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **String** | The name of the TransactionStream | [optional] 
-**transactions** | [**[EnrichedTransaction]**](EnrichedTransaction.md) | A list of Transactions from the transaction stream. | [optional] 
+**name** | **String** | The name of the Transaction Stream. | [optional] 
+**transactions** | [**[EnrichedTransaction]**](EnrichedTransaction.md) | A list of transaction details, identified by Yapily data services. | [optional] 
 **transactionSchedule** | [**TransactionSchedule**](TransactionSchedule.md) |  | [optional] 
 **scheduleConsistencyScore** | **Number** | The consistency of the transaction.  This is a number between 0 and 1 with 1 being the most consistent schedule. | [optional] 
 **nextExpectedTransactionDate** | **Date** | When is the transaction expected to occur next. | [optional] 

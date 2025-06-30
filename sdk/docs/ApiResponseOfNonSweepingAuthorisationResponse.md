@@ -9,5 +9,6 @@ Name | Type | Description | Notes
 **links** | **{String: String}** |  | [optional] 
 **forwardedData** | [**[ResponseForwardedData]**](ResponseForwardedData.md) |  | [optional] 
 **tracingId** | **String** |  | [optional] 
+**raw** | [**[RawResponse]**](RawResponse.md) |  | [optional] 
 
 

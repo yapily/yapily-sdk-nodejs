@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**displayName** | **String** |  | [optional] 
-**countryCode2** | **String** |  | [optional] 
+**displayName** | **String** | Country name. | [optional] 
+**countryCode2** | **String** | Two character ISO 3166 country code. | [optional] 
 
 

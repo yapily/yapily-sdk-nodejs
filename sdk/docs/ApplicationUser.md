@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **applicationUuid** | **String** | Unique identifier of the application the user is associated with. | [optional] 
 **applicationUserId** | **String** | __Conditional__. The user-friendly reference to the &#x60;User&#x60;. | [optional] 
 **referenceId** | **String** |  | [optional] 
+**createdAt** | **Date** | Date and time of when the user was created. | [optional] 
 **institutionConsents** | [**[InstitutionConsent]**](InstitutionConsent.md) |  | [optional] 
 
 

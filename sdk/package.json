@@ -1,6 +1,6 @@
 {
   "name": "@yapily/yapily-api",
-  "version": "2.13.1",
+  "version": "8.0.0",
   "description": "The_Yapily_API_enables_connections_between_your_application_and_users_banks__For_more_information_check_out_our__documentation_https__docs_yapily_com__brbrIn_particular_make_sure_to_view_our__Getting_Started_https__docs_yapily_com_pages_home_getting_started__steps_if_this_is_your_first_time_here_brbrWhile_testing_the_API_our_list_of__sandbox_credentials_https__docs_yapily_com_pages_key_concepts_sandbox_credentials__maybe_useful_",
   "license": "Unlicense",
   "main": "dist/index.js",

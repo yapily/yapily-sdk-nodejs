@@ -6,6 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **String** |  | [optional] 
 **paymentIdempotencyId** | **String** |  | [optional] 
+**paymentLifecycleId** | **String** |  | [optional] 
 **institutionConsentId** | **String** |  | [optional] 
 **status** | [**PaymentStatus**](PaymentStatus.md) |  | [optional] 
 **statusDetails** | [**PaymentStatusDetails**](PaymentStatusDetails.md) |  | [optional] 

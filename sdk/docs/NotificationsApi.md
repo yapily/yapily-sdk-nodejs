@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 ## createEventSubscription
 
-> ApiResponseOfEventSubscriptionResponse createEventSubscription(eventSubscriptionRequest)
+> ApiResponseOfEventSubscriptionResponse createEventSubscription(eventSubscriptionRequest, opts)
 
 Create Event Subscription
 
@@ -31,7 +31,10 @@ basicAuth.password = 'YOUR PASSWORD';
 
 let apiInstance = new YapilyApi.NotificationsApi();
 let eventSubscriptionRequest = new YapilyApi.EventSubscriptionRequest(); // EventSubscriptionRequest | 
-apiInstance.createEventSubscription(eventSubscriptionRequest, (error, data, response) => {
+let opts = {
+  'subApplication': "subApplication_example" // String | The sub-application ID to which event type is being subscribed to
+};
+apiInstance.createEventSubscription(eventSubscriptionRequest, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -46,6 +49,7 @@ apiInstance.createEventSubscription(eventSubscriptionRequest, (error, data, resp
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **eventSubscriptionRequest** | [**EventSubscriptionRequest**](EventSubscriptionRequest.md)|  | 
+ **subApplication** | **String**| The sub-application ID to which event type is being subscribed to | [optional] 
 
 ### Return type
 
@@ -63,7 +67,7 @@ Name | Type | Description  | Notes
 
 ## deleteEventSubscriptionById
 
-> ApiResponseOfEventSubscriptionDeleteResponse deleteEventSubscriptionById(eventTypeId)
+> ApiResponseOfEventSubscriptionDeleteResponse deleteEventSubscriptionById(eventTypeId, opts)
 
 Delete Event Subscription
 
@@ -80,8 +84,11 @@ basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
 
 let apiInstance = new YapilyApi.NotificationsApi();
-let eventTypeId = "eventTypeId_example"; // String | Unique identifier of the event type (for which notifications will be sent)
-apiInstance.deleteEventSubscriptionById(eventTypeId, (error, data, response) => {
+let eventTypeId = "eventTypeId_example"; // String | Unique identifier of the event type (for which notifications will be sent). 
+let opts = {
+  'subApplication': "subApplication_example" // String | The sub-application ID for which event type will be deleted
+};
+apiInstance.deleteEventSubscriptionById(eventTypeId, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -95,7 +102,8 @@ apiInstance.deleteEventSubscriptionById(eventTypeId, (error, data, response) => 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **eventTypeId** | **String**| Unique identifier of the event type (for which notifications will be sent) | 
+ **eventTypeId** | **String**| Unique identifier of the event type (for which notifications will be sent).  | 
+ **subApplication** | **String**| The sub-application ID for which event type will be deleted | [optional] 
 
 ### Return type
 
@@ -113,7 +121,7 @@ Name | Type | Description  | Notes
 
 ## getEventSubscriptionById
 
-> ApiResponseOfEventSubscriptionResponse getEventSubscriptionById(eventTypeId)
+> ApiResponseOfEventSubscriptionResponse getEventSubscriptionById(eventTypeId, opts)
 
 Get Event Subscription
 
@@ -130,8 +138,11 @@ basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
 
 let apiInstance = new YapilyApi.NotificationsApi();
-let eventTypeId = "eventTypeId_example"; // String | Unique identifier of the event type (for which notifications will be sent)
-apiInstance.getEventSubscriptionById(eventTypeId, (error, data, response) => {
+let eventTypeId = "eventTypeId_example"; // String | Unique identifier of the event type (for which notifications will be sent). 
+let opts = {
+  'subApplication': "subApplication_example" // String | The sub-application ID to which event type is being subscribed to
+};
+apiInstance.getEventSubscriptionById(eventTypeId, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -145,7 +156,8 @@ apiInstance.getEventSubscriptionById(eventTypeId, (error, data, response) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **eventTypeId** | **String**| Unique identifier of the event type (for which notifications will be sent) | 
+ **eventTypeId** | **String**| Unique identifier of the event type (for which notifications will be sent).  | 
+ **subApplication** | **String**| The sub-application ID to which event type is being subscribed to | [optional] 
 
 ### Return type
 
@@ -163,7 +175,7 @@ Name | Type | Description  | Notes
 
 ## getEventSubscriptions
 
-> ApiListResponseOfEventSubscriptionResponse getEventSubscriptions()
+> ApiListResponseOfEventSubscriptionResponse getEventSubscriptions(opts)
 
 Get Event Subscriptions
 
@@ -180,7 +192,10 @@ basicAuth.username = 'YOUR USERNAME';
 basicAuth.password = 'YOUR PASSWORD';
 
 let apiInstance = new YapilyApi.NotificationsApi();
-apiInstance.getEventSubscriptions((error, data, response) => {
+let opts = {
+  'subApplication': "subApplication_example" // String | The sub-application ID for which all event subscriptions will be returned
+};
+apiInstance.getEventSubscriptions(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -191,7 +206,10 @@ apiInstance.getEventSubscriptions((error, data, response) => {
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **subApplication** | **String**| The sub-application ID for which all event subscriptions will be returned | [optional] 
 
 ### Return type
 

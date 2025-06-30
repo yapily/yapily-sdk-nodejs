@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **String** |  | [optional] 
+**id** | **String** | Unique identifier of the user. | [optional] 
 **deleteStatus** | [**DeleteStatusEnum**](DeleteStatusEnum.md) |  | [optional] 
-**creationDate** | **Date** |  | [optional] 
+**creationDate** | **Date** | Date and time that the user was created. | [optional] 
 **userConsents** | [**[ConsentDeleteResponse]**](ConsentDeleteResponse.md) |  | [optional] 
 
 

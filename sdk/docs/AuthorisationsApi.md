@@ -44,8 +44,7 @@ let bulkPaymentAuthorisationRequest = new YapilyApi.BulkPaymentAuthorisationRequ
 let opts = {
   'psuId': "psuId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a personal account. <br><br>See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required.
   'psuCorporateId': "psuCorporateId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a business account. <br><br>See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required.
-  'psuIpAddress': "psuIpAddress_example", // String | __Conditional__. The IP address of the PSU. <br><br>See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required.
-  'raw': true // Boolean | __Optional__. Used to obtain the raw request and response to and from the <code>Institution</code>.
+  'psuIpAddress': "psuIpAddress_example" // String | __Conditional__. The IP address of the PSU. <br><br>See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required.
 };
 apiInstance.createBulkPaymentAuthorisation(bulkPaymentAuthorisationRequest, opts, (error, data, response) => {
   if (error) {
@@ -65,7 +64,6 @@ Name | Type | Description  | Notes
  **psuId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a personal account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required. | [optional] 
  **psuCorporateId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a business account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required. | [optional] 
  **psuIpAddress** | **String**| __Conditional__. The IP address of the PSU. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required. | [optional] 
- **raw** | **Boolean**| __Optional__. Used to obtain the raw request and response to and from the &lt;code&gt;Institution&lt;/code&gt;. | [optional] 
 
 ### Return type
 
@@ -104,8 +102,7 @@ let bulkPaymentEmbeddedAuthorisationRequest = new YapilyApi.BulkPaymentEmbeddedA
 let opts = {
   'psuId': "psuId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a personal account. <br><br>See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required.
   'psuCorporateId': "psuCorporateId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a business account. <br><br>See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required.
-  'psuIpAddress': "psuIpAddress_example", // String | __Conditional__. The IP address of the PSU. <br><br>See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required.
-  'raw': true // Boolean | __Optional__. Used to obtain the raw request and response to and from the <code>Institution</code>.
+  'psuIpAddress': "psuIpAddress_example" // String | __Conditional__. The IP address of the PSU. <br><br>See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required.
 };
 apiInstance.createEmbeddedBulkPaymentAuthorisation(bulkPaymentEmbeddedAuthorisationRequest, opts, (error, data, response) => {
   if (error) {
@@ -125,7 +122,6 @@ Name | Type | Description  | Notes
  **psuId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a personal account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required. | [optional] 
  **psuCorporateId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a business account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required. | [optional] 
  **psuIpAddress** | **String**| __Conditional__. The IP address of the PSU. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required. | [optional] 
- **raw** | **Boolean**| __Optional__. Used to obtain the raw request and response to and from the &lt;code&gt;Institution&lt;/code&gt;. | [optional] 
 
 ### Return type
 
@@ -165,7 +161,7 @@ let opts = {
   'psuId': "psuId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a personal account. <br><br>See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required.
   'psuCorporateId': "psuCorporateId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a business account. <br><br>See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required.
   'psuIpAddress': "psuIpAddress_example", // String | __Conditional__. The IP address of the PSU. <br><br>See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required.
-  'raw': true // Boolean | __Optional__. Used to obtain the raw request and response to and from the <code>Institution</code>.
+  'subApplication': "subApplication_example" // String | The sub-application ID to which event type is being subscribed to
 };
 apiInstance.createEmbeddedPaymentAuthorisation(paymentEmbeddedAuthorisationRequest, opts, (error, data, response) => {
   if (error) {
@@ -185,7 +181,7 @@ Name | Type | Description  | Notes
  **psuId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a personal account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required. | [optional] 
  **psuCorporateId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a business account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required. | [optional] 
  **psuIpAddress** | **String**| __Conditional__. The IP address of the PSU. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required. | [optional] 
- **raw** | **Boolean**| __Optional__. Used to obtain the raw request and response to and from the &lt;code&gt;Institution&lt;/code&gt;. | [optional] 
+ **subApplication** | **String**| The sub-application ID to which event type is being subscribed to | [optional] 
 
 ### Return type
 
@@ -225,7 +221,7 @@ let opts = {
   'psuId': "psuId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a personal account. <br><br>See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required.
   'psuCorporateId': "psuCorporateId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a business account. <br><br>See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required.
   'psuIpAddress': "psuIpAddress_example", // String | __Conditional__. The IP address of the PSU. <br><br>See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required.
-  'raw': true // Boolean | __Optional__. Used to obtain the raw request and response to and from the <code>Institution</code>.
+  'subApplication': "subApplication_example" // String | The sub-application ID to which event type is being subscribed to
 };
 apiInstance.createPaymentAuthorisation(paymentAuthorisationRequest, opts, (error, data, response) => {
   if (error) {
@@ -245,7 +241,7 @@ Name | Type | Description  | Notes
  **psuId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a personal account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required. | [optional] 
  **psuCorporateId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a business account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required. | [optional] 
  **psuIpAddress** | **String**| __Conditional__. The IP address of the PSU. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required. | [optional] 
- **raw** | **Boolean**| __Optional__. Used to obtain the raw request and response to and from the &lt;code&gt;Institution&lt;/code&gt;. | [optional] 
+ **subApplication** | **String**| The sub-application ID to which event type is being subscribed to | [optional] 
 
 ### Return type
 
@@ -263,11 +259,11 @@ Name | Type | Description  | Notes
 
 ## createPaymentPreAuthorisationRequest
 
-> ApiResponseOfAccountAuthorisationResponse createPaymentPreAuthorisationRequest(paymentPreAuthorisationRequest, opts)
+> ApiResponseOfPreAuthorisationResponse createPaymentPreAuthorisationRequest(paymentPreAuthorisationRequest, opts)
 
 Create Payment Pre-authorisation
 
-Used to initiate the pre-authorisation process for payments for CbiGlobe &#x60;Institution&#x60; that contains the &#x60;INITIATE_ONETIME_PRE_AUTHORISATION_PAYMENTS&#x60; feature to authenticate the user. &lt;br&gt;&lt;br&gt;Feature: &#x60;INITIATE_ONETIME_PRE_AUTHORISATION_PAYMENTS&#x60;
+Used to initiate the pre-authorisation process for payments for CBI Globe institutions that contain the &#x60;INITIATE_ONETIME_PRE_AUTHORISATION_PAYMENTS&#x60; feature to authenticate the user. &lt;br&gt;&lt;br&gt;Feature: &#x60;INITIATE_ONETIME_PRE_AUTHORISATION_PAYMENTS&#x60;
 
 ### Example
 
@@ -282,7 +278,9 @@ basicAuth.password = 'YOUR PASSWORD';
 let apiInstance = new YapilyApi.AuthorisationsApi();
 let paymentPreAuthorisationRequest = new YapilyApi.PaymentPreAuthorisationRequest(); // PaymentPreAuthorisationRequest | 
 let opts = {
-  'raw': true // Boolean | __Optional__. Used to obtain the raw request and response to and from the <code>Institution</code>.
+  'raw': true, // Boolean | __Optional__. Used to obtain the raw request and response to and from the <code>Institution</code>.
+  'psuIpAddress': "psuIpAddress_example", // String | __Conditional__. The IP address of the PSU. <br><br>See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required.
+  'subApplication': "subApplication_example" // String | The sub-application ID to which event type is being subscribed to
 };
 apiInstance.createPaymentPreAuthorisationRequest(paymentPreAuthorisationRequest, opts, (error, data, response) => {
   if (error) {
@@ -300,10 +298,12 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **paymentPreAuthorisationRequest** | [**PaymentPreAuthorisationRequest**](PaymentPreAuthorisationRequest.md)|  | 
  **raw** | **Boolean**| __Optional__. Used to obtain the raw request and response to and from the &lt;code&gt;Institution&lt;/code&gt;. | [optional] 
+ **psuIpAddress** | **String**| __Conditional__. The IP address of the PSU. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required. | [optional] 
+ **subApplication** | **String**| The sub-application ID to which event type is being subscribed to | [optional] 
 
 ### Return type
 
-[**ApiResponseOfAccountAuthorisationResponse**](ApiResponseOfAccountAuthorisationResponse.md)
+[**ApiResponseOfPreAuthorisationResponse**](ApiResponseOfPreAuthorisationResponse.md)
 
 ### Authorization
 
@@ -317,7 +317,7 @@ Name | Type | Description  | Notes
 
 ## createPreAuthorisationRequest
 
-> ApiResponseOfAccountAuthorisationResponse createPreAuthorisationRequest(preAuthorisationRequest, opts)
+> ApiResponseOfPreAuthorisationResponse createPreAuthorisationRequest(preAuthorisationRequest, opts)
 
 Create Pre-authorisation
 
@@ -336,7 +336,11 @@ basicAuth.password = 'YOUR PASSWORD';
 let apiInstance = new YapilyApi.AuthorisationsApi();
 let preAuthorisationRequest = new YapilyApi.PreAuthorisationRequest(); // PreAuthorisationRequest | 
 let opts = {
-  'raw': true // Boolean | __Optional__. Used to obtain the raw request and response to and from the <code>Institution</code>.
+  'raw': true, // Boolean | __Optional__. Used to obtain the raw request and response to and from the <code>Institution</code>.
+  'psuId': "psuId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a personal account. <br><br>See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required.
+  'psuCorporateId': "psuCorporateId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a business account. <br><br>See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required.
+  'psuIpAddress': "psuIpAddress_example", // String | __Conditional__. The IP address of the PSU. <br><br>See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required.
+  'subApplication': "subApplication_example" // String | The sub-application ID to which event type is being subscribed to
 };
 apiInstance.createPreAuthorisationRequest(preAuthorisationRequest, opts, (error, data, response) => {
   if (error) {
@@ -354,10 +358,14 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **preAuthorisationRequest** | [**PreAuthorisationRequest**](PreAuthorisationRequest.md)|  | 
  **raw** | **Boolean**| __Optional__. Used to obtain the raw request and response to and from the &lt;code&gt;Institution&lt;/code&gt;. | [optional] 
+ **psuId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a personal account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required. | [optional] 
+ **psuCorporateId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a business account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required. | [optional] 
+ **psuIpAddress** | **String**| __Conditional__. The IP address of the PSU. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required. | [optional] 
+ **subApplication** | **String**| The sub-application ID to which event type is being subscribed to | [optional] 
 
 ### Return type
 
-[**ApiResponseOfAccountAuthorisationResponse**](ApiResponseOfAccountAuthorisationResponse.md)
+[**ApiResponseOfPreAuthorisationResponse**](ApiResponseOfPreAuthorisationResponse.md)
 
 ### Authorization
 
@@ -393,7 +401,7 @@ let opts = {
   'psuId': "psuId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a personal account. <br><br>See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required.
   'psuCorporateId': "psuCorporateId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a business account. <br><br>See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required.
   'psuIpAddress': "psuIpAddress_example", // String | __Conditional__. The IP address of the PSU. <br><br>See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required.
-  'raw': true // Boolean | __Optional__. Used to obtain the raw request and response to and from the <code>Institution</code>.
+  'subApplication': "subApplication_example" // String | The sub-application ID to which event type is being subscribed to
 };
 apiInstance.initiateAccountRequest(accountAuthorisationRequest, opts, (error, data, response) => {
   if (error) {
@@ -413,7 +421,7 @@ Name | Type | Description  | Notes
  **psuId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a personal account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required. | [optional] 
  **psuCorporateId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a business account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required. | [optional] 
  **psuIpAddress** | **String**| __Conditional__. The IP address of the PSU. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required. | [optional] 
- **raw** | **Boolean**| __Optional__. Used to obtain the raw request and response to and from the &lt;code&gt;Institution&lt;/code&gt;. | [optional] 
+ **subApplication** | **String**| The sub-application ID to which event type is being subscribed to | [optional] 
 
 ### Return type
 
@@ -453,7 +461,7 @@ let opts = {
   'psuId': "psuId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a personal account. <br><br>See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required.
   'psuCorporateId': "psuCorporateId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a business account. <br><br>See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required.
   'psuIpAddress': "psuIpAddress_example", // String | __Conditional__. The IP address of the PSU. <br><br>See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required.
-  'raw': true // Boolean | __Optional__. Used to obtain the raw request and response to and from the <code>Institution</code>.
+  'subApplication': "subApplication_example" // String | The sub-application ID to which event type is being subscribed to
 };
 apiInstance.initiateEmbeddedAccountRequest(embeddedAccountAuthorisationRequest, opts, (error, data, response) => {
   if (error) {
@@ -473,7 +481,7 @@ Name | Type | Description  | Notes
  **psuId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a personal account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required. | [optional] 
  **psuCorporateId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a business account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required. | [optional] 
  **psuIpAddress** | **String**| __Conditional__. The IP address of the PSU. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required. | [optional] 
- **raw** | **Boolean**| __Optional__. Used to obtain the raw request and response to and from the &lt;code&gt;Institution&lt;/code&gt;. | [optional] 
+ **subApplication** | **String**| The sub-application ID to which event type is being subscribed to | [optional] 
 
 ### Return type
 
@@ -513,7 +521,7 @@ let opts = {
   'psuId': "psuId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a personal account. <br><br>See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required.
   'psuCorporateId': "psuCorporateId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a business account. <br><br>See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required.
   'psuIpAddress': "psuIpAddress_example", // String | __Conditional__. The IP address of the PSU. <br><br>See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required.
-  'raw': true // Boolean | __Optional__. Used to obtain the raw request and response to and from the <code>Institution</code>.
+  'subApplication': "subApplication_example" // String | The sub-application ID to which event type is being subscribed to
 };
 apiInstance.reAuthoriseAccount(consent, opts, (error, data, response) => {
   if (error) {
@@ -533,7 +541,7 @@ Name | Type | Description  | Notes
  **psuId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a personal account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required. | [optional] 
  **psuCorporateId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a business account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required. | [optional] 
  **psuIpAddress** | **String**| __Conditional__. The IP address of the PSU. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required. | [optional] 
- **raw** | **Boolean**| __Optional__. Used to obtain the raw request and response to and from the &lt;code&gt;Institution&lt;/code&gt;. | [optional] 
+ **subApplication** | **String**| The sub-application ID to which event type is being subscribed to | [optional] 
 
 ### Return type
 
@@ -574,7 +582,7 @@ let opts = {
   'psuId': "psuId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a personal account. <br><br>See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required.
   'psuCorporateId': "psuCorporateId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a business account. <br><br>See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required.
   'psuIpAddress': "psuIpAddress_example", // String | __Conditional__. The IP address of the PSU. <br><br>See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required.
-  'raw': true // Boolean | __Optional__. Used to obtain the raw request and response to and from the <code>Institution</code>.
+  'subApplication': "subApplication_example" // String | The sub-application ID to which event type is being subscribed to
 };
 apiInstance.updateEmbeddedAccountRequest(consentId, embeddedAccountAuthorisationRequest, opts, (error, data, response) => {
   if (error) {
@@ -595,7 +603,7 @@ Name | Type | Description  | Notes
  **psuId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a personal account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required. | [optional] 
  **psuCorporateId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a business account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required. | [optional] 
  **psuIpAddress** | **String**| __Conditional__. The IP address of the PSU. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required. | [optional] 
- **raw** | **Boolean**| __Optional__. Used to obtain the raw request and response to and from the &lt;code&gt;Institution&lt;/code&gt;. | [optional] 
+ **subApplication** | **String**| The sub-application ID to which event type is being subscribed to | [optional] 
 
 ### Return type
 
@@ -635,8 +643,7 @@ let bulkPaymentEmbeddedAuthorisationRequest = new YapilyApi.BulkPaymentEmbeddedA
 let opts = {
   'psuId': "psuId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a personal account. <br><br>See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required.
   'psuCorporateId': "psuCorporateId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a business account. <br><br>See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required.
-  'psuIpAddress': "psuIpAddress_example", // String | __Conditional__. The IP address of the PSU. <br><br>See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required.
-  'raw': true // Boolean | __Optional__. Used to obtain the raw request and response to and from the <code>Institution</code>.
+  'psuIpAddress': "psuIpAddress_example" // String | __Conditional__. The IP address of the PSU. <br><br>See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required.
 };
 apiInstance.updateEmbeddedBulkPaymentAuthorisation(consentId, bulkPaymentEmbeddedAuthorisationRequest, opts, (error, data, response) => {
   if (error) {
@@ -657,7 +664,6 @@ Name | Type | Description  | Notes
  **psuId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a personal account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required. | [optional] 
  **psuCorporateId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a business account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required. | [optional] 
  **psuIpAddress** | **String**| __Conditional__. The IP address of the PSU. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required. | [optional] 
- **raw** | **Boolean**| __Optional__. Used to obtain the raw request and response to and from the &lt;code&gt;Institution&lt;/code&gt;. | [optional] 
 
 ### Return type
 
@@ -698,7 +704,7 @@ let opts = {
   'psuId': "psuId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a personal account. <br><br>See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required.
   'psuCorporateId': "psuCorporateId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a business account. <br><br>See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required.
   'psuIpAddress': "psuIpAddress_example", // String | __Conditional__. The IP address of the PSU. <br><br>See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required.
-  'raw': true // Boolean | __Optional__. Used to obtain the raw request and response to and from the <code>Institution</code>.
+  'subApplication': "subApplication_example" // String | The sub-application ID to which event type is being subscribed to
 };
 apiInstance.updateEmbeddedPaymentAuthorisation(consentId, paymentEmbeddedAuthorisationRequest, opts, (error, data, response) => {
   if (error) {
@@ -719,7 +725,7 @@ Name | Type | Description  | Notes
  **psuId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a personal account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required. | [optional] 
  **psuCorporateId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a business account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required. | [optional] 
  **psuIpAddress** | **String**| __Conditional__. The IP address of the PSU. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required. | [optional] 
- **raw** | **Boolean**| __Optional__. Used to obtain the raw request and response to and from the &lt;code&gt;Institution&lt;/code&gt;. | [optional] 
+ **subApplication** | **String**| The sub-application ID to which event type is being subscribed to | [optional] 
 
 ### Return type
 
@@ -759,8 +765,7 @@ let paymentAuthorisationRequest = new YapilyApi.PaymentAuthorisationRequest(); /
 let opts = {
   'psuId': "psuId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a personal account. <br><br>See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required.
   'psuCorporateId': "psuCorporateId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a business account. <br><br>See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required.
-  'psuIpAddress': "psuIpAddress_example", // String | __Conditional__. The IP address of the PSU. <br><br>See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required.
-  'raw': true // Boolean | __Optional__. Used to obtain the raw request and response to and from the <code>Institution</code>.
+  'psuIpAddress': "psuIpAddress_example" // String | __Conditional__. The IP address of the PSU. <br><br>See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required.
 };
 apiInstance.updatePaymentAuthorisation(consent, paymentAuthorisationRequest, opts, (error, data, response) => {
   if (error) {
@@ -781,7 +786,6 @@ Name | Type | Description  | Notes
  **psuId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a personal account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required. | [optional] 
  **psuCorporateId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a business account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required. | [optional] 
  **psuIpAddress** | **String**| __Conditional__. The IP address of the PSU. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required. | [optional] 
- **raw** | **Boolean**| __Optional__. Used to obtain the raw request and response to and from the &lt;code&gt;Institution&lt;/code&gt;. | [optional] 
 
 ### Return type
 
@@ -822,7 +826,7 @@ let opts = {
   'psuId': "psuId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a personal account. <br><br>See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required.
   'psuCorporateId': "psuCorporateId_example", // String | __Conditional__. Represents the user's login ID for the `Institution` to a business account. <br><br>See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required.
   'psuIpAddress': "psuIpAddress_example", // String | __Conditional__. The IP address of the PSU. <br><br>See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required.
-  'raw': true // Boolean | __Optional__. Used to obtain the raw request and response to and from the <code>Institution</code>.
+  'subApplication': "subApplication_example" // String | The sub-application ID to which event type is being subscribed to
 };
 apiInstance.updatePreAuthoriseAccountConsent(consent, accountAuthorisationRequest, opts, (error, data, response) => {
   if (error) {
@@ -843,7 +847,7 @@ Name | Type | Description  | Notes
  **psuId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a personal account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required. | [optional] 
  **psuCorporateId** | **String**| __Conditional__. Represents the user&#39;s login ID for the &#x60;Institution&#x60; to a business account. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required. | [optional] 
  **psuIpAddress** | **String**| __Conditional__. The IP address of the PSU. &lt;br&gt;&lt;br&gt;See [PSU identifiers](https://docs.yapily.com/pages/knowledge/open-banking/psu_identifiers/) to see if this header is required. | [optional] 
- **raw** | **Boolean**| __Optional__. Used to obtain the raw request and response to and from the &lt;code&gt;Institution&lt;/code&gt;. | [optional] 
+ **subApplication** | **String**| The sub-application ID to which event type is being subscribed to | [optional] 
 
 ### Return type
 

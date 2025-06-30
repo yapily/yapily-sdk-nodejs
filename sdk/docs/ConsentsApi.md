@@ -295,7 +295,7 @@ let opts = {
   'filterStatus': ["null"], // [String] | __Optional__. Filter records based on the list of `Consent` [statuses](https://docs.yapily.com/api/reference/#operation/getConsents!c=200&path=data/status&t=response).
   'from': "from_example", // String | __Optional__. Returned transactions will be on or after this date (yyyy-MM-dd'T'HH:mm:ss.SSSZ). 
   'before': "before_example", // String | __Optional__. Returned transactions will be on or before this date (yyyy-MM-dd'T'HH:mm:ss.SSSZ).
-  'limit': 56, // Number | __Optional__. The maximum number of transaction records to be returned. Must be between 0 and 1000.
+  'limit': 56, // Number | __Optional__. The maximum number of transaction records to be returned. Must be between 1 and 1000.
   'offset': 0 // Number | __Optional__. The number of transaction records to be skipped. Used primarily with paginated results.
 };
 apiInstance.getConsents(opts, (error, data, response) => {
@@ -318,7 +318,7 @@ Name | Type | Description  | Notes
  **filterStatus** | [**[String]**](String.md)| __Optional__. Filter records based on the list of &#x60;Consent&#x60; [statuses](https://docs.yapily.com/api/reference/#operation/getConsents!c&#x3D;200&amp;path&#x3D;data/status&amp;t&#x3D;response). | [optional] 
  **from** | **String**| __Optional__. Returned transactions will be on or after this date (yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSSZ).  | [optional] 
  **before** | **String**| __Optional__. Returned transactions will be on or before this date (yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSSZ). | [optional] 
- **limit** | **Number**| __Optional__. The maximum number of transaction records to be returned. Must be between 0 and 1000. | [optional] 
+ **limit** | **Number**| __Optional__. The maximum number of transaction records to be returned. Must be between 1 and 1000. | [optional] 
  **offset** | **Number**| __Optional__. The number of transaction records to be skipped. Used primarily with paginated results. | [optional] [default to 0]
 
 ### Return type

@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**deleteProfileConsent**](FinancialProfileApi.md#deleteProfileConsent) | **DELETE** /users/{userUuid}/profile/consents/{profileConsentId} | Delete Profile Consent
 [**getBalancePrediction**](FinancialProfileApi.md#getBalancePrediction) | **GET** /users/{userUuid}/profile/predicted-balances | Get Predicted Balances
 [**getProfileConsent**](FinancialProfileApi.md#getProfileConsent) | **GET** /users/{userUuid}/profile/consents/{profileConsentId} | Get Profile Consent
-[**getUserProfile**](FinancialProfileApi.md#getUserProfile) | **GET** /users/{userUuid}/profile | Get User Profile
+[**getUserProfile**](FinancialProfileApi.md#getUserProfile) | **GET** /users/{userUuid}/profile/transaction-groups | Get Transaction Groups
 
 
 
@@ -172,7 +172,7 @@ Name | Type | Description  | Notes
 
 Get Profile Consent
 
-Used to retreive a specific ProfileConsent for a User.
+Used to retrieve a specific ProfileConsent for a User.
 
 ### Example
 
@@ -222,9 +222,9 @@ Name | Type | Description  | Notes
 
 > ApiResponseOfFinancialProfile getUserProfile(userUuid)
 
-Get User Profile
+Get Transaction Groups
 
-Used to retrieve a &#x60;FinancialProfile&#x60; for a &#x60;User&#x60;.  Status will be &#x60;PENDING&#x60; until all ProfileConsents are &#x60;COMPLETED&#x60;.
+Used to retrieve a &#x60;TransactionGroups&#x60; for a &#x60;User&#x60;.  Status will be &#x60;PENDING&#x60; until all ProfileConsents are &#x60;COMPLETED&#x60;.
 
 ### Example
 

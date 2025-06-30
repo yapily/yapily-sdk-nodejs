@@ -1,0 +1,10 @@
+# YapilyApi.HostedConsentPhase
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**phaseName** | **String** | The name of the hosted consent process phase. Allowed values are : &lt;ul&gt; &lt;li&gt; INITIATED - Process initiated &lt;/li&gt; &lt;li&gt; INSTITUTION_SUBMITTED - Consent institution submitted &lt;/li&gt; &lt;li&gt;    AUTHORISATION_INITIATED - All details required for consent initiation have been collected&lt;/li&gt; &lt;li&gt; AUTHORISATION_CREATED - Consent authorisation request created with Institution, awaiting authorisation completion &lt;/li&gt; &lt;li&gt; AUTHORISATION_FAILED - Consent authorisation failed and will not proceed further&lt;/li&gt; &lt;li&gt; AUTHORISATION_REJECTED - Consent Authorisation request rejected by Institution and will not proceed further &lt;/li&gt; &lt;li&gt;    DECOUPLED_AUTHORISATION - For embedded banks, decoupled authorisation was initiated by the bank&lt;/li&gt; &lt;li&gt;    EMBEDDED_CREDENTIAL_REQUESTED - For embedded banks, a UI element to collect user credentials was displayed&lt;/li&gt; &lt;li&gt;    EMBEDDED_CODE_REQUESTED - For embedded banks, a UI element to collect SCA for initiated consent was displayed&lt;/li&gt;&lt;li&gt;    EMBEDDED_TYPE_REQUESTED - For embedded banks, a UI element to allow the user to select their preferred SCA method for this consent authorisation was displayed&lt;/li&gt; &lt;li&gt;    EMBEDDED_CODE_COLLECTED - For embedded banks, SCA code was collected for consent authorisation&lt;/li&gt;&lt;li&gt;    EMBEDDED_TYPE_SELECTED - For embedded banks, preferred SCA method was selected for consent authorisation&lt;/li&gt; &lt;li&gt;    CONSENT_POLLING_STARTED - We start polling the bank for consent authorisation status&lt;/li&gt;&lt;li&gt;    CONSENT_POLLING_ENDED - We finish polling the bank for consent authorisation status&lt;/li&gt; &lt;li&gt; AUTHORISED - Consent authorisation completed &lt;/li&gt; &lt;li&gt; FINISHED - Process finished &lt;/li&gt;  &lt;/ul&gt; | [optional] 
+**phaseCreatedAt** | **Date** | The date and time at which the phase of the hosted Consent was created. | [optional] 
+
+

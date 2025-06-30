@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **consentToken** | **String** | The &#x60;consent-token&#x60; containing the user&#39;s authorisation to make the payment request. | [optional] 
 **state** | **String** |  | [optional] 
 **authorizedAt** | **Date** |  | [optional] 
-**institutionConsentId** | **String** |  | [optional] 
+**institutionConsentId** | **String** | Identification of the consent at the Institution. | [optional] 
 **authorisationUrl** | **String** |  | [optional] 
 **qrCodeUrl** | **String** |  | [optional] 
 **controlParameters** | [**SweepingControlParameters**](SweepingControlParameters.md) |  | [optional] 
